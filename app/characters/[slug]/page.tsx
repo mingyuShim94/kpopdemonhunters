@@ -3,93 +3,113 @@ import { notFound } from "next/navigation";
 import Footer from "../../components/Footer";
 
 const characters = {
-  lumi: {
-    name: "Lumi",
-    role: "Lead Hunter",
-    personality: `Lumi is the charismatic leader of the demon hunting team, known for her exceptional agility and strategic mind. She combines traditional Korean martial arts with modern combat techniques, making her a formidable opponent against supernatural threats.
-
-Her leadership style is both inspiring and practical - she leads by example and never asks her team to do something she wouldn't do herself. Despite the weight of responsibility, Lumi maintains her sense of humor and her deep care for her teammates.
-
-Born in Seoul, Lumi discovered her abilities during her teenage years when she encountered her first demon. This life-changing event set her on the path to becoming one of the most skilled hunters of her generation.`,
+  rumi: {
+    name: "Rumi",
+    role: "HUNTR/X Leader",
+    personality: `The leader and lead vocalist of HUNTR/X. A confident and charismatic leader who wields a saingeom sword in battle. She is the daughter of a former demon hunter and is the most dedicated of the trio to their mission.`,
     quotes: [
-      "Every demon we face is someone's nightmare. We're here to turn nightmares into dreams.",
-      "Strength isn't just about power - it's about knowing when to fight and when to protect.",
-      "The city sleeps peacefully because we stand guard. That's our honor and our duty."
+      "We fight for the light, with the power of our voices.",
+      "A true leader protects her team, no matter the cost.",
+      "The stage is our battlefield, and our music is our weapon."
     ],
     abilities: [
-      "Enhanced Agility and Reflexes",
-      "Energy Blade Manifestation", 
-      "Tactical Leadership",
-      "Demon Sense Detection"
+      "Master Swordswoman (Saingeom)",
+      "Vocal Magic",
+      "Demon Sealing",
+      "Inspirational Leadership"
     ],
-    background: "Originally from Seoul, Lumi trained under traditional Korean martial arts masters before discovering her supernatural abilities. She founded the current demon hunting team after a series of demon attacks threatened the city.",
-    relatedOST: ["Hunter's Anthem", "Seoul Nights", "Team Unity Theme"]
+    background: "As the daughter of a legendary demon hunter from the Sunlight Sisters, Rumi was raised to embrace her destiny. She now leads HUNTR/X, balancing the pressures of stardom with the sacred duty of protecting humanity.",
+    relatedOST: ["Golden", "TAKEDOWN", "What It Sounds Like"]
   },
-  kai: {
-    name: "Kai",
-    role: "Strategist",
-    personality: `Kai is the team's brilliant strategist and the voice of reason in chaotic situations. His psychic abilities allow him to analyze threats quickly and develop tactical solutions that save lives. He has a calm, thoughtful demeanor that masks his fierce determination to protect innocent people.
-
-Despite his serious nature, Kai has a dry sense of humor and deeply values the bonds he's formed with his teammates. He often serves as the bridge between Lumi's bold leadership and the rest of the team's varied personalities.
-
-His background in both ancient Korean philosophy and modern psychology gives him unique insights into both demon behavior and human nature.`,
+  mira: {
+    name: "Mira",
+    role: "HUNTR/X Main Dancer",
+    personality: `The visual and main dancer of the group. Mira is fierce and graceful, expressing her power through movement. Her weapon of choice is a deadly woldo, which she wields with precision and artistry.`,
     quotes: [
-      "Knowledge is our greatest weapon against the unknown.",
-      "Every battle won through strategy is a life saved through wisdom.",
-      "The mind that stays calm in chaos can find solutions others miss."
+      "Actions speak louder than words. My dance speaks loudest.",
+      "Find your rhythm, find your strength.",
+      "We move as one, a storm of light against the darkness."
     ],
     abilities: [
-      "Psychic Analysis and Prediction",
-      "Mental Shielding",
-      "Strategic Combat Coordination",
-      "Empathic Demon Reading"
+      "Woldo Mastery",
+      "Dance-Based Combat",
+      "Superhuman Agility",
+      "Protective Aura"
     ],
-    background: "Kai studied traditional Korean philosophy and modern psychology before his psychic abilities manifested. He joined Lumi's team after helping them solve a particularly complex demon case involving psychological manipulation.",
-    relatedOST: ["Mind's Eye", "Strategic Calm", "Wisdom's Path"]
+    background: "A prodigy in both traditional and modern dance, Mira discovered her demon-hunting abilities when her movements began to generate protective energy. She brings a unique, fluid fighting style to the team.",
+    relatedOST: ["How It's Done", "TAKEDOWN", "Golden"]
   },
-  nova: {
-    name: "Nova",
-    role: "Energy Specialist", 
-    personality: `Nova is the youngest member of the team but possesses incredibly powerful energy manipulation abilities. Her cheerful, optimistic personality often surprises those who witness her devastating combat capabilities. She brings light and hope to even the darkest situations.
-
-Her enthusiasm for helping people is matched only by her dedication to mastering her abilities. Nova sees every challenge as an opportunity to grow stronger and protect more people. She has a special fondness for Korean street food and often brings snacks to share with the team.
-
-Despite her young age, Nova's powers are among the most potent the team has encountered, and she continues to discover new applications for her energy manipulation.`,
+  zoey: {
+    name: "Zoey",
+    role: "HUNTR/X Main Rapper",
+    personality: `The main rapper, lyricist, and the youngest member (maknae) of HUNTR/X. Zoey is sharp, witty, and rebellious. She uses throwing knives with deadly accuracy and channels her energy into her powerful lyrics.`,
     quotes: [
-      "Every day is a chance to make someone's world a little brighter!",
-      "Power without compassion is just destruction. I choose to illuminate, not devastate.",
-      "The demons might be scary, but they've never faced someone who fights with pure joy!"
+      "My rhymes hit as hard as my blades.",
+      "They call me the maknae, but I'm the one you should fear.",
+      "Never underestimate the power of a sharp tongue and a sharper knife."
     ],
     abilities: [
-      "Energy Manipulation and Projection",
-      "Light-based Healing",
-      "Energy Shield Creation",
-      "Explosive Energy Bursts"
+      "Expert Marksmanship (Throwing Knives)",
+      "Lyrical Incantations",
+      "Stealth",
+      "Rapid Attacks"
     ],
-    background: "The youngest member of the team, Nova's abilities manifested during a demon attack on her school. Lumi and Kai rescued her and became her mentors, helping her channel her incredible power constructively.",
-    relatedOST: ["Bright Future", "Energy Rising", "Youth and Power"]
+    background: "Zoey grew up on the streets, honing her survival instincts and her skills as a rapper. After discovering her lineage, she joined HUNTR/X, bringing a raw, untamed energy to the group's dynamic.",
+    relatedOST: ["How It's Done", "TAKEDOWN", "Golden"]
   },
-  zara: {
-    name: "Zara",
-    role: "Tech Specialist",
-    personality: `Zara is the team's technological expert who seamlessly blends cutting-edge technology with traditional Korean martial arts. She's practical, resourceful, and has an engineer's mind for solving complex problems. Her gadgets and technical solutions often provide the edge the team needs in difficult battles.
-
-She has a quiet confidence and prefers to let her work speak for itself. Zara is deeply respectful of Korean traditions while embracing innovation, seeing technology as a tool to honor and enhance ancient wisdom rather than replace it.
-
-Her workshops are filled with both high-tech equipment and traditional Korean crafting tools, reflecting her unique approach to combining old and new.`,
+  jinu: {
+    name: "Jinu",
+    role: "Saja Boys Leader",
+    personality: `The leader of the Saja Boys and a demon with a haunting past. He was a musician centuries ago who made a deal with the demon Gwi-Ma. He is a direct foil to Rumi, torn between his demonic nature and his lingering humanity.`,
     quotes: [
-      "Tradition and innovation aren't opposites - they're partners in progress.",
-      "Every piece of technology should serve a purpose: protecting those who can't protect themselves.",
-      "The best solutions combine ancient wisdom with modern tools."
+      "The world only understands power.",
+      "My music is a curse, a beautiful, irresistible curse.",
+      "We offer obsession, and they give us their souls."
     ],
     abilities: [
-      "Advanced Technical Engineering",
-      "Traditional Korean Martial Arts",
-      "Demon-Tracking Technology",
-      "Protective Equipment Creation"
+      "Demonic Charm",
+      "Soul Absorption",
+      "Shadow Manipulation",
+      "Haunting Vocals"
     ],
-    background: "Zara comes from a family of traditional Korean craftsmen but showed early aptitude for modern technology. She developed specialized demon-hunting equipment after her hometown was attacked, combining her engineering skills with her martial arts training.",
-    relatedOST: ["Tech and Tradition", "Innovation's Edge", "Craftsman's Heart"]
+    background: "Once a gifted musician, Jinu made a pact with the demon king Gwi-Ma to achieve eternal fame. Now, he leads the Saja Boys, using their music to drain energy from fans and weaken the barrier protecting the human world.",
+    relatedOST: ["Soda Pop", "Your Idol", "Free"]
+  },
+  celine: {
+    name: "Celine",
+    role: "Mentor",
+    personality: `A former demon hunter and member of the legendary band Sunlight Sisters. Celine is a wise and powerful mentor to HUNTR/X, guiding them with a firm but loving hand. She is also Rumi's adoptive mother.`,
+    quotes: [
+      "The fight is not just yours, it is a legacy.",
+      "A true hunter fights with heart, not just with steel.",
+      "Protect the balance, and protect each other."
+    ],
+    abilities: [
+      "Veteran Demon Hunter",
+      "Mentorship",
+      "Protective Magic",
+      "Vast Knowledge of Demon Lore"
+    ],
+    background: "As a member of the Sunlight Sisters, Celine fought alongside Rumi's mother. After her friend's fall, she retired from the front lines and dedicated her life to raising Rumi and preparing the next generation of hunters.",
+    relatedOST: ["Free"]
+  },
+  "gwi-ma": {
+    name: "Gwi-Ma",
+    role: "Demon King",
+    personality: `The ruthless and manipulative demon king. Gwi-Ma is the ultimate villain, a being of immense power who seeks to shatter the barrier between the demon and human worlds to reign over both.`,
+    quotes: [
+      "The world will burn, and from the ashes, my kingdom will rise.",
+      "Their little songs are no match for my eternal power.",
+      "All souls are mine to command."
+    ],
+    abilities: [
+      "Overwhelming Demonic Power",
+      "Manipulation and Corruption",
+      "Reality Warping",
+      "Command of Demon Armies"
+    ],
+    background: "An ancient and powerful demon, Gwi-Ma has been plotting his return for centuries. He manipulates the Saja Boys as his pawns to break the magical barrier maintained by HUNTR/X's music.",
+    relatedOST: ["Your Idol"]
   }
 };
 
@@ -240,10 +260,5 @@ export default async function CharacterPage({ params }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  return [
-    { slug: 'lumi' },
-    { slug: 'kai' },
-    { slug: 'nova' },
-    { slug: 'zara' },
-  ];
+  return Object.keys(characters).map((slug) => ({ slug }));
 }

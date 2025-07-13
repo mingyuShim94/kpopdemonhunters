@@ -84,7 +84,7 @@ export default function OSTPage() {
                 <div>
                   <div className="aspect-video bg-black/30 rounded-lg overflow-hidden mb-4">
                     <iframe
-                      src={`https://www.youtube.com/embed/${track.youtubeId}`}
+                      src={`https://www.youtube.com/embed/${track.youtubeId}?rel=0`}
                       title={track.title}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen

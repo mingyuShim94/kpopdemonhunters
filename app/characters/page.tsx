@@ -3,32 +3,88 @@ import Footer from "../components/Footer";
 
 const characters = [
   {
-    id: "lumi",
-    name: "Lumi",
-    description: "A talented demon hunter with exceptional agility and a sharp wit. Known for her stylish combat techniques and unwavering determination.",
+    id: "rumi",
+    name: "Rumi",
+    description: "The leader and lead vocalist of HUNTR/X. A confident and charismatic leader who wields a saingeom sword in battle. She is the daughter of a former demon hunter and is the most dedicated of the trio to their mission.",
     image: "/placeholder-character.jpg",
-    role: "Lead Hunter"
+    role: "HUNTR/X Leader"
   },
   {
-    id: "kai",
-    name: "Kai",
-    description: "The strategist of the group with powerful psychic abilities. His calm demeanor hides a fierce protective instinct for his team.",
-    image: "/placeholder-character.jpg", 
-    role: "Strategist"
+    id: "mira",
+    name: "Mira",
+    description: "The visual and main dancer of the group. Mira's weapon of choice is a woldo.",
+    image: "/placeholder-character.jpg",
+    role: "HUNTR/X Main Dancer"
   },
   {
-    id: "nova",
-    name: "Nova",
-    description: "A young but incredibly powerful hunter who specializes in energy manipulation. Her cheerful personality contrasts with her devastating combat skills.",
+    id: "zoey",
+    name: "Zoey",
+    description: "The main rapper, lyricist, and the youngest member (maknae) of HUNTR/X. She utilizes throwing knives in combat.",
     image: "/placeholder-character.jpg",
-    role: "Energy Specialist"
+    role: "HUNTR/X Main Rapper"
   },
   {
-    id: "zara",
-    name: "Zara",
-    description: "The team's tech expert and support specialist. She combines traditional Korean martial arts with cutting-edge technology.",
+    id: "jinu",
+    name: "Jinu",
+    description: "The leader of the Saja Boys and a demon with a haunting past. He was a musician centuries ago who made a deal with the demon Gwi-Ma.",
     image: "/placeholder-character.jpg",
-    role: "Tech Specialist"
+    role: "Saja Boys Leader"
+  },
+  {
+    id: "abby-saja",
+    name: "Abby 'Abs' Saja",
+    description: "A member of the Saja Boys.",
+    image: "/placeholder-character.jpg",
+    role: "Saja Boys Member"
+  },
+  {
+    id: "romance-saja",
+    name: "Romance Saja",
+    description: "A member of the Saja Boys.",
+    image: "/placeholder-character.jpg",
+    role: "Saja Boys Member"
+  },
+    {
+    id: "mystery-saja",
+    name: "Mystery Saja",
+    description: "A member of the Saja Boys.",
+    image: "/placeholder-character.jpg",
+    role: "Saja Boys Member"
+  },
+  {
+    id: "baby-saja",
+    name: "Baby Saja",
+    description: "The youngest member of the Saja Boys.",
+    image: "/placeholder-character.jpg",
+    role: "Saja Boys Member"
+  },
+  {
+    id: "celine",
+    name: "Celine",
+    description: "A former demon hunter and member of the band Sunlight Sisters with Rumi's mother. She serves as a mentor to HUNTR/X and is Rumi's adoptive mother.",
+    image: "/placeholder-character.jpg",
+    role: "Mentor"
+  },
+  {
+    id: "bobby",
+    name: "Bobby",
+    description: "The enthusiastic band manager of HUNTR/X.",
+    image: "/placeholder-character.jpg",
+    role: "Manager"
+  },
+  {
+    id: "gwi-ma",
+    name: "Gwi-Ma",
+    description: "The ruthless and manipulative demon king who is the main villain of the film.",
+    image: "/placeholder-character.jpg",
+    role: "Demon King"
+  },
+  {
+    id: "healer-han",
+    name: "Healer Han",
+    description: "A character who attempts to help Rumi with her strained voice.",
+    image: "/placeholder-character.jpg",
+    role: "Healer"
   }
 ];
 
@@ -77,7 +133,7 @@ export default function CharactersPage() {
             Characters
           </h1>
           <p className="text-xl text-purple-200 max-w-2xl mx-auto">
-            Meet the demon hunters who protect the world from supernatural threats while navigating the complexities of modern life.
+            Meet the K-pop idols who lead double lives as demon slayers, the demonic forces they combat, and the allies who support them in their mission to protect the world.
           </p>
         </div>
       </section>
