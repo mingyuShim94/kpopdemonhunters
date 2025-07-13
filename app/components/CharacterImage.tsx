@@ -8,16 +8,20 @@ interface CharacterImageProps {
   alt: string;
   name: string;
   role: string;
+  aspectRatio?: "video" | "square";
 }
 
-export default function CharacterImage({ src, alt, name, role }: CharacterImageProps) {
+export default function CharacterImage({ src, alt, name, role, aspectRatio = "video" }: CharacterImageProps) {
   const [hasError, setHasError] = useState(false);
+  
+  const aspectClass = aspectRatio === "square" ? "aspect-square" : "aspect-video";
+  const iconSize = aspectRatio === "square" ? "text-8xl" : "text-4xl";
 
   if (hasError) {
     return (
-      <div className="aspect-video bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center">
+      <div className={`${aspectClass} bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center`}>
         <div className="text-center p-4">
-          <div className="text-4xl mb-3">👤</div>
+          <div className={`${iconSize} mb-3 text-white/50`}>👤</div>
           <div className="text-white text-sm font-medium mb-1">{name}</div>
           <div className="text-white/80 text-xs">{role}</div>
         </div>
@@ -26,7 +30,7 @@ export default function CharacterImage({ src, alt, name, role }: CharacterImageP
   }
 
   return (
-    <div className="relative aspect-video overflow-hidden">
+    <div className={`relative ${aspectClass} overflow-hidden`}>
       <Image
         src={src}
         alt={alt}

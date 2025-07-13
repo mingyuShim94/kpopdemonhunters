@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "../../components/Footer";
+import CharacterImage from "../../components/CharacterImage";
 
 const characters = {
   rumi: {
@@ -110,6 +111,96 @@ const characters = {
     ],
     background: "An ancient and powerful demon, Gwi-Ma has been plotting his return for centuries. He manipulates the Saja Boys as his pawns to break the magical barrier maintained by HUNTR/X's music.",
     relatedOST: ["Your Idol"]
+  },
+  abby: {
+    name: "Abby",
+    role: "Saja Boys Member",
+    personality: `A member of the Saja Boys with a charismatic and alluring presence.`,
+    quotes: [
+      "Follow the music, lose yourself in the rhythm.",
+      "We are what you desire most.",
+      "Your soul sings the sweetest melody."
+    ],
+    abilities: [
+      "Hypnotic Performance",
+      "Soul Enchantment",
+      "Demonic Agility",
+      "Dark Charisma"
+    ],
+    background: "As a member of the Saja Boys, Abby uses his supernatural charm to captivate audiences and drain their spiritual energy for Gwi-Ma's dark purposes.",
+    relatedOST: ["Soda Pop", "Your Idol"]
+  },
+  romance: {
+    name: "Romance",
+    role: "Saja Boys Member",
+    personality: `A member of the Saja Boys who specializes in emotional manipulation and seduction.`,
+    quotes: [
+      "Love is just another form of possession.",
+      "Your heart belongs to us now.",
+      "Romance is eternal, just like your servitude."
+    ],
+    abilities: [
+      "Emotional Manipulation",
+      "Seductive Aura",
+      "Heart Corruption",
+      "Illusion Creation"
+    ],
+    background: "Romance preys on the emotional vulnerabilities of fans, using the power of infatuation to bind souls to the Saja Boys' dark influence.",
+    relatedOST: ["Soda Pop", "Your Idol"]
+  },
+  mystery: {
+    name: "Mystery",
+    role: "Saja Boys Member",
+    personality: `The enigmatic member of the Saja Boys who shrouds himself in shadows and secrecy.`,
+    quotes: [
+      "The unknown is where true power lies.",
+      "Fear what you cannot understand.",
+      "In darkness, we are strongest."
+    ],
+    abilities: [
+      "Shadow Manipulation",
+      "Stealth",
+      "Fear Induction",
+      "Psychic Interference"
+    ],
+    background: "Mystery operates from the shadows, using fear and uncertainty as weapons. His true nature remains hidden, making him one of the most dangerous Saja Boys.",
+    relatedOST: ["Soda Pop", "Your Idol"]
+  },
+  baby: {
+    name: "Baby",
+    role: "Saja Boys Member",
+    personality: `The youngest member of the Saja Boys, whose innocent appearance masks a sinister nature.`,
+    quotes: [
+      "Don't let my age fool you.",
+      "The youngest flame burns the brightest.",
+      "Innocence is just another mask to wear."
+    ],
+    abilities: [
+      "Deceptive Innocence",
+      "Rapid Growth",
+      "Energy Absorption",
+      "Youthful Agility"
+    ],
+    background: "Baby uses his youthful appearance to lower the guard of victims, making him particularly effective at targeting younger fans and stealing their energy.",
+    relatedOST: ["Soda Pop", "Your Idol"]
+  },
+  bobby: {
+    name: "Bobby",
+    role: "Manager",
+    personality: `The enthusiastic and dedicated manager of HUNTR/X who supports the team both professionally and personally.`,
+    quotes: [
+      "Your success is my success.",
+      "Behind every great group is a great manager.",
+      "We'll face whatever comes together."
+    ],
+    abilities: [
+      "Strategic Planning",
+      "Industry Connections",
+      "Team Coordination",
+      "Crisis Management"
+    ],
+    background: "Bobby discovered HUNTR/X's potential early and has been instrumental in balancing their public careers with their secret demon-hunting duties.",
+    relatedOST: ["Golden"]
   }
 };
 
@@ -173,8 +264,14 @@ export default async function CharacterPage({ params }: PageProps) {
           
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <div className="aspect-square bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
-                <div className="text-8xl text-white/50">👤</div>
+              <div className="rounded-2xl overflow-hidden mb-6">
+                <CharacterImage
+                  src={`/images/characters/${slug}.jpg`}
+                  alt={`${character.name} character portrait`}
+                  name={character.name}
+                  role={character.role}
+                  aspectRatio="square"
+                />
               </div>
             </div>
             
