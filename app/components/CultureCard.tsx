@@ -53,7 +53,10 @@ function ImageWithFallback({ src, alt, fallbackText, label, icon, gradientClass 
     );
   }
 
-  const handleClick = () => {
+  const handleClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+    event.stopPropagation();
+    
     // 모바일에서만 클릭 기능 작동 (터치 디바이스 감지)
     if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
       setIsExpanded(!isExpanded);
@@ -61,7 +64,10 @@ function ImageWithFallback({ src, alt, fallbackText, label, icon, gradientClass 
   };
 
   const handleMouseLeave = () => {
-    setIsExpanded(false);
+    // 데스크톱에서만 마우스 리브 시 축소
+    if (!('ontouchstart' in window) && navigator.maxTouchPoints === 0) {
+      setIsExpanded(false);
+    }
   };
 
   return (
