@@ -53,28 +53,17 @@ function ImageWithFallback({ src, alt, fallbackText, label, icon, gradientClass 
     );
   }
 
+  // Click handler to toggle the expanded state on any device
   const handleClick = (event: React.MouseEvent) => {
     event.preventDefault();
     event.stopPropagation();
-    
-    // 모바일에서만 클릭 기능 작동 (터치 디바이스 감지)
-    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-      setIsExpanded(!isExpanded);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    // 데스크톱에서만 마우스 리브 시 축소
-    if (!('ontouchstart' in window) && navigator.maxTouchPoints === 0) {
-      setIsExpanded(false);
-    }
+    setIsExpanded(!isExpanded);
   };
 
   return (
     <div 
-      className="relative group overflow-hidden md:cursor-default cursor-pointer"
+      className="relative group overflow-hidden cursor-pointer"
       onClick={handleClick}
-      onMouseLeave={handleMouseLeave}
     >
       <Image
         src={src}
@@ -86,7 +75,7 @@ function ImageWithFallback({ src, alt, fallbackText, label, icon, gradientClass 
         sizes="50vw"
         onError={() => setHasError(true)}
       />
-      {/* 호버 힌트 아이콘 (데스크톱에서만 표시) */}
+      {/* Hover hint icon (desktop only) */}
       <div className="hidden md:block absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="bg-black/60 backdrop-blur-sm rounded-full p-1">
           <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +88,7 @@ function ImageWithFallback({ src, alt, fallbackText, label, icon, gradientClass 
           </svg>
         </div>
       </div>
-      {/* 모바일 터치 힌트 아이콘 */}
+      {/* Touch hint icon (mobile only) */}
       <div className={`md:hidden absolute top-2 right-2 transition-opacity duration-300 ${
         isExpanded ? 'opacity-100' : 'opacity-60'
       }`}>
@@ -110,16 +99,16 @@ function ImageWithFallback({ src, alt, fallbackText, label, icon, gradientClass 
               strokeLinejoin="round" 
               strokeWidth={2} 
               d={isExpanded 
-                ? "M20 12H4" // 축소 아이콘 (-)
-                : "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" // 확대 아이콘
+                ? "M20 12H4" // Collapse icon (-)
+                : "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" // Expand icon
               } 
             />
           </svg>
         </div>
       </div>
-      {/* 접근성을 위한 스크린 리더 텍스트 */}
+      {/* Accessibility text for screen readers */}
       <span className="sr-only">
-        전체 이미지 보려면 호버하거나 터치하세요
+        Hover or touch to see the full image
       </span>
     </div>
   );
