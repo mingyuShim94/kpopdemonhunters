@@ -9,8 +9,10 @@ export default function GoogleAnalytics() {
   useEffect(() => {
     // Initialize gtag if it doesn't exist
     if (typeof window !== 'undefined') {
-      window.gtag = window.gtag || function() {
-        (window.gtag.q = window.gtag.q || []).push(arguments)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      window.gtag = window.gtag || function(...args: any[]) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (window.gtag.q = window.gtag.q || []).push(args)
       }
       window.gtag.l = new Date().getTime()
     }
@@ -44,6 +46,11 @@ export default function GoogleAnalytics() {
 // Type declaration for gtag
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    gtag: ((...args: any[]) => void) & {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      q?: any[]
+      l?: number
+    }
   }
 }

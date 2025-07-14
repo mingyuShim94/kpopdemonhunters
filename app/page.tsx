@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -103,9 +104,11 @@ export default function Home() {
             <Link href="/characters" className="group">
               <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 backdrop-blur-sm rounded-xl p-6 hover:from-pink-500/30 hover:to-purple-600/30 transition-all duration-300 border border-pink-400/30 hover:border-pink-400/60 transform hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25">
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden border-2 border-pink-400/50">
-                  <img 
+                  <Image 
                     src="/images/characters/mira.jpg" 
                     alt="Characters"
+                    width={64}
+                    height={64}
                     className="w-full h-full object-cover"
                   />
                 </div>
