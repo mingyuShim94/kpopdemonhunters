@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.4.0",
+    "gtag": "^1.0.1",
     "next": "15.3.4",
     "picomatch": "^4.0.2",
     "react": "^19.0.0",
