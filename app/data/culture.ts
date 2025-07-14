@@ -45,13 +45,13 @@ export const mythologyAndFolklore: CultureItem[] = [
 
 export const kpopCulture: CultureItem[] = [
   {
-    name: "Idol Groups and Fandom",
+    name: "Idol Placards & Slogans",
     description:
-      "The film is a love letter to modern K-pop, drawing inspiration from real-life groups like BLACKPINK, BTS, and Stray Kids. It authentically portrays the dynamics of K-pop groups and their dedicated fandoms.",
+      "A key part of K-pop fan culture, fans create and hold up placards and slogans to cheer for and communicate with their favorite idols. Used at concerts and fan meetings, they are an essential tool for showing support, often featuring witty phrases or expressions of love.",
     filmConnection:
-      "HUNTR/X and the Saja Boys represent the classic girl group vs. boy band rivalry. The film showcases fan chants, slogan banners, and the intense fan-idol relationships that are central to K-pop culture.",
-    filmImage: "/images/culture/kpop/idol-groups-film.jpg",
-    realityImage: "/images/culture/kpop/idol-groups-reality.jpg",
+      "In the film, HUNTR/X fans hold up witty, realistic placards with messages like ‘어차피 일등은 헌트릭스 (HUNTR/X is #1 no matter what),’ ‘미라 내꼬 (Mira is mine),’ ‘QUEEN 루미 너만 보여 (QUEEN Rumi, I only see you),’ and ‘조이 왔조잉 (Zoey has arrived!).’ This vividly showcases the creative and passionate cheering culture of K-pop fandoms.",
+    filmImage: "/images/culture/kpop/placards-slogans-film.jpg",
+    realityImage: "/images/culture/kpop/placards-slogans-reality.jpg",
   },
   {
     name: "Hoobae/Sunbae Relationship",
@@ -59,17 +59,17 @@ export const kpopCulture: CultureItem[] = [
       "In Korean culture, sunbae refers to a senior and hoobae to a junior, based on experience or age. This hierarchical relationship is a key aspect of the K-pop industry.",
     filmConnection:
       "The film uses the term 'hoobae' (junior) to refer to a rival group, highlighting the established social hierarchy within the K-pop world.",
-    filmImage: "/images/culture/kpop/hierarchy-film.jpg",
-    realityImage: "/images/culture/kpop/hierarchy-reality.jpg",
+    filmImage: "/images/culture/kpop/hoobae-sunbae-film.jpg",
+    realityImage: "/images/culture/kpop/hoobae-sunbae-reality.jpg",
   },
   {
-    name: "Music Shows and Promotions",
+    name: "Idol Variety Shows (Weekly Idol)",
     description:
-      "K-pop groups heavily promote their new music on various weekly music shows, where they perform and interact with fans.",
+      "Weekly Idol is a Korean variety show that broke the mold of typical music promotions with its relaxed, often chaotic and humorous style. The show features segments like the 'Random Play Dance,' where groups must perform choreography to short segments of songs without mistakes, allowing idols to showcase their personalities beyond their on-stage personas.",
     filmConnection:
-      "The film depicts the high-stakes environment of music show promotions, where HUNTR/X and the Saja Boys compete for the top spot.",
-    filmImage: "/images/culture/kpop/music-shows-film.jpg",
-    realityImage: "/images/culture/kpop/music-shows-reality.jpg",
+      "In the film, the fictional variety show '우리랑 놀자!' (Let's Play Together!) serves as a perfect parody of Weekly Idol. Baby Saja from the rival group Saja Boys appears on this show and competes in a spicy food eating challenge, defeating the MC to claim first place. The show captures Weekly Idol's signature chaotic energy and tendency to put idols through absurd challenges.",
+    filmImage: "/images/culture/kpop/weekly-idol-film.jpg",
+    realityImage: "/images/culture/kpop/weekly-idol-reality.jpg",
   },
   {
     name: "Maknae (Youngest Member)",
@@ -77,7 +77,7 @@ export const kpopCulture: CultureItem[] = [
       "The 'maknae' is the youngest member of a K-pop group. They often have a unique role, sometimes being treated with extra affection or having a more rebellious image.",
     filmConnection:
       "Zoey is the maknae of HUNTR/X, and Baby Saja is the maknae of the Saja Boys, both fulfilling their respective roles within their groups.",
-    filmImage: "/images/culture/kpop/maknae-film.jpg",
+    filmImage: "/images/culture/kpop/maknae-zoey-baby-saja-film.jpg",
     realityImage: "/images/culture/kpop/maknae-reality.jpg",
   },
 ];
