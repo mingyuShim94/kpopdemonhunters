@@ -54,13 +54,13 @@ export const kpopCulture: CultureItem[] = [
     realityImage: "/images/culture/kpop/placards-slogans-reality.jpg",
   },
   {
-    name: "Hoobae/Sunbae Relationship",
+    name: "Fan Signing Events (팬사인회)",
     description:
-      "In Korean culture, sunbae refers to a senior and hoobae to a junior, based on experience or age. This hierarchical relationship is a key aspect of the K-pop industry.",
+      "Fan signing events are crucial opportunities for K-pop idols and fans to interact directly. Fans typically gain access through album purchases, and these events feature personal interactions, autograph signing, brief conversations, and fan service moments between idols and their supporters.",
     filmConnection:
-      "The film uses the term 'hoobae' (junior) to refer to a rival group, highlighting the established social hierarchy within the K-pop world.",
-    filmImage: "/images/culture/kpop/hoobae-sunbae-film.jpg",
-    realityImage: "/images/culture/kpop/hoobae-sunbae-reality.jpg",
+      "The film realistically depicts K-pop fan signing culture through a joint fan signing event between HUNTR/X and Saja Boys. A particularly touching moment shows Jinu receiving a hand-drawn artwork from a young fan, demonstrating that fan meetings involve more than just autograph signing—they're opportunities for fans to share their creative expressions and personal gifts with their idols.",
+    filmImage: "/images/culture/kpop/fansign-event-film.jpg",
+    realityImage: "/images/culture/kpop/fansign-event-reality.jpg",
   },
   {
     name: "Idol Variety Shows (Weekly Idol)",
