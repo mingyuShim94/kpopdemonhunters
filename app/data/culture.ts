@@ -72,13 +72,13 @@ export const kpopCulture: CultureItem[] = [
     realityImage: "/images/culture/kpop/weekly-idol-reality.jpg",
   },
   {
-    name: "Maknae (Youngest Member)",
+    name: "Weekly Music Shows (주간 음악방송)",
     description:
-      "The 'maknae' is the youngest member of a K-pop group. They often have a unique role, sometimes being treated with extra affection or having a more rebellious image.",
+      "Korean music shows broadcast weekly, culminating in the announcement of a #1 winner. Scores are tallied from various sources, and all performing artists gather on stage to await the results.",
     filmConnection:
-      "Zoey is the maknae of HUNTR/X, and Baby Saja is the maknae of the Saja Boys, both fulfilling their respective roles within their groups.",
-    filmImage: "/images/culture/kpop/maknae-zoey-baby-saja-film.jpg",
-    realityImage: "/images/culture/kpop/maknae-reality.jpg",
+      "K-pop Demon Hunters features a scene where all the artists, including HUNTR/X and the Saja Boys, are on stage together for the tense #1 announcement, with the Saja Boys ultimately taking the win.",
+    filmImage: "/images/culture/kpop/music-show-film.jpg",
+    realityImage: "/images/culture/kpop/music-show-reality.jpg",
   },
 ];
 
