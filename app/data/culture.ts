@@ -131,13 +131,13 @@ export const koreanPlaces: CultureItem[] = [
     realityImage: "/images/culture/places/seoul-tower-reality.jpg",
   },
   {
-    name: "Andong Hahoe Village",
+    name: "Bukchon Hanok Village",
     description:
-      "This location is tied to the backstory and heritage of one of the main characters, Rumi.",
+      "A historic village in Seoul, Bukchon Hanok Village is famous for its traditional Korean houses (hanok). It's a popular destination for tourists to experience the traditional atmosphere of the Joseon Dynasty.",
     filmConnection:
-      "Flashbacks to Rumi's childhood and training take place here.",
-    filmImage: "/images/culture/places/hahoe-village-film.jpg",
-    realityImage: "/images/culture/places/hahoe-village-reality.jpg",
+      "In the film, a chase scene takes place through the narrow, winding alleys of Bukchon Hanok Village, showcasing its unique architecture and traditional beauty.",
+    filmImage: "/images/culture/places/bukchon-hanok-village-film.jpg",
+    realityImage: "/images/culture/places/bukchon-hanok-village-reality.jpg",
   },
   {
     name: "COEX 3D Screen",
