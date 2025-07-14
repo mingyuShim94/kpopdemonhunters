@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Footer from "../../components/Footer";
 import CharacterImage from "../../components/CharacterImage";
 
@@ -358,4 +359,62 @@ export default async function CharacterPage({ params }: PageProps) {
 
 export async function generateStaticParams() {
   return Object.keys(characters).map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const character = characters[slug as keyof typeof characters];
+  
+  if (!character) {
+    return {
+      title: 'Character Not Found - KDH Wiki',
+      description: 'The requested character could not be found in the KDH Wiki.',
+    };
+  }
+
+  const title = `${character.name} - ${character.role} | KDH Wiki`;
+  const description = `Learn about ${character.name}, ${character.role} in K-pop Demon Hunters. ${character.personality.slice(0, 150)}...`;
+  const canonicalUrl = `https://kpopdemonhunters.net/characters/${slug}`;
+
+  return {
+    title,
+    description,
+    keywords: [
+      character.name,
+      character.role,
+      'K-pop Demon Hunters',
+      'KDH',
+      'Character',
+      'Fan Wiki',
+      ...character.abilities,
+    ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: 'KDH Wiki',
+      images: [
+        {
+          url: `/images/characters/${slug}.jpg`,
+          width: 800,
+          height: 800,
+          alt: `${character.name} character portrait`,
+        },
+      ],
+      type: 'profile',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`/images/characters/${slug}.jpg`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
 }
