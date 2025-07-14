@@ -102,12 +102,13 @@ export const koreanFoods: CultureItem[] = [
     realityImage: "/images/culture/food/ramyeon-reality.jpg",
   },
   {
-    name: "Naengmyeon",
+    name: "Hotteok",
     description:
-      "A cold noodle dish, perfect for hot weather. It has personal significance to the film's director.",
-    filmConnection: "Eaten by the characters during a moment of respite.",
-    filmImage: "/images/culture/food/naengmyeon-film.jpg",
-    realityImage: "/images/culture/food/naengmyeon-reality.jpg",
+      "A popular Korean street food, Hotteok is a sweet pancake filled with a mixture of brown sugar, honey, and nuts.",
+    filmConnection:
+      "The members of HUNTR/X are seen enjoying Hotteok from a street vendor after a successful mission.",
+    filmImage: "/images/culture/food/hotteok-film.jpg",
+    realityImage: "/images/culture/food/hotteok-reality.jpg",
   },
   {
     name: "Seolleongtang",
