@@ -1,27 +1,20 @@
 ---
 
-# Zoey (KPop Demon Hunters)
+# Zoey
 
-> ⚠️ **This Article Contains Spoilers**
-> WARNING: This article contains major spoilers. If you do not wish to know vital information on plot / character elements in a story, you may not wish to read beyond this warning: We hold no responsibility for any negative effects these facts may have on your enjoyment of said media should you continue. That is all.
+**Full Name**: Zoey
+**Alias(es)**: None
+**Origin**: *KPop Demon Hunters*
+**Occupation**:
+
+* Rapper/lyricist of Huntrix
+* Maknae of the group
+* Pop star
+* Demon Hunter
 
 ---
 
-## Do-gooder
-
-**Zoey (KPop Demon Hunters)**
-
-- **Full Name:** Zoey
-- **Alias(es):** None
-- **Origin:** _KPop Demon Hunters_
-- **Occupation:**
-
-  - Rapper/lyricist of Huntrix
-  - Maknae of the group
-  - Pop star
-  - Demon Hunter
-
-### Powers / Skills
+## Powers / Skills
 
 - Singing
 - Rapping
@@ -29,7 +22,9 @@
 - Spirit Magic
 - Knife combat
 
-### Hobby
+---
+
+## Hobby
 
 - Singing
 - Hunting demons
@@ -37,24 +32,32 @@
 - Lyricism
 - Going to the bathhouse with Rumi and Mira
 
-### Goals
+---
 
-- Stop Gwi-Ma and his demons from collecting human souls (**succeeded**)
-- Create the Golden Honmoon (**failed initially; still ongoing**)
-- Defeat Gwi-Ma and save the souls of her friends and fans (**succeeded**)
+## Goals
 
-### Family
+- Stop Gwi-Ma and his demons from collecting human souls _(succeeded)_
+- Create the Golden Honmoon _(failed initially; still ongoing)_
+- Defeat Gwi-Ma and save the souls of her friends and fans _(succeeded)_
+
+---
+
+## Family
 
 - Unknown
 
-### Friends / Allies
+---
+
+## Friends / Allies
 
 - Rumi (best friend)
 - Mira (best friend)
 - Bobby (manager and friend)
 - Celine (mentor)
 
-### Enemies
+---
+
+## Enemies
 
 - Gwi-Ma (arch-nemesis)
 - The Saja Boys
@@ -64,66 +67,92 @@
 - Romance †
 - Baby †
 
-### Type of Hero
+---
+
+## Type of Hero
 
 **Optimistic Voice of Reason**
 
-> _"Before I joined Huntrix, I felt like my thoughts and my lyrics and all my notebooks were just useless and weird. But with the two of you, they mean something. I mean something."_
-> — Zoey to Mira and Rumi
+> "Before I joined Huntrix, I felt like my thoughts and my lyrics and all my notebooks were just useless and weird. But with the two of you, they mean something. I mean something."
+> \~ Zoey to Mira and Rumi
 
 ---
 
-## 1. Story
+## Overview
 
-Zoey was born in Korea, but raised in Burbank, California, USA. Before she joined Huntrix, she made songs and lyrics in many of her notebooks, but however, people thought it was useless and weird. Despite the constant comments from her old school, she still persisted into becoming a rapper in Huntrix. Eventually, Celine recruited her as the rapper in Huntrix and is now known as the rapper and lyricist of the group.
+Zoey is one of the two deuteragonists (alongside Mira) of **Sony Pictures Animation's 2025 animated feature film _KPop Demon Hunters_**.
 
----
+She is the lyricist of the KPop group **Huntrix**, which consists of herself, Rumi, and Mira. They live double lives as K-Pop idols and **secret demon hunters**, protecting the world from spiritual threats.
 
-## 2. Personality
-
-As the **maknae** of the group, Zoey is seen as **playful, goofy and energetic**. Her expressiveness and profound understanding of lyrics helps her craft lyrics for Huntrix's songs. She's also the emotional glue of the group, as she was seen crying first in the bath-house in the middle of their three-month hiatus after the song _"This Is What It Sounds Like"_.
-
-But despite her bubbly exterior, she's actually very **protective of Rumi and Mira**, and the fans. Zoey fights fiercely alongside them, often putting herself in danger to shield them from demonic attacks. Her spirit magic is frequently used defensively when her friends are vulnerable.
-
-Even after fighting through chaos, she never lets Mira or Rumi carry their burdens alone. Even after Rumi was revealed to be a half-demon, Zoey never truly gives up on Rumi. Though she initially points her blades at Rumi in fear, she lets her escape. She believes in their bond and fights to restore it, helping Mira reconcile with Rumi during the climax.
-
-In flashbacks and quieter moments, Zoey is often the one checking in on Rumi after a fight, or on Mira's stress, offering lyrics or jokes and advice to lift their spirits.
+She is voiced by **Ji-young Yoo** when speaking, and **Rei Ami** when singing.
 
 ---
 
-## 3. Powers and Abilities
+## Story
 
-- **Fighting Skills:** As a Demon Hunter, Zoey is a strong and skilled fighter especially with her knives.
-- **Singing:** As a KPop star, Zoey is exceptionally good at singing and rapping. According to her fans she rap hard.
-- **Spirit Magic:** Zoey, like all hunters, can use spiritual magic.
-- **Weapon Conjuring:** Zoey is able to conjure multiple magical knives that she can slay demons with. Her knives are effective as both short-range weapons and long-range projectiles.
-- **Weapon Telekinesis:** Zoey has some control over her knives' throwing trajectories and can levitate them at will.
-- **Spirit Vision:** Zoey can see spirits, demons and the spiritual energy that flows through the Honmoon, she is able to see when it changes color or fluctuates indicating that there are demons nearby.
-- **Honmoon Creation:** Rumi, together with other members of Huntrix, are capable of creating and strengthening the Honmoon using the soul energy of their fans.
+Zoey was born in **Korea**, but raised in **Burbank, California, USA**. Before joining Huntrix, she spent her time writing songs and lyrics in notebooks—something others dismissed as strange or pointless.
+
+Despite the criticism from her peers at school, she persisted with her dreams. Eventually, she was recruited by **Celine** to join Huntrix as the group's **rapper** and **lyricist**.
 
 ---
 
-## 4. Quotes
+## Personality
 
-> _"You’re just my type. Oh well."_
-> — Zoey to Mystery Saja before killing him.
+As the **maknae** (youngest) of Huntrix, Zoey is **playful**, **goofy**, and **energetic**. Her expressiveness and talent for lyrical storytelling make her a key contributor to Huntrix’s songs.
+
+She's also the **emotional glue** of the group, famously breaking down first in the bathhouse during their three-month hiatus after releasing _"This Is What It Sounds Like."_
+
+Despite her light-hearted demeanor, Zoey is **fiercely protective** of her friends, often throwing herself into danger to protect Rumi, Mira, and even their fans.
+
+She demonstrates unwavering loyalty, particularly when **Rumi is revealed to be a half-demon**. Though initially scared, she lets Rumi escape and later plays a vital role in helping **Mira and Rumi reconcile** during the final battle.
+
+Zoey is often the one to check in with her friends emotionally, offering lyrics, jokes, and compassion after battles or during moments of stress.
 
 ---
 
-## 5. Physical Appearance
+## Powers and Abilities
 
-Zoey is a Korean-American young lady with pale skin and dark gray eyes and long black hair is tied into two low braided buns with blunt bangs across her forehead and she also has two sidelocks in front of her face.
-
-She wears a black halter top with a cyan scheme and a gold layer on top of her chest and it features a rose and shows her midriff. She wears two gold bracelets in her right wrist and she wears violet trackpants and black highlights on the knees and yellow-orange shades in the side of her trousers and dark plum-purple sneakers with gold soles. She has a turquoise belt around her waist.
+- **Fighting Skills**: Proficient in hand-to-hand and knife combat.
+- **Singing & Rapping**: As a pop idol, she has excellent musical skills—especially known for her hard-hitting raps.
+- **Spirit Magic**: Like other demon hunters, Zoey wields spirit-based magic.
+- **Weapon Conjuring**: Can conjure magical knives that are effective both in melee and as projectiles.
+- **Weapon Telekinesis**: Can control the direction and movement of her knives mid-air.
+- **Spirit Vision**: Can perceive spirits, demons, and fluctuations in spiritual energy (the Honmoon).
+- **Honmoon Creation**: Alongside Huntrix, can channel soul energy from fans to strengthen the Honmoon.
 
 ---
 
-## 6. Trivia
+## Quotes
 
-- Zoey is the Maknae (youngest member) and rapper of the group.
-- Maknaes in K-Pop groups have a stereotype of being innocent, charming and adorable.
-- There’s a fan speculation that she has divorced parents due to the Huntrix song _"Golden"_, as it shows that Zoey had to pick between living in Korea and the USA.
-- On Zoey's cup of Huntrix-branded cup noodles shown in the beginning of the movie, a drawing of her with an Uncle Sam hat can be seen on the packaging.
-- The cup noodles is also hamburger flavored, referencing her American background.
+> “You’re just my type. Oh well.”
+> \~ Zoey to Mystery Saja before killing him.
+
+---
+
+## Physical Appearance
+
+Zoey is a **Korean-American** young woman with:
+
+- Pale skin
+- Dark gray eyes
+- Long black hair styled into two low braided buns with blunt bangs and sidelocks
+
+**Outfit**:
+
+- A black halter top with a cyan and gold accent featuring a rose emblem
+- Two gold bracelets on her right wrist
+- Violet track pants with black knee highlights and yellow-orange side stripes
+- Dark plum-purple sneakers with gold soles
+- Turquoise belt at her waist
+
+---
+
+## Trivia
+
+- Zoey is the **Maknae** and **rapper** of Huntrix.
+- In K-Pop culture, **maknaes** are typically seen as innocent, charming, and adorable.
+- Fan theories suggest she may have **divorced parents**, based on themes in the Huntrix song _"Golden"_, which depicts her having to choose between life in Korea or the USA.
+- In the opening scene, she is seen eating **Huntrix-branded cup noodles**—the package features a cartoon of her wearing an **Uncle Sam hat**, referencing her American upbringing.
+- The cup noodles are **hamburger-flavored**.
 
 ---
