@@ -2,9 +2,17 @@ export const ostTracks = [
   {
     id: "golden",
     title: "Golden",
-    artist: "HUNTR/X",
+    artist: "HUNTR/X (Vocals by EJAE, Audrey Nuna, Rei Ami)",
+    duration: "3:45",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Andrew Choi, Danny Chung",
+    lyricist: "Andrew Choi, Danny Chung",
+    genre: "K-pop, Electronic Pop",
+    releaseDate: "2024",
+    themes: ["Self-realization", "Unity", "Destiny", "Golden Honmoon"],
+    sceneDescription: "Featured during HUNTR/X's climactic final performance where they fully embrace their identities and powers to create the Golden Honmoon, saving the world.",
     description:
-      "The song explores their journey from feeling lost and hiding their true selves to embracing their identity and finding strength in unity. It also alludes to the mystical 'Golden Honmoon' concept in the movie, representing ultimate self-realization and the group's shared destiny.",
+      "The triumphant anthem of the film. The song explores their journey from feeling lost and hiding their true selves to embracing their identity and finding strength in unity. It also alludes to the mystical 'Golden Honmoon' concept, representing ultimate self-realization and the group's shared destiny.",
     youtubeId: "yebNIHKAC4A",
     lyrics: `I was a ghost, I was alone, hah
 어두워진, hah, 앞길속에 (Ah)
@@ -58,9 +66,17 @@ That's who we're born to be`,
   {
     id: "how-its-done",
     title: "How It's Done",
-    artist: "HUNTR/X",
+    artist: "HUNTR/X (Vocals by EJAE, Audrey Nuna, Rei Ami)",
+    duration: "3:10",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Brian Ju, Danny Chung",
+    lyricist: "Brian Ju, Danny Chung",
+    genre: "K-pop, Hip-Hop",
+    releaseDate: "2024",
+    themes: ["Confidence", "Power", "Battle Anthem", "Teamwork"],
+    sceneDescription: "This battle anthem plays as the group fights demons who have hijacked their private plane, culminating in a grand, explosive entrance at their concert.",
     description:
-      "This battle anthem showcases the group's strength, confidence, and dominance as they secretly lead double lives as demon hunters, using their music and fighting skills to protect humanity. The song is featured during a scene where the group battles demons who hijack their private plane, ultimately making a grand entrance at their concert.",
+      "This fierce battle anthem showcases the group's strength, confidence, and dominance as they lead double lives as demon hunters. The song blends aggressive rap verses with a powerful chorus, perfectly capturing their fighting spirit.",
     youtubeId: "QGsevnbItdU",
     lyrics: `Ugh, you came at a bad time
 But you just crossed the line
@@ -138,9 +154,17 @@ Huntrix, don't miss, how it's done, done, done`,
   {
     id: "soda-pop",
     title: "Soda Pop",
-    artist: "Saja Boys",
+    artist: "Saja Boys (Vocals by Andrew Choi, Neckwav, samUIL Lee, Danny Chung)",
+    duration: "2:48",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Andrew Choi, Danny Chung",
+    lyricist: "Andrew Choi, Danny Chung",
+    genre: "K-pop, Bubblegum Pop",
+    releaseDate: "2024",
+    themes: ["Obsession", "Deception", "Addiction", "Superficiality"],
+    sceneDescription: "The Saja Boys' debut performance, a seemingly innocent concert that is actually a ritual to drain the life force from their adoring fans.",
     description:
-      "While seemingly a light and playful track, it's a 'narrative-driven pop power' that hints at the Saja Boys' true demonic identities. The lyrics use soda as a metaphor for an intense, insatiable desire for another person, reflecting the band's sinister goal of captivating fans and draining their energy to weaken a magical barrier.",
+      "While seemingly a light and playful track, it's a 'narrative-driven pop power' that reveals the Saja Boys' true demonic nature. The lyrics use soda as a metaphor for an intense, insatiable desire, reflecting the band's sinister goal of captivating fans and draining their energy.",
     youtubeId: "983bBbJx0Mk",
     lyrics: `Hey, hey
 Hey, hey
@@ -214,9 +238,17 @@ Gotta drink every drop`,
   {
     id: "your-idol",
     title: "Your Idol",
-    artist: "Saja Boys",
+    artist: "Saja Boys (Vocals by Andrew Choi, Neckwav, samUIL Lee, Danny Chung)",
+    duration: "2:55",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Andrew Choi, Danny Chung",
+    lyricist: "Andrew Choi, Danny Chung",
+    genre: "K-pop, Rock, Industrial",
+    releaseDate: "2024",
+    themes: ["Corruption", "Worship", "Power", "Villainy"],
+    sceneDescription: "The dramatic turning point where the Saja Boys reveal their true demonic forms to a stadium of horrified fans, transforming a concert into a soul-harvesting ritual for Gwi-Ma.",
     description:
-      "This song is a clever commentary on idol culture, revealing the Saja Boys' true demonic nature as they appeal to fan obsession to steal souls and weaken a magical barrier. It features traditional K-pop production with electronic and rock influences, along with sly lines about obsession, rebellion, and worship, making it a pivotal and dramatic moment in the film where the boy band fully reveals their sinister identities.",
+      "A dark commentary on idol culture, this song reveals the Saja Boys' true demonic nature as they demand worship to steal souls. It features a blend of electronic and rock influences, with lyrics about obsession and rebellion, marking the moment the villains drop their facade.",
     youtubeId: "cWppAbqm9I8",
     lyrics: `I'LL BE YOUR IDOL
 
@@ -283,9 +315,17 @@ IMMA BE YOUR IDOL`,
   {
     id: "take-down",
     title: "TAKEDOWN",
-    artist: "HUNTR/X",
+    artist: "HUNTR/X (Vocals by EJAE, Audrey Nuna, Rei Ami)",
+    duration: "3:00",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Brian Ju, Danny Chung",
+    lyricist: "Brian Ju, Danny Chung",
+    genre: "K-pop, Rock, Electronic",
+    releaseDate: "2024",
+    themes: ["Revenge", "Betrayal", "Anger", "Confrontation"],
+    sceneDescription: "Plays during the epic confrontation between a betrayed HUNTR/X and the Saja Boys after their demonic reveal. It is a raw, anger-fueled performance.",
     description:
-      "The track captures the intensity of facing deceptive and harmful forces, exposing their true, ugly nature. Lyrically, it's a revenge fantasy dripping with venom and vengeance, blending bold English lyrics with sharp Korean verses to channel anger and betrayal into strength. It represents HUNTR/X's determination to take down evil and protect the innocent. ",
+      "This track captures the intensity of facing deceptive forces and exposing their true, ugly nature. Lyrically, it's a revenge fantasy dripping with venom, blending bold English lyrics with sharp Korean verses to channel anger and betrayal into strength.",
     youtubeId: "l8Dr7vzMSVE",
     lyrics: `Takedown, takedown
 Takedown, down, down, down (HUNTR/X girls to the world)
@@ -365,9 +405,17 @@ Take it down`,
   {
     id: "free",
     title: "Free",
-    artist: "Rumi, Jinu",
+    artist: "Rumi & Jinu (Vocals by EJAE & Andrew Choi)",
+    duration: "3:15",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Andrew Choi, Danny Chung",
+    lyricist: "Andrew Choi, Danny Chung",
+    genre: "Ballad, Duet",
+    releaseDate: "2024",
+    themes: ["Redemption", "Vulnerability", "Healing", "Friendship"],
+    sceneDescription: "A powerful duet sung by Rumi and a redeemed Jinu as they find solace and understanding in each other, accepting their flawed natures before the final battle.",
     description:
-      "The song, a duet between Rumi and Jinu, explores themes of self-acceptance, courage, and the liberating power of friendship. It portrays a journey from hiding one's true self and feeling lost to finding strength and healing through connection, even when confronting personal damage and the past. It highlights how letting others in can provide the freedom to finally breathe and change.",
+      "This emotional duet between Rumi and Jinu explores themes of self-acceptance, courage, and the liberating power of friendship. It portrays a journey from hiding one's true self to finding strength and healing through connection, even when confronting a painful past.",
     youtubeId: "fjOeJssZX_Q",
     lyrics: `I tried to hide but something broke
 I tried to sing, couldn't hit the notes
@@ -430,9 +478,17 @@ Let the past be the past 'til it's weightless`,
   {
     id: "what-it-sounds-like",
     title: "What It Sounds Like",
-    artist: "HUNTR/X",
+    artist: "HUNTR/X (Vocals by EJAE, Audrey Nuna, Rei Ami)",
+    duration: "3:30",
+    album: "K-Pop: Demon Hunters (Original Motion Picture Soundtrack)",
+    composer: "Toby Chu, Andrew Choi, Danny Chung",
+    lyricist: "Andrew Choi, Danny Chung",
+    genre: "Pop, Ballad",
+    releaseDate: "2024",
+    themes: ["Vulnerability", "Honesty", "Collective Strength", "Harmony"],
+    sceneDescription: "The emotional resolution for HUNTR/X. After the battle, the group sings this song, revealing their true, imperfect selves to the world and finding strength in their shared vulnerability.",
     description:
-      "The song reflects a journey from hiding shame and inner conflict to embracing scars and jagged edges, finding beauty in imperfections. It's an anthem about revealing one's true voice and finding collective strength through vulnerability, emphasizing that when darkness meets light and voices combine, true harmony is found.",
+      "This song reflects a journey from hiding shame to embracing scars, finding beauty in imperfections. It's an anthem about revealing one's true voice and finding collective strength, emphasizing that when darkness meets light and voices combine, true harmony is found.",
     youtubeId: "TbMEMCvFbZk",
     lyrics: `Nothing but the truth now
 Nothing but the proof of what I am

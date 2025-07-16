@@ -1,6 +1,38 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Footer from "../components/Footer";
 import { ostTracks } from "../data/ost";
+import MobileNavigation from "../components/MobileNavigation";
+
+export const metadata: Metadata = {
+  title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
+  description: "Listen to the complete K-pop Demon Hunters soundtrack with YouTube videos, lyrics, and track information. Featuring character themes, battle anthems, and emotional ballads.",
+  keywords: ["K-pop Demon Hunters OST", "soundtrack", "music", "YouTube", "lyrics", "Golden", "TAKEDOWN", "Soda Pop", "Your Idol"],
+  alternates: {
+    canonical: '/ost',
+  },
+  openGraph: {
+    title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
+    description: "Listen to the complete K-pop Demon Hunters soundtrack with YouTube videos, lyrics, and track information.",
+    url: 'https://kpopdemonhunters.net/ost',
+    siteName: 'KDH Wiki',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'K-pop Demon Hunters OST',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
+    description: "Listen to the complete K-pop Demon Hunters soundtrack with YouTube videos and lyrics.",
+    images: ['/images/og-image.jpg'],
+  },
+};
 
 export default function OSTPage() {
   return (
@@ -34,26 +66,7 @@ export default function OSTPage() {
                 Korean Culture
               </Link>
             </div>
-            <div className="md:hidden flex space-x-4">
-              <Link
-                href="/characters"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                Chars
-              </Link>
-              <Link
-                href="/ost"
-                className="text-purple-300 font-semibold text-sm"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                Culture
-              </Link>
-            </div>
+            <MobileNavigation currentPath="/ost" />
           </div>
         </div>
       </nav>
@@ -102,9 +115,56 @@ export default function OSTPage() {
                       Track {index + 1}
                     </div>
                   </div>
+                  
+                  {/* Track Details */}
+                  {track.duration && (
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-sm">
+                      <div className="text-purple-300">
+                        <span className="font-semibold">Duration:</span> {track.duration}
+                      </div>
+                      {track.genre && (
+                        <div className="text-purple-300">
+                          <span className="font-semibold">Genre:</span> {track.genre}
+                        </div>
+                      )}
+                      {track.composer && (
+                        <div className="text-purple-300">
+                          <span className="font-semibold">Composer:</span> {track.composer}
+                        </div>
+                      )}
+                      {track.lyricist && (
+                        <div className="text-purple-300">
+                          <span className="font-semibold">Lyricist:</span> {track.lyricist}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
                   <p className="text-purple-200 mt-4 leading-relaxed">
                     {track.description}
                   </p>
+
+                  {/* Scene Description */}
+                  {track.sceneDescription && (
+                    <div className="mt-4 p-4 bg-black/20 rounded-lg border-l-4 border-purple-400">
+                      <h5 className="font-semibold text-white mb-2">Featured Scene:</h5>
+                      <p className="text-purple-200 text-sm">{track.sceneDescription}</p>
+                    </div>
+                  )}
+
+                  {/* Themes */}
+                  {track.themes && (
+                    <div className="mt-4">
+                      <h5 className="font-semibold text-white mb-2">Themes:</h5>
+                      <div className="flex flex-wrap gap-2">
+                        {track.themes.map((theme, themeIndex) => (
+                          <span key={themeIndex} className="bg-purple-600/20 text-purple-200 px-2 py-1 rounded text-sm">
+                            {theme}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Lyrics Section */}

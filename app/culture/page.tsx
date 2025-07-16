@@ -5,6 +5,7 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import CultureTabs from "../components/CultureTabs";
 import CultureSection from "../components/CultureSection";
+import MobileNavigation from "../components/MobileNavigation";
 import { cultureCategories, CultureCategoryKey } from "../data/culture";
 
 export default function CulturePage() {
@@ -41,26 +42,7 @@ export default function CulturePage() {
                 Korean Culture
               </Link>
             </div>
-            <div className="md:hidden flex space-x-4">
-              <Link
-                href="/characters"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                Chars
-              </Link>
-              <Link
-                href="/ost"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-purple-300 font-semibold text-sm"
-              >
-                Culture
-              </Link>
-            </div>
+            <MobileNavigation currentPath="/culture" />
           </div>
         </div>
       </nav>

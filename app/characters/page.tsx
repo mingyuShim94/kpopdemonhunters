@@ -1,92 +1,141 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Footer from "../components/Footer";
 import CharacterImage from "../components/CharacterImage";
+import MobileNavigation from "../components/MobileNavigation";
 
 const characters = [
   {
     id: "rumi",
     name: "Rumi",
     description:
-      "The leader and lead vocalist of HUNTR/X. A confident and charismatic leader who wields a saingeom sword in battle. She is the daughter of a former demon hunter and is the most dedicated of the trio to their mission.",
-    image: "/images/characters/rumi.jpg",
+      "The driven leader of HUNTR/X, haunted by a demonic secret. She channels her immense magical power through a sacred saingeom sword and her powerful voice. Voiced by Arden Cho (speaking) and EJAE (singing).",
+    image: "/images/characters/rumi.webp",
     role: "HUNTR/X Leader",
   },
   {
     id: "mira",
     name: "Mira",
     description:
-      "The visual and main dancer of the group. Mira's weapon of choice is a woldo.",
-    image: "/images/characters/mira.jpg",
+      "The fashion-forward main dancer of HUNTR/X. Mira's elegance translates to the battlefield where she wields a deadly woldo. Voiced by May Hong (speaking) and Audrey Nuna (singing).",
+    image: "/images/characters/mira.webp",
     role: "HUNTR/X Main Dancer",
   },
   {
     id: "zoey",
     name: "Zoey",
     description:
-      "The main rapper, lyricist, and the youngest member (maknae) of HUNTR/X. She utilizes throwing knives in combat.",
-    image: "/images/characters/zoey.jpg",
+      "The rebellious rapper, lyricist, and maknae of HUNTR/X. Zoey's sharp wit is as deadly as the throwing knives she uses in combat. Voiced by Ji-young Yoo (speaking) and Rei Ami (singing).",
+    image: "/images/characters/zoey.webp",
     role: "HUNTR/X Main Rapper",
   },
   {
     id: "jinu",
     name: "Jinu",
     description:
-      "The leader of the Saja Boys and a demon with a haunting past. He was a musician centuries ago who made a deal with the demon Gwi-Ma.",
-    image: "/images/characters/jinu.jpg",
+      "The charismatic and conflicted leader of the rival group, Saja Boys. A former human who traded his soul for fame, he now serves the demon king. Voiced by Ahn Hyo-seop (speaking) and Andrew Choi (singing).",
+    image: "/images/characters/jinu.webp",
     role: "Saja Boys Leader",
   },
   {
     id: "abby",
-    name: "Abby",
-    description: "A member of the Saja Boys.",
-    image: "/images/characters/abby.jpg",
+    name: "Abby 'Abs' Saja",
+    description:
+      "The muscular and intimidating member of the Saja Boys, providing brute force for the demonic group. Voiced by SungWon Cho (speaking) and Neckwav (singing).",
+    image: "/images/characters/abby.webp",
     role: "Saja Boys Member",
   },
   {
     id: "romance",
-    name: "Romance",
-    description: "A member of the Saja Boys.",
-    image: "/images/characters/romance.jpg",
-    role: "Saja Boys Member",
-  },
-  {
-    id: "mystery",
-    name: "Mystery",
-    description: "A member of the Saja Boys.",
-    image: "/images/characters/mystery.jpg",
+    name: "Romance Saja",
+    description:
+      "The smooth-talking, romantic member of the Saja Boys, who uses his charm as a weapon. Voiced by Joel Kim Booster (speaking) and samUIL Lee (singing).",
+    image: "/images/characters/romance.webp",
     role: "Saja Boys Member",
   },
   {
     id: "baby",
-    name: "Baby",
-    description: "The youngest member of the Saja Boys.",
-    image: "/images/characters/baby.jpg",
-    role: "Saja Boys Member",
-  },
-  {
-    id: "celine",
-    name: "Celine",
+    name: "Baby Saja",
     description:
-      "A former demon hunter and member of the band Sunlight Sisters with Rumi's mother. She serves as a mentor to HUNTR/X and is Rumi's adoptive mother.",
-    image: "/images/characters/celine.jpg",
-    role: "Mentor",
-  },
-  {
-    id: "bobby",
-    name: "Bobby",
-    description: "The enthusiastic band manager of HUNTR/X.",
-    image: "/images/characters/bobby.jpg",
-    role: "Manager",
+      "The deceptive maknae of the Saja Boys, whose youthful appearance hides a sinister nature. Vocals by Danny Chung.",
+    image: "/images/characters/baby.webp",
+    role: "Saja Boys Member",
   },
   {
     id: "gwi-ma",
     name: "Gwi-Ma",
     description:
-      "The ruthless and manipulative demon king who is the main villain of the film.",
-    image: "/images/characters/gwi-ma.jpg",
+      "The ultimate evil, a powerful and manipulative demon king seeking to merge the human and demon realms. Voiced by the legendary Lee Byung-hun.",
+    image: "/images/characters/gwi-ma.webp",
     role: "Demon King",
   },
+  {
+    id: "celine",
+    name: "Celine",
+    description:
+      "Rumi's adoptive mother and the wise mentor to HUNTR/X. A former K-pop star and demon hunter herself. Voiced by Yunjin Kim (speaking) and Lea Salonga (singing).",
+    image: "/images/characters/celine.webp",
+    role: "Mentor",
+  },
+  {
+    id: "bobby",
+    name: "Bobby",
+    description:
+      "The ever-enthusiastic and slightly clueless manager of HUNTR/X, trying to keep the group's demon-hunting life a secret. Voiced by Ken Jeong.",
+    image: "/images/characters/bobby.webp",
+    role: "Manager",
+  },
+  {
+    id: "mystery",
+    name: "Mystery",
+    description:
+      "A mysterious member of the Saja Boys with unknown motives and a quiet demeanor.",
+    image: "/images/characters/mystery.webp",
+    role: "Saja Boys Member",
+  },
 ];
+
+export const metadata: Metadata = {
+  title: "All Characters | K-pop Demon Hunters Wiki",
+  description:
+    "Meet all K-pop Demon Hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby. Complete character profiles with abilities and backgrounds.",
+  keywords: [
+    "KDH characters",
+    "HUNTR/X",
+    "Saja Boys",
+    "Rumi",
+    "Mira",
+    "Zoey",
+    "Jinu",
+    "K-pop Demon Hunters characters",
+  ],
+  alternates: {
+    canonical: "/characters",
+  },
+  openGraph: {
+    title: "All Characters | K-pop Demon Hunters Wiki",
+    description:
+      "Meet all K-pop Demon Hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby.",
+    url: "https://kpopdemonhunters.net/characters",
+    siteName: "KDH Wiki",
+    images: [
+      {
+        url: "/images/characters/rumi.webp",
+        width: 800,
+        height: 800,
+        alt: "K-pop Demon Hunters Characters",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "All Characters | K-pop Demon Hunters Wiki",
+    description:
+      "Meet all K-pop Demon Hunters characters including HUNTR/X and Saja Boys members.",
+    images: ["/images/characters/rumi.jpg"],
+  },
+};
 
 export default function CharactersPage() {
   return (
@@ -123,26 +172,7 @@ export default function CharactersPage() {
                 Korean Culture
               </Link>
             </div>
-            <div className="md:hidden flex space-x-4">
-              <Link
-                href="/characters"
-                className="text-purple-300 font-semibold text-sm"
-              >
-                Chars
-              </Link>
-              <Link
-                href="/ost"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                Culture
-              </Link>
-            </div>
+            <MobileNavigation currentPath="/characters" />
           </div>
         </div>
       </nav>
