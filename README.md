@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KPoP Demon Hunters (KDH)
 
-## Getting Started
+『K‑pop Demon Hunters』IP의 팬 위키 프로젝트입니다. 캐릭터, OST, 세계관 정보를 한 곳에서 제공하여 신규 및 기존 팬들의 접근성을 높이는 것을 목표로 합니다.
 
-First, run the development server:
+## 기술 스택
+
+- **프레임워크**: Next.js 15 (App Router) + TypeScript
+- **스타일링**: Tailwind CSS v4
+- **배포**: Cloudflare Pages (OpenNext.js 어댑터 사용)
+- **폰트**: Geist
+
+## 개발 시작하기
+
+개발 서버 실행:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 결과를 확인하세요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 사용 가능한 명령어
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 개발 서버 (Turbopack 사용)
+npm run dev
 
-## Learn More
+# 프로덕션 빌드
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# 프로덕션 서버 로컬 실행
+npm start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 린트 검사
+npm run lint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Cloudflare에 배포
+npm run deploy
 
-## Deploy on Vercel
+# 배포 미리보기
+npm run preview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Cloudflare 환경 타입 생성
+npm run cf-typegen
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 프로젝트 구조
+
+```
+app/                    # Next.js App Router 페이지 및 레이아웃
+├── layout.tsx         # 루트 레이아웃 (Geist 폰트 포함)
+├── page.tsx           # 홈페이지 컴포넌트
+└── globals.css        # 글로벌 Tailwind 스타일
+
+docs/                  # 프로젝트 문서
+└── prd.md            # 제품 요구사항 정의서 (한국어)
+
+public/               # 정적 에셋 (_headers for Cloudflare)
+```
+
+## 배포
+
+이 프로젝트는 Cloudflare Pages에 배포됩니다. OpenNext.js 어댑터를 사용하여 Next.js 애플리케이션을 Cloudflare의 Edge Runtime에서 실행할 수 있도록 최적화되었습니다.
+
+자세한 내용은 [CLAUDE.md](./CLAUDE.md) 파일을 참조하세요.
