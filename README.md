@@ -1,6 +1,7 @@
 # KPoP Demon Hunters (KDH)
 
 『K‑pop Demon Hunters』IP의 팬 위키 프로젝트입니다. 캐릭터, OST, 세계관 정보를 한 곳에서 제공하여 신규 및 기존 팬들의 접근성을 높이는 것을 목표로 합니다.
+👉 [공식 사이트 바로가기](https://kpopdemonhunters.net/)
 
 ## 기술 스택
 
