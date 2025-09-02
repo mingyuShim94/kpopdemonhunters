@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
@@ -30,9 +31,9 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a href="/" className="text-xl sm:text-2xl font-bold text-white hover:text-purple-300 transition-colors">
+              <Link href="/" className="text-xl sm:text-2xl font-bold text-white hover:text-purple-300 transition-colors">
                 KDH Wiki
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -52,7 +53,7 @@ export default function PrivacyPolicyPage() {
               </p>
 
               <p className="text-gray-200 mb-6">
-                KDH Ranking Filter (the "App") takes your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our face detection mini-game application.
+                KDH Ranking Filter (the &quot;App&quot;) takes your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our face detection mini-game application.
               </p>
 
               <section className="mb-8">
@@ -268,7 +269,7 @@ export default function PrivacyPolicyPage() {
 
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-white mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-                  7. Children's Privacy
+                  7. Children&apos;s Privacy
                 </h2>
                 <p className="text-gray-200">
                   KDH Ranking Filter does not knowingly collect personal information from children under 13 years of age. If we become aware that a child under 13 has provided us with personal information, we will immediately delete such information.
@@ -284,7 +285,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <ul className="list-disc list-inside text-gray-200 space-y-2 ml-4">
                   <li><strong>Google Services</strong>: United States (Firebase, AdMob, ML Kit)</li>
-                  <li><strong>Safeguards</strong>: Protected under Google's privacy policies and security measures</li>
+                  <li><strong>Safeguards</strong>: Protected under Google&apos;s privacy policies and security measures</li>
                 </ul>
               </section>
 

@@ -11,7 +11,6 @@ export default function GoogleAnalytics() {
     if (typeof window !== 'undefined') {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       window.gtag = window.gtag || function(...args: any[]) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (window.gtag.q = window.gtag.q || []).push(args)
       }
       window.gtag.l = new Date().getTime()
