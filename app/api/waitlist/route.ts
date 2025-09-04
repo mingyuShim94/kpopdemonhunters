@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// Cloudflare Edge Runtime 설정
+export const runtime = 'edge';
+
 // 대기자 명단 요청 인터페이스
 interface WaitlistRequest {
   email: string;
