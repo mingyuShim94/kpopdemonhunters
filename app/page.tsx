@@ -9,7 +9,7 @@ import SearchModal from "./components/SearchModal";
 
 export default function Home() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-
+  //수정
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
       {/* Navigation */}
@@ -49,7 +49,12 @@ export default function Home() {
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
@@ -226,7 +231,8 @@ export default function Home() {
                 Wiki Updates
               </h3>
               <p className="text-gray-200">
-                We&apos;re continuously adding new character profiles, OST information, and cultural insights to the KDH Wiki.
+                We&apos;re continuously adding new character profiles, OST
+                information, and cultural insights to the KDH Wiki.
               </p>
             </div>
 
@@ -239,7 +245,8 @@ export default function Home() {
                 Coming Soon: KDH Ranking Filter
               </h3>
               <p className="text-gray-200 mb-4 text-sm">
-                Step into the world of KDH with AR face tracking! Rank your favorite HUNTR/X members and create viral TikTok videos.
+                Step into the world of KDH with AR face tracking! Rank your
+                favorite HUNTR/X members and create viral TikTok videos.
               </p>
               <Link
                 href="/play/ranking"
