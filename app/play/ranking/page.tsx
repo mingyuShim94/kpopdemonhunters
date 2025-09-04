@@ -10,35 +10,6 @@ import StructuredData from "../../components/StructuredData";
 
 export default function RankingPage() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
-
-  const handleWaitlistSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch("/api/waitlist", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        setSubmitStatus("success");
-        setEmail("");
-      } else {
-        setSubmitStatus("error");
-      }
-    } catch {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
@@ -179,9 +150,9 @@ export default function RankingPage() {
                   <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 text-center">실시간 AR 얼굴 인식</h3>
+              <h3 className="text-xl font-bold text-white mb-4 text-center">Real-time AR Face Detection</h3>
               <p className="text-gray-200 text-center leading-relaxed">
-                Google ML Kit 기반의 정확한 실시간 얼굴 추적으로 KDH 캐릭터들이 당신 위에 나타납니다
+                Powered by Google ML Kit for accurate face tracking as KDH characters appear above your head
               </p>
             </div>
 
@@ -192,9 +163,9 @@ export default function RankingPage() {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 text-center">탭투랭크 시스템</h3>
+              <h3 className="text-xl font-bold text-white mb-4 text-center">Tap-to-Rank System</h3>
               <p className="text-gray-200 text-center leading-relaxed">
-                간단한 탭으로 HUNTR/X 멤버, 사자보이즈, 무기들을 1-10위까지 자유롭게 랭킹하세요
+                Simply tap to rank HUNTR/X members, Saja Boys, and weapons from 1-10 with intuitive gameplay
               </p>
             </div>
 
@@ -205,9 +176,9 @@ export default function RankingPage() {
                   <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.50-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 text-center">소셜 미디어 공유</h3>
+              <h3 className="text-xl font-bold text-white mb-4 text-center">Social Media Sharing</h3>
               <p className="text-gray-200 text-center leading-relaxed">
-                TikTok, Instagram, YouTube Shorts용 고품질 영상을 즉시 녹화하고 공유하세요
+                Record high-quality videos instantly for TikTok, Instagram, and YouTube Shorts sharing
               </p>
             </div>
           </div>
@@ -219,10 +190,10 @@ export default function RankingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
-              앱 미리보기
+              App Preview
             </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              실제 앱 화면으로 AR 랭킹 시스템의 놀라운 기능들을 확인해보세요
+              Experience the amazing features of the KDH ranking filter system through real app screens
             </p>
           </div>
           
@@ -236,7 +207,7 @@ export default function RankingPage() {
                 <div className="aspect-[9/16] rounded-lg overflow-hidden border border-orange-400/30">
                   <Image
                     src={`/images/ranking/0${i}.webp`}
-                    alt={`KDH 랭킹 필터 앱 스크린샷 ${i}`}
+                    alt={`KDH Ranking Filter App Screenshot ${i}`}
                     width={400}
                     height={711}
                     className="w-full h-full object-cover"
@@ -252,16 +223,16 @@ export default function RankingPage() {
       <section className="relative z-10 py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-            플레이 방법
+            How to Play
           </h2>
           <div className="space-y-6">
             {[
-              { step: 1, title: "테마 선택", desc: "좋아하는 K-Pop Demon Hunters 테마를 선택하세요" },
-              { step: 2, title: "얼굴 정렬", desc: "카메라 화면에서 얼굴을 정렬하세요" },
-              { step: 3, title: "캐릭터 등장", desc: "KDH 우주의 캐릭터나 아이템이 머리 위에 나타납니다" },
-              { step: 4, title: "랭킹 선택", desc: "화면의 번호 슬롯 (1-10)을 탭해서 아이템을 배치하세요" },
-              { step: 5, title: "영상 녹화", desc: "원탭으로 랭킹 과정을 녹화하세요" },
-              { step: 6, title: "공유하기", desc: "완성된 작품을 저장하고 전 세계와 공유하세요!" }
+              { step: 1, title: "Select Theme", desc: "Choose your favorite K-Pop Demon Hunters theme" },
+              { step: 2, title: "Align Face", desc: "Position your face within the camera view" },
+              { step: 3, title: "Character Appears", desc: "Watch as KDH universe characters or items appear above your head" },
+              { step: 4, title: "Tap to Rank", desc: "Tap number slots (1-10) on screen to place items in your ranking" },
+              { step: 5, title: "Record Video", desc: "Capture your ranking process with a single tap" },
+              { step: 6, title: "Share & Save", desc: "Save your masterpiece and share it with the world!" }
             ].map((item) => (
               <div
                 key={item.step}
@@ -284,14 +255,14 @@ export default function RankingPage() {
       <section className="relative z-10 py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-            다양한 랭킹 테마
+            Ranking Themes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "HUNTR/X 멤버", desc: "루미, 미라, 조이 등 최애 멤버 랭킹", icon: "👥", color: "from-pink-500/20 to-purple-500/20" },
-              { title: "사자보이즈", desc: "악마적 매력의 사자보이즈 순위 매기기", icon: "😈", color: "from-red-500/20 to-orange-500/20" },
-              { title: "악마 사냥 무기", desc: "가장 강력한 무기는 무엇인가?", icon: "⚔️", color: "from-cyan-500/20 to-blue-500/20" },
-              { title: "OST 트랙", desc: "Golden, Takedown 등 명곡들", icon: "🎵", color: "from-purple-500/20 to-indigo-500/20" }
+              { title: "HUNTR/X Members", desc: "Rank your favorite members like Rumi, Mira, and Zoey", icon: "👥", color: "from-pink-500/20 to-purple-500/20" },
+              { title: "Saja Boys", desc: "Rank the demonic charm of the Saja Boys", icon: "😈", color: "from-red-500/20 to-orange-500/20" },
+              { title: "Demon Slaying Weapons", desc: "Which weapon is the most powerful?", icon: "⚔️", color: "from-cyan-500/20 to-blue-500/20" },
+              { title: "OST Tracks", desc: "Hit songs like Golden and Takedown", icon: "🎵", color: "from-purple-500/20 to-indigo-500/20" }
             ].map((theme, index) => (
               <div
                 key={index}
@@ -310,62 +281,56 @@ export default function RankingPage() {
       <section id="waitlist" className="relative z-10 py-16 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-            베타 테스터 모집
+            Join Beta Testing
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            K-Pop Demon Hunters 랭킹 필터 앱의 베타 테스터가 되어 새로운 경험을 가장 먼저 만나보세요!
+            Be among the first to experience the K-Pop Demon Hunters Ranking Filter app!
           </p>
 
-          {/* Waitlist Form */}
-          <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-xl p-8 border border-orange-400/30">
-            {submitStatus === "success" ? (
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">등록 완료!</h3>
-                <p className="text-gray-300">베타 테스트 정보를 가장 먼저 받아보실 수 있습니다.</p>
+          {/* Waitlist Form - In Development */}
+          <div className="bg-gradient-to-br from-gray-500/20 to-gray-600/20 backdrop-blur-sm rounded-xl p-8 border border-gray-400/30">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
               </div>
-            ) : (
-              <form onSubmit={handleWaitlistSubmit} className="space-y-6">
+              <div className="bg-gradient-to-r from-gray-500 to-gray-600 text-white text-sm px-4 py-2 rounded-full mx-auto w-fit mb-4">
+                🚧 IN DEVELOPMENT
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">Waitlist Registration</h3>
+              <p className="text-gray-300 mb-6">
+                The waitlist registration system is currently under development. 
+                Check back soon to be among the first beta testers!
+              </p>
+              
+              <form className="space-y-6 opacity-60 pointer-events-none">
                 <div>
                   <label htmlFor="email" className="block text-lg font-semibold text-white mb-3">
-                    이메일 주소
+                    Email Address
                   </label>
                   <input
                     type="email"
                     id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="your@email.com"
-                    required
-                    className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/30 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-400/20 transition-all duration-200"
+                    disabled
+                    className="w-full px-4 py-3 rounded-lg bg-black/30 border border-gray-500/50 text-gray-400 placeholder-gray-500 cursor-not-allowed"
                   />
                 </div>
-                
-                {submitStatus === "error" && (
-                  <div className="bg-red-500/20 border border-red-400/50 rounded-lg p-4">
-                    <p className="text-red-300 text-sm">
-                      등록 중 오류가 발생했습니다. 다시 시도해 주세요.
-                    </p>
-                  </div>
-                )}
 
                 <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 disabled:from-gray-500 disabled:to-gray-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/25 text-lg disabled:transform-none disabled:shadow-none"
+                  type="button"
+                  disabled
+                  className="w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white px-8 py-4 rounded-lg font-semibold cursor-not-allowed text-lg"
                 >
-                  {isSubmitting ? "등록 중..." : "베타 대기자 명단 등록"}
+                  Coming Soon
                 </button>
               </form>
-            )}
+            </div>
           </div>
 
           <p className="text-sm text-gray-400 mt-6">
-            베타 테스트 시작 시 이메일로 알려드립니다. 스팸은 절대 발송하지 않습니다.
+            We&apos;ll notify you via email when beta testing begins. No spam, ever.
           </p>
         </div>
       </section>
