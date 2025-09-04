@@ -32,6 +32,14 @@ export default function MobileNavigation({
     { href: "/characters", label: "Characters" },
     { href: "/ost", label: "OST" },
     { href: "/culture", label: "Korean Culture" },
+    { 
+      href: "/play", 
+      label: "Play Services",
+      subItems: [
+        { href: "/play/ranking", label: "AR Ranking App" },
+        { href: "#", label: "Cosplay Service (Coming Soon)", disabled: true }
+      ]
+    },
   ];
 
   return (
@@ -122,18 +130,34 @@ export default function MobileNavigation({
           {/* Navigation items */}
           <nav className="space-y-1">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all duration-200 ${
-                  currentPath === item.href
-                    ? "bg-purple-600 text-white border-l-4 border-purple-400"
-                    : "text-white hover:bg-gray-800 hover:text-purple-200"
-                }`}
-                onClick={closeMenu}
-              >
-                {item.label}
-              </Link>
+              <div key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all duration-200 ${
+                    currentPath === item.href
+                      ? "bg-purple-600 text-white border-l-4 border-purple-400"
+                      : "text-white hover:bg-gray-800 hover:text-purple-200"
+                  }`}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </Link>
+                {/* Sub items for Play Services */}
+                {item.label === "Play Services" && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    <Link
+                      href="/play/ranking"
+                      className="block px-4 py-2 rounded-lg text-base text-gray-300 hover:bg-gray-800 hover:text-orange-300 transition-all duration-200"
+                      onClick={closeMenu}
+                    >
+                      AR Ranking App
+                    </Link>
+                    <div className="px-4 py-2 text-sm text-gray-500">
+                      Cosplay Service (Coming Soon)
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
 
