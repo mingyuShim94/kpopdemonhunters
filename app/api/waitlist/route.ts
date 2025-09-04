@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// 대기자 명단 요청 인터페이스
+interface WaitlistRequest {
+  email: string;
+}
+
 // 간단한 이메일 검증 함수
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -8,7 +13,7 @@ function isValidEmail(email: string): boolean {
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const { email } = await request.json() as WaitlistRequest;
 
     // 이메일 검증
     if (!email || typeof email !== "string") {
