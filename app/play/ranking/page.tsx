@@ -225,37 +225,22 @@ export default function RankingPage() {
             </p>
           </div>
           
-          {/* Placeholder for app screenshots */}
+          {/* App Screenshots */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[1, 2, 3, 4, 5].map((i) => (
               <div
                 key={i}
-                className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-600/30 hover:border-orange-400/50 transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-4 border border-gray-600/30 hover:border-orange-400/50 transition-all duration-300 transform hover:scale-105"
               >
-                <div className="aspect-[9/16] bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg flex items-center justify-center border border-orange-400/30">
-                  <div className="text-center">
-                    <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">{i}</span>
-                    </div>
-                    <p className="text-gray-300 text-sm">스크린샷 {i}</p>
-                  </div>
+                <div className="aspect-[9/16] rounded-lg overflow-hidden border border-orange-400/30">
+                  <img
+                    src={`/images/ranking/0${i}.webp`}
+                    alt={`AR 랭킹 앱 스크린샷 ${i}`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Play Store Graphic Placeholder */}
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-600/30 hover:border-orange-400/50 transition-all duration-300">
-            <div className="aspect-[1024/500] bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-lg flex items-center justify-center border border-orange-400/30">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
-                  </svg>
-                </div>
-                <p className="text-gray-300">플레이스토어 그래픽 (1024x500)</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
