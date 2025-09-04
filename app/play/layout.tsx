@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Play Services | K-pop Demon Hunters Interactive Experiences",
   description:
-    "Discover interactive experiences in the K-pop Demon Hunters universe. AR ranking games, cosplay transformation, and more coming soon!",
+    "Discover interactive experiences in the K-pop Demon Hunters universe. KDH ranking filter games, cosplay transformation, and more coming soon!",
   keywords: [
     "K-pop Demon Hunters",
-    "AR ranking",
+    "KDH ranking filter",
     "interactive games",
     "cosplay transformation",
     "mobile app",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Play Services | K-pop Demon Hunters Interactive Experiences",
     description:
-      "Discover interactive experiences in the K-pop Demon Hunters universe. AR ranking games, cosplay transformation, and more!",
+      "Discover interactive experiences in the K-pop Demon Hunters universe. KDH ranking filter games, cosplay transformation, and more!",
     url: "https://kpopdemonhunters.net/play",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Play Services | K-pop Demon Hunters Interactive Experiences",
     description:
-      "Discover interactive experiences in the K-pop Demon Hunters universe. AR ranking games and cosplay transformation!",
+      "Discover interactive experiences in the K-pop Demon Hunters universe. KDH ranking filter games and cosplay transformation!",
     images: ["/images/og-image.jpg"],
   },
 };

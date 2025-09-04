@@ -58,7 +58,7 @@ export default function Home() {
                       href="/play/ranking"
                       className="block px-4 py-2 text-white hover:bg-white/10 hover:text-orange-300 transition-colors"
                     >
-                      AR Ranking App
+                      KDH Ranking Filter
                     </Link>
                     <div className="px-4 py-2 text-gray-400 text-sm">
                       Cosplay Service (Coming Soon)
@@ -236,7 +236,7 @@ export default function Home() {
                 <span className="text-white font-bold text-xl">🆕</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3 bg-gradient-to-r from-orange-300 to-red-300 bg-clip-text text-transparent">
-                Coming Soon: AR Ranking App
+                Coming Soon: KDH Ranking Filter
               </h3>
               <p className="text-gray-200 mb-4 text-sm">
                 Step into the world of KDH with AR face tracking! Rank your favorite HUNTR/X members and create viral TikTok videos.

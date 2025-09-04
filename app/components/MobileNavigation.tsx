@@ -36,7 +36,7 @@ export default function MobileNavigation({
       href: "/play", 
       label: "Play Services",
       subItems: [
-        { href: "/play/ranking", label: "AR Ranking App" },
+        { href: "/play/ranking", label: "KDH Ranking Filter" },
         { href: "#", label: "Cosplay Service (Coming Soon)", disabled: true }
       ]
     },
@@ -150,7 +150,7 @@ export default function MobileNavigation({
                       className="block px-4 py-2 rounded-lg text-base text-gray-300 hover:bg-gray-800 hover:text-orange-300 transition-all duration-200"
                       onClick={closeMenu}
                     >
-                      AR Ranking App
+                      KDH Ranking Filter
                     </Link>
                     <div className="px-4 py-2 text-sm text-gray-500">
                       Cosplay Service (Coming Soon)

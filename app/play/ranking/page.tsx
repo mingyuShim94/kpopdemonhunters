@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import Footer from "../../components/Footer";
 import MobileNavigation from "../../components/MobileNavigation";
@@ -87,7 +88,7 @@ export default function RankingPage() {
                       href="/play/ranking"
                       className="block px-4 py-2 text-orange-300 font-semibold"
                     >
-                      AR Ranking App
+                      KDH Ranking Filter
                     </Link>
                     <div className="px-4 py-2 text-gray-400 text-sm">
                       Cosplay Service (Coming Soon)
@@ -140,10 +141,10 @@ export default function RankingPage() {
               🆕 COMING SOON TO APP STORES
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">
-              AR Ranking App
+              KDH Ranking Filter
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Step into the world of K-Pop Demon Hunters with the ultimate AR ranking game. 
+              Step into the world of K-Pop Demon Hunters with the ultimate ranking filter game. 
               Your face becomes the stage as your favorite heroes and villains appear above your head!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -233,9 +234,11 @@ export default function RankingPage() {
                 className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-4 border border-gray-600/30 hover:border-orange-400/50 transition-all duration-300 transform hover:scale-105"
               >
                 <div className="aspect-[9/16] rounded-lg overflow-hidden border border-orange-400/30">
-                  <img
+                  <Image
                     src={`/images/ranking/0${i}.webp`}
-                    alt={`AR 랭킹 앱 스크린샷 ${i}`}
+                    alt={`KDH 랭킹 필터 앱 스크린샷 ${i}`}
+                    width={400}
+                    height={711}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -310,7 +313,7 @@ export default function RankingPage() {
             베타 테스터 모집
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            K-Pop Demon Hunters AR 랭킹 앱의 베타 테스터가 되어 새로운 경험을 가장 먼저 만나보세요!
+            K-Pop Demon Hunters 랭킹 필터 앱의 베타 테스터가 되어 새로운 경험을 가장 먼저 만나보세요!
           </p>
 
           {/* Waitlist Form */}
@@ -380,7 +383,7 @@ export default function RankingPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "MobileApplication",
-          name: "K-Pop Demon Hunters AR Ranking App",
+          name: "K-Pop Demon Hunters KDH Ranking Filter",
           description:
             "Revolutionary AR face tracking app for ranking K-Pop Demon Hunters characters. Experience real-time overlays and create viral social media content.",
           operatingSystem: ["iOS", "Android"],

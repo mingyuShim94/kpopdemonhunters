@@ -57,7 +57,7 @@ export default function PlayPage() {
                       href="/play/ranking"
                       className="block px-4 py-2 text-white hover:bg-white/10 hover:text-orange-300 transition-colors"
                     >
-                      AR Ranking App
+                      KDH Ranking Filter
                     </Link>
                     <div className="px-4 py-2 text-gray-400 text-sm">
                       Cosplay Service (Coming Soon)
@@ -118,7 +118,7 @@ export default function PlayPage() {
       <section className="relative z-10 py-8 md:py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {/* AR Ranking App */}
+            {/* KDH Ranking Filter */}
             <Link href="/play/ranking" className="group">
               <div className="bg-gradient-to-br from-orange-500/20 to-red-600/20 backdrop-blur-sm rounded-xl p-6 md:p-8 hover:from-orange-500/30 hover:to-red-600/30 transition-all duration-300 border border-orange-400/30 hover:border-orange-400/60 transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow">
                 <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden border-2 border-orange-400/50 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
@@ -134,7 +134,7 @@ export default function PlayPage() {
                   🆕 COMING SOON
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 bg-gradient-to-r from-orange-300 to-red-300 bg-clip-text text-transparent">
-                  AR Ranking App
+                  KDH Ranking Filter
                 </h3>
                 <p className="text-gray-200 text-base md:text-lg leading-relaxed">
                   Experience AR face tracking technology! Rank your favorite HUNTR/X members, 
