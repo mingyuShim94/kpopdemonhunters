@@ -5,6 +5,7 @@ import { useState } from "react";
 import Footer from "../../components/Footer";
 import MobileNavigation from "../../components/MobileNavigation";
 import SearchModal from "../../components/SearchModal";
+import StructuredData from "../../components/StructuredData";
 
 export default function RankingPage() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function RankingPage() {
       } else {
         setSubmitStatus("error");
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -387,6 +388,42 @@ export default function RankingPage() {
       <SearchModal
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
+      />
+
+      {/* Structured Data */}
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "MobileApplication",
+          name: "K-Pop Demon Hunters AR Ranking App",
+          description:
+            "Revolutionary AR face tracking app for ranking K-Pop Demon Hunters characters. Experience real-time overlays and create viral social media content.",
+          operatingSystem: ["iOS", "Android"],
+          applicationCategory: "GameApplication",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+          author: {
+            "@type": "Organization",
+            name: "KDH Wiki Team",
+            url: "https://kpopdemonhunters.net",
+          },
+          isBasedOn: {
+            "@type": "CreativeWork",
+            name: "K-pop Demon Hunters",
+            description: "Animated movie about K-pop idols who are secret demon hunters",
+          },
+          featureList: [
+            "Real-time AR face tracking with Google ML Kit",
+            "Interactive tap-to-rank system for characters",
+            "Social media recording and sharing features",
+            "Multiple ranking themes (HUNTR/X, Saja Boys, OST)",
+            "60fps performance optimization",
+          ],
+          screenshot: "https://kpopdemonhunters.net/images/app-preview.webp",
+        }}
       />
     </div>
   );
