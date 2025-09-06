@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Footer from "../components/Footer";
 import { ostTracks } from "../data/ost";
 import MobileNavigation from "../components/MobileNavigation";
+import OSTSidebar from "../components/OSTSidebar";
 
 export const metadata: Metadata = {
   title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
@@ -37,6 +38,8 @@ export const metadata: Metadata = {
 export default function OSTPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+      {/* OST Sidebar */}
+      <OSTSidebar tracks={ostTracks.map(track => ({ id: track.id, title: track.title }))} />
       {/* Navigation */}
       <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,6 +93,7 @@ export default function OSTPage() {
           {ostTracks.map((track, index) => (
             <div
               key={track.id}
+              id={track.id}
               className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden"
             >
               <div className="grid lg:grid-cols-2 gap-8 p-8">
