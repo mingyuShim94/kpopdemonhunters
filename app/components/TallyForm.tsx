@@ -2,22 +2,30 @@
 
 import { useEffect } from "react";
 
+declare global {
+  interface Window {
+    Tally?: {
+      loadEmbeds: () => void;
+    };
+  }
+}
+
 export default function TallyForm() {
   useEffect(() => {
     // Tally 스크립트가 로드되면 임베드를 초기화
     const loadTallyEmbeds = () => {
-      if (typeof window !== "undefined" && (window as any).Tally) {
-        (window as any).Tally.loadEmbeds();
+      if (typeof window !== "undefined" && window.Tally) {
+        window.Tally.loadEmbeds();
       }
     };
 
     // 스크립트가 이미 로드되었는지 확인
-    if (typeof window !== "undefined" && (window as any).Tally) {
+    if (typeof window !== "undefined" && window.Tally) {
       loadTallyEmbeds();
     } else {
       // 스크립트 로드를 기다림
       const checkTally = setInterval(() => {
-        if (typeof window !== "undefined" && (window as any).Tally) {
+        if (typeof window !== "undefined" && window.Tally) {
           loadTallyEmbeds();
           clearInterval(checkTally);
         }
@@ -38,8 +46,6 @@ export default function TallyForm() {
         width="100%"
         height="177"
         frameBorder="0"
-        marginHeight="0"
-        marginWidth="0"
         title="KDH Beta Waitlist"
         className="rounded-lg"
       />
