@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Footer from "../../components/Footer";
 import CharacterImage from "../../components/CharacterImage";
-import { characterDetails as characters } from "../../data/characters";
+import { characterDetails as characters, characterSummaries } from "../../data/characters";
 
 interface PageProps {
   params: Promise<{
@@ -14,6 +14,7 @@ interface PageProps {
 export default async function CharacterPage({ params }: PageProps) {
   const { slug } = await params;
   const character = characters[slug as keyof typeof characters];
+  const characterSummary = characterSummaries.find(c => c.id === slug);
   
   if (!character) {
     notFound();
@@ -67,7 +68,7 @@ export default async function CharacterPage({ params }: PageProps) {
             <div>
               <div className="rounded-2xl overflow-hidden mb-6">
                 <CharacterImage
-                  src={`/images/characters/${slug}.jpg`}
+                  src={characterSummary?.image || `/images/characters/${slug}.webp`}
                   alt={`${character.name} character portrait`}
                   name={character.name}
                   role={character.role}
