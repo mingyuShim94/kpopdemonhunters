@@ -159,3 +159,17 @@ Currently no test framework is configured - verify with the user before implemen
 - Environment variables for Cloudflare should be configured in wrangler.jsonc
 - When adding new character data, maintain the separation between `CharacterSummary` and `CharacterDetails` interfaces
 - Search functionality searches across all data types (characters, OST, culture) - update SearchModal when adding new content types
+
+# Important Development Reminders
+
+**Cloudflare Edge Runtime**: This project runs on Cloudflare Pages with OpenNext.js adapter. Always consider Edge Runtime constraints:
+- No Node.js APIs (fs, path, crypto) in client/edge contexts
+- Use Web APIs instead (fetch, URL, TextEncoder, etc.)
+- Environment variables must be configured in wrangler.jsonc
+
+**Current Modified Files** (check git status before starting):
+- `app/layout.tsx`: Root layout changes
+- `app/play/ranking/page.tsx`: Ranking page modifications  
+- `app/components/TallyForm.tsx`: New Tally form component (untracked)
+
+**Waitlist Form Status**: Currently disabled in ranking page - verify requirements before re-enabling

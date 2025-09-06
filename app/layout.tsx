@@ -95,6 +95,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8647279125417942"
           crossOrigin="anonymous"
         ></script>
+        <script async src="https://tally.so/widgets/embed.js"></script>
         <GoogleAnalytics />
       </head>
       <body

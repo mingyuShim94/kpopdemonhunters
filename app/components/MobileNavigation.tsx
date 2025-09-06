@@ -32,14 +32,6 @@ export default function MobileNavigation({
     { href: "/characters", label: "Characters" },
     { href: "/ost", label: "OST" },
     { href: "/culture", label: "Korean Culture" },
-    { 
-      href: "/play", 
-      label: "Play Services",
-      subItems: [
-        { href: "/play/ranking", label: "KDH Ranking Filter" },
-        { href: "#", label: "Cosplay Service (Coming Soon)", disabled: true }
-      ]
-    },
   ];
 
   return (
@@ -142,21 +134,6 @@ export default function MobileNavigation({
                 >
                   {item.label}
                 </Link>
-                {/* Sub items for Play Services */}
-                {item.label === "Play Services" && (
-                  <div className="ml-4 mt-2 space-y-1">
-                    <Link
-                      href="/play/ranking"
-                      className="block px-4 py-2 rounded-lg text-base text-gray-300 hover:bg-gray-800 hover:text-orange-300 transition-all duration-200"
-                      onClick={closeMenu}
-                    >
-                      KDH Ranking Filter
-                    </Link>
-                    <div className="px-4 py-2 text-sm text-gray-500">
-                      Cosplay Service (Coming Soon)
-                    </div>
-                  </div>
-                )}
               </div>
             ))}
           </nav>

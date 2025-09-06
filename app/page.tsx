@@ -40,37 +40,6 @@ export default function Home() {
               >
                 Korean Culture
               </Link>
-              <div className="relative group">
-                <button className="text-white hover:text-purple-300 transition-colors flex items-center space-x-1">
-                  <span>Play</span>
-                  <svg
-                    className="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                <div className="absolute top-full left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-                  <div className="bg-black/90 backdrop-blur-sm border border-white/20 rounded-lg py-2 shadow-xl">
-                    <Link
-                      href="/play/ranking"
-                      className="block px-4 py-2 text-white hover:bg-white/10 hover:text-orange-300 transition-colors"
-                    >
-                      KDH Ranking Filter
-                    </Link>
-                    <div className="px-4 py-2 text-gray-400 text-sm">
-                      Cosplay Service (Coming Soon)
-                    </div>
-                  </div>
-                </div>
-              </div>
               <button
                 onClick={() => setIsSearchOpen(true)}
                 className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-200"
@@ -224,7 +193,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-white mb-8 bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
             Recent Updates
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
             {/* Wiki Updates */}
             <div className="bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-cyan-500/10 backdrop-blur-sm rounded-xl p-6 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300">
               <h3 className="text-xl font-semibold text-white mb-3 bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent">
@@ -234,26 +203,6 @@ export default function Home() {
                 We&apos;re continuously adding new character profiles, OST
                 information, and cultural insights to the KDH Wiki.
               </p>
-            </div>
-
-            {/* AR App Announcement */}
-            <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-xl p-6 border border-orange-400/40 hover:border-orange-400/60 transition-all duration-300 transform hover:scale-105 animate-glow">
-              <div className="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-400 to-red-500">
-                <span className="text-white font-bold text-xl">🆕</span>
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3 bg-gradient-to-r from-orange-300 to-red-300 bg-clip-text text-transparent">
-                Coming Soon: KDH Ranking Filter
-              </h3>
-              <p className="text-gray-200 mb-4 text-sm">
-                Step into the world of KDH with AR face tracking! Rank your
-                favorite HUNTR/X members and create viral TikTok videos.
-              </p>
-              <Link
-                href="/play/ranking"
-                className="inline-block bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-orange-500/25 text-sm"
-              >
-                Join Beta Waitlist
-              </Link>
             </div>
           </div>
         </div>

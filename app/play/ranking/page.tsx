@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import MobileNavigation from "../../components/MobileNavigation";
 import SearchModal from "../../components/SearchModal";
 import StructuredData from "../../components/StructuredData";
+import TallyForm from "../../components/TallyForm";
 
 export default function RankingPage() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -287,45 +288,23 @@ export default function RankingPage() {
             Be among the first to experience the K-Pop Demon Hunters Ranking Filter app!
           </p>
 
-          {/* Waitlist Form - In Development */}
-          <div className="bg-gradient-to-br from-gray-500/20 to-gray-600/20 backdrop-blur-sm rounded-xl p-8 border border-gray-400/30">
+          {/* Tally Waitlist Form */}
+          <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-xl p-8 border border-orange-400/30">
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
               </div>
-              <div className="bg-gradient-to-r from-gray-500 to-gray-600 text-white text-sm px-4 py-2 rounded-full mx-auto w-fit mb-4">
-                🚧 IN DEVELOPMENT
+              <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm px-4 py-2 rounded-full mx-auto w-fit mb-4">
+                ✅ NOW AVAILABLE
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Waitlist Registration</h3>
               <p className="text-gray-300 mb-6">
-                The waitlist registration system is currently under development. 
-                Check back soon to be among the first beta testers!
+                Join our beta waitlist and be among the first to experience the KDH Ranking Filter app!
               </p>
               
-              <form className="space-y-6 opacity-60 pointer-events-none">
-                <div>
-                  <label htmlFor="email" className="block text-lg font-semibold text-white mb-3">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="your@email.com"
-                    disabled
-                    className="w-full px-4 py-3 rounded-lg bg-black/30 border border-gray-500/50 text-gray-400 placeholder-gray-500 cursor-not-allowed"
-                  />
-                </div>
-
-                <button
-                  type="button"
-                  disabled
-                  className="w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white px-8 py-4 rounded-lg font-semibold cursor-not-allowed text-lg"
-                >
-                  Coming Soon
-                </button>
-              </form>
+              <TallyForm />
             </div>
           </div>
 
