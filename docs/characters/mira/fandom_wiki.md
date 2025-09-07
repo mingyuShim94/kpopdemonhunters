@@ -1,149 +1,42 @@
----
-
-# Mira
-
-**Full Name:** Mira
-**Alias(es):** Black Sheep, Problem Child
-
-## Origin
-
-**From:** *KPop Demon Hunters*
-
-## Occupation
-
-* Choreographer of Huntrix
-* Pop star
-* Demon Hunter
-
-## Powers / Skills
-
-* Singing
-* Dancing and Choreography
-* Modeling
-* Fighting skills
-* Spirit Magic
-* Spear combat
-
-## Hobby
-
-* Singing
-* Hunting demons
-* Hanging out with her friends
-* Going to the steam room
-
-## Goals
-
-* Stop Gwi-Ma and his demons from collecting human souls *(succeeded)*
-* Create the Golden Honmoon *(failed initially; still ongoing)*
-* Defeat Gwi-Ma and save the souls of her friends and fans *(succeeded)*
-
-## Family
-
-*The family name has never been officially released.*
-
-## Friends / Allies
-
-* **Rumi** (best friend)
-* **Zoey** (best friend)
-* **Bobby** (manager and friend)
-* **Celine** (mentor)
-
-## Enemies
-
-* **Gwi-Ma** (arch-nemesis)
-* **The Saja Boys**
-* **Jinu †** (formerly)
-* **Abby †** (crush and victim)
-* **Mystery †**
-* **Romance †**
-* **Baby †**
-
-## Type of Hero
-
-**Brutish Warrior**
-
-> *"I know our faults and fears must never be seen, but, look, I'm kind of a difficult person. Overly blunt, short-fused, highly aggressive. My whole life, those things were a liability. But somehow, with you guys, they're okay."*
-> — Mira to Rumi and Zoey
+Of course. Here is the provided text about the character Mira, organized and presented in English.
 
 ---
 
-Mira is one of the two deuteragonists (alongside Zoey) of Sony Pictures Animation's 2025 animated feature film **KPop Demon Hunters**.
-She is the choreographer of the group **Huntrix**, comprising herself, Rumi, and Zoey. They assume confidential identities as demon hunters to safeguard the humans from demons.
-She is voiced by **May Hong**.
+### **Mira**
 
----
+Mira (Korean: 미라; RR: Mi Ra) is one of the two deuteragonists of _K-Pop Demon Hunters_. She is the lead dancer, visual, and choreographer of the famous K-Pop girl group HUNTR/X, which also consists of her friends Rumi and Zoey. As a result of being a problem child growing up, she believes deep down that she isn't worthy of family or friends. Alongside her groupmates, Mira assumes a secret identity as a demon hunter to protect humanity, wielding a Gok-Do in combat.
 
-## Contents
+She is voiced by May Hong, and her singing voice is provided by Audrey Nuna.
 
-1. Story
-2. Powers and Abilities
-3. Physical Appearance
-4. Trivia
-5. Gallery
-6. External Links
+### **Personality**
 
----
+Mira has a tough exterior and is characterized by her blunt, sarcastic, snarky, and brutally honest nature. With her deadpan remarks, she has no problem calling out Rumi for her choices. Despite this, she cares deeply for both Rumi and Zoey, especially since they allow her to be herself, unlike her family, whom she seems to have left behind. Mira also possesses a bit of a temper, which is shown briefly when demons sabotage the group's plane and when she is uncomfortably "shipped" with other characters by fans.
 
-## 1. Story
+Although Mira often appears stoic, she can show as much enthusiasm and energy as her bandmates. She is never hesitant to act goofy with her friends, loves relaxing with them, and is just as likely as Zoey to develop a crush.
 
-Before she joined Huntrix, Mira was known as the "black sheep" of her family. In Huntrix's single **"Golden"**, one of the lines described how she was called a problematic child because she was chaotic and a rebellious person in her family — soon leading to her rise to fame in Huntrix.
+Functioning as the group's anchor, Mira often keeps the team on task, balancing Rumi’s insecurities and closed-off tendencies with Zoey’s unconstrained energy and naivety.
 
----
+Mira is highly observational, calling herself an expert at reading people, and is therefore aware of Rumi’s unusual behavior throughout the film. When Rumi begins to make choices Mira doesn't understand, such as changing the lyrics for their song "Takedown" or cheering for their rival Jinu, Mira becomes frustrated and tries to figure out the reason for her friend's actions.
 
-## 2. Powers and Abilities
+Having been taught that all demons are evil and deserve to be killed, Mira initially shows no mercy toward the Saja Boys. When she notices Rumi's hesitation to fight them, she becomes scared that Rumi is no longer on their side, leading her to issue an ultimatum with blunt aggression. It is not until Mira and Zoey discover that Rumi is part-demon that Mira begins to challenge her own beliefs. She is ultimately willing to accept the Rumi she knows, realizing that perhaps not everyone with demonic patterns deserves the fate she was taught they did.
 
-- **Fighting Skills:**
-  As a Demon Hunter, Mira has vast fighting experience with her glave and hand-to-hand combat.
+### **Appearance**
 
-- **Singing:**
-  As a Kpop star, Mira is very good at singing, including rap.
+Mira is a young Korean woman with an angular, long face and slim, dark brown almond-shaped eyes. She has hot pink hair that reaches her upper thighs, styled with two chunks tied into twintails and two middle-parted sidelocks framing her face. Her build is skinny, and she is noticeably taller than Rumi and Zoey.
 
-- **Spirit Magic:**
-  Mira, like all hunters, can use spiritual magic powered by her and her fans' souls.
+### **Skills and Abilities**
 
-- **Weapon Conjuring:**
-  Mira is able to conjure a magical glave that she can slay demons with.
+- **Dart Throwing:** Mira's dart-throwing skills are displayed when she casually tosses three darts over her head and accurately hits a poster of Jinu.
+- **Demon Hunting:** She is a demon hunter alongside Rumi and Zoey as part of HUNTR/X.
+- **Choreography:** While all the members are excellent dancers, Mira serves as the group's lead dancer and choreographer.
+- **Spirit Magic:** As a Hunter, Mira can use spirit magic to conjure weapons and empower herself with her soul and the souls of her fans to create energy barriers.
+- **Mediumship:** Mira can see spirits, demons, and the spiritual energy flowing from the Honmoon. She is able to see when it changes color and perceive its fluctuations, which indicate that demons are nearby or that the barrier is breaking.
 
-- **Energy Shockwave:**
-  Mira's glave can emit a shockwave capable of disintegrating demons.
+### **Trivia**
 
-- **Spirit Vision:**
-  Mira can see spirits, demons, and the spiritual energy that flows through the Honmoon.
-  She is able to see when it changes color or fluctuates — indicating that there are demons nearby.
-  She can also see when the Honmoon is damaged or destroyed.
-
-- **Honmoon Creation:**
-  Mira, together with other members of Huntrix, is capable of creating and strengthening the Honmoon using the soul energy of their fans.
-
----
-
-## 3. Physical Appearance
-
-Mira is a tall fair-skinned South Korean young woman with dark purple eyes and chest-length hot-pink hair tied into two twintails, with two sidelocks framing her face.
-
-She wears:
-
-- A short-sleeved purple crop-top featuring a graphic picture of waves and the word _"cruise"_
-- A choker
-- A yellow denim skirt with a white chain on the belt
-- Violet shoulder pads
-- Dark magenta stockings (often ripped) with crimson shades on the knees
-
----
-
-## 4. Trivia
-
-- Mira is the **visual** (most beautiful/attractive member) and **lead dancer** of the group.
-- She **choreographs all of Huntrix's dance routines**.
-
-  - Despite Bobby having prepared lead dancers for Mira during the planning for _"Takedown"_, none of Huntrix's dance routines on-screen have involved anyone except the members themselves.
-
-- Mira once attended the **Met Gala wearing a sleeping bag**.
-- Mira **wears glasses when going undercover**.
-- Mira's full name was stated to be **"Mira Kotadoski"** in an official Netflix merch drop.
-
-  - This was never previously confirmed officially and was only a **fanon name** given to her.
-  - “Kotadoski” is not a Korean surname and is spelled similarly to the Polish surname _"Kotarski"_, but there is no official confirmation that Mira is of Polish origin.
-  - The **T-shirt referencing her full name has since been removed** from the store after backlash.
-
----
+- One of Mira's fan "ships" is "Miromabby," the only polyamorous ship in the film, which she visibly despises.
+- Mira is 6 months younger than Rumi.
+- Mira's hairstyle went through changes in her concept art. A storyboard by Josh Lieberman showed her with her hair down and with bangs. In other early concept art, her hair was down, but it was red and shorter.
+- Additionally, Mira was originally supposed to have a fan as her weapon.
+- On the phone that displays a fan edit of "Miromabby," Mira is shown in her disguised outfit rather than her "How It's Done" outfit, which was her actual attire at the fan signing event.
+- Director Maggie Kang revealed that Mira's look was inspired by Korean model Ahn So Yeon.

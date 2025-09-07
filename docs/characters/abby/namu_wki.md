@@ -1,66 +1,43 @@
----
-
-# 애비 (케이팝 데몬 헌터스)
-
-* **성별**: 남성
-* **국적**: 조선
-* **종족**: 악령 (저승사자)
-* **소속 그룹**: 사자 보이즈
-* **포지션**: 메인댄서, 리드래퍼, 서브보컬
-* **성우**: 🇺🇸 조성원 / 🇰🇷 이현
-* **노래**: *Neckwav*
+Of course. Here is a meticulously detailed English summary of the character Abby, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-## 1. 개요
+### **Abby**
 
-《케이팝 데몬 헌터스》의 유닛 *헌트릭스*의 라이벌 유닛인 **사자 보이즈**의 멤버.
-그룹 내에서 **메인댄서**, **리드래퍼**, **서브보컬**을 맡고 있다.
+| Category             | Detail                                    |
+| :------------------- | :---------------------------------------- |
+| **Gender**           | Male                                      |
+| **Nationality**      | Unspecified                               |
+| **Species**          | Demon                                     |
+| **Affiliated Group** | Saja Boys                                 |
+| **Position**         | Main Dancer, Lead Rapper, Sub-Vocalist    |
+| **Voice Actors**     | **EN:** Sungwon Cho <br> **KR:** Lee Hyun |
+| **Singing Voice**    | Neckwav                                   |
 
----
+### **1. Overview**
 
-## 2. 작중 행적
+> "I knew they would. That one's always looking at me."
 
-> ⚠️ **이 문서에는 스포일러가 포함되어 있습니다.**
+Abby is a character in _K-Pop Demon Hunters_. He is the main dancer, lead rapper, and sub-vocalist for the demon idol group, Saja Boys.
 
-애비는 식스팩을 자랑하는 **전형적인 근육질 캐릭터**로, 그의 예명은 영어로 복근을 뜻하는 *abs*에서 따온 것이다. 하지만 이 이름은 한국어에서 아버지의 낮춤말인 *아비*와 동음이의어인데다, 어감까지 미묘해서 팬들 사이에서는 예명이 **“바보 같다”**, **“애비(not daddy)”** 등 다양한 농담 소재가 되고 있다. 사실 *Abby*라는 이름은 서양권에서도 사용되나, 주로 **여성 이름**이다.
+He is the group's archetypal muscular member, known for his six-pack abs. His stage name, "Abby," is a direct reference to the English word "abs." This has led to numerous jokes among Korean viewers, as "Abby" (애비) is a homophone for an old, informal term for "father," leading to gags about him and his bandmate, Baby. While the name Abby is common in Western countries (usually as a nickname for Abigail or Albert), its use for a male K-pop idol in Korea is seen as comically awkward.
 
-작품 내에서도 애비는 **몸매 담당**임을 대놓고 강조한다. 미라와 조이가 그의 복근을 보고 **눈에서 팝콘이 튀기는 장면**이 나오고, 팬사인회에서는 **복근에 종이를 대고 연필로 탁본**을 떠주기도 한다. 이 때문에 다른 멤버들이 모두 긴 상의를 입고 있음에도, 애비 혼자만 **복근이 드러날 듯 말 듯한 크롭티** 수준의 상의를 주로 입는다. 첫 등장 때는 상체를 가린 **하와이안 셔츠**를 입고 있지만, 이마저도 복근에 **단추가 튕겨져 나가며** 결국 상체가 노출된다.
+### **2. In-Story Arc**
 
-댄서 포지션이라 비중이 적을 것 같지만, **무대 위에서도 꽤 돋보이는 멤버**다.
+**(Warning: Spoilers Ahead)**
 
-- 《Soda pop》에서는 **1절에서 치고 나오는 안무 파트**를 맡아 눈에 띄며, **후렴구도 배정**받는다.
-- 《Your Idol》에서는 1절 도입부를 제외하고 짧은 파트만 배정되어 **전체 비중은 약 9.8초, 7.8% 수준**이지만, 그 도입부에서 선보인 **갓끈 퍼포먼스**가 호평을 받으며 존재감을 발산한다. 이에 시청자들은 \*\*‘갓끈걔’\*\*라는 별명을 붙여주기도 했다. 반면 리더 진우는 \*\*70.6초로 전체 비중의 56.5%\*\*를 차지해 비교가 된다.
+While his position as main dancer might suggest a smaller role in the group's songs, Abby has several standout moments on stage. In "Soda Pop," he leads a key dance break in the first verse and also has a part in the chorus. In "Your Idol," his singing part is brief (only 9.8 seconds, or 7.8% of the song, compared to Jinu's 70.6 seconds), but his performance is unforgettable. His "gat-kkeun performance"—a dance move involving the string of his traditional Korean hat (_gat_)—was so impactful that viewers nicknamed him "the gat-string guy." This move was highly praised by a real-life traditional Korean dancer for its innovation, who noted they planned to study and incorporate it into their own performances.
 
-작중에서는 **미라와의 엮임**이 많아 ‘**Miromabby**’(미라 + 로맨스 + 애비)라는 삼각관계 이름이 생기기도 했다. 다른 사자 보이즈 멤버들이 크게 접점이 없는 데 비해, 애비는 **진우와 함께 등장하는 장면**이 많다.
-예를 들어:
+Despite the Saja Boys' story focusing heavily on Jinu, Abby receives a fair share of the spotlight through these memorable scenes and his interactions with the other characters. He is often seen alongside Jinu in group shots and shares a significant connection with Mira. His unique fan service, such as giving out pencil rubbings of his abs, and his iconic dance moves have made him a fan-favorite among the Saja Boys.
 
-- 팬 영상 콘텐츠
-- _Soda pop_ 안무
-- **목욕탕 장면**
-- 헌터들과 싸울 때 진우의 어깨에 손을 얹고 나아가는 장면 등
+In a parody of the variety show _Weekly Idol_, Abby is seen giving his bandmate Baby a piggyback ride as they flee from HUNTR/X, further fueling the "Abby the daddy" jokes among fans.
 
-이런 묘사들 덕분에 비록 **스토리 비중은 진우에게 몰려** 있지만, 애비는 **강한 개성과 퍼포먼스로 주목**을 받는다.
+### **3. Miscellaneous & Trivia**
 
-또한, 예능 프로그램 **〈우리랑 놀자!〉** 출연 후 헌트릭스를 피해 달아나는 장면에서는 **베이비를 업고 도망치는 모습**이 등장한다. 이 장면 이후 “**애비가 진짜 애 아빠냐**”는 농담도 생겨났다.
+- **Name and Motif:** His name is derived from "abs," and he shamelessly flaunts his physique throughout the film. He is a "popcorn maker" for Mira and Zoey, and at a fansign, he even gives out frottage art of his abs. His outfits are consistently cropped to show off his midsection. According to the production team, his 3D model was designed with 20% more muscle mass than the other members. His occult motif is believed to be the _dokkaebi_ (Korean goblin), a mythological being known for its powerful masculine energy.
 
-소멸 장면 또한 화제였는데, **미라가 복근 선을 따라 곡도를 베면서** 애비가 소멸한다. 이때 미라는 대부분의 언어에서 "이제 복근은 그만!"이라는 식의 외침을 한다. 하지만
+- **Real-Life Parallel:** His muscular idol image has drawn comparisons to former Monsta X member Wonho, who in turn cosplayed as Abby.
 
-- **일본어 더빙**에서는 `"愛しいの腹筋、さらば!!"` (사랑스러운 복근, 잘 가!)
-- **프랑스어 더빙**에서는 `"Adieu les abdos!"` (복근이여 잘 가라!) 라며 **복근에 대한 애정을 담은 연출**이 이루어졌다.
-  마치 **복근에 반했을 때처럼 미라의 눈에서 팝콘이 튀어나오는 연출**이 반복되며 극적인 장면을 만든다.
+- **Combat Prowess:** Despite his impressive physique, his combat skills are questionable. While the Saja Boys (excluding Jinu) were shown to be stronger than average demons, they were still no match for the hunters. In the final battle, Abby is swiftly defeated by Mira in a 2-on-1 fight without landing a single effective blow.
 
----
-
-## 3. 기타
-
-- 애비의 오컬트 모티브는 **괴력과 남성성이 두드러지는 도깨비**에서 따온 것으로 보인다. 이에 따라 *애비*라는 이름이 단순히 복근(abs) 외에도 \*\*도깨비(Dokkaebi)\*\*에서 유래한 것 아니냐는 해석도 있다.
-- **근육질 몸매**의 아이돌이라는 점에서 많은 이들이 **몬스타엑스의 前 멤버 원호**를 연상시키며, 실제로 **원호가 애비를 코스프레한 적도 있다.**
-
----
-
-**관련 유닛**: \[사자 보이즈]
-**라이벌 유닛**: \[헌트릭스]
-**작중 프로그램 패러디**: \*〈우리랑 놀자!〉\*는 \*〈주간 아이돌 시즌 1〉\*을 패러디한 콘텐츠로, **형돈이와 대준이**가 진행했던 실제 프로그램을 모티브로 한다.
-
----
+- **Final Moments & Fan Reception:** In a testament to his defining trait, Mira's finishing blow is a slash directly across his abs. Her cry of "No more abs!" is iconic. However, in some dubs, her line is more regretful, such as the Japanese "Farewell, my beloved abs!" or the French "Adieu, abs!" delivered in a tearful voice. This is likely a reference to the fact that Mira's eyes were "making popcorn" even as she defeated him. He is the only Saja Boys member besides Jinu to get a small scene in the end credits, shown doing ab workouts with the three auntie characters.

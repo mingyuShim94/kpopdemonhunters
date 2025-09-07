@@ -1,204 +1,70 @@
----
-
-# Baby Saja
-
-> “**Bichinaneun fame Gyesok oecheo I'm your idol! Thank you for the pain cuz' it got me going viral! Oh yeah, naji anneun fever makin' you a believer nareul wihae neon jonjae haneun aideul.**”
-> — Baby as he raps during *"Your Idol"*
-
-**Baby Saja** is a major antagonist in *Sony Animation's* 29th feature-length animated film **KPop Demon Hunters**. He is the youngest member of the demon idol group **Saja Boys**, serving **Gwi-Ma**, and is known for his childlike demeanor paired with unsettling powers. Despite his name, Baby Saja is just as dangerous as his fellow demon bandmates.
-
-His singing voice is portrayed by **Danny Chung**.
+Of course. Here is the provided text about the character Baby Saja, organized and presented in English.
 
 ---
 
-## Full Name
+### **Baby Saja**
 
-**Baby Saja**
+> "Thank you for the pain, 'cause it got me going viral."
+> — Baby's lines in "Your Idol"
 
-## Alias
+| Category          | Detail                        |
+| :---------------- | :---------------------------- |
+| **Name**          | Baby Saja (베이비 사자)       |
+| **Also Known As** | Baby                          |
+| **Species**       | Demon                         |
+| **Occupation**    | K-pop Idol, Servant of Gwi-Ma |
+| **Team**          | Saja Boys                     |
+| **Singing Voice** | Danny Chung                   |
 
-**Baby**
+### **1. Overview**
 
-## Origin
+Baby Saja is the main rapper of the Saja Boys and serves as a minor antagonist in the film _K-Pop Demon Hunters_. He is a demon who disguises himself as a K-pop idol to steal fans from the demon-hunting girl group HUNTR/X as part of a plan to weaken the protective Honmoon barrier. His rapping voice is provided by Danny Chung.
 
-_KPop Demon Hunters_
+### **2. Appearance**
 
-## Occupation
+Baby is a slim man of average height with a boyish appearance, a short, round face, a small nose, and soft lips. In his human disguise, he has pale skin, fluffy turquoise hair styled in a mop top, and matching turquoise eyes. He paints his nails mint green. In his demon form, he has purple skin with glowing patterns, clawed hands, sharp teeth, and golden eyes.
 
-- Member of the **Saja Boys**
-- **Musician**
-- **Rapper**
-- **Minion of Gwi-Ma**
+As an idol, Baby dresses in a youthful style, often wearing newsboy caps backwards and oversized sweaters. In his true demon form, he wears a tattered black _hanbok_ and a _gat_. During the "Your Idol" performance, he blends these styles, wearing a turtleneck under a traditional overcoat.
 
----
+### **3. Personality**
 
-## Powers / Skills
+As the group's _maknae_ (youngest member), Baby is portrayed as the most youthful member of the Saja Boys. On stage, he plays up a cute, boyish persona by wearing oversized clothing, using playful gestures, and displaying an oral fixation with childish props like lollipops. Unlike the other members, he avoids "ship teases" with fans, which reinforces his innocent image. However, when he raps, his presence becomes powerful and commanding.
 
-- Demonic magic
-- Demonic physiology
-- Shapeshifting
-- High intelligence
-- Combat prowess
-- Stealth
-- Strategy
-- Charisma
-- Rapping and dancing skills
-- High spice tolerance
+Despite this boyish image, Baby is an immoral demon who willingly serves Gwi-Ma. Off-stage, he drops the act and appears bored, nonchalant, and tired of maintaining his idol persona. Like the other Saja Boys, he becomes aggressive when their plans start to fail and is genuinely shocked when Jinu sacrifices himself for Rumi.
 
----
+### **4. Plot**
 
-## Goals
+**Backstory:** Little is known about Baby's early life. It is assumed that he was once human and was transformed into a demon after making a deal with the demon king, Gwi-Ma.
 
-- Get rid of the **Huntrix**
-- Collect and send as many souls onto **Gwi-Ma**'s realm
-- Ruin the **Huntrix’s** reputation (all failed)
+**Main Events:** Baby first appears in the Demon Realm when Jinu proposes the plan to form a K-pop boy band. As a member of the Saja Boys, he makes his debut in the human world and quickly gains popularity. He competes on a variety show, effortlessly winning a hot sauce drinking contest and finishing with the phrase, "goo goo ga ga."
 
----
+During a joint fan signing event, Baby sits between Zoey and Jinu and keeps to himself, drinking water. Like the other members, he discards fan gifts in the trash after the event.
 
-## Crimes
+In his final appearance, Baby performs "Your Idol" in his demon form. When HUNTR/X reunites, he attacks the girls and engages in a brief fight with Zoey. He is visibly shocked by Jinu's betrayal and subsequent sacrifice. His ultimate fate is not explicitly shown, leaving his status unknown.
 
-- Impersonation
-- Conspiracy
-- Theft
-- Mass murder
-- Grand theft animarum
-- Psychological abuse
-- Mass brainwashing
-- Attempted assisted genocide
-- Attempted assisted world domination
+### **5. Abilities and Skills**
 
----
+- **Demonic Powers:** As a demon, Baby can steal souls, teleport, levitate, and shapeshift between his human and demon forms.
+- **Immortality:** He is effectively immortal, unless killed by a demon hunter or Gwi-Ma.
+- **Rapping:** As the main rapper, he is exceptionally skilled.
+- **High Spice Tolerance:** He can handle extreme levels of spice, as proven when he easily won the hot sauce challenge.
+- **Artistic Talents:** He is a proficient dancer and singer.
 
-## Type of Villain
+### **6. Quotes**
 
-**Charismatic Demon**
+- "Uh, make me wanna flip the top. 한 모금에 (in one sip) you hit the spot. Every little drip and drop, fizz and pop, ah 소름 돋아 (it's giving me goosebumps) it's gettin' hot." — Baby's rap in "Soda Pop."
+- "Goo goo ga ga." — Baby, after winning the spice contest.
+- "Uh, 빛이나는 (shining) fame, 계속 외쳐 (keep shouting), I'm your idol. Thank you for the pain, 'cause it got me going viral. Uh, yeah, 낫지 않는 (unhealing) fever, makin' you a believer 나를 위해 넌 존재하는 (you exist for me) idol." — Baby's rap in "Your Idol."
 
----
+### **7. Trivia**
 
-## Contents
-
-1. [Appearance](#appearance)
-2. [Personality](#personality)
-3. [History](#history)
-
-   - [Background](#background)
-
-4. [Powers and Abilities](#powers-and-abilities)
-5. [Relationships](#relationships)
-
-   - [Friends](#friends)
-   - [Enemies](#enemies)
-
-6. [Trivia](#trivia)
-
----
-
-## Appearance
-
-### Demon Form
-
-Baby Saja has:
-
-- Glowing golden eyes with slit pupils
-- Claws and fangs
-- Sharp features
-- Pale blue-tinted skin marked by dark, vein-like patterns that glow under neon light
-- Short, sleek blue-gray hair
-- Traditional **저승사자 (Jeoseung-saja)** attire:
-
-  - Large, wide-brimmed black hat (**갓/Gat**)
-  - Dark **한복/Hanbok** adorned with elegant beads and chains
-
-- Seductive expression and eerie, otherworldly presence
-- Aura of mystery, intimidation, and power
-
-### Human Form
-
-- Short, fluffy blue-gray hair
-- Pale skin
-- Sharp, expressive eyes with a confident and sassy look
-- Mustard yellow newsboy cap (worn backward)
-- Fuzzy hot pink argyle sweater (light and dark pink)
-- Dark blue collared shirt underneath
-- Bold, stylish, playful fashion sense
-
----
-
-## Personality
-
-- **Charismatic**, **manipulative**, and **sarcastic**
-- Uses **cuteness** and **harmless demeanor** to deceive
-- Emotionally distant, deadpan humor
-- On-stage: exaggeratedly cutesy “baby” image with props, pouting, gestures
-- Off-stage: cold, cunning, quick to drop the act when annoyed
-- Hard to rattle, frequently mocks or undermines others
-
----
-
-## History
-
-### Background
-
-- Little is known about his life before demonhood
-- Unlike **Jinu**, never speaks of a former life
-- Rumored to be:
-
-  - A child prodigy who made a pact with **Gwi-Ma**
-  - Possibly traded youth and fame for power
-
-- Rose quickly in demon ranks by:
-
-  - Using innocent appearance to steal souls unnoticed
-
-- Personally groomed by **Gwi-Ma** into a deadly soul weapon
-- Became a twisted family member under **Jinu**'s leadership in the **Saja Boys**
-
----
-
-## Powers and Abilities
-
-- Soul stealing
-- Teleportation
-- Illusion creation
-- Hypnotic voice
-- Levitation
-- Immortality
-- Emotion manipulation
-- Demonic transformation
-- **Pyrokinesis** (briefly shown during the climax)
-
----
-
-## Relationships
-
-### Friends
-
-- **Gwi-Ma †** (Master)
-- **Saja Boys**
-
-  - **Jinu †**
-  - **Abby Saja †**
-  - **Mystery Saja †** (Best friend)
-  - **Romance Saja †**
-
-### Enemies
-
-- **Rumi**
-- **Zoey**
-- **Mira**
-
----
-
-## Trivia
-
-- **Left-handed** and has a **high spice tolerance**
-
-  - Won the hot sauce-chugging contest in the movie
-
-- Despite the name **“Baby,”** he is **centuries old**
-- Has the **deepest singing voice** among the Saja Boys
-- Is the **maknae** (youngest) of the Saja Boys
-- Character design inspired by **Korean horror folklore** and **modern idol trends**
-- Only **Saja Boy** who isn’t canonically shipped with any **HUNTR/X** member
-
----
+- Baby is the youngest member (_maknae_) of the Saja Boys.
+- In contrast to his childish appearance, Baby has the deepest voice of all the Saja Boys.
+- His final fate is unclear and is not shown on-screen.
+- He is the only Saja Boy not canonically shipped with a HUNTR/X member. Instead, he is sometimes portrayed in fanart as the child of Mystery and Zoey.
+- He has the least amount of dialogue among the Saja Boys, with only one speaking line ("Goo goo ga ga").
+- He is the only member without a separately credited speaking voice actor.
+- His name is an anagram of his teammate, Abby.
+- His design was inspired by **Hyunjin of Stray Kids** and **Jimin of BTS** (during his "Golden" era).
+- It was confirmed by an art director that Baby was the one who wrote "HUNTR/X" on a slide during the variety show scene as a prank.
+- Baby could be interpreted as a symbol of the infantilization of K-pop idols.

@@ -1,103 +1,74 @@
----
-
-# 미라
-
-* **성별**: 여성
-* **국적**: 대한민국
-* **연령**: 23\~24세 (루미보다 생일이 약 6개월 늦음. 레딧 AMA에서 매기 강 감독이 직접 밝힘)
-* **가족**: 아버지, 어머니, 오빠
-* **종족**: 인간
-* **소속 그룹**: 헌트릭스
-* **포지션**: 서브 보컬, 댄서
-* **성우**:
-
-  * 영어: 메이 홍
-  * 한국어: 김도영
-  * 일본어: 타무라 무츠미
-* **대표곡**: 〈오드리 누나〉
+Of course. Here is a complete English summary of the character Mira, meticulously integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-## 1. 개요
+### **Mira**
 
-케이팝 데몬 헌터스의 서브 주인공으로, 세계적인 K-POP 걸그룹 \*\*헌트릭스(HUNTRIX)\*\*의 멤버이다.
+| Category             | Detail                                                                                                             |
+| :------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| **Gender**           | Female                                                                                                             |
+| **Weapon**           | Gok-do (Curved Sword)                                                                                              |
+| **Nationality**      | ![South Korea Flag](https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg) Republic of Korea |
+| **Age**              | 23-24 years old (Born c. 2001-2002)                                                                                |
+| **Family**           | Father, Mother, Older Brother                                                                                      |
+| **Species**          | Human                                                                                                              |
+| **Affiliated Group** | HUNTR/X                                                                                                            |
+| **Position**         | Visual, Main Dancer                                                                                                |
+| **Voice Actors**     | **EN:** May Hong <br> **KR:** Kim Do-young <br> **JP:** Mutsumi Tamura                                             |
+| **Singing Voice**    | **EN/KR:** Audrey Nuna <br> **JP:** MARU                                                                           |
 
-헌트릭스 내에서 **최장신**이자 **가장 뛰어난 비율과 몸매**를 자랑하며, 외모 담당으로 묘사된다. 댄서 포지션에 걸맞게 **춤선과 안무의 중심**을 맡고 있으며, 이는 곡 작업에서 **조이가 작사**, **미라가 안무를 담당**, **전체적인 구성은 셋이 함께 조율**하는 것으로 보인다.
+### **1. Overview**
 
----
+> "Fit check for my napalm era."
+> — Mira's opening line in "How It's Done"
 
-## 2. 작중 행적
+Mira is the deuteragonist of _K-Pop Demon Hunters_. She is the main dancer and visual of the world-renowned K-pop group HUNTR/X. As the tallest member of the group, she is known for her slender figure and exceptional dancing skills. Her primary weapon is a _Gok-do_, a curved sword inspired by blades from the ancient Gaya confederacy of Korea.
 
-> ⚠ 이 문단은 케이팝 데몬 헌터스의 주요 **줄거리 및 반전 요소를 포함한 스포일러**가 있습니다.
+### **2. Abilities**
 
----
+As a Hunter, Mira specializes in mid-range combat, utilizing her height and the long reach of her _Gok-do_ to engage multiple enemies simultaneously. She often acts as the group's vanguard alongside Zoey, charging into battle first. With a single powerful swing, she can cut down several demons at once. She has also demonstrated the ability to unleash an area-of-effect attack by striking the ground with her stored energy, leading some to believe she may possess the highest raw physical power in HUNTR/X.
 
-### 과거와 성장
+### **3. Personality**
 
-보수적인 집안에서 자라며 늘 삐딱한 자세와 빨간 머리 등 **가족 내에서 유일하게 튀는 인물**로 묘사된다. 가족사진 속에서도 **중앙에 앉아 있음에도 불량한 표정과 자세**를 취한 것이 특징. 겉으로는 가족과 불화를 겪는 듯 보이나, **가족이 적극적으로 통제하거나 거부하지는 않고 묵묵히 수용하는 태도**를 보여주는 점에서 **어느 정도 사랑을 받고 자란 막내**라는 해석도 가능하다.
+Mira embodies the "girl crush" archetype common in K-pop, characterized by a defiant and brutally honest attitude. She is said to be so bold that she would wear a sleeping bag to the Met Gala. This rebellious persona is very popular with fans, who are shown imitating her signature crossed-arms pose and sharp-eyed glare.
 
----
+However, beneath this tough exterior, Mira struggles with low self-esteem. This is a common trope where a strong personality is used to hide deep-seated insecurities. When Rumi points this out during an argument, Mira is left speechless. Upon discovering Rumi's half-demon secret, her reaction is not anger but self-pity, remarking, "I knew it was too good to be true." When Gwi-ma's whispers tempt her, she utters the self-deprecating line, "Who was I kidding, thinking I could have a family?"
 
-### 헌터로의 변화
+While Rumi's conflict is about her species and Zoey's is about her identity, Mira's central conflict revolves around her family. A family photo shows her as the sole rebellious figure in a conservative-looking family. It's implied through the lyrics of their song "Golden" that her clashing personality led to discord at home. Gwi-ma's taunts—"Thought you finally had a family? You're not worthy. You never were"—further confirm this painful history. There is also a fan theory that she may come from a wealthy family, as the "Golden" music video depicts her family looking displeased with her pop-star success, a common trope for a self-made star rebelling against their family's wishes.
 
-집안의 골칫거리였던 미라는 성장 후 **셀린**의 지도 아래 **악령을 퇴치하는 헌터이자 아이돌 헌트릭스의 멤버**로 발탁된다. 루미, 조이와 함께 활동하면서 두 사람을 **친가족처럼 소중히 여긴다.**
+### **4. In-Story Arc**
 
----
+**(Warning: Spoilers Ahead)**
 
-### 헌트릭스 내부 갈등
+Once the "problem child" of her family, Mira found her place as a member of HUNTR/X under Celine's guidance. Though she appears chic and aloof, she cherishes Rumi and Zoey as the true family she never had.
 
-미라는 **서글서글한 조이와는 달리 직설적이고 털털한 성격**으로, 속마음을 잘 털어놓지 않는 루미의 태도에 답답함을 느끼고 “**자존감 낮은 티 내지 마**”라는 말을 내뱉게 된다. 이로 인해 루미와의 갈등이 깊어지고, 이는 훗날 **아이돌 어워드 사건에서 루미에 대한 불신**으로 이어지는 결정적인 빌미가 된다.
+The film opens with HUNTR/X defeating demons on their private jet and making a spectacular landing on stage. Here, Mira delivers her iconic line, "Fit check for my napalm era," a phrase that encapsulates her intense, self-assured image. After the show, her hopes for a well-deserved rest are crushed when Rumi unilaterally announces their next single, "Golden," causing Mira to wail in genuine despair.
 
----
+In the "Golden" music video, her lyrics reflect on her past: "Called a problem child 'cause I got too wild / But now that's how I'm getting paid." When Rumi's vocal issues cancel a live show, Mira comforts her. At a traditional clinic, she protectively glares down the healer to stop him from prying into Rumi's (and her own) vulnerabilities. Later, she and Zoey have a comical "popcorn eyes" reaction to Saja Boys member Abby's abs.
 
-### 귀마 사건과 회복
+When the group decides to write a diss track, "Takedown," the song's title comes from Mira's impassioned cry: "I'm taking these down! Just like how we're gonna take down these boys!"
 
-루미의 정체가 드러나고 헌트릭스가 해체된 후, 미라는 심적 충격을 받아 **귀마에게 일시적으로 홀리게 된다**. 하지만 능력을 되찾은 루미의 노래를 들은 뒤 제정신을 되찾고, 그녀와 함께 귀마를 퇴치한다. 이 과정에서 **루미와의 관계도 회복**된다.
+However, as Rumi grows closer to the demon Jinu, her convictions as a hunter begin to waver. Mira notices this change—Rumi's hesitation to fight, her defense of Jinu, and her desire to alter the aggressive lyrics of "Takedown." One night, Mira confronts Rumi, asking if she is hiding something, but Rumi evades the question.
 
----
+The tension culminates in a fight on a subway train the day before the Idol Awards. Mira presses Rumi to explain her doubts, leading to a heated argument where Rumi cruelly throws Mira's insecurities back at her. As demons attack the train, Mira gives her an ultimatum: **"If you're with us, prove it."** After the battle, she leaves Rumi with the parting words that they must face the crisis "together," emphasizing her unwavering belief in the group.
 
-## 3. 기타
+On the day of the awards, Mira opens up to her members, admitting that while she can be abrasive and quick-tempered, being with them makes her feel okay. However, during their performance, demons trick Mira and Zoey into leaving the stage, then expose Rumi's demonic markings to the world.
 
-### 캐릭터성과 대중 반응
+Upon seeing the truth, Mira's first reaction is one of self-deprecating sorrow: **"I knew it. I knew it was too good to be true."** When Rumi's desperate cries unleash demonic energy, a resigned Mira points her weapon at her friend, her face contorted in sadness.
 
-- 겉보기에는 **걸크러시형 캐릭터**로 보이지만, 실제로는 **자존감이 낮은 모습을 숨기기 위해 센 척을 하는 유형**이다. 이는 **루미와의 말다툼 중 폭로되며**, 말문이 막히는 장면에서 드러난다.
-- **영어 더빙**에서는 목소리 톤이 매우 허스키하고, **멧 갈라에 침낭을 두르고 나갈 정도의 배짱**을 지닌 인물로도 묘사된다.
-- 이런 **반항적이고 직설적인 모습이 팬들에게 인기가 많아**, 콘서트에서는 **10대 팬 3인조가 미라를 따라 팔짱을 끼고 눈을 치켜뜨며 말투를 흉내내는 장면**이 있다.
+Afterward, broken and lost, Mira is swayed by Gwi-ma's whispers targeting her deepest fears about being unworthy of family. She pushes Zoey away, declaring "There is no 'us' anymore," and is drawn into the crowd heading for the Saja Boys' concert.
 
----
+Just as the Honmoon is about to break, Rumi's song of self-acceptance cuts through the despair. Mira is the first to respond, her voice joining Rumi's with the lyric, **"I should've let the jagged edges meet the light instead."** HUNTR/X reunites, and in the final battle, Mira defeats Abby by yelling, **"No more abs!"** as she slices through his torso.
 
-### 가족과 정체성
+In the end, Mira, Rumi, and Zoey finally enjoy a bathhouse together. The scene symbolizes their growth: Rumi is open, Zoey is assertive, and Mira has softened her tough exterior.
 
-- 루미가 종족, 조이가 정체성 혼란에 대한 고민이 있다면, 미라는 **가족과의 관계**에 복잡한 감정을 가진다.
-- 〈Golden〉의 뮤직비디오에서 **성공한 팝스타가 되었음에도 가족이 자랑스러워하지 않고 못마땅한 표정**을 짓는 장면은, **금수저 가정에서 자란 자수성가형 캐릭터**라는 클리셰를 암시한다.
+### **5. Miscellaneous & Trivia**
 
----
-
-### 애비와의 관계
-
-- 작중에서 **사자 보이즈의 애비와 자주 엮인다.** 미라는 그의 **복근이 부담스러워**하며, **결국 무기로 그의 복근을 가르는 방식으로 퇴마**에 성공한다.
-- 두 사람 모두 **붉은 계열 머리카락을 지닌 비주얼 멤버**라는 공통점이 있으며, 팬들 사이에서 \*\*로맨스(또는 삼각관계)\*\*로 자주 연결된다. 팬들 사이에서는 \*\*미로마비(Miromabby)\*\*라는 커플링 이름으로 불리기도 한다.
-
----
-
-### 루미 & 조이와의 관계
-
-- 헌트릭스 내부 갈등의 한 축이 되었지만, 실제로는 **멤버들을 매우 아끼며 가족처럼 여긴다.**
-- **노리개 장식에는 루미와 조이의 모습이 달려 있으며**, 루미의 노리개는 반인반악령 혈통을 상징하는 반반 배색, 조이의 노리개에는 그녀가 좋아하는 **거북이 장식**이 달려 있다.
-
----
-
-### 제작 뒷이야기
-
-- 헌트릭스의 콘셉트를 구상할 당시, 메인 디자이너가 **K-POP 아이돌 마마무의 화사**를 참고했다는 인터뷰가 있다. 팬들은 **세 멤버 중 미라가 화사와 가장 유사한 이미지**를 지니고 있다고 분석한다.
-
----
-
-## 4. 관련 이미지나 콘텐츠 (추후 삽입 가능)
-
-- 🎤 〈Golden〉 M/V
-- 📸 가족사진 속 미라 (어린 시절)
-- 🎭 미라 따라하는 팬 소녀 3인방
-- 🐢 미라 & 조이의 노리개
-
----
+- **Inspiration:** Director Maggie Kang has stated that Mira's look was inspired by Korean model Ahn So-yeon.
+- **Role in Group:** It is implied that Mira is in charge of choreography, while Zoey writes the lyrics.
+- **Relationships & Ships:** Mira is frequently shipped by fans with Saja Boys members Romance and Abby. At a fansign, Romance stares at her intently, prompting her to mutter a threat under her breath before sweetly thanking the fan. The polyamorous ship name given by fans is "Miromabby."
+- **Devotion to HUNTR/X:** Having experienced conflict with her biological family, Mira treasures Rumi and Zoey. This is symbolized by her _norigae_, which has charms representing Rumi and Zoey attached to it.
+- **Real-Life Idol Reference:** A designer mentioned that Mamamoo's Hwasa was an inspiration for HUNTR/X, and fans believe Mira's image reflects Hwasa's the most.
+- **Appearance Details:** Mira wears stylish glasses with her casual outfits, a look that has been very popular with fans. Early storyboards suggest she may have originally been designed as a character who always wears glasses.
+- **Voice Actor's Insight:** Mira's Korean voice actress, Kim Do-young, stated her favorite scene was when Mira visits Rumi's room at night. She felt that Mira's surprisingly cute pajamas revealed a hidden side to her character, showing a desire for cuteness that she hides behind her tough image—a trait the actress personally related to.
+- **Fan Appeal:** Her combination of a harsh exterior and deep devotion to her members gives her a "reversal charm" (a tsundere-like quality) that has made her a fan favorite.

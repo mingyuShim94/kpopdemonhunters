@@ -1,105 +1,84 @@
----
-
-# 루미 (Rumi)
-
-## 프로필
-
-* **성별**: 여성
-* **국적**: 대한민국 🇰🇷
-* **연령**: 23\~24세 (감독 매기 강의 AMA 답변 기준, 미라보다 6개월 빠름)
-* **가족**:
-
-  * 친어머니: 류미영 (사망, 전설적인 헌터이자 선라이트 시스터즈의 멤버)
-  * 양어머니: 셀린 (류미영의 동료로 루미를 양육)
-  * 아버지: 악귀 (콘셉트 아트를 통해 확인)
-* **종족**: 인간 / 악귀 혼혈 (귀태)
-* **소속 그룹**: 헌트릭스 (HUNTR/X)
-* **포지션**: 리더, 메인 보컬
-* **성우**:
-
-  * 영어: 아덴 조 (Aarden Cho)
-  * 한국어: 신나리
-  * 일본어: 코토부키 미나코
-* **보컬 대역**: EJAE (에스파의 "Armageddon", 레드벨벳의 "Psycho" 작곡 참여 및 드라마 OST 활동)
+Based on the provided text, here is a complete English summary of the character Rumi, with all footnotes integrated.
 
 ---
 
-## 1. 개요
+### **Rumi**
 
-케이팝 데몬 헌터스의 주인공. 세계적인 케이팝 걸그룹 겸 헌터 팀 '헌트릭스'의 리더이자 메인 보컬. 그녀는 전대 헌터 그룹 '선라이트 시스터즈'의 전설적인 멤버 류미영의 딸로, 어릴 적 어머니를 잃고 셀린의 손에서 자라게 된다.
+| Category          | Detail                                                                                                                  |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| **Gender**        | Female                                                                                                                  |
+| **Weapon**        | Saingeom (Four Tigers Sword), later enhanced into a Chilseongkal (Seven Star Sword)                                     |
+| **Nationality**   | ![South Korea Flag](httpshttps://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg) Republic of Korea |
+| **Age**           | 23-24 years old (Born in 2001-2002)                                                                                     |
+| **Family**        | Ryu Mi-yeong (Biological Mother), Celine (Adoptive Mother)                                                              |
+| **Species**       | Half-Human, Half-Demon                                                                                                  |
+| **Group**         | HUNTR/X                                                                                                                 |
+| **Position**      | Leader, Main Vocalist                                                                                                   |
+| **Voice Actors**  | **EN:** Arden Cho, Rumi Oak (child) <br> **KR:** Shin Na-ri <br> **JP:** Minako Kotobuki                                |
+| **Singing Voice** | **EN/KR:** EJAE <br> **JP:** Tsutsumi Ikuko                                                                             |
 
----
+### **1. Overview**
 
-## 2. 능력
+Rumi is the main protagonist of _K-Pop Demon Hunters_. She is the leader and main vocalist of the world-renowned K-pop group HUNTR/X. She is the daughter of Ryu Mi-yeong, a member of the previous generation of hunters known as the Sunlight Sisters. After her mother's death, Rumi was taken in and raised by her mother's colleague, Celine.
 
-### 신체능력
+### **2. Abilities**
 
-루미를 포함한 헌트릭스 멤버들은 일반 인간을 뛰어넘는 신체 능력을 지녔다. 건물 사이를 파쿠르로 이동하거나, 낙하산 없이 비행기에서 착지하는 등의 초인적인 활동이 가능하며, 은밀하게 움직이는 침투 능력도 뛰어나다.
+Rumi wields a _Saingeom_ (a spirit-slaying sword) as her weapon. Like the other members of HUNTR/X, she possesses physical abilities far beyond that of a normal human. She is capable of parkour-level feats, leaping between buildings with complete silence, demonstrating mastery in stealth. She can hold her own in a direct power struggle with Jinu and can even skydive from a plane without a parachute, landing on stage completely unharmed.
 
-### 사인검
+Her combat sense is exceptionally sharp. During her first battle with Jinu, she was able to predict his teleportation attacks and counter them. This skill was so formidable that when Jinu later sought to speak with her alone, he had to lure her with a mannequin, implying a direct ambush would have resulted in his own serious injury. Even when they met at Naksan Park, Jinu was startled by her sudden appearance, unable to sense her approach. This explains why Jinu, a high-ranking demon, chose an indirect "idol showdown" strategy rather than a direct confrontation with HUNTR/X.
 
-루미의 주무기. 진우가 대신 희생한 이후 한층 강화된 형태로 다시 등장하며, 검의 문양이 별자리에서 치우천왕 문양으로 바뀐다. 이로써 루미는 헌터로서의 힘뿐 아니라 진우의 영혼까지 품은 전사로 거듭난다.
+Later in the story, her _Saingeom_ is enhanced, transforming into a massive _Chilseongkal_ (Seven Star Sword) engraved with the image of a _dokkaebi_ (Korean goblin/demon).
 
-### 보컬 능력
+As the leader and main vocalist of HUNTR/X, Rumi is often depicted as more powerful than her two bandmates. The hunters' exorcism method involves igniting the spirits of people through music and using the resulting bond to create a protective barrier called the _Honmoon_. As the main vocalist, Rumi's power is portrayed as the strongest in this process.
 
-퇴마 방식이 음악과 사람들의 유대를 통해 이루어지기 때문에, 메인 보컬인 루미는 가장 강한 퇴마 능력을 가진 인물로 묘사된다. 고음 후렴 파트는 루미에게 몰려 있으며, 특히 곡 「Golden」과 「How it's done」에서 극단적인 고음을 보여준다.
+#### **2.1. Idol Abilities**
 
----
+As an idol, Rumi is a monster-class talent. While officially the main vocalist, she is a "hexagonal center" who perfectly covers all areas, including dance, rap, and visuals. In the animation, she performs live vocals for songs that even professional singers would find difficult to sing while standing still, all while executing intense choreography.
 
-## 3. 작중 행적
+It is inferred that she underwent rigorous training from a young age under Celine, who was a top idol of her time. Furthermore, despite it being a children's animation, her actions in the film suggest she also serves as a producer for HUNTR/X.
 
-### 과거
+### **3. In-Story Arc**
 
-루미는 어릴 적 어머니를 잃고 셀린에게 맡겨져 자란다. 어린 시절 문양은 작고 쉽게 숨길 수 있었지만, 성인이 되면서 상반신을 뒤덮을 정도로 퍼졌다. 이로 인해 평소 목까지 올라오는 옷을 입으며 이를 숨긴다.
+**Warning: Spoilers ahead.**
 
-### 비행기 하이재킹 & 공연
+Born to Ryu Mi-yeong, a member of the hunter group Sunlight Sisters, Rumi lost her mother at a young age and was raised by her mother's colleague, Celine. Following in her mother's footsteps, she becomes both an idol and a hunter, leading HUNTR/X as its main vocalist. On the night of their World Tour final show, Rumi and her members discover their private jet has been hijacked by demons disguised as flight crew. They perform their song "How It's Done" while effortlessly defeating the demons, making a spectacular parachute-free landing on their concert stage. During the performance, a corner of the _Honmoon_ barrier begins to glow gold, signaling that its final, perfect form is near.
 
-월드 투어 마지막 공연 직전, 전용기가 악귀에게 하이재킹당한다. 헌트릭스는 「How It’s Done」을 부르며 적들을 무찌르고 낙하산 없이 무대에 등장하는 전설적인 오프닝을 만든다. 이 과정에서 황금 혼문이 거의 완성되었음을 감지한다.
+Excited by this, Rumi unilaterally announces their next single, "Golden," a song she believes will complete the Golden Honmoon, without consulting her members. While Mira and Zoey are dismayed at their vacation being cut short, they celebrate when their manager, Bobby, informs them of the song's overwhelmingly positive public reception.
 
-### 「Golden」 발표
+However, behind the scenes, Rumi harbors a secret. As revealed when she changes into her stage outfit, her arms are covered in demonic markings. Rumi is a cambion, born to a human mother and a demon father, and these markings are the proof. On Celine's advice, she has hidden them her entire life. While the markings were small enough in her youth to be covered by short sleeves, they have now spread to cover most of her upper body. This is why she has repeatedly declined invitations from Mira and Zoey to go to a public bathhouse. She pushed for the "Golden" single so urgently because Celine taught her that completing the Golden Honmoon would sever her demonic lineage and make the markings disappear.
 
-루미는 멤버들과 상의 없이 신곡 「Golden」을 공개한다. 이는 황금 혼문을 완성해 자신의 악귀 혈통과 문양을 제거하기 위한 결정이었다. 그러나 이 독단적인 결정은 미라와 조이와의 갈등을 유발한다.
+Contradicting the song's lyrics, "No more hiding, I'll be shining like I'm born to be," Rumi covers her markings and strengthens her resolve. However, during rehearsal, her voice fails on a high note. She discovers the markings have spread to her neck. Terrified of losing her career, she runs to the rooftop in despair, crying out about the impossibility of fixing the world and herself when her voice is gone. During this outburst, her demonic power flares, causing a red energy to spread across the _Honmoon_.
 
-### 정체 드러남
+The live performance is canceled, but her members comfort her. The group visits a traditional healer to fix her voice. The healer notes that Rumi has built so many walls around herself that he cannot see her true nature, an allusion to the secret she hides even from her friends. Afterward, they encounter the rival group Saja Boys and realize they are demons. In the ensuing confrontation in a men's bathhouse, Rumi's sleeve is torn, revealing her markings to the Saja Boys' leader, Jinu. In a surprising turn, Jinu pulls her into an embrace and uses a towel to cover the markings before her own members can see.
 
-리허설 중 고음이 나오지 않음을 느끼고, 문양이 목까지 퍼진 것을 확인한 루미는 좌절한다. 이후 사자 보이즈를 쫓는 과정에서 문양이 드러나고, 이를 진우가 가려주며 도와준다. 이후 루미는 진우와 만남을 거듭하며 악귀에 대한 시각이 변화하게 된다.
+As the Saja Boys' popularity weakens the _Honmoon_, Rumi suggests creating a diss track to defeat them at the upcoming Idol Awards. That night, she receives a letter from Jinu, written in traditional vertical script, asking to meet. She goes, intending to defeat him, but instead learns of his tragic past. This encounter, along with his act of covering her secret, causes her to question the black-and-white morality of mercilessly killing all demons. This creates a rift between her and her bandmates, particularly Mira.
 
-### 갈등과 붕괴
+In subsequent meetings, Rumi proposes a deal to Jinu: if he lets HUNTR/X win, the completed Golden Honmoon will sever the connection to the demon world, freeing him while also curing her. When Jinu questions if the _Honmoon_ can protect her, Rumi confesses, "You made a mistake trying to protect your family, but my very existence is a mistake." Jinu replies, "I don't think you're a mistake." This emotional vulnerability allows her voice to gradually return. On the eve of the awards show, she and Jinu sing "Free" together, resolving to confront their secrets and overcome them. Jinu promises that the Saja Boys will not aim for victory.
 
-아이돌 어워드 무대 도중 루미의 정체가 폭로된다. 계획된 무대는 방해받고, 문양이 대중과 멤버들 앞에 드러난다. 이후 진우에게 배신당했다고 생각한 루미는 악귀화되기 시작하고, 헌트릭스 내에서도 고립된다.
+On the day of the Idol Awards, the members of HUNTR/X share their true feelings and resolve their conflicts, though Rumi still cannot bring herself to reveal her secret. They decide to perform "Golden" instead of their diss track, "Takedown." With her emotional wounds healed, Rumi flawlessly delivers her solo part. However, Mira and Zoey are lured away from the stage by demons in a ploy involving a fake kidnapping of their manager. At the song's climax, the stage lights go out. When they return, the music has switched to "Takedown," and demons disguised as Mira and Zoey are on stage. They use the lyrics meant for Saja Boys to attack Rumi, forcibly tearing off her jacket and exposing her demonic markings to the world.
 
-### 각성
+Fleeing backstage, Rumi tries to explain to her shocked members that the markings will disappear once the _Honmoon_ is complete. But every time she raises her voice, demonic energy radiates from her, causing her friends to aim their weapons at her in fear. Betrayed by her friends and Jinu, a furious Rumi confronts him. Jinu coldly states that everything was a lie to gain her trust. Crushed by everyone she trusted, Rumi mentally breaks down and begins to transform, her body becoming more demonic as she gains the ability to teleport.
 
-셀린에게 자신을 죽여달라 간청하지만, 거부당한다. 이 과정에서 셀린과도 갈등을 빚게 되며, 억압적인 황금 혼문 대신 새로운 혼문을 만들기로 결심한다. 남산에서 열린 사자 보이즈의 콘서트에 난입해 자신의 정체성을 회복하며 노래한다.
+She goes to Celine and begs her to kill her before she destroys the _Honmoon_ herself. Celine, who loves her like a daughter, refuses but hesitates to touch her in her semi-demonic state. Celine insists they can still hide the truth and complete the Golden Honmoon. In response, Rumi declares she is done hiding. She proclaims, **"If this is the Honmoon I'm supposed to protect, I'm glad to see it destroyed,"** and teleports away, leaving Celine in despair.
 
-### 최종 결전
+Meanwhile, HUNTR/X is disqualified from the awards. The Saja Boys hold a special concert at Namsan Tower, where their music, amplified by the crowd's despair, begins to shatter the _Honmoon_. Just as it's about to break, Rumi appears. When the demon king Gwi-ma mocks her, she calmly replies, **"Then, we'll just make a new one."** She begins to sing, and having accepted her true self, her powers return stronger than ever. Her demonic markings transform from a sinister dark purple to a radiant rainbow color. Hearing her song, Mira and Zoey break free from Gwi-ma's influence. Reunited, HUNTR/X engages in a final battle. Jinu, moved by Rumi's courage, sacrifices himself to save her from Gwi-ma's attack, giving his soul to her. His soul, now pure blue like a human's, merges with her sword, transforming it into a giant, _dokkaebi_-engraved _Chilseongkal_.
 
-헌트릭스와 사자 보이즈의 최종 전투에서 진우는 루미를 지키기 위해 희생한다. 진우의 혼은 루미의 검에 깃들고, 루미는 강화된 사인검으로 귀마를 물리친다. 이후 헌트릭스는 명성을 되찾고 3개월 휴식기에 들어간다.
+With this newfound power and the support of their fans, HUNTR/X defeats Gwi-ma. Three months later, a healed Rumi enjoys a day at the bathhouse with Mira and Zoey, finally able to be open about who she is. This scene shows the growth of all three members: Rumi is no longer hiding, Zoey is learning to speak her mind directly, and Mira has tempered her harshness. Though they plan a vacation, they immediately abandon it to hold a street fan meeting for young fans. In the end, her markings remain, but they are now accepted by her friends and even featured on their comeback banner.
 
----
+### **4. Miscellaneous**
 
-## 4. 기타
-
-- 루미는 어릴 때부터 줄곧 악귀의 문양을 숨기며 살아왔다. 문양은 등 → 팔 → 목까지 확산되었으며, 공연 의상 등으로 이를 감추려 했다.
-- 악귀인 아버지와의 사연은 밝혀지지 않았으나, 어머니가 사랑했던 인간이 악귀가 되었을 가능성이 제기되고 있다.
-- 혼문은 보호와 평화를 상징하지만, 루미에게는 억압과 강요로 작용하였다. 따라서 혼문을 새로 만들겠다는 선언은 자기 해방의 상징이다.
-- 작품 초반 김밥 냄새를 맡는 루미의 모습은 밈으로 유행하며 “Rumi sniffing gimbap”이라는 별칭이 생겼다.
-- MBTI는 ENFJ 혹은 ENTJ로 추정되며, 머리카락은 무릎까지 닿는 긴 땋은머리로 후드를 자주 눌러쓴다.
-- 노래 파트 대부분이 루미에게 집중되어 있으며, 고음 후렴구는 진성으로 3옥타브 A5, 휘슬로 4옥타브 D까지 도달한다.
-- 팬들 사이에서는 진우와의 커플링 ‘루진우(Rujinu)’가 인기를 끌고 있으며, 팬미팅용 티셔츠 디자인은 감독이 직접 그린 것으로 알려져 있다.
-- 결말 이후 루미의 문양은 사라지지 않고 옅은 무지개색으로 변화한다. 이는 정체성을 인정했다는 상징으로 해석되거나, 귀마가 아직 완전히 사라지지 않았다는 복선일 수도 있다.
-
----
-
-## 대표 명대사
-
-> **"No more hiding, I'll be shining like I'm born to be."**
-> 더 이상 숨지 않을 거야. 나는 태어난 대로 빛날 거야.
-
-> **"If this is the Honmoon I'm supposed to protect, I'm glad to see it destroyed."**
-> 이게 내가 지켜야 할 혼문이라면, 무너지는 게 차라리 나아.
-
-> **"So we can make a new one."**
-> 그럼, 다시 새로 만들면 돼.
-
----
+- The backstory of how Rumi's parents met and fell in love is never revealed, leaving a significant mystery, especially since hunters view demons as pure evil.
+- Rumi is the only character with demonic blood who is immune to Gwi-ma's voice, a fact Gwi-ma himself notes. Fans have theorized that her mother may have embedded an incomplete Golden Honmoon within Rumi at the cost of her own life, which would also explain why Rumi's own soul is never visually depicted in the final battle.
+- Her family's ancestral home and her mother's tomb appear to be on Jeju Island, based on the traditional _sandam_ grave style and the presence of _dol hareubang_ statues in flashbacks.
+- Sequel hooks remain, as Gwi-ma was likely only temporarily banished, not destroyed. The _Honmoon_ was restored as a rainbow-blue barrier, not the prophesied pure golden one, and Rumi's markings, which Gwi-ma called "my markings," did not disappear.
+- The spread of her markings is directly linked to her emotional state and stress levels.
+- Voice actress Arden Cho stated she wanted Rumi to be as cool as real-life K-pop groups like BLACKPINK, aespa, and LE SSERAFIM.
+- In fan works, Rumi is most often paired with Jinu (a ship named "Rujinu" by fans in-universe) or with Mira, with whom she had significant conflict.
+- Rumi's singing vocalist, EJAE, is a Korean composer and singer who has worked on songs for groups like aespa ("Armageddon") and Red Velvet ("Psycho").
+- A two-second scene early in the film where Rumi exaggeratedly sniffs kimbap became a viral meme. The meme was even acknowledged in-universe, with a fan shown using fanart of the scene as their profile picture. The simple but expressive gag has led to numerous fanart parodies with other characters.
+- The cartoonishly exaggerated way she eats the kimbap whole was, according to director Maggie Kang, an intentional choice to create funny and relatable female characters.
+- As the main vocalist, Rumi sings the most challenging parts of their songs. "Golden" features sustained notes in the 3rd octave, hitting a solid A5 repeatedly. "How It's Done" also hits an A5 and includes a whistle note at D6. This has led to fan jokes that her voice problems were not due to a curse, but simply from vocal nodules.
+- Her signature braided hairstyle, which is even longer than Mira's already very long hair, is inherited from her mother, Ryu Mi-yeong. The design is likely inspired by the traditional Korean _gache_ wig.
+- Rumi's initial design was created in 2016 by director Maggie Kang's husband, artist Rad Sechrist, for a personal project called "Plastic Walrus." Kang loved the design so much she adapted it for the film.
+- Rumi's name was given to director Maggie Kang's real-life daughter, not the other way around. The project was in development for nine years, long enough for her daughter to grow old enough to voice the younger version of the character.
+- According to a concept artist, her surname is confirmed to be Kang, making her full Korean name "Kang Rumi."

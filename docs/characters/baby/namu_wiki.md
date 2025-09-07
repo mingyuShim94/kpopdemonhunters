@@ -1,62 +1,51 @@
----
-
-# 베이비 (케이팝 데몬 헌터스)
-
-* **성별:** 남성
-* **국적:** 조선
-* **종족:** 악령 (저승사자)
-* **소속 그룹:** 사자 보이즈 (SAjA Boys)
-* **포지션:** 메인래퍼, 서브보컬
-* **성우:** 미국 성우 Danny Chung
-* **노래:** Danny Chung 담당
-
-## 1. 개요
-
-넷플릭스 오리지널 애니메이션 \*\*《케이팝 데몬 헌터스》\*\*의 주인공 그룹 **HUNTR/X**의 대항마 그룹 **사자 보이즈**의 멤버.
-
-민트색 머리를 한 중성적 미소년 계열의 캐릭터로, 귀엽고 앳된 얼굴과는 상반되는 중저음의 보이스로 래핑을 때려 박는 갭 차이가 큰 매력 포인트다.
-
-작중 대사는 거의 없으며, 실제로 **유일한 대사**는 버라이어티 쇼에서 **매운맛 챌린지**를 할 때 했던 아기 옹알이 같은 **"구구가가응애응애"** 한 마디뿐이다. 이조차도 예명인 ‘베이비’와 어울리는 아기 흉내일 뿐이며, 실제 대사는 매우 시크한 톤으로 말한다. 한국 성우는 밝혀지지 않았다.
-
-## 2. 작중 행적
-
-* '아기'라는 예명답게 **대사가 가장 적은 캐릭터**이다.
-* 다른 멤버들이 헌트릭스 멤버들과 자주 엮이는 데 반해, **베이비는 누구와도 엮이지 않는 유일한 캐릭터**이다.
-* 예능 프로그램 **《우리랑 놀자!》** (주간 아이돌 시즌 1 패러디)에서 **매운 것 먹기 대결** 중 진행자를 이기며 1등을 차지했고, 노래에서도 인상적인 **단독 샷**을 여럿 받았다.
-* 조이와 미스터리의 커플링인 **Zoeystery** 설정에서 **2세 역할**로 등장한 장면이 짧게 존재한다.
-* 팬사인회 시퀀스에서는 팬이 준 꽃다발에 **볼하트를 날리며 팬서비스**를 선보인다.
-* 애비 다음으로 **진우 어깨에 손을 많이 올리는 캐릭터**다.
-* 《우리랑 놀자!》에서 헌트릭스를 피해 도망치다가 **애비에게 업혀가는 모습**으로 보아, 평소에는 의외로 행동이 굼뜬 성격으로 묘사된다.
-* **다른 사자 보이즈 멤버들은 소멸 장면이 묘사되지만**, 베이비는 로맨스와 함께 **소멸 묘사가 생략**되었다.
-
-## 3. 여담
-
-* **오컬트적 모티브**는 죽은 어린아이가 귀신이 된다는 설화 속 존재인 **태자귀**로 추정된다.
-* 늘 **무언가를 먹고 있는 모습**이 자주 등장하는데, 이는 **입이 험해서 말을 못 하게 하려고 계속 먹을 것을 준다는 설정**이 있다.
-* 이 설정은 태자귀의 창작설화 ― 아이를 대나무 통에 가둬 굶기며 음식에 대한 집착을 극대화해 만든다는 이야기 ―와 연결된다.
-* **머리 색이 초록색과 비슷한 민트색**인 것도 이를 뒷받침한다.
-* 감독 인터뷰에 따르면 **베이비는 사자 보이즈의 막내**이며, 시간이 지날수록 **진우와 자웅을 겨루는 멤버로 부상**하고 있다고 한다.
-* 귀여움 + 막내 + 시크 + 갭 + 중저음 + 민트색 + 메인래퍼 + 킬링파트 담당이라는 **반전매력 요소**들이 합쳐져 많은 팬들에게 **“볼수록 빠져든다”는 평**을 얻고 있다.
-* 《Your Idol》 공연에서 베이비의 랩 장면을 담당한 애니메이터는 **음악 방송 카메라 워킹을 참고**했으며, **동작 레퍼런스 영상 없이** 바로 애니메이션을 제작했다고 한다.
-* ‘핫’한 장면인지 아닌지 판단하기 위해 **케이팝을 좋아하는 자신의 약혼녀에게 여러 차례 확인**을 받기도 했다.
-
-## 4. 캐릭터 디자인 관련
-
-캐릭터 디자이너 **마리온 보르데인**은 인터뷰에서 \*\*“베이비 사자 캐릭터는 BTS 지민의 귀여운 이미지에서 영감을 받았다”\*\*고 밝히며 팬들의 큰 관심을 모았다.
-
-![베이비 사자와 BTS 지민 비교 이미지](attachment://file-PpJGuZcaS76X6RanAmTeog.png)
-
-## 5. 2차 창작에서의 특징
-
-* 주로 **솔로 속성**으로 그려지는 경우가 많다.
-* 팬사인회 시퀀스에서 루미/진우, 미라/애비·로맨스, 조이/미스터리·베이비 구성으로 짝이 지어지는데,
-
-  * 조이는 베이비에게는 **적대적인 태도**를 보이면서,
-  * 정작 미스터리에게는 **헤벌레한 반응**을 보이는 일관된 패턴이다.
-* 그 결과 **조이/미스터리 중심으로만 엮이고**, **베이비는 소외**되는 구조가 생긴다.
-* 또한 애비와 로맨스는 미라와 함께 **역하렘**으로 묘사되는 경우도 많아,
-
-  * 최종적으로는 **진우/루미**, **애비·로맨스/미라**, **미스터리/조이** 구성으로 커플이 완성된다.
-  * **베이비만 혼자 남게 되는 경우가 잦다.**
+Of course. Here is a meticulously detailed English summary of the character Baby, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
+
+### **Baby**
+
+| Category             | Detail                    |
+| :------------------- | :------------------------ |
+| **Gender**           | Male                      |
+| **Nationality**      | Unspecified               |
+| **Species**          | Demon                     |
+| **Affiliated Group** | Saja Boys                 |
+| **Position**         | Main Rapper, Sub-Vocalist |
+| **Voice Actor**      | **EN:** Danny Chung       |
+| **Singing Voice**    | Danny Chung               |
+
+### **1. Overview**
+
+> "Googoo gaga."
+
+Baby is a character in _K-Pop Demon Hunters_. He is the main rapper for the demon idol group, Saja Boys. With his mint-green hair and boyish good looks, he serves as the group's _maknae_ (youngest member), a role he shares with Zoey in the rival group HUNTR/X.
+
+Fans have praised the "gap moe" (a charm arising from contrast) of his character: a cute, baby-faced appearance paired with a deep, baritone rapping voice.
+
+### **2. In-Story Arc**
+
+Reflecting his stage name, "Baby," he has the fewest lines of dialogue in the group. While he isn't deeply involved in the main plot's ships, he is sometimes included in a "Mystery-Zoey-Baby" love triangle and is occasionally depicted in fan works as the child of Mystery and Zoey.
+
+Despite his minimal dialogue, he receives several memorable moments. He wins a spicy food challenge on a variety show and, as the group's rapper, gets impressive solo shots in every song. Notably, his solo rap in "Your Idol" coincides with the dramatic descent of the demon king, Gwi-ma, giving him a key part in the film's climax.
+
+He is also shown performing idol fanservice, like making a "cheek heart" for a fan who gives him a bouquet. In a parody of the variety show _Weekly Idol_, he is seen getting a piggyback ride from his bandmate Abby as they flee from HUNTR/X.
+
+Like his bandmate Romance, Baby's final fate is not explicitly shown on screen; he is simply omitted from the final battle.
+
+### **3. Miscellaneous & Trivia**
+
+- **Occult Motif:** His demonic motif is believed to be the _Taeja-gwi_, the ghost of a child, specifically one created through the dark ritual of _Yeommae_, where a starved child is killed to create a powerful spirit. This theory is supported by his frequent on-screen eating, his "baby" concept, and his mint-green hair (green being associated with the bamboo tube used in the ritual).
+
+- **High Spice Tolerance:** He is incredibly good at handling spicy food, calmly winning a spicy sauce challenge while his bandmates were in agony.
+
+- **Growing Popularity:** Despite his limited screen time and having only one line of dialogue ("Googoo gaga"), his popularity has grown to rival even Jinu's. Fans are drawn to his "gap moe" appeal: the cute, mint-haired _maknae_ with a chic personality, a professional on-stage persona, and a deep rapping voice. Because his fate was left ambiguous, many fans hope for his return in a sequel.
+
+- **Animation Details:** The animator for Baby's rap scene in "Your Idol" studied K-pop music show camera work but created the movements without a specific video reference, instead getting feedback from his K-pop-loving fiancée to ensure it looked "hot."
+
+- **Design Inspiration:** The character designer, Marion Bordeyne, confirmed that Baby's design was inspired by **Jimin of BTS**. This news became a hot topic among K-pop fans, who drew comparisons between the two.
+
+- **Group Hierarchy:** Despite being the _maknae_, Baby is not the shortest member of the group; character model sheets show that Mystery is slightly shorter.
+
+- **Fan Works:** In fan creations, he is often depicted in various scenarios, including solo art, as part of the Mystery-Zoey-Baby love triangle, or even in a humorous "Abby x Baby" pairing (playing on the Korean meaning of "Abby" as "father").
+
+- **Voice Actor:** Danny Chung is the only voice actor for the Saja Boys who performs both the character's speaking and singing parts.

@@ -1,55 +1,47 @@
----
-
-# 로맨스 (케이팝 데몬 헌터스)
-
-- **성별**: 남성
-- **국적**: 조선
-- **종족**: 악령 (저승사자)
-- **소속 그룹**: 사자 보이즈
-- **포지션**: 서브보컬 (곡들의 최고음역대를 담당하며, 서브보컬임에도 불구하고 산발한 화음과 코러스를 완벽히 수행함)
-- **성우**:
-
-  - 🇺🇸 조엘 킴 부스터 (버라이어티 쇼 및 아이돌 어워즈 진행자와 중복)
-  - 🇰🇷 최현식
-
-- **노래**: samUIL Lee
+Of course. Here is a meticulously detailed English summary of the character Romance, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-## 1. 개요
+### **Romance**
 
-케이팝 데몬 헌터스의 <헌트릭스>의 대항마인 <사자 보이즈>의 멤버. 그룹 내 포지션은 서브보컬이다.
+| Category             | Detail                                              |
+| :------------------- | :-------------------------------------------------- |
+| **Gender**           | Male                                                |
+| **Nationality**      | Unspecified (as a human)                            |
+| **Species**          | Demon                                               |
+| **Affiliated Group** | Saja Boys                                           |
+| **Position**         | Lead Vocalist (Presumed)                            |
+| **Voice Actors**     | **EN:** Joel Kim Booster <br> **KR:** Choi Hyun-sik |
+| **Singing Voice**    | samUIL Lee                                          |
 
----
+### **1. Overview**
 
-## 2. 상세
+> "Hm. We keep meeting like this."
 
-5대 5 핑크색 하트 모양 가르마 헤어를 하고 있으며, 이름 ‘로맨스’답게 느끼한 스타일의 미청년 이미지가 특징이다.
+Romance is a character in _K-Pop Demon Hunters_. He is a member of the demon idol group, Saja Boys, and is presumed to be the group's lead vocalist. His official position has not been confirmed, but fans speculate he is the lead vocalist due to his significant vocal parts in their songs, where he often handles the highest notes, harmonies, and choruses, second only to Jinu.
 
-스토리상 사자 보이즈 멤버들은 진우를 제외하고 비중이 적은 편인데, 그 중에서도 로맨스의 비중은 매우 적다. 예를 들어:
+### **2. Character Details**
 
-- **애비**는 복근 담당으로 각종 노출 씬에서 강렬한 인상을 남겼고,
-- **베이비**는 매운 것 먹기 대결에서 1등을 차지했으며,
-- **미스터리**는 조이와의 커플링이 뚜렷하게 묘사되었다.
+Romance is a handsome young man with an androgynous appearance, best known for his distinctive pink, heart-shaped, 50/50 parted hairstyle.
 
-반면, 로맨스는 합동 팬사인회 장면에서 대사를 한 정도 외에는 로맨스를 비롯한 관계나 드라마틱한 에피소드가 거의 없다. 팬들 사이에서는 미라와 엮어 "Miromabby" (미라+로맨스+애비)라는 삼각관계 커플링이 생겨났지만, 실제로는 미라가 애비의 복근에 반한 정도이며 로맨스와는 팬사인회에서의 대화 외엔 교류가 없다.
+Among the Saja Boys members, who have limited screen time outside of Jinu, Romance has one of the smallest roles. Unlike Abby (the "abs guy"), Baby (the rap rival), and Mystery (Zoey's love interest), Romance lacks a clear narrative hook. While he is part of the "Miromabby" love triangle ship with Mira and Abby, his actual interaction with Mira is limited to a brief conversation at a fansign. Despite this, he seems genuinely interested in her, as he is shown staring at her throughout the entire event.
 
-하지만 **무대 위에서는 의외로 비중이 크다**:
+On stage, however, his presence is significant. In "Soda Pop," he has the longest verse and performs high-note ad-libs with Mystery. In "Your Idol," he sings the chorus and has a memorable dance sequence where he sweeps his hand across the brim of his _gat_, which became a fan-favorite moment. His on-stage image also shows the most dramatic transformation; he shifts from a soft and mellow persona in "Soda Pop" to a sharp and dark presence in "Your Idol."
 
-- `Soda Pop`에서는 영상 분량은 가장 적지만 가사의 분량이 가장 길다. 특히 미스터리의 파트와 더불어 “넌 내꺼야 이미 알고 있잖아” 부분이 감미롭다는 평가를 받는다.
-- `Your Idol`에서는 후렴구를 맡았으며, 갓을 쓴 채 앞으로 등장하는 안무 장면이 화제가 되어 스포트라이트를 받았다.
+His visual style appears to be more popular with international fans than with Korean audiences, where his "greasy" look and longish hair have been met with some resistance.
 
-두 곡 모두 컨셉에 따라 로맨스의 이미지 변화가 크게 드러난다. `Soda Pop`에서는 부드럽고 그윽한 인상, `Your Idol`에서는 날카롭고 어두운 분위기를 연출하며 다른 멤버들에 비해 이미지 갭이 크다.
+Like his bandmate Baby, Romance's final fate is not explicitly shown on screen; he is simply omitted from the final battle after being countered by Mira.
 
-틱톡 등의 해외 커뮤니티에서는 로맨스를 최애로 꼽는 팬들이 간간이 보이며, **비주얼이 한국인보다 외국인 팬들에게 더 매력적으로 다가가는 듯하다**.
+### **3. Miscellaneous & Trivia**
 
-기타 멤버들은 소멸 장면이 명시적으로 묘사된 반면, **로맨스와 베이비는 소멸 장면이 생략되었다**.
+- **Occult Motif:** Fans speculate his demonic motif is the _mongdal gwisin_ (bachelor ghost), a spirit of a man who died unmarried. Another theory connects him to _Jigwi_, a Korean fire spirit associated with unrequited love, linking him to the fire-based demon king, Gwi-ma.
 
----
+- **Group Hierarchy & Personality:** An official fanart by the art director suggests Romance is older than Abby but younger than Jinu. The art director also jokingly stated that Romance is actually bad at learning choreography. While his singing voice is a beautiful falsetto, his speaking voice is a deep baritone.
 
-## 3. 여담
+- **Fan Reception & Image:** While other members have clear archetypes (leader, muscle, etc.), Romance is often seen as the member without a distinct trait, aside from his impactful hairstyle. However, he is a core vocal member of the group. Fans have developed a "motherly" image for him, as he is often seen with the younger members, Mystery and Baby, resting their arms on his shoulders.
 
-- 로맨스의 오컬트적 모티브는 \*\*총각귀신(몽달귀신)\*\*으로 추정된다. 작중에서 등장하는 혼불형 귀신 '귀마'와의 연결성을 고려하면, **불귀신인 지귀**일 가능성도 있다.
-- 국내에서는 **스트리머 카라미를 닮았다는 우스갯소리로 화제가 되었으며**, 로맨스 본인도 이에 반응 영상을 올렸고, **닛몰캐쉬의 댄스 영상에 출연해 직접 춤을 추는 모습도 공개**하였다.
+- **Design Reference:** His design is said to be inspired by Yeonjun of TOMORROW X TOGETHER, particularly during his pink hair era. Some international fans also see a resemblance to Felix of Stray Kids. His hairstyle is also very similar to that of Moon Hee-jun from the 1st-generation K-pop group H.O.T.
 
----
+- **Korean Meme:** In Korea, he became a hot topic for his resemblance to the streamer Karami, who has since reacted to the character and even performed his dance moves.
+
+- **Japanese Dub:** In the Japanese dub, he uses the personal pronoun "boku."

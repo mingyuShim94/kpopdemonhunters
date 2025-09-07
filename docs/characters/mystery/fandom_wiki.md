@@ -1,105 +1,67 @@
----
-
-# Mystery Saja
-
-> “Thank you, we really feed off your energy.”
-> \~ Mystery thanking his fans, as well as alluding to his true nature.
-
-**Mystery Saja** is a major antagonist in the 2025 fantasy musical film *K-Pop Demon Hunters*.
-He is a member of the **Saja Boys**, a demonic boy band sent by **Gwi-Ma** to defeat **The Huntrix** and help him conquer the human world.
-He is also **Zoey's crush**.
-
-He was voiced by **Alan Lee**, who also voiced **New Era Shang Tsung** in *Mortal Kombat 1*, including his **Titan counterpart** (excluding before MK11).
+Of course. Here is the provided text about the character Mystery Saja, organized and presented in English.
 
 ---
 
-## 🆔 Identity
+### **Mystery Saja**
 
-- **Full Name**: Unknown
-- **Alias**: Mystery Saja
-- **Origin**: _K-Pop Demon Hunters_
-- **Occupation**:
+> "And to our fans, thank you. We really feed off your energy."
+> — Mystery thanking the Saja Boys' fans.
 
-  - Member of the Saja Boys
-  - Singer
-  - Servant of Gwi-Ma
+| Category          | Detail                                           |
+| :---------------- | :----------------------------------------------- |
+| **Name**          | Mystery Saja (미스터리 사자)                     |
+| **Also Known As** | Mystery                                          |
+| **Species**       | Demon                                            |
+| **Occupation**    | K-pop Idol, Servant of Gwi-Ma                    |
+| **Team**          | Saja Boys                                        |
+| **Voice Actors**  | **EN:** Alan Lee (Dialogue), Kevin Woo (Singing) |
 
----
+### **1. Overview**
 
-## 🔥 Powers / Skills
+Mystery Saja is the lead vocalist of the Saja Boys and serves as a minor antagonist in the film _K-Pop Demon Hunters_. He is a demon in disguise who poses as a K-pop idol to steal fans from the demon-hunting girl group HUNTR/X. He also briefly serves as a love interest for HUNTR/X member Zoey. He is voiced by Alan Lee, with Kevin Woo providing his singing voice.
 
-- Shapeshifting
-- Singing skills
-- Charisma
-- Pyrokinesis
-- Demonic physiology
-- Demonic magic
-- High intelligence
+### **2. Appearance**
 
----
+Mystery is a man of average height with a slim build. His most distinctive feature is his long, periwinkle-colored hair with bangs that completely cover his eyes. Though much of his face is obscured, he appears to have a small nose and a soft jawline. In his demon form, he has purple skin with glowing patterns, clawed hands, sharp teeth, and hidden tusks.
 
-## 🎯 Goals
+As an idol, Mystery wears stylish clothing, including sweater vests over sleeveless turtlenecks and ripped skinny jeans. He paints his nails purple. In his true demon form, he wears a tattered black _hanbok_ and a _gat_. During the "Your Idol" performance, he blends these styles, wearing a crewneck shirt and asymmetrical pants under a traditional overcoat.
 
-- Aid Gwi-Ma in his goals
-- Upstage The Huntrix and ruin their reputation
-- Kill Zoey
+### **3. Personality**
 
-> _(All failed)_
+Mystery is portrayed as the most enigmatic member of the Saja Boys. He maintains a reserved and stoic persona, striking bashful poses and remaining mostly silent during public appearances. He rarely shows emotion, with rare exceptions like a faint smile or a single tear during a spicy food challenge.
 
----
+Despite his idol persona, Mystery struggles to convincingly mimic human behavior. His movements are sometimes rigid, and he exhibits unexpected animalistic traits, such as barking at a fan without provocation during a signing event.
 
-## 🧨 Crimes
+Beneath the surface, he is an immoral demon who willingly serves Gwi-Ma. Off-stage, he appears apathetic and tired of his idol duties. Like the other Saja Boys, he becomes aggressive when their plans start to fail, being the first to charge at HUNTR/X after Jinu's sacrifice.
 
-- Mass murder
-- Fraud
-- Conspiracy
-- Aiding and abetting
-- Terrorism
-- Attempted assisted world domination
+### **4. Plot**
 
----
+**Backstory:** Little is known about Mystery's past. It is assumed that he was once human and was transformed into a demon after making a pact with the demon king, Gwi-Ma.
 
-## 😈 Type of Villain
+**Main Events:** Mystery first appears in the Demon Realm when Jinu proposes the plan to form a K-pop boy band. As a member of the Saja Boys, he makes his debut in the human world, quickly capturing the attention of Zoey. He competes on a variety show, flees from HUNTR/X, and reports the group's success to Gwi-Ma, looking visibly exhausted.
 
-Mischievous, sly, demonic K-pop villain hiding behind a quiet persona.
+During a joint fan signing event, Zoey flirts with him, and he later barks at a fan, only to be reprimanded by Zoey. Like the other members, he discards fan gifts in the trash after the event.
 
----
+In his final appearance, Mystery performs "Your Idol" in his demon form. When HUNTR/X reunites, he attacks the girls and engages in a brief fight with Zoey. After Jinu's sacrifice, he is the first to charge at the hunters but ultimately escapes by teleporting away just as Zoey delivers a final blow. She is the only one to catch a glimpse of his uncovered face before he vanishes.
 
-## 👁️ Appearance
+### **5. Abilities and Skills**
 
-- **Hair**: Always styled to cover half his face, only his mouth is visible
-- **Human Form**:
+- **Demonic Powers:** As a demon, Mystery can steal souls, teleport, levitate, and shapeshift between his human and demon forms.
+- **Immortality:** He is effectively immortal, unless killed by a demon hunter or Gwi-Ma.
+- **Singing:** As the lead vocalist, he has an exceptionally angelic voice and can hit unusually high notes.
+- **Artistic Talents:** He is a proficient dancer.
 
-  - Pink shirt
-  - Blue vest
-  - Light blueish-purple hair
+### **6. Quotes**
 
-- **Demon Form**:
+- "When you're in my arms, I hold you so tight. Can't let go, no, no, not tonight." — Mystery singing "Soda Pop."
+- "We're so excited to show you what's next." — Mystery, to fans.
+- "Don’t let it show, keep it all inside. The pain and the shame, keep it outta sight." — Mystery, singing "Your Idol."
 
-  - Black attire
-  - Dark blueish-purple hair
-  - Dark hat
-  - Pale skin with markings
-  - Claws and fangs (like other Saja Boys)
+### **7. Trivia**
 
----
-
-## 🧠 Personality
-
-- Portrays a **shy and quiet** demeanor, often appearing **embarrassed**
-- **Least emotive** of the Saja Boys, possibly due to his hidden eyes
-- Acts **mischievous and sly**, especially when **taunting The Huntrix**
-- Displays **aggression** more than others:
-
-  - Barks incoherently at a fan during a Signing Event
-  - First to attack Zoey during the failed plan (which leads to his death)
-
----
-
-## 🧩 Trivia
-
-- Has **the least amount of information** revealed among the Saja Boys
-- His **eyes are never shown** due to his hairstyle
-- **Alan Lee**, his voice actor, also voices another "soul-eater" character: **Shang Tsung**
-
----
+- Mystery's face-covering hairstyle was a practical design choice to streamline the animation process by reducing the need for detailed facial animation.
+- Zoey is the only person who has seen Mystery's uncovered face.
+- In the "Soda Pop" sequence, his left eye is allegedly visible for a brief moment.
+- He was the only Saja Boys member to have tusks in his demon form, though they disappear shortly after their initial reveal.
+- His singing voice actor, Kevin Woo, has stated that he believes Mystery had a crush on Zoey, though this is his personal speculation.
+- Mystery could be interpreted as a symbol of the tendency of K-Pop fans to project idealized narratives onto idols.

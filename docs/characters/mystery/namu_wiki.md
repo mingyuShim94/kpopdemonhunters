@@ -1,90 +1,40 @@
----
-
-# 미스터리 (케이팝 데몬 헌터스)
-
-* **성별**: 남성
-* **국적**: 조선
-* **종족**: 악령 (저승사자)
-* **소속 그룹**: 사자 보이즈
-* **포지션**: 리드보컬
-* **성우**: 🇺🇸 앨런 리 / 🇰🇷 임채빈
-* **노래**: 케빈 (사자 보이즈 멤버 중 유일하게 실제 케이팝 아이돌 유키스 출신)
+Of course. Here is a meticulously detailed English summary of the character Mystery, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-## 1. 개요
+### **Mystery**
 
-미스터리는 《케이팝 데몬 헌터스》의 아이돌 그룹 *사자 보이즈*의 멤버로, <헌트릭스>의 대항마 포지션이다. 그룹 내 포지션은 리드보컬. 이름도 미스터리인 만큼 맨얼굴도 미스터리로, 영화 속에서 얼굴을 거의 보인 적이 없다. 다만 _소다 팝_ 장면과 _Your Idol_ 무대 시작 전 전광판에서, 머리카락 속에 숨겨졌던 그의 눈이 잠시 드러난다. 자세한 얼굴은 컨셉 아트를 통해 확인 가능하다.
+| Category             | Detail                                    |
+| :------------------- | :---------------------------------------- |
+| **Gender**           | Male                                      |
+| **Nationality**      | Unspecified                               |
+| **Species**          | Demon                                     |
+| **Affiliated Group** | Saja Boys                                 |
+| **Position**         | Sub-Vocalist (Presumed)                   |
+| **Voice Actors**     | **EN:** Alan Lee <br> **KR:** Im Chae-bin |
+| **Singing Voice**    | Kevin Woo                                 |
 
----
+### **1. Overview**
 
-## 2. 기타
+> "And to our fans, thank you. We really feed off your energy."
 
-### 외형 및 설정
+Mystery is a character in _K-Pop Demon Hunters_. He is a member of the demon idol group, Saja Boys, and is presumed to be the group's sub-vocalist. True to his stage name, his face is a mystery, as it is almost entirely obscured by his long bangs throughout the film.
 
-- 이름에 어울리는 얼굴을 감춘 헤어스타일의 소유자다.
-- 아이돌로 처음 변신할 때는 길고 뾰족한 이빨이 귀걸이로 변화한다.
-- 팬사인회에서는 팬들을 향해 으르렁거리기도 했으며, 이 모습을 통해 짐승 계열의 악귀, 즉 *축생귀*일 가능성이 제기되었다.
-- 원형인 저승사자 시절 모습을 보면 두 개의 송곳니가 존재하는데, 이는 짐승 계열이라는 증거이기도 하다.
-- 일부 팬들 사이에서는 머리 스타일과 외형, 행동을 근거로 ‘삽살개의 영혼’이라는 추측도 존재한다.
+### **2. Miscellaneous & Trivia**
 
-### 팬사인회 에피소드
+- **Defining Traits & Motif:** His most prominent feature is his face-concealing hairstyle. This design choice was also practical, as it streamlined the animation process by reducing the need for detailed facial animation. When he first transforms into his idol form, his long, sharp fangs are shown morphing into earrings. This, combined with his tendency to growl at fans, suggests his true form is that of a beast-type demon. Fans have debated his specific motif:
 
-- 팬들에게 짖어대자 조이가 “조용! 짖으면 안돼!”(영어 더빙은 "No! bad Saja boy!")라고 펜으로 머리를 툭 치며 혼내기도 했다. 이때 미스터리는 강아지가 혼난 듯 살짝 시무룩한 표정을 지었다.
-- 노래할 때와 으르렁거리는 것을 제외하면, 작중 단독 대사는 팬클럽 5천만 명 달성 감사 영상에서 등장. 여기서 그는 "Thank you. We really feed upon your energy."라고 말한다. 이는 '팬들의 사랑을 먹고 산다'는 의미로도 해석되지만, '팬들의 영혼을 흡수해 그 에너지로 산다'는 의미로도 해석될 수 있다.
+  - **Sapsali Dog Theory:** This is the majority view. The Sapsali is a native Korean dog breed known for its long fur covering its eyes. His gentle appearance but wild nature, his dog-like growling, and his periwinkle hair color—similar to the "blue" Sapsali—all support this theory.
+  - **Jangsanbeom Theory:** A minority view suggests he is a Jangsanbeom, a fearsome Korean cryptid. This is based on the argument that a Sapsali, a guardian spirit, is an unfitting motif for a high-ranking demon. His glowing blue eyes, long white/blue-ish fur, and beautiful singing voice are all traits associated with the Jangsanbeom.
 
-### 조이와의 관계
+- **Story Significance & Fan Reception:** Mystery has very little story significance, even among the other Saja Boys who are already minor characters. However, he serves as the primary love interest for Zoey, who is immediately smitten with him. Their ship is canonically named "Zoeystery." He is the only member to be part of a purely romantic pairing, as Rumi and Jinu's bond is more about shared trauma, and Mira's "interest" in Abby is purely physical. Because of this, he has gained a significant following.
 
-- 스토리상에서 미스터리는 단독으로 주목받는 장면이 거의 없다. _사자 보이즈_ 전체가 진우를 제외하면 스토리에서 비중이 적지만, 그 중에서도 미스터리는 특히 비중이 적은 편이다.
-- 그럼에도 불구하고 조이는 미스터리에게 여러 차례 호감을 보였다. 사자 보이즈를 싫어한다고 말하면서도 미스터리가 곁에 앉자 태도가 급변하며 헤벌쭉해지는 모습까지 보여주었다.
-- 팬들 사이에서는 ‘조이’와 ‘미스터리’를 엮어 ‘Zoeystery’라는 커플링 명칭이 생겼다. 이는 작품 내에서 거의 유일하게 순수한 의미의 커플링으로 주목받은 사례이다.
+- **On-Stage Presence:** While he doesn't have many lines, his beautiful, falsetto singing voice has been highly praised. Most of his singing parts are duets with Romance.
 
-> 참고: 루미와 진우는 서로 비슷한 처지에서의 동질감이 주된 테마였고, 미라는 애비의 복근에 반응했으나 당시엔 악령인 줄 몰랐고, 이후 사자 보이즈 전원에게 적개심을 보인다. 애비의 복근이 취향이긴 하나, 애비 자체에게 호감을 표한 적은 없으며 복근만 언급했다.
+- **Final Moments:** In the final battle, Zoey strikes him, and his bangs are momentarily swept aside, revealing his full face to her alone. Her reaction—"He's totally my type!"—confirms his attractiveness. However, she proceeds to attack him anyway, though a puff of smoke implies he may have teleported away at the last second, leaving his fate ambiguous.
 
----
+- **Personality and Habits:** He has a signature pose where he holds one arm. His only speaking line in the entire film is his thank-you message to fans, which has a sinister double meaning: "We really feed off your energy." At a fansign, he growls at fans like a dog, prompting Zoey to scold him by tapping his head with a pen, to which he reacts with a slight sulk.
 
-## 3. 무대 비중 및 실력
+- **Group Hierarchy:** Despite Baby being the _maknae_, official character model sheets reveal that Mystery is the shortest member of the Saja Boys.
 
-- 리드보컬임에도 무대에서의 비중은 크지 않다.
-- *Soda pop*에서는 파트량이 많지는 않지만 댄서 포지션인 애비와 비슷한 수준으로, 리드보컬로서 충분히 받지 못했다는 인상을 준다.
-- *Your Idol*에서는 곡 분위기와 음색이 어울리지 않아 파트가 더 줄었다.
-- 그러나 굉장한 미성을 지녔기에, 보컬 실력에 대해서는 팬들 사이에서 호평이 많다.
-
----
-
-## 4. 외형 모티브에 대한 추측
-
-미스터리는 가장 특이한 외형과 언행 덕분에, 사자 보이즈가 저승사자 외에도 다양한 환상종 또는 영물에서 모티브를 딴 것이 아니냐는 추측이 있을 때 자주 언급되는 멤버다. 그가 위장하기 전 모습에서 확인되는 민화 속 짐승 특유의 송곳니 등을 바탕으로 두 가지 대표적인 설이 있다.
-
-### 삽살개 설 (다수설)
-
-- **이유**:
-
-  - 한국 토종견으로서 친숙한 이미지
-  - 두 눈을 가리는 긴 머리카락
-  - 순해 보이지만 야성적인 성격
-  - 팬사인회에서 개처럼 으르렁댐
-  - 머리털 색깔이 삽살개의 ‘청삽사리’와 유사
-
-- **비판**:
-
-  - 삽살개는 악귀가 아닌, 인간을 지키는 존재이다.
-  - 오히려 삽을(쫓을 삽) 자를 써서 악귀를 쫓는 역할이기에 최고위 악귀 모티브로는 어울리지 않는다는 시각도 있다.
-
-> 참고: 실제 민간 전승에서 삽살개는 제삿날 주인을 지키기 위해 다른 존재들을 쫓아낼 수 있어서, 일부러 묶어두기도 했다고 전해진다.
-
-### 장산범 설 (소수설)
-
-- **이유**:
-
-  - 푸르게 빛나는 눈
-  - 푸른색이 섞인 흰 긴 털
-  - 리드보컬 포지션 → 높은 음역대 → 목소리가 특징적인 존재로서의 상징성
-
----
-
-## 5. 의상 특징
-
-- _Your Idol_ 무대에서 오른쪽 허벅지에 가터 벨트를 착용한 묘사가 있다.
-
----
+- **Japanese Dub:** In the Japanese dub, he uses the personal pronoun "boku."

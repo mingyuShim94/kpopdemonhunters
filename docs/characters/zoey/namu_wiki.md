@@ -1,87 +1,68 @@
----
-
-# 조이 (Joy)
-
-- **성별:** 여성
-- **국적:** 🇺🇸 한국계 미국인
-- **연령:** 22\~23세 _(레딧 AMA 질의응답에서 매기 강 감독이 직접 답변. 루미, 미라보다 1살 어림)_
-- **가족:** 불명 _(다른 멤버들과 달리 가족관계를 유추할 단서 없음. 단, 뮤직비디오 <Golden>에서 한국 쪽 손은 여성, 미국 쪽 손은 남성으로 묘사되어 한국인 어머니와 미국인 아버지 설 존재)_
-- **종족:** 인간
-- **소속 그룹:** 헌트릭스 (HUNTRIX)
-- **포지션:** 래퍼, 서브보컬
-- **성우:**
-
-  - 🇺🇸 유지영 _(KBS 성우 유지영과 동명이인, 본명 서선희)_
-  - 🇰🇷 김예림
-  - 🇯🇵 와타야 미호
-
-- **노래:** Rei Ami _(담당 보컬리스트의 인스타그램 게시물 출처)_
+Of course. Here is a meticulously detailed English summary of the character Zoey, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-## 1. 개요
+### **Zoey**
 
-조이는 *케이팝 데몬 헌터스*의 서브 주인공으로, 세계적인 케이팝 그룹 **헌트릭스**의 막내 멤버다. 그룹 내에서 가장 작고 귀여운 인상을 지닌 인물로, 심지어 영어 더빙판에서도 "막내"라는 단어가 한글 그대로 쓰인다.
+| Category             | Detail                                                                                                                                                              |
+| :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Gender**           | Female                                                                                                                                                              |
+| **Weapon**           | Shin-kal (Shamanic Knives)                                                                                                                                          |
+| **Nationality**      | ![USA Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png) USA (Korean-American) |
+| **Age**              | 22-23 years old (Born c. 2002-2003)                                                                                                                                 |
+| **Family**           | Unspecified                                                                                                                                                         |
+| **Species**          | Human                                                                                                                                                               |
+| **Affiliated Group** | HUNTR/X                                                                                                                                                             |
+| **Position**         | Main Rapper, Sub-Vocalist                                                                                                                                           |
+| **Voice Actors**     | **EN:** Ji-young Yoo <br> **KR:** Kim Yea-lim <br> **JP:** Miho Wataya                                                                                              |
+| **Singing Voice**    | **EN/KR:** Rei Ami <br> **JP:** Manami Yokoyama                                                                                                                     |
 
-평소에는 귀엽고 온화한 인상을 보여주지만, 랩을 시작하면 과격한 카리스마를 발산한다. 그룹 내에서는 **작사를 담당**하는 듯한 묘사가 있으며, 미라는 춤선과 안무를 담당하는 것으로 그려진다. 전체적인 그룹 구성은 셋이 조율하는 형식이다.
+### **1. Overview**
 
----
+> "Okay, like I know I ramble / But when shootin' my words I go Rambo / Took blood, sweat, and tears to look natural."
+> — Zoey's rap verse in "How It's Done"
 
-## 2. 작중 행적
+Zoey is the deuteragonist of _K-Pop Demon Hunters_. She is the main rapper of the world-renowned K-pop group HUNTR/X and the group's youngest member (_maknae_), known for her cute and energetic persona. While she has an adorable image, she transforms into a charismatic powerhouse when she raps. Her weapon of choice is the _Shin-kal_, a set of shamanic knives.
 
-### 정체성과 소속
+### **2. Character Details**
 
-- **출신:** 미국 캘리포니아주 로스앤젤레스 카운티 버뱅크
-  _(버뱅크는 애니메이션 및 미디어 산업의 중심지이며, 제작진 중 한국계 미국인이 많아 자기 투영적 캐릭터로 보이기도 함)_
+Zoey has a bubbly, energetic, and sometimes ditzy personality. She is generally cheerful and gentle, rarely getting angry. The first time she shows true anger is when Rumi dismisses her lyrical suggestions for "Takedown," leading Zoey to nearly rip up her cherished notebook in frustration.
 
-한국과 미국 양쪽 문화 사이에서 정체성에 혼란을 겪는 모습이 자주 드러난다. 양 사회 모두에서 소외된 비주류로서 눈치를 보는 듯하며, 자신 있게 의견을 말해도 다르면 급히 정정하는 등 은근한 불안감이 묘사된다.
+#### **2.1 As an Idol**
 
-그녀는 **셀린**의 지도 아래 악령을 퇴마하는 헌터이자 아이돌인 헌트릭스 멤버로 발탁된다.
+As the group's main rapper, Zoey is also implied to be the primary lyricist for HUNTR/X. Her rap style is characterized by fast-paced delivery, which contrasts with the slower, more rhythmic flow of Baby, the rapper for the rival group Saja Boys. This difference often puts them at odds, and Zoey clearly dislikes Baby, likely due to their rivalrous positions. She also contributes high-pitched chorus vocals in songs like "How It's Done."
 
----
+#### **2.2 As a Hunter**
 
-### 주요 사건
+Zoey wields six _Shin-kal_ (three in each hand). While Rumi specializes in one-on-one duels and Mira excels at crowd control, Zoey's fighting style is a versatile mix of ranged and close-quarters combat. She throws her knives with deadly accuracy and, if unable to resummon them, seamlessly transitions to powerful kicks and even flying armbars. This is why her movements most heavily incorporate the motion capture work of Taekwondo national athlete Tae-mi.
 
-- **사자 보이즈 첫 대면 시**
-  가장 온건한 성향으로, 루미와 미라가 사자 보이즈를 무조건 퇴치하자고 주장할 때 혼자서 “좋은 악령 아닐까?”라며 다른 시각을 제시한다. 이는 ‘아직 피해를 입힐 것 같지 않으니 신중히 움직이자’는 입장에 가깝다.
+She often maintains a cheerful, almost playful demeanor even in battle, treating demons like toys. This has earned her the fan nickname "Zoey-chopath" and a reputation for being ruthlessly professional. She might apply makeup to a demon before casually dispatching it or admire a handsome demon's face moments before destroying him.
 
-- **얼빠 면모**
-  팀 내에서 가장 심한 얼빠. 사자 보이즈의 소다팝 거리공연을 보며 혼자 싱글벙글하고, 이에 루미에게 눈총을 받는다. 공연 도중 사자 보이즈의 입맞춤 퍼포먼스에 관중들이 휘청일 때, 혼자 여심 공격에 쓰러지는 모습도 보인다. 두 번 연속으로 하트 공격을 받아 미라가 한 번은 막아주지만, 두 번째는 정통으로 얼굴을 맞고 움푹 들어가는 장면이 짤로 유행하기도 했다.
+### **3. In-Story Arc**
 
-- **루미와의 관계**
-  평소 루미를 잘 이해하려고 노력하지만, **아이돌 어워드 사건**에서 루미를 의심한다. 루미가 괴성을 지를 때 악령과 동일한 파장이 분출되어 충분히 의심스러운 상황이었기 때문이다.
+A Korean-American from Burbank, California, Zoey was recruited by Celine to join HUNTR/X. The film opens with the group fighting demons on their private jet before making a spectacular landing on stage, where Zoey blows a heart to the camera in a meta moment. After the show, her plans to relax and watch 700 two-second turtle shorts are thwarted by Rumi's sudden announcement of their next single, "Golden."
 
-- **귀마 사건과 결전**
-  루미의 탈퇴 이후 미라가 심리적 불안정으로 귀마에게 홀리게 되고, 조이도 “우린 가족도 아니니까 친한 척 하지 마”라는 말을 듣고 충격을 받아 귀마의 세뇌에 휘둘린다.
-  이후 루미가 남산서울타워의 콘서트장에 난입하며 노래로 모두를 되돌려놓고, 조이와 미라는 함께 귀마를 무찌른다.
+In the "Golden" music video, her lyrics explore her identity struggles: "I lived two lives, tried to play both sides / But I couldn't find my own place." When Rumi's voice fails, Zoey comforts her and suggests a visit to a traditional healer, one of 57 methods she researched (a self-homage by the creators, who wrote 57 versions of "How It's Done"). At the clinic, the healer diagnoses her with an "overly eager to please" nature. Later, she comically reacts to Saja Boys member Abby's abs with "popcorn eyes."
 
-- **미스터리와의 관계**
-  최종 결전에서 사자 보이즈의 미스터리에게 주먹을 날리며 “내 스타일이야…”라고 황홀해하다 곧장 퇴마한다. 이 장면은 ‘공과 사 철저’, ‘맑은 눈의 광인’ 밈으로 이어졌다. 또한, 공연 중 미스터리가 옆에 앉자 헤벌쭉해진 반면, 베이비가 옆에 앉았을 때는 정색한다. 같은 랩 담당으로서 **베이비에 대한 라이벌 의식**도 드러내며 “열받게 잘하네”라는 말도 한다.
+Initially, Zoey is the only one to suggest that the Saja Boys might be "nice demons," showcasing her naive optimism and a clear crush on the members, especially Mystery. This causes her to get distracted by their music and flustered in their presence. However, she joins her friends to fight them in a men's bathhouse, hilariously complaining that bathhouses are supposed to be relaxing.
 
----
+As tensions rise between the groups, Zoey is seen admiring a picture of Mystery, much to Mira's annoyance. During a joint fansign, she is initially flustered sitting next to Mystery but is openly disgusted when placed next to her rival, Baby. The pressure mounts when Rumi, influenced by Jinu, hesitates to perform their aggressive diss track. Feeling her contributions are being dismissed, Zoey becomes deeply hurt. After a failed mission, she tells Rumi, "We can't win without your voice."
 
-## 3. 기타
+On the day of the Idol Awards, Zoey shares her heart with the group, confessing that before HUNTR/X, she felt her lyrics and notebooks were "useless and weird," but with them, she feels like she means something. Her hopes are shattered when Rumi's half-demon secret is exposed. Betrayed and confused, Zoey asks, "How are we supposed to be with you when we don't know what's a lie and what's the truth?" Following Mira's lead, she reluctantly draws two of her six knives, symbolizing her hesitation and the fracturing of their trio.
 
-- **유머 코드**
-  뭔가를 외칠 때 혼자 엉뚱한 말을 자주 한다. 예: 사자보이즈 문양이 드러났을 때, 루미와 미라는 “악령!”이라 외치는데 조이는 “마술사!”라고 한다.
+Lost and heartbroken, Zoey is manipulated by Gwi-ma's whispers: "You're too much, but you're not enough. There's no place for you... but I can give you one." She is then drawn to the Saja Boys' concert.
 
-- **아이돌 시상식에 대한 열정**
-  ‘1년 중 가장 중요한 무대가 뭐냐’는 질문에 “아이돌 시상식”이라고 대답함. 이때 매니저 바비는 “지역 박람회?”라고 말해 엇갈린 반응을 보임.
+Just as the Honmoon is about to break, Rumi's song of self-acceptance reaches her. Zoey responds with her own lyric, "Why did I cover up the colors stuck inside my head?" Reunited, HUNTR/X enters the final battle. During the fight, Zoey punches Mystery, declares "He's totally my type!" with sparkling eyes, and then promptly annihilates him.
 
-- **거북이 애호가**
-  2초짜리 거북 쇼츠 영상을 700개나 모을 정도로 거북을 좋아한다. 거북 무늬 잠옷도 입는데, 이는 *짱구는 못말려*의 주인공 신짱구의 잠옷 무늬 패러디로 보인다. 착용한 노리개 장식도 거북이다.
+In the end, the three friends finally enjoy a bathhouse together, a scene symbolizing their growth and healing.
 
-- **선라이트 시스터즈 팬**
-  버뱅크 시절부터 그들의 앨범을 듣고 있었고, <Golden> 뮤직 비디오에서는 그들의 앨범을 품에 안고 한국과 미국 사이에서 갈등하는 연출이 나온다. 한국으로 오게 된 계기가 선라이트 시스터즈에 대한 동경이었을 가능성도 제기된다.
+### **4. Miscellaneous & Trivia**
 
-- **기타 묘사**
-  눈으로 팝콘을 튀길 정도의 리액션 능력은 미라와 공통적이다. 얼굴이 클로즈업될 때 **주근깨**가 있는 것이 확인된다.
-
----
-
-## 4. 팬덤 및 2차 창작
-
-- 작중에서 사자 보이즈의 **미스터리**, **베이비**, 그리고 팀 동료 **미라**와 자주 엮인다.
-- 팬들이 만든 커플링 이름 중 하나는 \*\*조이스터리(Joeystery)\*\*다.
-
----
+- **Korean-American Identity:** Zoey’s background is a core part of her character, influencing her struggles with identity and her unique perspective. Details like her hamburger-flavored ramyeon cup nod to this. A popular fan theory suggests her parents may be divorced, explaining the "tug-of-war" visual in the "Golden" music video.
+- **Love for Turtles:** She is an avid turtle enthusiast, with turtle-print pajamas and a turtle charm on her _norigae_. Fans theorize this stems from her feeling of displacement; she envies turtles for always carrying their homes with them.
+- **Past Trauma:** A deleted storyboard reveals a scrapped backstory where Zoey was a victim of school bullying, which would have added another layer to her insecurities.
+- **Sunlight Sisters Fan:** She is shown to be a fan of the previous generation of hunters, the Sunlight Sisters, owning their albums and magazines. This may have been her motivation to become an idol in Korea.
+- **Fan Ships:** In fan works, she is most often paired with Mystery (canon ship name: **Zoeystery**) and sometimes Baby (often as their child in fan comics). She is also frequently shipped with Mira.
+- **"Clear-Eyed Maniac" Meme:** Her tendency to admire a demon's good looks before ruthlessly destroying them has earned her the fan nickname "clear-eyed maniac," celebrated for her strict separation of personal feelings and professional duty.
+- **Ambidextrous:** She is presumed to be ambidextrous, as she is seen writing and holding her mic and weapons with both hands at different times.
+- **"Gateway Character":** With her cute appearance, bubbly personality, and surprising depth, Zoey is often considered the "gateway character" that draws new fans into the series.

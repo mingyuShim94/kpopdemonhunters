@@ -1,81 +1,45 @@
-다음은 주석 내용을 본문에 통합하고, 전체를 마크다운 형식으로 정리한 귀마(Gwima)의 소개입니다:
+Of course. Here is a meticulously detailed English summary of the character Gwi-Ma, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-# 귀마 (Gwima)
+### **Gwi-Ma (鬼魔)**
 
-**성우:** 이병헌 (영어/한국어 동시더빙), 츠치다 히로시 (일본어판)
-※ 이병헌은 과거에도 _아마게돈_, _마리이야기_ 등의 애니메이션 더빙 경력이 있으며, 이번 작품의 엔딩 크레딧에서는 한국판 한정으로 이병헌의 이름이 맨 윗줄에 올라 팬들 사이에서 잠시 논란이 있었으나 이후 수정되었다.
+| Category         | Detail                                                 |
+| :--------------- | :----------------------------------------------------- |
+| **Voice Actors** | **EN/KR:** Lee Byung Hun <br> **JP:** Hiroshi Tsuchida |
 
----
+### **1. Overview**
 
-## 개요
+Gwi-Ma is the true main villain, mastermind, and final boss of _K-Pop Demon Hunters_. He is the king of demons, the ruler of the Demon Realm, and the producer of the demon idol group, Saja Boys.
 
-귀마는 저승의 지배자이자 진 최종 보스로, 과거 인간의 혼을 먹으며 *마왕*이라는 이름으로 세상을 공포에 몰아넣은 존재이다. 퇴마사들의 활약으로 인해 혼을 먹지 못하고 약해져 혼불의 형태로 나타나게 되었다.
+His motif is the Demon King Gwi-ma from the classic Korean novel _Samhanseupyu_. Once a terrifying entity who feasted on human souls, his power dwindled over the centuries due to the efforts of demon hunters who sealed him away. In his prime, he was a colossal being of fire, but by the film's present day, he is a mere shadow of his former self. Despite this weakened state, he remains an overwhelmingly powerful foe, only defeated by the combined power of an enhanced Rumi and the souls of thousands of fans.
 
-진우의 언급과 초반부에 등장하는 귀마의 묘사를 통해, 전성기에는 활화산 하나를 덮을 정도로 거대한 위용을 자랑했으나, 작중 시점에서는 제단 하나를 덮는 정도로 약해졌고, 힘을 일부 회복한 후반부에도 스타디움 하나를 덮는 수준에 그쳤다. 그마저도 진우의 희생과 루미에게 힘을 위임한 뒤에서야 겨우 유효타를 가할 수 있었으며, 결국 팬들의 성원으로 만들어진 *혼문*에 의해 제압되었다. 이로 미루어 보아 전성기 시절의 “지옥의 지배자”라는 이명이 허명이 아님을 알 수 있다.
+### **2. Appearance and Personality**
 
----
+> Gwi-Ma in his prime (top) vs. his weakened state (bottom).
+> Gwi-Ma after regaining some power (top) vs. his final form (bottom).
 
-## 활동과 전개
+Gwi-Ma appears as a giant, sentient flame of magenta-colored fire (_honbul_). He has a menacing, toothy mouth that expands when he is angry or amused. In the film's climax, after absorbing countless souls and the life force of his minions, he grows to a colossal size, developing nostrils and a pair of glowing eyes, and his voice deepens.
 
-혼문에 의해 저승에 갇힌 이후에도 악령들을 지속적으로 보내 퇴마사들을 제거하려 한다. 하지만 진우가 “아이돌로서 맞서야 한다”고 제안하자 이를 받아들이며 진우를 포함한 5인조 *사자 보이즈*를 내세운다. 이러한 모습은 귀마가 은근히 융통성이 있다는 점을 보여주며, 이후 사자 보이즈에 대한 사람들의 반응이 좋자 노래를 흥얼거리는 개그 장면도 등장한다.
+He is portrayed as a manipulative, cruel, sadistic, and power-hungry being. He despises his underlings, punishing any failure with merciless rage, as seen when he incinerates a demon for failing to kill HUNTR/X. His greatest pleasure comes from exploiting the deepest insecurities and traumas of both humans and demons, twisting their relationships and using their shame to control them.
 
-진우는 “아이돌 활동을 계속하게 해준다면 인간의 영혼을 더 많이 얻을 수 있을 것”이라 말했고, 이를 통해 귀마는 데뷔, 프로듀싱, 활동 전반을 적극 지원한 것으로 보인다. 초기 등장한 악령들은 인간의 행동조차 흉내내지 못했지만, 사자 보이즈와 미라/조이를 모방한 악령들은 루미조차 안무 중 가짜임을 눈치채지 못할 정도로 정교한 위장을 보여줬다. 헌트릭스 관계자로 위장해 노래 정보나 안무를 파악한 정황도 있으나, 그 수준까지 끌어올릴 수 있었던 것은 진우의 지휘와 귀마의 전폭적인 지원 덕분이다.
+### **3. In-Story Arc**
 
-최종장에서는 귀마 본인이 무대장치로 등장해 연출을 돕기도 한다. *Your Idol*의 무대에서 사자 보이즈의 안무에 맞춰 퍼지는 화려한 불꽃은 다름 아닌 귀마 본인이며, 이로 인해 “무대 연출까지 하는 중소 기획사 사장”이라는 이미지가 붙었다.
-여담으로, 귀마 역의 이병헌은 실제로도 2007년 일본 팬미팅에서 아이돌 댄스와 노래를 선보인 바 있으며, 이 일명 ‘병모닝’ 영상은 유명하다.
+Trapped in the Demon Realm by the Honmoon barrier, Gwi-ma continuously sends his minions to the human world. When Jinu suggests a new strategy—fighting fire with fire by creating a rival idol group—Gwi-ma, despite his initial mockery, shows a surprising degree of flexibility and agrees to the plan. He acts as the producer for Saja Boys, providing them with the magical support needed to become top-tier idols, including flawless disguises and spectacular stage effects, all of which are tinged with his signature magenta color. In the final performance of "Your Idol," he even becomes a part of the stage production itself, his flames dancing to the rhythm of the song. This has led to the fan meme of him being a "small agency CEO who even handles stage direction."
 
----
+In the final battle, just as his plan to absorb all the souls at the concert is about to succeed, he is thwarted by the sacrifice of Jinu and the power of the reunited HUNTR/X. Overwhelmed by their song, his fiery form is extinguished. His defeat is somewhat anticlimactic, as he has no final words and is simply overwhelmed. However, the ambiguous nature of his "demise"—whether he was truly destroyed or merely resealed—leaves the door open for his return in a potential sequel, a theory supported by the fact that Rumi's demonic markings did not disappear.
 
-## 위상과 능력
+### **4. Combat Abilities**
 
-비록 약해졌다고는 하나, 귀마는 여전히 저승사자 및 악귀들 사이에서는 절대적인 존재로, 문양이 있는 악귀들은 그의 목소리를 계속 들으며 결국 복종하게 된다. 그들의 행동을 실시간 감시하고 언제 어디서든 강제로 저승으로 전이시키는 능력도 가진다.
+As the ruler of the Demon Realm, Gwi-Ma is the most powerful being in the series' universe. He is overwhelmingly stronger than even Jinu, the second most powerful demon. He can telepathically whisper into the minds of demons and humans, monitoring their actions and forcibly summoning them at will. Even in his weakened state, the hunters could not face him in a direct confrontation.
 
-최초 컨셉 아트에서도 최종 보스에 걸맞는 공포스러운 형상을 띠며, 무형의 존재로 건물 등에 빙의해 현세에 강림하는 묘사가 있다. 전투력 또한 엄청난데, 일반 악령들조차 비행기 동체를 찢을 수 있으며, 고고도로 비행 중인 비행기에서 추락해도 멀쩡한 수준이다. 그런 악령들을 통제하는 귀마는 무려 400년간 단 한 명의 헌터도 퇴치하지 못했고, 오직 혼문을 통해서만 봉인할 수 있었던 존재다. 심지어 마음이 흔들린 헌터들조차 그의 세뇌에 당하기까지 한다.
+His whispers can hypnotize mortals, a power he uses to lure thousands of people to the Saja Boys' concert once the Honmoon is broken. Even the hunters Mira and Zoey fell under his influence. His physical power is also immense; a single blast of his fire breath was enough to fatally wound Jinu. He rules over millions, if not billions, of demons, each of whom is a formidable threat on their own. The hunters' ultimate goal was not to destroy him—a feat considered nearly impossible—but to create the Golden Honmoon to permanently seal him away.
 
----
+### **5. Miscellaneous & Trivia**
 
-## 최종 결전
-
-귀마는 사자 보이즈를 이용해 혼문을 파괴하고 모든 인간의 혼을 흡수하려 했으나, 진우의 희생과 팬들의 응원으로 각성한 루미, 그리고 헌트릭스의 힘에 의해 결국 제압당했다. 최종 보스치고는 다소 싱겁게 끝났다는 평도 있으나, 혼문에 의해 일시적으로 저승으로 돌아간 것인지, 완전히 소멸한 것인지는 밝혀지지 않았다.
-
-작중 후반부에도 루미의 몸에 남은 악령의 문양이 사라지지 않은 점을 보면, 귀마가 아직 완전히 사라지지 않았고 후속작에서 재등장할 가능성이 존재한다. 작중 대사 중 “헌터 중 내 문양을 지닌 자가 있는데도 조종할 수 없다”는 말은 루미와 귀마 사이의 연결을 시사한다.
-
----
-
-## 외형과 모티브
-
-초반에는 입만 있는 형태로 등장하나, 후반부에는 온전한 얼굴이 드러나며 입을 움직이지 않는다. 이름은 ‘마귀’를 거꾸로 뒤집어 만든 듯하며, 모티브는 *도깨비*에서 비롯되었을 가능성이 있다. 한국 설화의 도깨비는 불과 자연, 흥과 춤을 즐기는 무형의 존재로 묘사되며, 악한 도깨비도 일부 민담에서 나타난다.
-
----
-
-## 더빙과 평가
-
-이병헌의 연기에 대한 평가는 다양하다.
-
-- **긍정적 평가:** 분노, 호탕한 웃음, 조롱 등 감정 표현과 발음이 뛰어나다는 평가.
-- **부정적 평가:** 진우 역의 전문 성우 민승우와 비교하여 거친 호흡이 어색하게 느껴진다는 지적.
-
-이병헌의 **영어 연기**에 대해서는, 진우의 영어 성우인 안효섭이 전문 성우가 아니기에 상대적으로 이질감이 덜하다는 이유로 더 호평받기도 한다.
-
----
-
-## 제작 비화
-
-감독의 인터뷰에 따르면, 귀마 역에 이병헌 대신 \*\*박진영(JYP)\*\*을 고려하기도 했다. 귀마가 사자 보이즈의 프로듀서로 활동하는 점을 감안한 캐스팅이었으며, 실제로 박진영이 워터밤 무대에서 마젠타색 의상을 입은 모습이 귀마의 불꽃 색과 닮아 “케이팝 데몬이냐”는 농담도 있었다.
-
-또한, 사자 보이즈 데뷔 즈음 귀마의 형상이 지상 세계에 퍼졌는지, *남산타워 콘서트*에서는 귀마 로고가 박힌 굿즈 티셔츠를 입은 팬도 목격되었다.
-
----
-
-## 번역 및 자잘한 트리비아
-
-- 사자 보이즈의 곡 *My little sodapop*은 한국어판에서 “내 작은 소다팝”으로 번역되었다.
-- 영어, 일본어, 한국어 더빙이 모두 존재하며, 노래는 처음에 각국어로 더빙된 것으로 보인다.
-- 일부 자막은 “노래 못 부르게 막아”를 “노래 못 틀게 막아”로 번역하는 등 넷플릭스 특유의 오역도 존재한다.
-- 만약 한국어 번안곡이 추후 제작된다면, 원곡 가수들이 직접 한국어 가사로 부를 가능성도 있는 수준으로 한국어에 능숙하다고 알려져 있다.
-
----
-
-이상은 저승의 지배자이자 진 최종 보스인 귀마에 대한 상세 마크다운 정리입니다. 추가 정리가 필요하시면 말씀해 주세요.
+- **Occult Motif:** His fiery, formless nature and his love for music and dance are reminiscent of some depictions of the Korean _dokkaebi_ (goblin).
+- **Initial Concept:** According to the director, Gwi-ma was originally conceived as a K-pop idol wannabe. In this early stage, he was intended to be voiced by **J.Y. Park**, the founder of JYP Entertainment. This initial idea is subtly referenced in the final film when Gwi-ma hums along to "Soda Pop."
+- **Voice Actor:** The performance of his voice actor, **Lee Byung-hun** (the Frontman from _Squid Game_), has been a topic of debate. While his emotional expression is praised, some found his natural voice, even when modulated, not "demonic" enough, especially when compared to professional voice actors. However, his English performance was more widely praised for its deeper, more menacing tone.
+- **Easter Egg:** At the Namsan Tower concert, a fan can be seen wearing a t-shirt with Gwi-ma's logo, suggesting the Saja Boys marketed him as a kind of mascot.
+- **Korean Dub Details:** In the Korean dub, Gwi-ma's laughter is more pronounced and has a more "old man" feel.
+- **Fan Theories:** It was a popular fan theory that Gwi-ma was Rumi's biological father, but this has been officially debunked by the director.

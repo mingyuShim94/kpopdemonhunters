@@ -1,64 +1,79 @@
-## 진우 (케이팝 데몬 헌터스)
-
-**성별:** 남성
-**국적:** 조선
-**연령:** 약 400살 (추정 생년: 1625년, 인조 3년)
-**가족:** 어머니, 여동생
-**종족:** 인간 → 악령
-**소속 그룹:** 사자 보이즈
-**포지션:** 리더, 센터, 메인보컬
-**성우:**
-
-- 🇺🇸 안효섭 (영어판)
-- 🇰🇷 민승우 (한국어판)
-- 🇯🇵 이시카와 카이토 (일본어판)
-  **노래:** 앤드루 최 (Andrew Choi)
+Of course. Here is a meticulously detailed English summary of the character Jinu, integrating all the information and footnotes from the provided Korean wiki page.
 
 ---
 
-### 1. 개요
+### **Jinu**
 
-> _"It's time for a new strategy."_ > _"이제 전략을 바꿔야 합니다."_
+| Category             | Detail                                                                                                                                         |
+| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Gender**           | Male                                                                                                                                           |
+| **Nationality**      | ![Joseon Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flag_of_Joseon.svg/1200px-Flag_of_Joseon.svg.png) Joseon (as a human) |
+| **Age**              | Approx. 400+ years                                                                                                                             |
+| **Family**           | Mother, Younger Sister                                                                                                                         |
+| **Pets**             | Derpy and Sussie                                                                                                                               |
+| **Species**          | Human → Demon                                                                                                                                  |
+| **Affiliated Group** | Saja Boys                                                                                                                                      |
+| **Position**         | Leader, Center, Main Vocalist                                                                                                                  |
+| **Voice Actors**     | **EN:** Ahn Hyo Seop <br> **KR:** Min Seung-woo <br> **JP:** Kaito Ishikawa                                                                    |
+| **Singing Voice**    | Andrew Choi                                                                                                                                    |
 
-케이팝 데몬 헌터스의 메인 빌런이자 남주인공. <헌트릭스>의 대항마 <사자 보이즈>의 리더이며, 귀마의 부하이기도 하다. 하지만 다른 악령들과 달리 귀마를 맹목적으로 따르지는 않으며, 작중 유일하게 인간성을 유지하고 있는 악령이다. 루미에게 "증오로 귀마를 없앨 수 있었다면 내가 먼저 귀마를 없앴을 거다"라고 말할 만큼 귀마를 달갑게 여기지 않으며 거래 때문에 협력하고 있는 것으로 묘사된다. 실제로 가족을 버리게 만든 근본 원인이 귀마이기 때문.
+### **1. Overview**
 
----
+> "It's time for a new strategy."
 
-### 2. 작중 행적
+Jinu is the male protagonist and main villain of _K-Pop Demon Hunters_. He is the leader of the Saja Boys and the right-hand man of the demon king, Gwi-ma.
 
-#### 2.1 과거
+However, unlike other demons, he does not blindly follow Gwi-ma. As the only demon who retains a significant degree of his humanity, he harbors a deep resentment for Gwi-ma, who orchestrated the circumstances that forced him to abandon his family. He cooperates with the demon king purely out of a transactional necessity, telling Rumi, "If hate alone could have destroyed Gwi-ma, I would have done it first." He serves as the leader, center, and main vocalist for the Saja Boys.
 
-조선시대 가난한 집안에서 태어나 낡은 비파로 거리에서 연주하며 생계를 이어갔으나 큰 성과를 거두지 못했다. 임진왜란, 이괄의 난, 정묘/병자호란 등 조선 전란의 혼란기 속에서 하층민으로 재능을 인정받기 어려웠던 진우에게 귀마가 접근하여 거래를 제안한다. 귀마는 '성공'을 거래로 보장했지만, 가족의 안위는 거래에 포함되지 않았으며 이 점을 교묘히 이용해 진우를 타락시켰다.
+### **2. In-Story Arc**
 
-진우는 계약 후 뛰어난 목소리를 얻게 되었고, 왕의 명으로 궁에 들어가 가족과 함께 생활하게 된다. 그러나 귀마는 진우를 멋대로 지옥으로 끌어들여 악령으로 만들고, 그가 사라진 후 가족은 궁에서 쫓겨나 더욱 비참한 삶을 살게 되었다. 그 기억은 진우를 400년간 괴롭혔고, 이를 잊기 위해 귀마와의 계약을 연장하면서 악령으로 살아간다.
+**(Warning: Spoilers Ahead)**
 
-작중 비파는 향비파와 당비파의 형태를 섞은 4현 비파로, 오랜 세월 관리받지 못해 끊어진 것일 수도 있다. 진우는 귀마의 계약으로 불로불사에 가까운 상태가 되었으며, 이후 400년간 역대 퇴마사(헌터)들의 활동을 지켜보며 전략을 연구해왔다.
+#### **2.1. Past**
 
-#### 2.2 현재
+> Jinu, tempted by Gwi-ma.
 
-진우는 헌트릭스를 방해하기 위한 5인조 보이밴드, 사자 보이즈의 결성을 제안한다. 조건은 자신의 기억 속에서 가족과 함께한 기억을 지우는 것. 이는 그가 400년간 죄책감 속에서 살아왔음을 보여준다.
+Approximately 400 years ago, during the late Gwanghaegun to early Injo period of the Joseon Dynasty, Jinu was born into poverty. He struggled to support his mother and younger sister by playing a ragged _bipa_ (lute) on the streets. It was during this time of despair that Gwi-ma appeared, tempting him with the promise of a powerful singing voice that could save his family. After accepting the deal, Jinu's talent blossomed, and he was granted residence in the royal palace.
 
-사자 보이즈로 데뷔 후 팬들의 호응을 얻으며 데뷔곡 'Soda Pop'으로 헌트릭스가 만들어 놓은 혼문을 약화시킨다. 루미와의 첫 만남은 한의원 앞 골목. 넘어지는 루미에게 손을 뻗다 이내 자신의 어깨를 털며 "조심 좀 해"라며 사라진다. 이후 루미가 길거리 공연에서 그가 악령이라는 것을 알게 되고, 둘은 추격전과 전투를 벌이게 된다. 이 과정에서 진우는 루미의 몸에서 악령의 문양을 발견하고 이를 숨기기 위해 도와준다.
+However, his story to Rumi that his family joined him was a lie. In reality, Jinu was forced to choose between a life of luxury for himself or remaining in poverty with his family. He chose the former, abandoning them. Gwi-ma later dragged him to the demon realm and transformed him into a demon. For the next 400 years, Jinu was enslaved by a contract with Gwi-ma, who periodically offered to erase the painful memories of his family in exchange for his servitude. This cycle of guilt is what paradoxically allowed Jinu to retain his humanity; had he chosen to erase the memories, he would have become a mindless puppet like the other demons.
 
-이후 루미와 비밀리에 만남을 이어가며 서로의 과거를 털어놓고 동질감을 느끼게 된다. 진우는 루미의 문양이 있음에도 자유로운 모습을 부러워하며, 그녀와의 마지막 만남에서 과거를 고백하려 한다. 아이돌 어워즈를 앞두고 루미의 제안에 따라 우승을 포기하겠다고 약속하며, 희망의 상징인 'Free'라는 곡을 함께 부른다.
+#### **2.2. Present**
 
-하지만 귀마는 그 직후 진우를 강제로 소환하여 과거의 기억을 다시 들추고, 진우는 결국 아이돌 어워즈 당일 루미를 배신해 그녀의 정체를 폭로한다. 공연 직전, 루미가 준 팔찌를 착용하지 않은 진우의 모습에서 배신의 복선이 암시된다.
+> Jinu singing a lament about Gwi-ma's decline.
 
-진우는 과거 궁궐 입성 시 가족이 아닌 자신만의 영달을 선택한 죄책감을 고백하며 눈물을 흘린다. 이후 콘서트 ‘Your Idol’을 열고 인간들의 혼을 흡수하려는 귀마의 계획에 협조하지만, 루미가 절망을 극복하고 등장하자 다시 동요한다.
+Jinu proposes a new strategy to Gwi-ma: to form a five-member demon boy band to counter HUNTR/X and destroy the Honmoon barrier. In return, he demands the complete erasure of his memories. This reveals that he has been living under the weight of his guilt for over 400 years. This guilt is a key part of his humanity. Unlike the other Saja Boys, who carelessly discard fan gifts, Jinu is shown thoughtfully looking at a fan's letter and gently placing a bouquet down.
 
-결국 귀마의 공격으로부터 루미를 지키기 위해 몸을 던져 막고, 자신의 혼을 루미에게 넘기며 소멸한다. 이때 악귀의 노란 눈이 아닌 인간의 눈으로 돌아오며, 그의 혼은 검붉은색이 아닌 인간의 혼과 같은 푸른색으로 묘사된다. 이는 해원(解怨) 형식의 성불로 해석되기도 한다.
+As the Saja Boys, they achieve massive success with their debut song "Soda Pop," significantly weakening the Honmoon. Jinu's first encounter with Rumi is a brief, tense collision. Later, during a battle in a bathhouse, he discovers her demonic markings. In a pivotal moment, he chooses to help her hide them from her friends, feeling a sense of kinship with her.
 
----
+Intrigued, he arranges a meeting. Initially, his goal is to exploit her weakness, but as they share their secrets, they become confidants who understand each other's shame. Jinu feels a genuine connection to Rumi, as she is free from Gwi-ma's mental control despite her markings. Their bond culminates in a duet of the song "Free," where Jinu, for a moment, feels liberated from Gwi-ma's influence and sincerely promises to let HUNTR/X win the upcoming Idol Awards.
 
-### 3. 기타
+However, Gwi-ma foils this by forcibly summoning Jinu back to the demon realm and tormenting him with vivid memories of his past, reminding him that he can never escape. Jinu is forced to betray Rumi.
 
-- 예능 프로그램에서 즉흥적으로 분위기를 주도하며 헌트릭스를 역으로 당황하게 만드는 등 무대 외적 감각도 뛰어나다.
-- 사자 보이즈 멤버 중 유일하게 개별 서사가 드러난 인물이며, 다른 멤버들과의 관계나 감정은 거의 묘사되지 않는다. 다른 멤버들은 팬 서비스를 하면서도 무대 뒤에선 팬 선물을 내던지는 등, 귀마에게 완전히 굴복한 모습이다.
-- 사자 보이즈의 다른 멤버들과 달리 공연 후 팬이 준 꽃다발과 편지를 소중히 다루는 모습을 보인다.
-- 루미와의 마지막 콘서트에서는 손목에 루미의 팔찌를 끼지 않았지만, 루미가 등장하기 전과 후의 감정 변화가 극적으로 드러난다.
-- 작중 마지막 전투 시 루미에게 혼을 전한 이후, 루미가 귀마와 맞설 수 있을 정도로 강해진 것도 진우의 혼이 얼마나 강했는지를 보여준다.
-- 이름의 로마자 표기는 Jinwoo가 아닌, 현행 국어의 표기법에 따라 Jinu로 표기된다.
-- 진우의 외형 모티브는 배우 차은우와 남주혁이다.
-- 진우의 최후에 대해서 감독 매기 강은 "모든 걸 얻지 못하고 최후를 맞는 것이 옳다"는 판단을 내렸다. 죄를 인정하고 스스로를 구원하는 역할을 해야 했기 때문이다.
-- 2025년 아니메 엑스포에서는 팬들에 의해 진우 추모 제단이 설치되었다.
-- 루미와 함께 과거 구조되던 소녀가 진우의 여동생일 가능성도 제기되었다. 헌터가 혈연 기반으로 선발되지 않기 때문에 후손이라는 해석은 무리지만, 귀마와의 거래로 삶이 갈린 두 남매의 대비는 분명하다.
+At the Idol Awards, he carries out Gwi-ma's plan, exposing Rumi's secret and shattering her world. When she confronts him, he confesses the full, painful truth of his past: he willingly abandoned his family. This confession is filled with tears, revealing the immense guilt he has carried for centuries.
+
+With HUNTR/X disbanded, Jinu and the Saja Boys hold a concert at Namsan Tower to finally destroy the Honmoon. Just as their plan is about to succeed, Rumi reappears, having accepted her full identity. Her powerful song begins to restore the barrier, and Jinu, moved by her strength, hesitates. As Gwi-ma launches a fatal attack at Rumi, Jinu makes his final choice.
+
+> "I'm sorry... For... Everything...."
+> "You did. You gave me my soul back. And now... I give it to you."
+
+Jinu shields Rumi with his own body, atoning for his betrayal. In his final moments, his eyes revert to their human brown, and he gives his soul—now pure blue like a human's—to Rumi, enhancing her sword. This ultimate sacrifice allows HUNTR/X to defeat Gwi-ma. After his death, his loyal animal companions, Derpy and Sussie, are adopted by Rumi.
+
+### **3. Combat Abilities**
+
+Jinu is the demon faction's chief strategist and second-in-command after Gwi-ma. He devised the entire K-pop idol infiltration plan, demonstrating his intelligence.
+
+His combat prowess is formidable, far surpassing other demons. In his first fight with Rumi, he lands the first blow and remains composed even when she counters, remarking, "Not bad." He is at least her equal in strength, if not superior. Even in his human form, he easily evades her attacks using teleportation and agility. If he had transformed into his true demon form, it's likely he could have killed her, but his affection for her held him back.
+
+His true strength, however, lies in his magical abilities. His singing and dancing can manipulate human emotions, and he possesses shapeshifting and illusion-casting powers. Ultimately, his greatest asset was his cunning mind, which made him Gwi-ma's most valuable, albeit most rebellious, subordinate.
+
+### **4. Miscellaneous & Trivia**
+
+- **Name Origin:** The name "Jinu" is a reference to the Korean hip-hop duo **Jinusean**.
+- **Historical Context:** His backstory is set around 1625, a tumultuous period in Korean history, making his family's poverty historically plausible. However, the details of a commoner living in the palace are more aligned with Western fairy tales than Joseon-era Korean history.
+- **_Bipa_ Details:** Jinu's _bipa_ is a hybrid of two traditional types of lutes.
+- **Double Protagonist:** As a frenemy to the female lead Rumi, he functions as a second protagonist, with his backstory being the only one among the Saja Boys to be explored in depth. His in-universe ship name with Rumi is **Rujinu**.
+- **Actor's Contribution:** Actor Ahn Hyo Seop's facial expressions during recording were used as a reference for Jinu's animation.
+- **Design Inspiration:** His appearance was inspired by Korean celebrities Cha Eun Woo and Nam Joo-hyuk.
+- **Character's Ending:** The directors considered alternate endings where Jinu survived but ultimately decided that his redemption required sacrifice. Co-director Jeff Rowe noted, "Great love stories tend to change each other... This girl came into this demonic boy's life and made him atone for a lifetime."
+- **Fan Tribute:** A memorial shrine for Jinu was set up by fans at Anime Expo 2025.
+- **Sister Fan Theory:** A popular fan theory suggests that a young girl rescued by the first generation of hunters in the film's prologue is Jinu's younger sister, though this has not been confirmed.
