@@ -104,11 +104,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* AdSense 스크립트 - 현재 미사용으로 주석처리 */}
+        {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8647279125417942"
           crossOrigin="anonymous"
-        ></script>
+        ></script> */}
         <script async src="https://tally.so/widgets/embed.js"></script>
         <GoogleAnalytics />
       </head>
