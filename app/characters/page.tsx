@@ -93,50 +93,158 @@ export default function CharactersPage() {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Characters
           </h1>
-          <p className="text-xl text-purple-200 max-w-2xl mx-auto">
-            Meet the K-pop idols who lead double lives as demon slayers, the
-            demonic forces they combat, and the allies who support them in their
-            mission to protect the world.
-          </p>
         </div>
       </section>
 
       {/* Character Grid */}
       <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {characters.map((character) => (
-              <Link
-                key={character.id}
-                href={`/characters/${character.id}`}
-                className="group"
-              >
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
-                  <CharacterImage
-                    src={character.image}
-                    alt={`${character.name} character portrait`}
-                    name={character.name}
-                    role={character.role}
-                  />
-                  <div className="p-6">
-                    <div className="flex justify-between items-start mb-3">
-                      <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
-                        {character.name}
-                      </h3>
-                      <span className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
-                        {character.role}
-                      </span>
+        <div className="max-w-6xl mx-auto space-y-16">
+          {/* HUNTR/X Section */}
+          <div>
+            <div className="mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-3">
+                HUNTR/X
+              </h2>
+              <p className="text-purple-200 text-lg">
+                The demon-hunting K-pop group protecting humanity with their music and magical abilities
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {characters
+                .filter((character) => character.role.includes("HUNTR/X"))
+                .map((character) => (
+                  <Link
+                    key={character.id}
+                    href={`/characters/${character.id}`}
+                    className="group"
+                  >
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
+                      <CharacterImage
+                        src={character.image}
+                        alt={`${character.name} character portrait`}
+                        name={character.name}
+                        role={character.role}
+                      />
+                      <div className="p-6">
+                        <div className="flex justify-between items-start mb-3">
+                          <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            {character.name}
+                          </h3>
+                          <span className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
+                            {character.role}
+                          </span>
+                        </div>
+                        <p className="text-purple-200 leading-relaxed">
+                          {character.description}
+                        </p>
+                        <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
+                          Learn more →
+                        </div>
+                      </div>
                     </div>
-                    <p className="text-purple-200 leading-relaxed">
-                      {character.description}
-                    </p>
-                    <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
-                      Learn more →
+                  </Link>
+                ))}
+            </div>
+          </div>
+
+          {/* Saja Boys Section */}
+          <div>
+            <div className="mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400 mb-3">
+                Saja Boys
+              </h2>
+              <p className="text-purple-200 text-lg">
+                The demonic boy band serving the Demon King, using their music to drain souls
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {characters
+                .filter((character) => character.role.includes("Saja Boys"))
+                .map((character) => (
+                  <Link
+                    key={character.id}
+                    href={`/characters/${character.id}`}
+                    className="group"
+                  >
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
+                      <CharacterImage
+                        src={character.image}
+                        alt={`${character.name} character portrait`}
+                        name={character.name}
+                        role={character.role}
+                      />
+                      <div className="p-6">
+                        <div className="flex justify-between items-start mb-3">
+                          <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            {character.name}
+                          </h3>
+                          <span className="bg-red-600/30 text-red-200 px-3 py-1 rounded-full text-sm">
+                            {character.role}
+                          </span>
+                        </div>
+                        <p className="text-purple-200 leading-relaxed">
+                          {character.description}
+                        </p>
+                        <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
+                          Learn more →
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                  </Link>
+                ))}
+            </div>
+          </div>
+
+          {/* Other Characters Section */}
+          <div>
+            <div className="mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-3">
+                Other Characters
+              </h2>
+              <p className="text-purple-200 text-lg">
+                Mentors, allies, and villains who shape the story
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {characters
+                .filter(
+                  (character) =>
+                    !character.role.includes("HUNTR/X") &&
+                    !character.role.includes("Saja Boys")
+                )
+                .map((character) => (
+                  <Link
+                    key={character.id}
+                    href={`/characters/${character.id}`}
+                    className="group"
+                  >
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
+                      <CharacterImage
+                        src={character.image}
+                        alt={`${character.name} character portrait`}
+                        name={character.name}
+                        role={character.role}
+                      />
+                      <div className="p-6">
+                        <div className="flex justify-between items-start mb-3">
+                          <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            {character.name}
+                          </h3>
+                          <span className="bg-cyan-600/30 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                            {character.role}
+                          </span>
+                        </div>
+                        <p className="text-purple-200 leading-relaxed">
+                          {character.description}
+                        </p>
+                        <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
+                          Learn more →
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+            </div>
           </div>
         </div>
       </section>
