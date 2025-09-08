@@ -6,18 +6,55 @@ export interface CharacterSummary {
   role: string;
 }
 
+export interface PerformanceOutfit {
+  name: string;
+  description: string;
+  occasion: string;
+}
+
+export interface TriviaItem {
+  category: string;
+  title: string;
+  description: string;
+}
+
 export interface CharacterDetails {
   name: string;
   koreanName?: string;
+  fullName?: string;
+  gender?: string;
+  nationality?: string;
+  species?: string;
+  affiliatedGroup?: string;
+  position?: string;
   role: string;
   age?: string;
   height?: string;
   weapon?: string;
+  weaponEvolution?: string;
   voiceActor?: string;
+  voiceActors?: {
+    en?: string;
+    kr?: string;
+    jp?: string;
+  };
+  singingVoice?: {
+    en?: string;
+    kr?: string;
+    jp?: string;
+  };
+  family?: Array<{
+    relation: string;
+    name: string;
+  }>;
+  overview?: string;
+  appearance?: string;
+  performanceOutfits?: PerformanceOutfit[];
   personality: string;
   quotes: string[];
   abilities: string[];
   background: string;
+  storyArc?: string;
   relationships?: Array<{
     name: string;
     relation: string;
@@ -27,6 +64,7 @@ export interface CharacterDetails {
   favoriteFood?: string;
   hobbies?: string[];
   fears?: string[];
+  trivia?: TriviaItem[];
   relatedOST: string[];
 }
 
@@ -124,64 +162,148 @@ export const characterSummaries: CharacterSummary[] = [
 export const characterDetails: Record<string, CharacterDetails> = {
   rumi: {
     name: "Rumi",
-    koreanName: "류루미",
-    role: "HUNTR/X Leader & Lead Vocalist",
-    age: "20",
-    height: "165cm",
-    weapon: "Saingeom (Sacred Sword)",
-    voiceActor: "Arden Cho (Speaking) / EJAE (Singing)",
-    personality: `The passionate and driven leader of HUNTR/X. Haunted by her half-demon heritage, Rumi is fiercely dedicated to protecting humanity and proving her worth. She channels powerful spirit and demon magic through her voice and her sacred sword, though she fears her demonic side.`,
+    koreanName: "강루미",
+    fullName: "Kang Rumi",
+    gender: "Female",
+    nationality: "Republic of Korea",
+    species: "Half-Human, Half-Demon (Cambion)",
+    affiliatedGroup: "HUNTR/X",
+    position: "Leader, Main Vocalist",
+    role: "HUNTR/X Leader & Main Vocalist",
+    age: "23-24 years old (Born in 2001-2002)",
+    weapon: "Saingeom (Four Tigers Sword)",
+    weaponEvolution: "Later enhanced into a Chilseongkal (Seven Star Sword) with a dokkaebi motif",
+    voiceActors: {
+      en: "Arden Cho, Rumi Oak (child)",
+      kr: "Shin Na-ri",
+      jp: "Minako Kotobuki"
+    },
+    singingVoice: {
+      en: "EJAE",
+      kr: "EJAE",
+      jp: "Tsutsumi Ikuko"
+    },
+    family: [
+      {
+        relation: "Biological Mother",
+        name: "Ryu Mi-yeong"
+      },
+      {
+        relation: "Adoptive Mother",
+        name: "Celine"
+      },
+      {
+        relation: "Biological Father",
+        name: "Unnamed Demon"
+      }
+    ],
+    overview: "Rumi Kang is the main protagonist of the 2025 animated musical fantasy, K-Pop Demon Hunters, produced by Sony Pictures Animation for Netflix. She is the charismatic leader and main vocalist of the world-renowned K-pop girl group, HUNTR/X. While captivating audiences on stage, Rumi and her bandmates, Mira and Zoey, lead a secret life as demon hunters. However, Rumi harbors a deeper secret she conceals even from her closest friends: she is a cambion, born to a human mother and a demon father.",
+    appearance: "Rumi is depicted as a tall, athletic young woman with classic Korean beauty. Her most defining feature is her long, brilliant purple hair, which she almost always wears in a thick dragon tail braid—a style she inherited from her mother, Ryu Mi-yeong. As an idol, she sports bold stage makeup with intense eyeliner and heavy mascara to accentuate a fierce persona. Her outfits blend modern K-pop glamour with traditional Korean aesthetics, often featuring a modernized norigae (a decorative tassel pendant).",
+    performanceOutfits: [
+      {
+        name: "How It's Done",
+        description: "An edgy, streetwear-inspired outfit consisting of a puffy bomber jacket over a white mock-neck crop top (to hide her demon markings), high-waisted denim shorts, and platform combat boots.",
+        occasion: "Opening number performance"
+      },
+      {
+        name: "Golden (Idol Awards)",
+        description: "A polished black, white, and gold ensemble, featuring a white sleeveless top and shorts, a cropped black jacket detailed with gold chains, and knee-high white lace-up boots.",
+        occasion: "Awards ceremony performance"
+      },
+      {
+        name: "Takedown (Train Battle)",
+        description: "A stealthy, all-black leather combat outfit that balances style with functionality, allowing her to wield her glowing purple sword during the performance.",
+        occasion: "Action sequence performance"
+      },
+      {
+        name: "Free",
+        description: "A softened look with a simple cropped hoodie, skinny jeans, and sneakers. Her magenta demon markings begin to glow faintly through her clothes as she starts to embrace her identity.",
+        occasion: "Intimate duet with Jinu"
+      },
+      {
+        name: "What It Sounds Like (Finale)",
+        description: "A disheveled version of her 'Golden' outfit, with the jacket removed to fully reveal the glowing purple and iridescent demon markings swirling across her arms, neck, and face.",
+        occasion: "Climax finale performance"
+      }
+    ],
+    personality: "On the surface, Rumi is the confident, ambitious, and responsible leader of HUNTR/X. She is hardworking and relentlessly pushes herself and her group toward their goal of completing the 'Golden Honmoon'—a mission to permanently seal the demon world which she believes will also purify her of her demonic heritage. This drive can make her stubborn and prone to neglecting her own well-being. Beneath this driven exterior, Rumi is deeply compassionate and protective of her friends and fans. Her greatest struggle is the internal shame and fear she feels about her half-demon nature. Terrified of being seen as a 'monster' and rejected by her friends, she keeps her struggles hidden, which can make her seem emotionally distant. This insecurity leads to moments of intense self-doubt and a tendency toward reckless self-sacrifice, often choosing to face danger alone rather than burden her team.",
     quotes: [
-      "We fight for the light, with the power of our voices.",
-      "This isn't just music, it's a shield for humanity.",
-      "I will not be defined by the darkness within me.",
+      "If this is the Honmoon I'm supposed to protect, I'm glad to see it destroyed.",
+      "Then, we'll just make a new one."
     ],
     abilities: [
-      "Master Swordswoman",
-      "Spirit Magic",
-      "Demon Magic (Rarely Used)",
-      "Demonic Screech",
-      "Teleportation",
-      "Inspirational Leadership",
+      "Expert Combat Skills: Thanks to years of rigorous training, Rumi is a formidable fighter, skilled in hand-to-hand combat and swordplay, seamlessly blending dance-like movements with her attacks. She is capable of parkour-level feats and has a combat sense so sharp she can predict and counter a demon's teleportation attacks.",
+      "Powerful Singing Voice: Her voice possesses magical properties, channeling spiritual energy from her fans' emotions to power the Honmoon, a protective barrier against demonic forces. As the main vocalist, her power is depicted as the strongest in the group, and she can also use her voice to unleash sonic attacks.",
+      "Weapon Conjuring & Soul Energy Projection: Rumi can summon her signature weapon, the Saingeom Sword, from pure energy. This magical blade is spiritually linked to her. She can also channel soul energy into it to release crescent-shaped energy slashes for ranged attacks.",
+      "Idol Abilities: While officially the main vocalist, she is a 'hexagonal center'—an all-rounder who perfectly covers all areas, including dance, rap, and visuals. She performs incredibly difficult songs live while executing intense choreography and is implied to also act as a producer for the group."
     ],
-    background:
-      "Rumi is the half-demon, half-human daughter of a legendary demon hunter. Raised by her mentor Celine, she was taught to suppress her demonic abilities. She formed HUNTR/X to hunt demons and believed creating a 'Golden Honmoon' through her music would make her fully human. Her journey is one of self-acceptance, learning to embrace both her human and demon halves to ultimately defeat the Demon King.",
+    background: "Her primary weapon is the Saingeom (Four Tigers Sword), a legendary Korean blade believed to repel evil. It is a spiritual heirloom passed down from her mother's generation of hunters. Later in the story, after absorbing Jinu's soul, it transforms into a massive Chilseongkal (Seven Star Sword) engraved with a dokkaebi (Korean goblin/demon) motif.",
+    storyArc: "Raised as an idol and a hunter by her adoptive mother Celine, Rumi discovers that the demonic markings on her body are spreading, causing her to lose her voice. Believing that completing the Golden Honmoon will cure her, she rushes the release of their new song, 'Golden.' During this time, she encounters the rival boy band 'Saja Boys' and discovers they are demons. In a confrontation, their leader, Jinu, sees her secret markings but chooses to cover for her. This act, combined with learning of Jinu's own tragic past as a human, forms a complicated bond between them. Rumi makes a deal with him to win at the Idol Awards, but he betrays her at the last moment, exposing her half-demon nature to the world. Abandoned by her horrified friends, who point their weapons at her, and crushed by Jinu's betrayal, Rumi breaks down and begins to transform into a more demonic form. She begs Celine to kill her, but when Celine also fails to accept her as she is, Rumi despairs, declaring, 'If this is the Honmoon I'm supposed to protect, I'm glad to see it destroyed.' However, just as the Honmoon is about to shatter, Rumi finds the strength to accept her entire identity. She reappears and proclaims, 'Then, we'll just make a new one,' and begins to sing. Her song breaks the spell over Mira and Zoey, and the reunited HUNTR/X enters the final battle. Jinu sacrifices himself to save Rumi, and using his soul's power, she finally defeats the demon king Gwi-ma and creates a new, rainbow-colored Honmoon to protect the world. In the end, Rumi's markings remain, but she no longer hides them. Her relationship with her bandmates is healed, and HUNTR/X continues their career, stronger and more united than ever.",
     relationships: [
       {
         name: "Jinu",
-        relation: "Love Interest / Former Rival",
-        description:
-          "Her main rival and later savior. Their relationship is complex, evolving from enemies to allies who find understanding in their shared struggles.",
+        relation: "Love Interest / Rival",
+        description: "Their relationship evolves from enemies to a complex bond built on understanding their shared supernatural burdens. Jinu ultimately sacrifices himself to save Rumi."
       },
       {
         name: "Mira",
-        relation: "Best Friend & Teammate",
-        description:
-          "Rumi's most trusted confidante and fellow founding member of HUNTR/X.",
+        relation: "Bandmate",
+        description: "Fellow member of HUNTR/X who initially rejects Rumi when her demon nature is revealed, but later reconciles."
       },
       {
         name: "Zoey",
-        relation: "Teammate / Younger Sister Figure",
-        description: "The maknae of the group, whom Rumi feels a strong need to protect.",
+        relation: "Bandmate",
+        description: "Fellow member of HUNTR/X who initially rejects Rumi when her demon nature is revealed, but later reconciles."
       },
       {
         name: "Celine",
         relation: "Adoptive Mother & Mentor",
-        description:
-          "Raised Rumi after her mother's death, training her as a demon hunter while urging her to hide her demonic nature.",
+        description: "Raised Rumi after her biological mother's death, but struggles to accept Rumi's demonic heritage."
       },
       {
-        name: "Gwi-Ma",
+        name: "Gwi-ma",
         relation: "Arch-Nemesis",
-        description: "The Demon King who represents everything Rumi fights against.",
-      },
+        description: "The demon king whom Rumi ultimately defeats, creating a new Honmoon to protect the world."
+      }
     ],
-    combatStyle:
-      "A blend of elegant swordsmanship and powerful vocal magic. She can create protective barriers or unleash devastating sonic attacks. Reluctantly uses teleportation and other demonic powers in dire situations.",
-    favoriteFood: "Tteokbokki",
-    hobbies: ["Songwriting", "Practicing swordsmanship", "Visiting ancient temples"],
-    fears: ["Losing control of her demon side", "Failing her friends and family"],
-    relatedOST: ["Golden", "TAKEDOWN", "What It Sounds Like"],
+    trivia: [
+      {
+        category: "Character Origin",
+        title: "Design Creation",
+        description: "Rumi's initial design was created in 2016 by director Maggie Kang's husband, artist Rad Sechrist, for a personal project. Director Kang loved the design and adapted it for the film."
+      },
+      {
+        category: "Name",
+        title: "Real-Life Connection",
+        description: "The character's name, Rumi, was given to Director Kang's real-life daughter, not the other way around. The film was in development for nine years, long enough for her daughter to voice the younger version of the character."
+      },
+      {
+        category: "Backstory",
+        title: "Ancestral Home",
+        description: "Her family's ancestral home is likely on Jeju Island, as suggested by traditional funeral markers (sandam) and statues (dol hareubang) shown in flashbacks. The story of how her human mother and demon father fell in love remains an unresolved mystery."
+      },
+      {
+        category: "Immunity",
+        title: "Demon King Resistance",
+        description: "Rumi is the only character with demonic blood who is immune to the demon king Gwi-ma's mental control."
+      },
+      {
+        category: "Fan Culture",
+        title: "Viral Memes & Ships",
+        description: "A brief, comical scene of Rumi sniffing kimbap became a viral meme among fans. In fan fiction, she is most often shipped with Jinu ('Rujinu') or Mira."
+      },
+      {
+        category: "Voice & Vocals",
+        title: "Performance Inspiration",
+        description: "English voice actress Arden Cho wanted Rumi to be as cool as real-life K-pop groups like BLACKPINK and aespa. Her singing vocalist, EJAE, is a renowned composer who has worked on hits like Red Velvet's 'Psycho' and aespa's 'Armageddon.'"
+      },
+      {
+        category: "Sequel Hooks",
+        title: "Future Possibilities",
+        description: "The story leaves open possibilities for a sequel: Gwi-ma was only temporarily banished, the Honmoon was not the pure 'Golden' version, and Rumi's markings (which Gwi-ma called 'my markings') did not disappear."
+      }
+    ],
+    relatedOST: ["Golden", "TAKEDOWN", "What It Sounds Like", "How It's Done", "Free"],
   },
   mira: {
     name: "Mira",
