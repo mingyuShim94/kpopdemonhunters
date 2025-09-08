@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import CharacterImage from "./CharacterImage";
 import { CharacterSummary } from "../data/characters";
 
@@ -12,7 +13,35 @@ interface CharacterTabsProps {
 }
 
 export default function CharacterTabs({ characters }: CharacterTabsProps) {
-  const [activeTab, setActiveTab] = useState<TabType>("HUNTR/X");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  
+  // URL 파라미터에서 탭 값을 읽어오기
+  const getInitialTab = (): TabType => {
+    const tabParam = searchParams.get('tab');
+    if (tabParam === "HUNTR/X" || tabParam === "Saja Boys" || tabParam === "Others") {
+      return tabParam;
+    }
+    return "HUNTR/X";
+  };
+
+  const [activeTab, setActiveTab] = useState<TabType>(getInitialTab);
+
+  // URL 파라미터가 변경되었을 때 탭 상태 동기화
+  useEffect(() => {
+    const currentTab = getInitialTab();
+    if (currentTab !== activeTab) {
+      setActiveTab(currentTab);
+    }
+  }, [searchParams]);
+
+  // 탭 변경 시 URL 업데이트
+  const handleTabChange = (tab: TabType) => {
+    setActiveTab(tab);
+    const newParams = new URLSearchParams(searchParams.toString());
+    newParams.set('tab', tab);
+    router.replace(`/characters?${newParams.toString()}`, { scroll: false });
+  };
 
   const getCharactersByTab = (tab: TabType) => {
     switch (tab) {
@@ -80,7 +109,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
             {(["HUNTR/X", "Saja Boys", "Others"] as TabType[]).map((tab) => (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => handleTabChange(tab)}
                 className={`
                   px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
                   ${activeTab === tab
@@ -111,7 +140,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
           {currentCharacters.map((character) => (
             <Link
               key={character.id}
-              href={`/characters/${character.id}`}
+              href={`/characters/${character.id}?fromTab=${encodeURIComponent(activeTab)}`}
               className="group"
             >
               <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">

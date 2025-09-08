@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import Footer from "./Footer";
 import CharacterImage from "./CharacterImage";
 import ScrollToTop from "./ScrollToTop";
@@ -305,6 +306,11 @@ interface CharacterPageClientProps {
 
 export default function CharacterPageClient({ character, characterSummary, slug }: CharacterPageClientProps) {
   const theme = getCharacterTheme(character.name);
+  const searchParams = useSearchParams();
+  
+  // fromTab 파라미터에서 이전 탭 정보 읽기
+  const fromTab = searchParams.get('fromTab');
+  const backToCharactersUrl = fromTab ? `/characters?tab=${encodeURIComponent(fromTab)}` : '/characters';
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
@@ -346,7 +352,7 @@ export default function CharacterPageClient({ character, characterSummary, slug 
       {/* Hero Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <Link href="/characters" className="text-purple-300 hover:text-purple-200 mb-8 inline-block">
+          <Link href={backToCharactersUrl} className="text-purple-300 hover:text-purple-200 mb-8 inline-block">
             ← Back to Characters
           </Link>
           
