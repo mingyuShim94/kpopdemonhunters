@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { characterDetails as characters, characterSummaries } from "../../data/characters";
 import CharacterPageClient from "../../components/CharacterPageClient";
 
@@ -19,11 +20,15 @@ export default async function CharacterPage({ params }: PageProps) {
   }
 
   return (
-    <CharacterPageClient 
-      character={character} 
-      characterSummary={characterSummary} 
-      slug={slug} 
-    />
+    <Suspense fallback={<div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center">
+      <div className="text-white text-xl">Loading character...</div>
+    </div>}>
+      <CharacterPageClient 
+        character={character} 
+        characterSummary={characterSummary} 
+        slug={slug} 
+      />
+    </Suspense>
   );
 }
 

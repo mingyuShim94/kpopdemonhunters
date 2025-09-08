@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import CharacterImage from "./CharacterImage";
 import { CharacterSummary } from "../data/characters";
 
@@ -17,13 +17,13 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
   const router = useRouter();
   
   // URL 파라미터에서 탭 값을 읽어오기
-  const getInitialTab = (): TabType => {
+  const getInitialTab = useCallback((): TabType => {
     const tabParam = searchParams.get('tab');
     if (tabParam === "HUNTR/X" || tabParam === "Saja Boys" || tabParam === "Others") {
       return tabParam;
     }
     return "HUNTR/X";
-  };
+  }, [searchParams]);
 
   const [activeTab, setActiveTab] = useState<TabType>(getInitialTab);
 
@@ -33,7 +33,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
     if (currentTab !== activeTab) {
       setActiveTab(currentTab);
     }
-  }, [searchParams]);
+  }, [searchParams, activeTab, getInitialTab]);
 
   // 탭 변경 시 URL 업데이트
   const handleTabChange = (tab: TabType) => {

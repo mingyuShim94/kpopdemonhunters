@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Footer from "../components/Footer";
 import CharacterTabs from "../components/CharacterTabs";
 import MobileButtons from "../components/MobileButtons";
@@ -99,7 +100,9 @@ export default function CharactersPage() {
 
       {/* Character Grid */}
       <section className="pt-0 pb-8 px-4">
-        <CharacterTabs characters={characters} />
+        <Suspense fallback={<div className="text-center text-white">Loading characters...</div>}>
+          <CharacterTabs characters={characters} />
+        </Suspense>
       </section>
 
       <div className="mt-16">
