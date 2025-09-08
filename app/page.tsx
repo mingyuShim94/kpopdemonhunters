@@ -174,26 +174,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Updates */}
-      <section className="relative z-10 py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-8 bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
-            Recent Updates
-          </h2>
-          <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
-            {/* Wiki Updates */}
-            <div className="bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-cyan-500/10 backdrop-blur-sm rounded-xl p-6 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-3 bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent">
-                Wiki Updates
-              </h3>
-              <p className="text-gray-200">
-                We&apos;re continuously adding new character profiles, OST
-                information, and cultural insights to the KDH Wiki.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
 
