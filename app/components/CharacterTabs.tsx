@@ -1,0 +1,157 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import CharacterImage from "./CharacterImage";
+import { CharacterSummary } from "../data/characters";
+
+type TabType = "HUNTR/X" | "Saja Boys" | "Others";
+
+interface CharacterTabsProps {
+  characters: CharacterSummary[];
+}
+
+export default function CharacterTabs({ characters }: CharacterTabsProps) {
+  const [activeTab, setActiveTab] = useState<TabType>("HUNTR/X");
+
+  const getCharactersByTab = (tab: TabType) => {
+    switch (tab) {
+      case "HUNTR/X":
+        return characters.filter((character) => character.role.includes("HUNTR/X"));
+      case "Saja Boys":
+        return characters.filter((character) => character.role.includes("Saja Boys"));
+      case "Others":
+        return characters.filter(
+          (character) =>
+            !character.role.includes("HUNTR/X") &&
+            !character.role.includes("Saja Boys")
+        );
+      default:
+        return [];
+    }
+  };
+
+  const getTabConfig = (tab: TabType) => {
+    switch (tab) {
+      case "HUNTR/X":
+        return {
+          title: "HUNTR/X",
+          description: "The demon-hunting K-pop group protecting humanity with their music and magical abilities",
+          gradientFrom: "from-pink-400",
+          gradientTo: "to-purple-400",
+          badgeColor: "bg-purple-600/30 text-purple-200"
+        };
+      case "Saja Boys":
+        return {
+          title: "Saja Boys",
+          description: "The demonic boy band serving the Demon King, using their music to drain souls",
+          gradientFrom: "from-red-400",
+          gradientTo: "to-orange-400",
+          badgeColor: "bg-red-600/30 text-red-200"
+        };
+      case "Others":
+        return {
+          title: "Other Characters",
+          description: "Mentors, allies, and villains who shape the story",
+          gradientFrom: "from-cyan-400",
+          gradientTo: "to-blue-400",
+          badgeColor: "bg-cyan-600/30 text-cyan-200"
+        };
+      default:
+        return {
+          title: "",
+          description: "",
+          gradientFrom: "",
+          gradientTo: "",
+          badgeColor: ""
+        };
+    }
+  };
+
+  const currentTabConfig = getTabConfig(activeTab);
+  const currentCharacters = getCharactersByTab(activeTab);
+
+  return (
+    <>
+      {/* Tab Navigation */}
+      <div className="flex justify-center mb-4">
+        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-1 border border-white/10">
+          <div className="flex space-x-1">
+            {(["HUNTR/X", "Saja Boys", "Others"] as TabType[]).map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`
+                  px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
+                  ${activeTab === tab
+                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+                    : "text-purple-200 hover:text-white hover:bg-white/10"
+                  }
+                `}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Character Content */}
+      <div className="max-w-6xl mx-auto">
+        <div className="mb-8 text-center">
+          <h2 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${currentTabConfig.gradientFrom} ${currentTabConfig.gradientTo} mb-3`}>
+            {currentTabConfig.title}
+          </h2>
+          <p className="text-purple-200 text-lg">
+            {currentTabConfig.description}
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in">
+          {currentCharacters.map((character) => (
+            <Link
+              key={character.id}
+              href={`/characters/${character.id}`}
+              className="group"
+            >
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
+                <CharacterImage
+                  src={character.image}
+                  alt={`${character.name} character portrait`}
+                  name={character.name}
+                  role={character.role}
+                />
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                      {character.name}
+                    </h3>
+                    <span className={`${currentTabConfig.badgeColor} px-3 py-1 rounded-full text-sm`}>
+                      {character.role}
+                    </span>
+                  </div>
+                  <p className="text-purple-200 leading-relaxed">
+                    {character.description}
+                  </p>
+                  <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
+                    Learn more →
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 0.3s ease-out;
+        }
+      `}</style>
+    </>
+  );
+}
