@@ -9,9 +9,10 @@ interface CharacterImageProps {
   name: string;
   role: string;
   aspectRatio?: "video" | "square";
+  priority?: boolean;
 }
 
-export default function CharacterImage({ src, alt, name, role, aspectRatio = "video" }: CharacterImageProps) {
+export default function CharacterImage({ src, alt, name, role, aspectRatio = "video", priority = false }: CharacterImageProps) {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   
@@ -48,8 +49,8 @@ export default function CharacterImage({ src, alt, name, role, aspectRatio = "vi
         fill
         className="object-cover transition-transform duration-300 group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, 50vw"
-        priority={false}
-        loading="lazy"
+        priority={priority}
+        loading={priority ? "eager" : "lazy"}
         onLoad={() => setIsLoading(false)}
         onError={() => setHasError(true)}
       />

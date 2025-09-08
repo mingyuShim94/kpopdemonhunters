@@ -125,62 +125,68 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
         </div>
       </div>
 
-      {/* Character Content */}
+      {/* Character Content - All tabs rendered simultaneously */}
       <div className="max-w-6xl mx-auto">
-        <div className="mb-8 text-center">
-          <h2 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${currentTabConfig.gradientFrom} ${currentTabConfig.gradientTo} mb-3`}>
-            {currentTabConfig.title}
-          </h2>
-          <p className="text-purple-200 text-lg">
-            {currentTabConfig.description}
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in">
-          {currentCharacters.map((character) => (
-            <Link
-              key={character.id}
-              href={`/characters/${character.id}?fromTab=${encodeURIComponent(activeTab)}`}
-              className="group"
-            >
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
-                <CharacterImage
-                  src={character.image}
-                  alt={`${character.name} character portrait`}
-                  name={character.name}
-                  role={character.role}
-                />
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
-                      {character.name}
-                    </h3>
-                    <span className={`${currentTabConfig.badgeColor} px-3 py-1 rounded-full text-sm`}>
-                      {character.role}
-                    </span>
-                  </div>
-                  <p className="text-purple-200 leading-relaxed">
-                    {character.description}
-                  </p>
-                  <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
-                    Learn more →
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
+        {(["HUNTR/X", "Saja Boys", "Others"] as TabType[]).map((tab) => {
+          const tabConfig = getTabConfig(tab);
+          const tabCharacters = getCharactersByTab(tab);
+          const isActive = activeTab === tab;
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-          animation: fade-in 0.3s ease-out;
-        }
-      `}</style>
+          return (
+            <div
+              key={tab}
+              className={`transition-opacity duration-300 ${
+                isActive ? "opacity-100" : "opacity-0 hidden"
+              }`}
+            >
+              <div className="mb-8 text-center">
+                <h2 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${tabConfig.gradientFrom} ${tabConfig.gradientTo} mb-3`}>
+                  {tabConfig.title}
+                </h2>
+                <p className="text-purple-200 text-lg">
+                  {tabConfig.description}
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {tabCharacters.map((character) => (
+                  <Link
+                    key={character.id}
+                    href={`/characters/${character.id}?fromTab=${encodeURIComponent(tab)}`}
+                    className="group"
+                  >
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
+                      <CharacterImage
+                        src={character.image}
+                        alt={`${character.name} character portrait`}
+                        name={character.name}
+                        role={character.role}
+                        priority={tab === "HUNTR/X"}
+                      />
+                      <div className="p-6">
+                        <div className="flex justify-between items-start mb-3">
+                          <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            {character.name}
+                          </h3>
+                          <span className={`${tabConfig.badgeColor} px-3 py-1 rounded-full text-sm`}>
+                            {character.role}
+                          </span>
+                        </div>
+                        <p className="text-purple-200 leading-relaxed">
+                          {character.description}
+                        </p>
+                        <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
+                          Learn more →
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
