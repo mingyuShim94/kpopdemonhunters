@@ -5,7 +5,7 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import CultureTabs from "../components/CultureTabs";
 import CultureSection from "../components/CultureSection";
-import MobileNavigation from "../components/MobileNavigation";
+import MobileButtons from "../components/MobileButtons";
 import { cultureCategories, CultureCategoryKey } from "../data/culture";
 
 export default function CulturePage() {
@@ -42,7 +42,7 @@ export default function CulturePage() {
                 Korean Culture
               </Link>
             </div>
-            <MobileNavigation currentPath="/culture" />
+            <MobileButtons />
           </div>
         </div>
       </nav>

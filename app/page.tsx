@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "./components/Footer";
-import MobileNavigation from "./components/MobileNavigation";
 import SearchModal from "./components/SearchModal";
+import MobileButtons from "./components/MobileButtons";
 
 export default function Home() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -60,7 +60,7 @@ export default function Home() {
                 </svg>
               </button>
             </div>
-            <MobileNavigation currentPath="/" />
+            <MobileButtons />
           </div>
         </div>
       </nav>

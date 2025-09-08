@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import Footer from "../../components/Footer";
-import MobileNavigation from "../../components/MobileNavigation";
 import SearchModal from "../../components/SearchModal";
 import StructuredData from "../../components/StructuredData";
 import TallyForm from "../../components/TallyForm";
+import MobileButtons from "../../components/MobileButtons";
 
 export default function RankingPage() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -88,7 +88,7 @@ export default function RankingPage() {
                 </svg>
               </button>
             </div>
-            <MobileNavigation currentPath="/play/ranking" />
+            <MobileButtons />
           </div>
         </div>
       </nav>

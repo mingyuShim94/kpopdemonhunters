@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Footer from "../components/Footer";
 import { ostTracks } from "../data/ost";
-import MobileNavigation from "../components/MobileNavigation";
 import OSTSidebar from "../components/OSTSidebar";
+import MobileButtons from "../components/MobileButtons";
 
 export const metadata: Metadata = {
   title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
@@ -69,7 +69,7 @@ export default function OSTPage() {
                 Korean Culture
               </Link>
             </div>
-            <MobileNavigation currentPath="/ost" />
+            <MobileButtons />
           </div>
         </div>
       </nav>

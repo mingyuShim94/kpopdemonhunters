@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Footer from "../components/Footer";
-import MobileNavigation from "../components/MobileNavigation";
 import CharacterTabs from "../components/CharacterTabs";
+import MobileButtons from "../components/MobileButtons";
 import { characterSummaries as characters } from "../data/characters";
 
 export const metadata: Metadata = {
@@ -83,7 +83,7 @@ export default function CharactersPage() {
                 Korean Culture
               </Link>
             </div>
-            <MobileNavigation currentPath="/characters" />
+            <MobileButtons />
           </div>
         </div>
       </nav>

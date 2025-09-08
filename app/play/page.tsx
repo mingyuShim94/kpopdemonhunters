@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Footer from "../components/Footer";
-import MobileNavigation from "../components/MobileNavigation";
 import SearchModal from "../components/SearchModal";
+import MobileButtons from "../components/MobileButtons";
 import { useState } from "react";
 
 export default function PlayPage() {
@@ -85,7 +85,7 @@ export default function PlayPage() {
                 </svg>
               </button>
             </div>
-            <MobileNavigation currentPath="/play" />
+            <MobileButtons />
           </div>
         </div>
       </nav>
