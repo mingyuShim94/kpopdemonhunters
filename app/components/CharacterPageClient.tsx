@@ -66,7 +66,41 @@ interface CharacterData extends Character {
   relatedOST?: string[];
 }
 
+// Character color theme utility function
+function getCharacterTheme(characterName: string) {
+  switch (characterName) {
+    case 'Zoey':
+      return { primary: 'text-teal-300', secondary: 'text-teal-200', bg: 'bg-teal-600/30', accent: 'bg-yellow-600/30 text-yellow-200' };
+    case 'Mira':
+      return { primary: 'text-pink-300', secondary: 'text-pink-200', bg: 'bg-pink-600/30', accent: 'bg-red-600/30 text-red-200' };
+    case 'Jinu':
+      return { primary: 'text-amber-300', secondary: 'text-amber-200', bg: 'bg-amber-600/30', accent: 'bg-orange-600/30 text-orange-200' };
+    case 'Abby':
+      return { primary: 'text-emerald-300', secondary: 'text-emerald-200', bg: 'bg-emerald-600/30', accent: 'bg-green-600/30 text-green-200' };
+    case 'Baby':
+      return { primary: 'text-cyan-300', secondary: 'text-cyan-200', bg: 'bg-cyan-600/30', accent: 'bg-blue-600/30 text-blue-200' };
+    case 'Mystery':
+      return { primary: 'text-slate-300', secondary: 'text-slate-200', bg: 'bg-slate-600/30', accent: 'bg-gray-600/30 text-gray-200' };
+    case 'Romance':
+      return { primary: 'text-rose-300', secondary: 'text-rose-200', bg: 'bg-rose-600/30', accent: 'bg-pink-600/30 text-pink-200' };
+    case 'Gwi-Ma':
+      return { primary: 'text-red-300', secondary: 'text-red-200', bg: 'bg-red-600/30', accent: 'bg-orange-600/30 text-orange-200' };
+    case 'Celine':
+      return { primary: 'text-violet-300', secondary: 'text-violet-200', bg: 'bg-violet-600/30', accent: 'bg-purple-600/30 text-purple-200' };
+    case 'Bobby':
+      return { primary: 'text-yellow-300', secondary: 'text-yellow-200', bg: 'bg-yellow-600/30', accent: 'bg-amber-600/30 text-amber-200' };
+    case 'Derpy':
+      return { primary: 'text-blue-300', secondary: 'text-blue-200', bg: 'bg-blue-600/30', accent: 'bg-cyan-600/30 text-cyan-200' };
+    case 'Sussie':
+      return { primary: 'text-slate-300', secondary: 'text-slate-200', bg: 'bg-slate-600/30', accent: 'bg-gray-600/30 text-gray-200' };
+    default:
+      return { primary: 'text-purple-300', secondary: 'text-purple-200', bg: 'bg-purple-600/30', accent: 'bg-indigo-600/30 text-indigo-200' };
+  }
+}
+
 function InfoBox({ character }: { character: CharacterData }) {
+  const theme = getCharacterTheme(character.name);
+  
   return (
     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 mb-8">
       <h3 className="text-xl font-bold text-white mb-4 text-center border-b border-white/20 pb-2">
@@ -75,59 +109,59 @@ function InfoBox({ character }: { character: CharacterData }) {
       <div className="space-y-3 text-sm">
         {character.fullName && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Full Name:</span>
+            <span className={`font-semibold ${theme.primary}`}>Full Name:</span>
             <span className="text-white col-span-2">{character.fullName}</span>
           </div>
         )}
         {character.gender && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Gender:</span>
+            <span className={`font-semibold ${theme.primary}`}>Gender:</span>
             <span className="text-white col-span-2">{character.gender}</span>
           </div>
         )}
         {character.species && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Species:</span>
+            <span className={`font-semibold ${theme.primary}`}>Species:</span>
             <span className="text-white col-span-2">{character.species}</span>
           </div>
         )}
         {character.nationality && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Nationality:</span>
+            <span className={`font-semibold ${theme.primary}`}>Nationality:</span>
             <span className="text-white col-span-2">{character.nationality}</span>
           </div>
         )}
         {character.age && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Age:</span>
+            <span className={`font-semibold ${theme.primary}`}>Age:</span>
             <span className="text-white col-span-2">{character.age}</span>
           </div>
         )}
         {character.affiliatedGroup && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Group:</span>
+            <span className={`font-semibold ${theme.primary}`}>Group:</span>
             <span className="text-white col-span-2">{character.affiliatedGroup}</span>
           </div>
         )}
         {character.position && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Position:</span>
+            <span className={`font-semibold ${theme.primary}`}>Position:</span>
             <span className="text-white col-span-2">{character.position}</span>
           </div>
         )}
         {character.weapon && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Weapon:</span>
+            <span className={`font-semibold ${theme.primary}`}>Weapon:</span>
             <span className="text-white col-span-2">{character.weapon}</span>
           </div>
         )}
         {character.family && character.family.length > 0 && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Family:</span>
+            <span className={`font-semibold ${theme.primary}`}>Family:</span>
             <div className="col-span-2 space-y-1">
               {character.family.map((member, index) => (
                 <div key={index} className="text-white text-xs">
-                  <span className="text-purple-200">{member.relation}:</span> {member.name}
+                  <span className={theme.secondary}>{member.relation}:</span> {member.name}
                 </div>
               ))}
             </div>
@@ -135,21 +169,21 @@ function InfoBox({ character }: { character: CharacterData }) {
         )}
         {character.voiceActors && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Voice Actors:</span>
+            <span className={`font-semibold ${theme.primary}`}>Voice Actors:</span>
             <div className="col-span-2 space-y-1">
               {character.voiceActors.en && (
                 <div className="text-white text-xs">
-                  <span className="text-purple-200">EN:</span> {character.voiceActors.en}
+                  <span className={theme.secondary}>EN:</span> {character.voiceActors.en}
                 </div>
               )}
               {character.voiceActors.kr && (
                 <div className="text-white text-xs">
-                  <span className="text-purple-200">KR:</span> {character.voiceActors.kr}
+                  <span className={theme.secondary}>KR:</span> {character.voiceActors.kr}
                 </div>
               )}
               {character.voiceActors.jp && (
                 <div className="text-white text-xs">
-                  <span className="text-purple-200">JP:</span> {character.voiceActors.jp}
+                  <span className={theme.secondary}>JP:</span> {character.voiceActors.jp}
                 </div>
               )}
             </div>
@@ -157,21 +191,21 @@ function InfoBox({ character }: { character: CharacterData }) {
         )}
         {character.singingVoice && (
           <div className="grid grid-cols-3 gap-2">
-            <span className="text-purple-300 font-semibold">Singing Voice:</span>
+            <span className={`font-semibold ${theme.primary}`}>Singing Voice:</span>
             <div className="col-span-2 space-y-1">
               {character.singingVoice.en && (
                 <div className="text-white text-xs">
-                  <span className="text-purple-200">EN:</span> {character.singingVoice.en}
+                  <span className={theme.secondary}>EN:</span> {character.singingVoice.en}
                 </div>
               )}
               {character.singingVoice.kr && (
                 <div className="text-white text-xs">
-                  <span className="text-purple-200">KR:</span> {character.singingVoice.kr}
+                  <span className={theme.secondary}>KR:</span> {character.singingVoice.kr}
                 </div>
               )}
               {character.singingVoice.jp && (
                 <div className="text-white text-xs">
-                  <span className="text-purple-200">JP:</span> {character.singingVoice.jp}
+                  <span className={theme.secondary}>JP:</span> {character.singingVoice.jp}
                 </div>
               )}
             </div>
@@ -182,16 +216,18 @@ function InfoBox({ character }: { character: CharacterData }) {
   );
 }
 
-function PerformanceOutfits({ outfits }: { outfits: PerformanceOutfit[] }) {
+function PerformanceOutfits({ outfits, characterName }: { outfits: PerformanceOutfit[], characterName: string }) {
+  const theme = getCharacterTheme(characterName);
+  
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       {outfits.map((outfit, index) => (
         <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:scale-105 transition-transform">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xl">👗</span>
-            <h4 className="text-purple-300 font-semibold">{outfit.name}</h4>
+            <h4 className={`${theme.primary} font-semibold`}>{outfit.name}</h4>
           </div>
-          <p className="text-purple-200 text-sm mb-2">
+          <p className={`${theme.secondary} text-sm mb-2`}>
             <span className="font-semibold">Occasion:</span> {outfit.occasion}
           </p>
           <p className="text-white text-sm">{outfit.description}</p>
@@ -201,7 +237,9 @@ function PerformanceOutfits({ outfits }: { outfits: PerformanceOutfit[] }) {
   );
 }
 
-function TriviaCards({ trivia }: { trivia: TriviaItem[] }) {
+function TriviaCards({ trivia, characterName }: { trivia: TriviaItem[], characterName: string }) {
+  const theme = getCharacterTheme(characterName);
+  
   return (
     <div className="grid md:grid-cols-2 gap-4">
       {trivia.map((item, index) => (
@@ -209,11 +247,11 @@ function TriviaCards({ trivia }: { trivia: TriviaItem[] }) {
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xl">✨</span>
             <div>
-              <span className="text-purple-300 text-xs font-semibold uppercase tracking-wide">{item.category}</span>
+              <span className={`${theme.primary} text-xs font-semibold uppercase tracking-wide`}>{item.category}</span>
               <h4 className="text-white font-semibold">{item.title}</h4>
             </div>
           </div>
-          <p className="text-purple-200 text-sm">{item.description}</p>
+          <p className={`${theme.secondary} text-sm`}>{item.description}</p>
         </div>
       ))}
     </div>
@@ -266,6 +304,8 @@ interface CharacterPageClientProps {
 }
 
 export default function CharacterPageClient({ character, characterSummary, slug }: CharacterPageClientProps) {
+  const theme = getCharacterTheme(character.name);
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
       {/* Navigation */}
@@ -331,18 +371,18 @@ export default function CharacterPageClient({ character, characterSummary, slug 
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
                 <h1 className="text-4xl md:text-6xl font-bold text-white">{character.name}</h1>
                 {character.koreanName && (
-                  <span className="text-2xl md:text-3xl text-purple-300 font-medium">
+                  <span className={`text-2xl md:text-3xl font-medium ${theme.primary}`}>
                     {character.koreanName}
                   </span>
                 )}
               </div>
               
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="bg-purple-600/30 text-purple-200 px-4 py-2 rounded-full">
+                <span className={`px-4 py-2 rounded-full ${theme.bg} ${theme.secondary}`}>
                   {character.role}
                 </span>
                 {character.species && (
-                  <span className="bg-indigo-600/30 text-indigo-200 px-4 py-2 rounded-full">
+                  <span className={`px-4 py-2 rounded-full ${theme.accent}`}>
                     {character.species}
                   </span>
                 )}
@@ -399,7 +439,7 @@ export default function CharacterPageClient({ character, characterSummary, slug 
             {character.performanceOutfits && character.performanceOutfits.length > 0 && (
               <>
                 <h3 className="text-2xl font-bold text-white mb-6">Performance Outfits</h3>
-                <PerformanceOutfits outfits={character.performanceOutfits} />
+                <PerformanceOutfits outfits={character.performanceOutfits} characterName={character.name} />
               </>
             )}
           </div>
@@ -502,7 +542,7 @@ export default function CharacterPageClient({ character, characterSummary, slug 
               <span className="text-4xl">✨</span>
               Behind the Scenes & Trivia
             </h2>
-            <TriviaCards trivia={character.trivia} />
+            <TriviaCards trivia={character.trivia} characterName={character.name} />
           </div>
         </section>
       )}

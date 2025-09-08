@@ -157,6 +157,22 @@ export const characterSummaries: CharacterSummary[] = [
     image: "/images/characters/mystery.webp",
     role: "Saja Boys Member",
   },
+  {
+    id: "derpy",
+    name: "Derpy",
+    description:
+      "A supernatural blue tiger and former pet of Jinu, known as the ultimate 'scene-stealer' mascot character. Based on Korean folk art tigers with his signature derpy expression and obsession with fixing fallen objects.",
+    image: "/images/characters/derpy.webp",
+    role: "Mascot Character",
+  },
+  {
+    id: "sussie",
+    name: "Sussie",
+    description:
+      "A supernatural six-eyed magpie and Derpy's companion. Intelligent, sassy, and mischievous with kleptomaniacal tendencies, she wears a stolen black Korean gat hat and is nicknamed the 'Galaxy Magpie' by fans.",
+    image: "/images/characters/sussie.webp",
+    role: "Mascot Character",
+  },
 ];
 
 export const characterDetails: Record<string, CharacterDetails> = {
@@ -308,400 +324,1086 @@ export const characterDetails: Record<string, CharacterDetails> = {
   mira: {
     name: "Mira",
     koreanName: "미라",
+    fullName: "Mira",
+    gender: "Female",
+    nationality: "Republic of Korea",
+    species: "Human",
+    affiliatedGroup: "HUNTR/X",
+    position: "Visual, Main Dancer, Choreographer",
     role: "HUNTR/X Main Dancer & Visual",
-    age: "21",
-    height: "170cm",
-    weapon: "Woldo (Moon Blade)",
-    voiceActor: "May Hong (Speaking) / Audrey Nuna (Singing)",
-    personality:
-      "The visual and main dancer of the group. Mira is fierce, graceful, and fashion-forward. She expresses her power through movement, wielding her deadly woldo with artistic precision. She is loyal and protective of her friends.",
+    age: "23-24 years old (Estimated born c. 2001-2002)",
+    weapon: "Gok-do (Curved Sword)",
+    voiceActors: {
+      en: "May Hong",
+      kr: "Kim Do-young",
+      jp: "Mutsumi Tamura"
+    },
+    singingVoice: {
+      en: "Audrey Nuna",
+      kr: "Audrey Nuna",
+      jp: "MARU"
+    },
+    family: [
+      {
+        relation: "Father",
+        name: "Unnamed Father"
+      },
+      {
+        relation: "Mother", 
+        name: "Unnamed Mother"
+      },
+      {
+        relation: "Older Brother",
+        name: "Unnamed Older Brother"
+      }
+    ],
+    overview: "Mira is the deuteragonist of K-Pop Demon Hunters. She is the main dancer, visual, and choreographer of the world-renowned K-pop girl group HUNTR/X. As the tallest member, she is known for her striking looks and exceptional dancing skills. Growing up as a 'problem child,' she secretly believes she is unworthy of having a family or friends. Alongside her groupmates Rumi and Zoey, she leads a double life as a demon hunter, wielding a Gok-do—a curved sword inspired by ancient Korean blades—in combat.",
+    appearance: "Mira is the tallest member of HUNTR/X, known for her striking visual appearance that embodies the 'girl crush' concept. Her look was inspired by Korean model Ahn So-yeon. In early concept art, her hairstyle was different, and storyboards suggest she was once conceived as a character who always wore glasses, a popular look she sports with her casual outfits. She treasures HUNTR/X as her found family, symbolized by her norigae (tassel pendant) which features charms representing Rumi and Zoey.",
+    performanceOutfits: [
+      {
+        name: "How It's Done Opening",
+        description: "Her striking outfit for the opening performance, embodying the 'girl crush' aesthetic with tough, fashion-forward styling.",
+        occasion: "Opening number performance"
+      }
+    ],
+    personality: "Mira embodies the 'girl crush' archetype with a tough exterior, characterized by her blunt, sarcastic, and brutally honest nature. She has no problem calling out her friends with deadpan remarks but is fiercely protective of Rumi and Zoey, whom she considers her true family. This bond is especially important to her, as it contrasts sharply with the relationship she has with her biological family, who treated her as an outcast. She has a quick temper, which flares up when provoked by demons or uncomfortable fan 'ships.' Functioning as the group's anchor, she balances Rumi's insecurities and Zoey's naivety. Though she often appears stoic, she is not afraid to be goofy and energetic with her friends. Calling herself an 'expert at reading people,' Mira is highly observant and is the first to notice Rumi's strange behavior. When Rumi's actions become incomprehensible, Mira's frustration stems from a deep-seated fear of losing her friend. At the core of her tough personality is low self-esteem. A family photo reveals her as a rebellious figure in what appears to be a conservative family, and her central conflict revolves around this strained relationship. Her deepest insecurities are targeted by the demon king Gwi-ma, who taunts her with the words, 'Thought you finally had a family? You're not worthy.'",
     quotes: [
-      "Actions speak louder than words. My dance speaks loudest.",
-      "Find your rhythm, find your strength.",
-      "We move as one, a storm of light against the darkness.",
+      "Fit check for my napalm era.",
+      "Thought you finally had a family? You're not worthy."
     ],
     abilities: [
-      "Woldo Mastery",
-      "Dance-Based Combat",
-      "Superhuman Agility",
-      "Protective Aura Generation",
-      "Enhanced Reflexes",
+      "Demon Hunter: Mira is a skilled demon hunter alongside her bandmates.",
+      "Combat Style: She specializes in mid-range combat, using her height and the long reach of her Gok-do to fight multiple enemies. As the group's vanguard, she charges into battle with Zoey and can unleash an area-of-effect attack, leading some to believe she has the highest raw physical power in the group.",
+      "Spirit Magic: As a Hunter, she can use spirit magic to conjure her weapon and create energy barriers, empowered by her own soul and the souls of their fans.",
+      "Mediumship: She can see spirits, demons, and the spiritual energy of the Honmoon, allowing her to detect demonic presences or weaknesses in the barrier.",
+      "Choreography: While all members are skilled dancers, Mira is the group's lead dancer and official choreographer.",
+      "Dart Throwing: She demonstrates exceptional accuracy by casually hitting a poster of Jinu with three darts thrown over her head."
     ],
-    background:
-      "A prodigy in both traditional Korean and modern dance, Mira discovered her demon-hunting abilities when her movements began to generate protective energy. She co-founded HUNTR/X with Rumi, bringing a unique, fluid fighting style to the team.",
+    background: "Growing up as a 'problem child' in what appears to be a conservative family, Mira was treated as an outcast by her biological family. She secretly believes she is unworthy of having a family or friends, which makes her bond with HUNTR/X especially precious to her. She is six months younger than Rumi and handles choreography while Zoey is the primary lyricist.",
+    storyArc: "Initially, Mira shows no mercy to demons, having been taught they are all evil. However, her entire belief system is challenged when she discovers Rumi is part-demon. This forces her to grow, ultimately choosing to accept the friend she knows rather than cling to the dogma she was taught. When Rumi's secret is revealed, Mira is initially shocked and hurt, but her deep love for her found family ultimately overcomes her prejudices.",
     relationships: [
-       {
+      {
         name: "Rumi",
         relation: "Best Friend & Leader",
-        description:
-          "Her closest friend. Mira is often the one to ground Rumi and offer a different perspective.",
+        description: "Her closest friend. Mira is often the one to ground Rumi and offer a different perspective. She is the first to notice Rumi's strange behavior due to her observant nature."
       },
       {
         name: "Zoey",
-        relation: "Teammate",
-        description:
-          "Shares a sisterly bond with Zoey, often teasing her but always supporting her.",
+        relation: "Teammate & Found Family",
+        description: "Shares a sisterly bond with Zoey, often teasing her but always supporting her. Zoey is represented by one of the charms on her norigae pendant."
       },
+      {
+        name: "Biological Family",
+        relation: "Estranged Family",
+        description: "Has a strained relationship with her conservative family who treated her as a 'problem child' and outcast."
+      }
     ],
-    combatStyle: "A fluid and acrobatic style that combines dance with martial arts. She uses her woldo in wide, sweeping attacks and can generate energy waves from her movements.",
-    favoriteFood: "Naengmyeon (Cold Noodles)",
-    hobbies: ["Choreography", "Fashion design", "Visiting art galleries"],
-    fears: ["Being unable to protect her loved ones", "Confined spaces"],
+    combatStyle: "She specializes in mid-range combat, using her height and the long reach of her Gok-do to fight multiple enemies. As the group's vanguard, she charges into battle and can unleash area-of-effect attacks.",
+    favoriteFood: "Unknown",
+    hobbies: ["Choreography", "Dart throwing"],
+    fears: ["Being unworthy of family or friends", "Losing her found family"],
+    trivia: [
+      {
+        category: "Inspiration",
+        title: "Model Inspiration",
+        description: "Director Maggie Kang revealed that Mira's look was inspired by Korean model Ahn So-yeon."
+      },
+      {
+        category: "Design History",
+        title: "Concept Evolution",
+        description: "In early concept art, Mira's hairstyle was different, and her weapon was originally intended to be a fan. Storyboards also suggest she was once conceived as a character who always wore glasses, a popular look she sports with her casual outfits."
+      },
+      {
+        category: "Age",
+        title: "Relative Age",
+        description: "She is six months younger than Rumi."
+      },
+      {
+        category: "Role in Group",
+        title: "Creative Responsibilities",
+        description: "It is implied that Mira handles choreography while Zoey is the primary lyricist."
+      },
+      {
+        category: "Devotion",
+        title: "Found Family Symbol",
+        description: "Having been alienated from her biological family, Mira treasures HUNTR/X as her found family. This is symbolized by her norigae (tassel pendant), which features charms representing Rumi and Zoey."
+      },
+      {
+        category: "Fan Culture",
+        title: "Shipping Controversy",
+        description: "In the film, fans 'ship' her with Saja Boys members Romance and Abby. She particularly despises the polyamorous ship 'Miromabby.'"
+      },
+      {
+        category: "Voice Actor's Insight",
+        title: "Hidden Softness",
+        description: "Her Korean voice actress, Kim Do-young, felt a personal connection to a scene where Mira wears cute pajamas, interpreting it as Mira hiding a softer side beneath her tough image."
+      },
+      {
+        category: "Fan Appeal",
+        title: "Reversal Charm",
+        description: "Her 'reversal charm'—a tough exterior hiding a deeply devoted and caring heart (a tsundere-like quality)—has made her a fan favorite."
+      },
+      {
+        category: "Idol Reference",
+        title: "Hwasa Inspiration",
+        description: "A lead designer mentioned that Hwasa of Mamamoo was an inspiration for HUNTR/X, and fans believe Mira's fierce and confident image reflects Hwasa's the most."
+      }
+    ],
     relatedOST: ["How It's Done", "TAKEDOWN", "Golden"],
   },
   zoey: {
     name: "Zoey",
     koreanName: "조이",
+    fullName: "Zoey",
+    gender: "Female",
+    nationality: "USA (Korean-American)",
+    species: "Human",
+    affiliatedGroup: "HUNTR/X",
+    position: "Main Rapper, Sub-Vocalist, Lyricist",
     role: "HUNTR/X Main Rapper & Maknae",
-    age: "19",
-    height: "162cm",
-    weapon: "Throwing Knives (Balisong style)",
-    voiceActor: "Ji-young Yoo (Speaking) / Rei Ami (Singing)",
-    personality:
-      "The main rapper, lyricist, and youngest member (maknae) of HUNTR/X. Zoey is sharp, witty, and rebellious, with a street-smart attitude. She channels her energy into her powerful lyrics and uses throwing knives with deadly accuracy.",
+    age: "22-23 years old (Estimated born c. 2002-2003)",
+    weapon: "Shin-kal (Shamanic Throwing Knives)",
+    voiceActors: {
+      en: "Ji-young Yoo",
+      kr: "Kim Yea-lim",
+      jp: "Miho Wataya"
+    },
+    singingVoice: {
+      en: "Rei Ami",
+      kr: "Rei Ami",
+      jp: "Manami Yokoyama"
+    },
+    family: [
+      {
+        relation: "Family",
+        name: "Unspecified (Theorized to have divorced parents)"
+      }
+    ],
+    overview: "Zoey is a deuteragonist of K-Pop Demon Hunters. She is the main rapper and lyricist of the world-renowned K-pop group HUNTR/X and serves as the group's maknae (youngest member). A Korean-American who grew up in Burbank, California, her bubbly and fun-loving personality makes her the mood-maker of the group. While she has an adorable image, she transforms into a charismatic powerhouse when she raps. In combat, she wields Shin-kal, a set of throwing knives inspired by the tools of Korean shamans.",
+    appearance: "Zoey has black hair styled in twin braided buns (often called 'Pucca hair') with micro-bangs and fringe locks. She has a rounder face, light brown eyes, freckles, and a heart-shaped mouth. Though the shortest member, she has a slender build with long limbs. She wears sparkly makeup and has numerous ear piercings. Her stage outfits often feature a streetwear aesthetic, like a teal halter top and parachute pants, accessorized with a yellow norigae (a traditional Korean charm) decorated with cute ornaments that reflect her personality.",
+    performanceOutfits: [
+      {
+        name: "Streetwear Stage Outfit",
+        description: "A teal halter top and parachute pants, accessorized with a yellow norigae (traditional Korean charm) decorated with cute ornaments that reflect her personality.",
+        occasion: "Stage performances"
+      }
+    ],
+    personality: "Zoey is perky, bubbly, and energetic, openly showing affection for her friends and fans. However, unlike the observant Mira, she can be quite naive, failing to notice Rumi's increasingly strange behavior. She is easily distracted and prone to being tricked, as seen when she can't resist dancing to the Saja Boys' infectious song. Beneath her bright exterior lies a deep-seated insecurity about her identity. Having grown up between Korean and American cultures, she often felt like an outsider in both, a conflict explored in her lyrics for the song 'Golden.' Before joining HUNTR/X, she believed her own thoughts and lyrics were 'weird and useless.' She harbors a fear of being 'too much, yet not enough,' an eagerness to please that becomes a vulnerability the demon king Gwi-Ma later exploits. Though gentle-natured, she is fiercely protective of her creative work. She shows genuine anger for the first time when Rumi dismisses her lyrics, nearly tearing up her notebook. When Rumi's secret is revealed, she is deeply hurt and confused, and her hesitation to draw all her weapons shows her reluctance to harm her friend.",
     quotes: [
-      "My rhymes hit as hard as my blades.",
-      "They call me the maknae, but I'm the one you should fear.",
-      "Never underestimate the power of a sharp tongue and a sharper knife.",
+      "Before I joined HUNTR/X, I felt like my thoughts and my lyrics and all my notebooks were just useless and weird. But with the two of you, they mean something. I mean something.",
+      "Okay, like I know I ramble / But when shootin' my words I go Rambo.",
+      "How are we supposed to be with you when we don't know what's a lie and what's the truth?",
+      "Why did I cover up the colors stuck inside my head?"
     ],
     abilities: [
-      "Expert Marksmanship (Throwing Knives)",
-      "Lyrical Incantations",
-      "Stealth and Infiltration",
-      "Rapid Attacks",
-      "Enhanced Speed",
+      "Rapping Skills: As the main rapper, Zoey is known for her lightning-fast delivery, which contrasts with the slower, rhythmic style of her rival, Baby of the Saja Boys.",
+      "Lyricism: She is implied to be the group's primary lyricist.",
+      "Sub-Vocalist: She also provides high-pitched chorus and background vocals.",
+      "Weaponry (Shin-kal): Zoey wields a set of six throwing knives called Shin-kal. According to the art director, the animation team developed a fighting style for her that resembles professional knife or card throwing.",
+      "Combat Style: Unlike Rumi (a duelist) and Mira (a crowd-control specialist), Zoey is a versatile fighter who mixes ranged attacks with close-quarters combat. When unable to resummon her knives, she seamlessly transitions to kicks and acrobatic martial arts."
     ],
-    background:
-      "Zoey grew up on the streets, honing her survival instincts and her skills as a rapper. After discovering her latent demon-hunting lineage, she was recruited by Celine and joined HUNTR/X, bringing a raw, untamed energy to the group's dynamic.",
-     relationships: [
-       {
+    background: "Recruited by Celine from her home in Burbank, Zoey becomes a member of HUNTR/X. Her Korean-American background is central to her character, reflected in details like her hamburger-flavored ramyeon.",
+    storyArc: "After an intense world tour, Zoey is eager to relax, but her plans are cut short by Rumi's push for their new single, 'Golden.' She is supportive of Rumi's vocal struggles, suggesting a healer she found among 57 researched methods. She is the first to naively suggest the Saja Boys might be 'nice demons' and develops an immediate crush on their member, Mystery. Despite this, she joins the fight against them. As Rumi grows distant, Zoey becomes hurt and confused, especially when Rumi criticizes her lyrical contributions. At the Idol Awards, Rumi's half-demon secret is revealed, leaving Zoey feeling betrayed and asking, 'How are we supposed to be with you when we don't know what's a lie and what's the truth?' She reluctantly draws her weapons after Mira. Broken and vulnerable, she is brainwashed by Gwi-ma's whispers targeting her insecurities: 'You're too much, but you're not enough. There's no place for you.' She is saved by Rumi's song of self-acceptance, responding with her own lyric: 'Why did I cover up the colors stuck inside my head?' Reunited, HUNTR/X defeats their enemies. In the final battle, Zoey punches Mystery, exclaims 'He's totally my type!' and then promptly destroys him. The story concludes with the three members healing their bonds and growing together.",
+    relationships: [
+      {
         name: "Rumi",
-        relation: "Leader / Older Sister Figure",
-        description:
-          "Looks up to Rumi as a leader and role model, though she often challenges her authority.",
+        relation: "Leader & Bandmate",
+        description: "Initially supportive of Rumi's struggles but becomes hurt and confused when Rumi's secret is revealed. Their relationship heals by the end."
       },
       {
         name: "Mira",
-        relation: "Teammate",
-        description:
-          "Enjoys a playful, teasing relationship with Mira, seeing her as a cool older sister.",
+        relation: "Bandmate",
+        description: "Fellow member of HUNTR/X who shares in the initial rejection and later reconciliation with Rumi."
       },
+      {
+        name: "Mystery",
+        relation: "Crush/Enemy",
+        description: "Develops an immediate crush on Mystery from the Saja Boys, but ultimately destroys him in the final battle after declaring 'He's totally my type!'"
+      }
     ],
-    combatStyle: "A fast-paced, aggressive style focusing on ranged attacks and exploiting enemy weaknesses. She uses her agility to outmaneuver opponents and her lyrical incantations to stun or distract them.",
-    favoriteFood: "Spicy Ramyeon",
-    hobbies: ["Writing lyrics", "Skateboarding", "Playing video games"],
-    fears: ["Being alone", "Losing her newfound family"],
-    relatedOST: ["How It's Done", "TAKEDOWN", "Golden"],
+    combatStyle: "She often maintains a playful, smiling expression in battle, treating demons like toys. This has earned her the fan nicknames 'Zoey-chopath' and 'clear-eyed maniac,' as she can admire a handsome demon's face one moment and ruthlessly annihilate him the next, showing a stark separation between her personal feelings and her duty.",
+    favoriteFood: "Hamburger-flavored ramyeon",
+    hobbies: ["Writing lyrics", "Collecting turtle-themed items"],
+    fears: ["Being 'too much, yet not enough'", "Having no place to belong"],
+    trivia: [
+      {
+        category: "Identity",
+        title: "Korean-American Background",
+        description: "Her Korean-American background is central to her character, reflected in details like her hamburger-flavored ramyeon. A popular fan theory suggests her parents are divorced, based on the 'Golden' music video visuals."
+      },
+      {
+        category: "Love for Turtles",
+        title: "Turtle Symbolism",
+        description: "She is an avid turtle lover, owning turtle-themed pajamas and charms. Fans theorize this is because she, feeling displaced, envies turtles for always carrying their homes with them."
+      },
+      {
+        category: "Deleted Backstory",
+        title: "School Bullying",
+        description: "A scrapped storyboard revealed a backstory where Zoey was a victim of school bullying."
+      },
+      {
+        category: "Fan Connections",
+        title: "Sunlight Sisters Fan",
+        description: "She was a fan of the previous hunter group, the Sunlight Sisters, before her debut. In the fandom, her ship with Mystery is canonically named 'Zoeystery.'"
+      },
+      {
+        category: "Gateway Character",
+        title: "Fan Appeal",
+        description: "With her cute design, bright personality, and surprising depth, Zoey is often considered the 'gateway character' who attracts new fans to the series."
+      },
+      {
+        category: "Neurodivergent Fan Theory",
+        title: "Fan Interpretation",
+        description: "A popular fan theory posits that Zoey is neurodivergent (e.g., having autism or ADHD)."
+      }
+    ],
+    relatedOST: ["How It's Done", "Golden"],
   },
   jinu: {
     name: "Jinu",
     koreanName: "진우",
+    fullName: "Jinu",
+    gender: "Male",
+    nationality: "Joseon (as a human)",
+    species: "Human → Demon",
+    affiliatedGroup: "Saja Boys",
+    position: "Leader, Center, Main Vocalist",
     role: "Saja Boys Leader",
-    age: "Appears 21 (Chronologically over 100)",
-    height: "185cm",
-    weapon: "Demonic Microphone / Shadow Manipulation",
-    voiceActor: "Ahn Hyo-seop (Speaking) / Andrew Choi (Singing)",
-    personality:
-      "The charismatic and conflicted leader of the Saja Boys. Once a human who sold his soul for fame, he is a direct foil to Rumi, torn between his demonic duty and his lingering humanity. He often appears arrogant and cynical but hides a deep well of regret.",
+    age: "Approx. 400+ years (as a demon), 23-24 (physical appearance)",
+    voiceActors: {
+      en: "Ahn Hyo Seop (Dialogue), Andrew Choi (Singing)",
+      kr: "Min Seung-woo (Dialogue)",
+      jp: "Kaito Ishikawa (Dialogue), Yuta Fujimasa (Singing)"
+    },
+    family: [
+      {
+        relation: "Mother",
+        name: "Unnamed Mother (deceased)"
+      },
+      {
+        relation: "Younger Sister",
+        name: "Unnamed Sister (deceased)"
+      }
+    ],
+    overview: "Jinu is the male protagonist and main villain of K-Pop Demon Hunters. He is the leader of the demon idol group, Saja Boys, and serves as the right-hand man to the demon king, Gwi-ma. However, unlike other demons, Jinu does not follow Gwi-ma blindly and is the only demon who retains a significant degree of his humanity. He harbors a deep resentment for Gwi-ma, who orchestrated the circumstances that forced him to abandon his family. He cooperates with the demon king purely out of a transactional necessity: to have his painful memories erased.",
+    appearance: "Jinu is a tall, slender man who appears to be in his early twenties. In his human form, he has pale skin, black hair styled with curtain bangs, and brown eyes. In his true demon form, his skin turns purple with glowing patterns, and he has claws, sharp teeth, and golden eyes with slit pupils. As an idol, he wears stylish, modern clothing. In private, he opts for a more casual look. As a demon, he wears a tattered black hanbok and a gat (traditional hat).",
+    performanceOutfits: [
+      {
+        name: "Idol Stage Outfit",
+        description: "Stylish, modern clothing that showcases his charismatic idol persona.",
+        occasion: "Stage performances"
+      },
+      {
+        name: "Demon Form",
+        description: "A tattered black hanbok and gat (traditional hat) worn in his true demonic form.",
+        occasion: "Demonic transformations"
+      }
+    ],
+    personality: "Jinu is intelligent and charismatic, but also duplicitous and primarily driven by self-interest. His entire plan to destroy the Honmoon is a means to an end: erasing the memories that cause him immense guilt and shame over abandoning his family. While he despises Gwi-ma, he believes this is the only way to free himself from his torment. Initially, he appears to enjoy teasing and outsmarting HUNTR/X. However, subtle signs of his humanity persist: he helps Rumi after discovering her demonic markings, treats a fan's gift with care, and shows kindness to his animal companions. Despite his polished idol image, he can also be awkward and clumsy.",
     quotes: [
-      "The world only understands power.",
-      "My music is a curse, a beautiful, irresistible curse.",
-      "We offer obsession, and they give us their souls.",
+      "That's right, I lied to you. I only made a deal with Gwi-Ma to get myself out of that miserable life. I left my sister, my mother, alone while I slept on silk sheets in the palace with my belly full every night! I left them! I left them...",
+      "It's time for a new strategy."
     ],
     abilities: [
-      "Demonic Charm",
-      "Soul Absorption (via music)",
-      "Shadow Manipulation",
-      "Haunting Vocals",
-      "Superhuman Strength",
+      "Master of teleportation, shapeshifting, and illusion magic",
+      "Cunning intellect for manipulation",
+      "Singing and dancing to control human emotions",
+      "Demonic combat abilities equal or superior to Rumi",
+      "Strategic planning and leadership"
     ],
-    background:
-      "Once a gifted but unrecognized musician, Jinu made a pact with the demon king Gwi-Ma to achieve eternal fame. Now, he leads the Saja Boys, using their demonic music to drain life energy from fans to weaken the barrier protecting the human world. His encounter with Rumi reawakens his dormant conscience.",
+    background: "Approximately 400 years ago in the Joseon Dynasty, Jinu lived in extreme poverty. Desperate, he accepted a deal from the demon king Gwi-ma for a powerful singing voice. His talent earned him a place in the royal palace, but he chose a life of luxury over staying with his family. Gwi-ma later transformed him into a demon, and the guilt of his decision haunted him for the next four centuries.",
+    storyArc: "Jinu proposes infiltrating the human world as K-pop idols to destroy the Honmoon barrier. During a battle, he discovers Rumi's demonic markings and helps her hide them, forming a deep bond. However, Gwi-ma forces him to betray her at the Idol Awards. In the final battle, when Gwi-ma attacks Rumi, Jinu intercepts the blow, sacrificing himself. In his final moments, he gives his soul to Rumi, empowering her to defeat Gwi-ma, finally free from his guilt.",
     relationships: [
       {
         name: "Rumi",
         relation: "Love Interest / Rival",
-        description:
-          "He sees a kindred spirit in Rumi, another artist burdened by a supernatural secret. He is drawn to her light and ultimately sacrifices himself for her.",
+        description: "He sees a kindred spirit in Rumi, another artist burdened by a supernatural secret. He is drawn to her light and ultimately sacrifices himself for her."
       },
       {
-        name: "Gwi-Ma",
+        name: "Gwi-ma",
         relation: "Master / Enemy",
-        description:
-          "The demon king he serves out of a binding contract, but whom he grows to despise.",
+        description: "The demon king he serves out of a binding contract, but whom he grows to despise."
       },
-       {
+      {
         name: "Saja Boys",
         relation: "Leader / Teammates",
-        description:
-          "He leads the Saja Boys, but his connection to them is based on their shared demonic nature rather than true camaraderie.",
-      },
+        description: "He leads the Saja Boys, but his connection to them is based on their shared demonic nature rather than true camaraderie."
+      }
     ],
-    combatStyle: "Relies on his overwhelming demonic power, using shadows to attack and restrain foes. His most dangerous weapon is his voice, which can charm, weaken, and drain the souls of his victims.",
-    favoriteFood: "Cold Brew Coffee",
-    hobbies: ["Composing melancholic melodies", "Reading classic literature", "Rooftop stargazing"],
-    fears: ["Eternal servitude to Gwi-Ma", "Forgetting his human self completely"],
+    combatStyle: "Jinu is the demon faction's second-in-command and chief strategist. His combat abilities are formidable, making him an equal or superior to Rumi. His most powerful weapon is not his physical strength but his cunning intellect.",
+    favoriteFood: "Unknown",
+    hobbies: ["Strategic planning", "Caring for animal companions"],
+    fears: ["Eternal guilt over abandoning his family", "Never finding redemption"],
+    trivia: [
+      {
+        category: "Name Origin",
+        title: "Jinusean Reference",
+        description: "The name 'Jinu' was inspired by the Korean hip-hop duo Jinusean."
+      },
+      {
+        category: "Historical Context",
+        title: "Joseon Period Accuracy",
+        description: "His age was set to align with the mid-Joseon period (c. 1625) to ensure the historical accuracy of his flat-topped gat."
+      },
+      {
+        category: "Design",
+        title: "Celebrity Inspiration",
+        description: "His appearance was inspired by Korean celebrities such as Cha Eun Woo, Nam Joo-hyuk, and Jungkook."
+      },
+      {
+        category: "Voice Actor",
+        title: "Animation Reference",
+        description: "Actor Ahn Hyo Seop's facial expressions during his recording sessions were used as a reference for Jinu's animation."
+      },
+      {
+        category: "Symbolism",
+        title: "Ship Name & Death",
+        description: "His in-universe ship name with Rumi is Rujinu. When he dies, his eyes briefly revert to their human brown color."
+      },
+      {
+        category: "Fan Culture",
+        title: "Memorial Shrine",
+        description: "Fans created a memorial shrine for him at Anime Expo 2025."
+      }
+    ],
     relatedOST: ["Soda Pop", "Your Idol", "Free"],
   },
   celine: {
     name: "Celine",
-    koreanName: "셀린",
-    role: "Mentor to HUNTR/X",
-    age: "40s",
-    height: "168cm",
-    weapon: "Geom (Korean Sword) / Protective Talismans",
-    voiceActor: "Yunjin Kim (Speaking) / Lea Salonga (Singing)",
-    personality:
-      "A former demon hunter and member of the legendary K-pop group Sunlight Sisters. Celine is a wise, powerful, and sometimes stern mentor to HUNTR/X. She carries the grief of losing her best friend, Rumi's mother, and is fiercely protective of the new generation.",
+    koreanName: "셀린 (Sellin)",
+    fullName: "Celine",
+    age: "Late 40s to early 50s",
+    species: "Human",
+    role: "Overarching Protagonist and Mentor Figure",
+    overview: "Celine is an overarching protagonist and mentor figure in K-Pop Demon Hunters. She is a retired member of the Sunlight Sisters, a legendary 1st-generation K-pop group that secretly operated as demon hunters. After the death of her bandmate and best friend, Mi-yeong Ryu, Celine adopted her daughter, Rumi, raising her to become the next generation's leader. She lives on Jeju Island, guarding a sacred shrine.",
+    voiceActors: {
+      en: "Yunjin Kim (Dialogue), Lea Salonga (Singing)",
+      kr: "Jeon Sook-kyung (Dialogue)",
+      jp: "Akari Higuchi (Dialogue)",
+    },
+    appearance: "Celine is a tall, elegant middle-aged woman with sharp facial features and long, black hair streaked with gray. As a mentor, she is sharp but fair. However, she is a perfectionist, deeply bound by the traditional Hunter ideology that all demons are evil and that personal flaws must be hidden at all costs to protect the Honmoon barrier.",
+    personality: "This rigid belief system puts her in direct conflict with her love for Rumi. While her intentions are protective—fearing Rumi would be persecuted for her half-demon heritage—her insistence that Rumi suppress her true self causes her adoptive daughter immense pain and self-rejection. Her stubbornness ultimately makes her less understanding than Rumi's own friends, leading to a painful and unresolved rift between them.",
     quotes: [
+      "Our faults and fears must never be seen. That's the only way to protect the Honmoon!",
       "The fight is not just yours, it is a legacy.",
       "A true hunter fights with heart, not just with steel.",
-      "Protect the balance, and protect each other.",
+      "Protect the balance, and protect each other."
     ],
     abilities: [
-      "Veteran Demon Hunter Tactics",
-      "Protective Magic & Talismans",
-      "Vast Knowledge of Demon Lore",
-      "Spiritual Energy Healing",
+      "Demon Hunter - As a former hunter, she was a skilled fighter, likely wielding dual swords as suggested by an end-credits illustration",
+      "Mediumship - Even in retirement, she can still perceive the spiritual energy of the Honmoon",
+      "Idol Talents - As a 1st-generation idol, she was a proficient singer and dancer"
     ],
-    background:
-      "As a member of the Sunlight Sisters, Celine fought alongside Rumi's mother. After her friend's fall, she retired from the front lines and dedicated her life to raising Rumi and preparing the next generation of hunters. She runs a hidden dojo and information hub for the team.",
+    background: "In the 1990s, Celine was the leader of the popular demon-hunting idol group, the Sunlight Sisters. After her friend Mi-yeong died, she retired from public life to raise Mi-yeong's daughter, Rumi. Upon discovering Rumi's demonic markings, she taught her to conceal them, believing the prophesied 'Golden Honmoon' would eventually 'purify' her. Years later, she formed and trained the next generation of hunters, HUNTR/X.",
+    storyArc: "When a desperate Rumi, her demonic features revealed, comes to her on Jeju Island and begs to be killed, Celine refuses. She confesses that she vowed to protect Rumi as the last remnant of her mother, even though Rumi's existence defied everything she was taught as a hunter. However, she cannot overcome her prejudice, insisting they can still hide the truth. Rumi rejects this life of lies, and their confrontation culminates in Rumi questioning if Celine ever truly loved all of her. Heartbroken, Rumi teleports away, leaving their relationship shattered. The conflict remains unresolved at the film's end, positioning Celine as a key figure for a potential sequel.",
     relationships: [
-       {
+      {
         name: "Rumi",
-        relation: "Adoptive Daughter & Protégé",
-        description:
-          "Loves Rumi as her own but their relationship is strained by Celine's insistence on secrecy and control.",
+        relation: "Adoptive Daughter",
+        description: "Raised Rumi as her own after Mi-yeong's death, but their relationship becomes strained due to Celine's rigid beliefs about hiding Rumi's demon nature.",
       },
-       {
-        name: "Rumi's Mother",
-        relation: "Former Teammate & Best Friend",
-        description:
-          "Her memory is Celine's driving force to protect Rumi and the world.",
+      {
+        name: "Mi-yeong Ryu",
+        relation: "Former Bandmate & Best Friend",
+        description: "Her deceased best friend from the Sunlight Sisters whose daughter she adopted and raised.",
+      },
+      {
+        name: "HUNTR/X",
+        relation: "Mentor",
+        description: "Formed and trained the next generation of hunters, serving as their mentor and guide.",
       },
     ],
-    combatStyle: "A defensive and strategic style, relying on her vast experience. She uses talismans to create barriers, disrupt demonic energy, and support her allies from the back lines.",
-    favoriteFood: "Ginseng Tea",
-    hobbies: ["Meditation", "Calligraphy", "Maintaining her weapon collection"],
-    fears: ["History repeating itself", "Rumi suffering the same fate as her mother"],
+    performanceOutfits: [
+      {
+        name: "Sunlight Sisters Era",
+        description: "1990s idol outfit as leader of the legendary demon-hunting K-pop group",
+        occasion: "Flashback performances"
+      },
+      {
+        name: "Jeju Island Guardian",
+        description: "Contemporary casual attire worn while guarding the sacred shrine on Jeju Island",
+        occasion: "Present day scenes"
+      }
+    ],
+    trivia: [
+      {
+        category: "Real-Life Inspirations",
+        title: "Lee Hyori & Bada (S.E.S.)",
+        description: "Her 'retired idol living on Jeju Island' status draws comparisons to Lee Hyori, though their personalities are opposites. A more likely inspiration is Bada of S.E.S. The Sunlight Sisters (SLS) debuted in 1997, the same year as S.E.S.; both Celine and Bada were their groups' leaders and share a similar cautious personality.",
+      },
+      {
+        category: "Scrapped Backstory",
+        title: "Dark Secret",
+        description: "An early concept for the film revealed that Celine was accidentally responsible for Mi-yeong's death, a secret that would have cast her prejudice in a much darker light. The creators left this idea open for a potential sequel.",
+      },
+      {
+        category: "Voice Acting",
+        title: "Lea Salonga's Cameo",
+        description: "The legendary singer Lea Salonga is credited as Celine's singing voice but only performs a single line in a flashback.",
+      },
+      {
+        category: "Fan Reception",
+        title: "Divided Audience",
+        description: "Audience reaction to Celine is split. Many adults sympathize with her difficult position, while younger audiences and LGBTQ+ viewers often see her as an oppressive parental figure who refuses to accept her child's true identity, interpreting Rumi's story as a coming-out allegory.",
+      },
+    ],
     relatedOST: ["Free"],
   },
   "gwi-ma": {
     name: "Gwi-Ma",
-    koreanName: "귀마",
+    koreanName: "귀마 (鬼魔)",
+    fullName: "Gwi-Ma, The Demon King",
+    age: "Centuries",
+    species: "Demon",
     role: "The Demon King",
-    age: "Ancient",
-    height: "Variable",
-    weapon: "His own demonic power",
-    voiceActor: "Lee Byung-hun",
-    personality:
-      "The ruthless, ancient, and manipulative demon king. Gwi-Ma is the ultimate villain, a being of immense power who seeks to shatter the barrier between the demon and human worlds to reign over both. He is arrogant, cruel, and sees humans as nothing more than a source of energy.",
+    overview: "Gwi-Ma is the true main villain, mastermind, and final boss of K-Pop Demon Hunters. He is the king of demons, the ruler of the Demon Realm, and the producer of the demon idol group, Saja Boys. His motif is the Demon King Gwi-ma from the classic Korean novel Samhanseupyu. Once a terrifying entity who feasted on human souls, his power dwindled over the centuries after being sealed away by demon hunters. In his prime, he was a colossal being of fire, but by the film's present day, he is a mere shadow of his former self. Despite this weakened state, he remains an overwhelmingly powerful foe and the series' strongest character.",
+    voiceActors: {
+      en: "Lee Byung Hun",
+      kr: "Lee Byung Hun",
+      jp: "Hiroshi Tsuchida",
+    },
+    appearance: "Gwi-Ma appears as a giant, sentient flame of magenta-colored fire, known in Korean folklore as a honbul (soul-fire). He primarily consists of a menacing, toothy mouth that expands when he is angry or amused. In the film's climax, after absorbing countless souls, he grows to a colossal size, developing nostrils and a pair of glowing eyes, and his voice deepens.",
+    personality: "He is portrayed as a manipulative, cruel, sadistic, and power-hungry being. He has no affection for his underlings, punishing any failure with merciless rage, as seen when he incinerates a demon for failing to kill HUNTR/X. His greatest pleasure comes from exploiting the deepest insecurities and traumas of both humans and demons, twisting their relationships and using their shame to control them.",
     quotes: [
       "The world will burn, and from the ashes, my kingdom will rise.",
       "Their little songs are no match for my eternal power.",
-      "All souls are mine to command.",
+      "All souls are mine to command."
     ],
+    background: "Gwi-Ma is based on the classic Korean novel Samhanseupyu. Once a terrifying entity in his prime as a colossal being of fire, his power has dwindled over centuries after being sealed away by demon hunters. By the present day, he is a shadow of his former self but still remains the most powerful being in the series' universe.",
+    storyArc: "Trapped in the Demon Realm by the Honmoon barrier, Gwi-ma continuously sends minions to attack the human world. When his right-hand man, Jinu, suggests a new strategy—creating a rival K-pop idol group—Gwi-ma, despite his initial mockery, shows surprising flexibility and agrees. He acts as the producer for Saja Boys, providing them with the magical support needed to become top-tier idols, including flawless disguises and spectacular stage effects. This has led to the fan meme of him being a 'small agency CEO who even handles stage direction.' As Jinu begins to waver due to his growing connection with Rumi, Gwi-ma torments him with his most painful memories to ensure his compliance. He successfully orchestrates HUNTR/X's breakup and weakens the Honmoon, allowing him to hypnotize thousands of people and draw them to the Saja Boys' final concert. Just as he is about to absorb their souls, he is thwarted by the sacrifice of Jinu and the power of the reunited HUNTR/X. Overwhelmed by their song, his fiery form is extinguished. His defeat is somewhat anticlimactic, and its ambiguous nature—whether he was truly destroyed or merely resealed—leaves the door open for his return in a potential sequel. This theory is supported by the fact that Rumi's demonic markings did not disappear.",
     abilities: [
-      "Overwhelming Demonic Power",
-      "Manipulation and Corruption",
-      "Reality Warping",
-      "Command of Demon Armies",
-      "Soul Contracts",
+      "Mental Domination (Telepathy & Hypnosis) - His most terrifying ability to telepathically whisper into victims' minds, exploiting their trauma to control them",
+      "Soul Absorption - Can consume souls of humans and demons to increase his size and power", 
+      "Fire Breath - In enlarged form, can unleash torrents of demonic fire powerful enough to fatally wound even Jinu",
+      "Immortality - Nearly immortal being that cannot be destroyed, only sealed away",
+      "Demon Summoning - Can monitor and forcibly summon any demon at will",
+      "Reality Manipulation - Overwhelming power that transcends normal demonic abilities"
     ],
-    background:
-      "An ancient and powerful demon, Gwi-Ma has been plotting his return for centuries. He was previously defeated by the Sunlight Sisters but survived. He manipulates the Saja Boys as his pawns to break the magical barrier maintained by HUNTR/X's music so he can consume the Earth.",
     relationships: [
-       {
+      {
+        relation: "Right-hand man",
         name: "Jinu",
-        relation: "Pawn / Servant",
-        description:
-          "He holds Jinu's soul via a contract, using him as the leader of his demonic boy band.",
+        description: "Jinu serves as Gwi-Ma's right-hand man and chief strategist, though he harbors deep resentment for the demon king.",
       },
-       {
+      {
+        relation: "Producer",
+        name: "Saja Boys",
+        description: "Acts as the producer for the demon idol group, providing magical support for their performances.",
+      },
+      {
+        relation: "Enemy",
         name: "HUNTR/X",
-        relation: "Primary Obstacle",
-        description:
-          "The descendants of his old enemies and the only thing standing in his way.",
+        description: "The hunter group that maintains the Honmoon barrier preventing his escape from the Demon Realm.",
       },
     ],
-    combatStyle: "Relies on pure, overwhelming force and reality-bending powers. He rarely engages in direct combat himself, preferring to corrupt and manipulate others to do his bidding.",
-    favoriteFood: "Human Souls",
-    hobbies: ["Monologuing", "World domination planning"],
-    fears: ["The combined power of Spirit and Demon magic", "The Golden Honmoon"],
+    performanceOutfits: [
+      {
+        name: "Soul-Fire Form",
+        description: "Giant sentient flame of magenta-colored fire with a menacing, toothy mouth",
+        occasion: "Standard manifestation form",
+      },
+      {
+        name: "Colossal Form",
+        description: "Enlarged form with nostrils, glowing eyes, and deeper voice after absorbing countless souls",
+        occasion: "Final battle climax",
+      },
+    ],
+    trivia: [
+      {
+        category: "Name Origin",
+        title: "Hanja Characters",
+        description: "His name comes from the Hanja characters 鬼 (gwi, 'ghost/demon') and 魔 (ma, 'evil spirit/magic'). An earlier name for the character was 'Dueoksini.'",
+      },
+      {
+        category: "Occult Motif",
+        title: "Korean Dokkaebi",
+        description: "His fiery, formless nature and appreciation for music are reminiscent of some depictions of the Korean dokkaebi (goblin).",
+      },
+      {
+        category: "Initial Concept",
+        title: "K-pop Idol Wannabe",
+        description: "Originally, Gwi-ma was conceived as a K-pop idol wannabe, and the director considered casting J.Y. Park, founder of JYP Entertainment, for the role. This is subtly referenced when Gwi-ma hums along to 'Soda Pop.'",
+      },
+      {
+        category: "Voice Actor",
+        title: "Lee Byung-hun's Dual Role",
+        description: "Lee Byung-hun (The Frontman in Squid Game) is the only actor to voice his character in both English and Korean. Fan reception has been mixed, with some finding his voice not 'demonic' enough, though his English performance was more widely praised for its deeper tone.",
+      },
+      {
+        category: "Fan Theory",
+        title: "Rumi's Father Theory Debunked",
+        description: "The popular fan theory that Gwi-ma was Rumi's biological father has been officially debunked by the director.",
+      },
+      {
+        category: "Easter Egg",
+        title: "Mascot Merchandise",
+        description: "At the final concert, a fan can be seen wearing a T-shirt with Gwi-ma's logo, suggesting the Saja Boys marketed him as a mascot.",
+      },
+      {
+        category: "Design History",
+        title: "Traditional Mask Inspiration",
+        description: "Early designs were inspired by monstrous traditional Korean masks called Gwimyeon and Tal.",
+      },
+      {
+        category: "Fan Culture",
+        title: "Small Agency CEO Meme",
+        description: "His role as producer for Saja Boys has led to the fan meme of him being a 'small agency CEO who even handles stage direction.'",
+      },
+    ],
     relatedOST: ["Your Idol"],
   },
   abby: {
-    name: "Abby 'Abs' Saja",
-    koreanName: "애비",
+    name: "Abby Saja",
+    koreanName: "애비 사자",
+    fullName: "Abby 'Abs' Saja",
+    gender: "Male",
+    nationality: "Unspecified",
+    species: "Demon",
+    affiliatedGroup: "Saja Boys",
+    position: "Main Dancer, Lead Rapper, Sub-Vocalist",
     role: "Saja Boys Member",
     age: "Appears 22",
-    height: "188cm",
-    weapon: "Brute Strength",
-    voiceActor: "SungWon Cho (Speaking) / Neckwav (Singing)",
-    personality:
-      "The muscular and intimidating member of the Saja Boys. He is a demon of pure physical power who enjoys the adoration of fans and the chaos the group causes. Less cunning than his bandmates, he prefers direct confrontation.",
+    height: "185 cm (approx. 6'1\")",
+    voiceActors: {
+      en: "Sungwon Cho (Dialogue), Neckwav (Singing)",
+      kr: "Lee Hyun (Dialogue)"
+    },
+    overview: "Abby Saja is a supporting antagonist in K-Pop Demon Hunters. He is the main dancer, lead rapper, and sub-vocalist of the demon idol group, Saja Boys. As a demon disguised as a K-pop idol, his mission is to help steal fans from the hunter group HUNTR/X to weaken the protective Honmoon barrier. His stage name, 'Abby,' is derived from the English word 'abs,' and true to his name, he is the group's designated muscular member, renowned for his well-defined physique.",
+    appearance: "Abby is a tall (185 cm) man with an athletic, muscular build, famous for his six-pack abs. In his human disguise, he has lightly tanned skin, short raspberry-pink hair, and brown eyes. In his true demon form, his skin turns purple with glowing patterns, and he has claws, sharp teeth, and golden eyes. As an idol, he favors outfits that show off his midsection, often wearing cropped shirts, beanies, and ripped skinny jeans.",
+    performanceOutfits: [
+      {
+        name: "Your Idol Performance",
+        description: "A fishnet crop top and leather pants under a traditional Korean overcoat (sochangui) and gat, combining modern and traditional styles.",
+        occasion: "'Your Idol' stage performance"
+      }
+    ],
+    personality: "Abby is portrayed as the group's 'eye candy,' exuding confidence with a teasing and occasionally vain demeanor. He frequently flaunts his physique to provoke reactions from others, such as proudly distributing pencil rubbings of his own abs at a fan signing event. He is also self-aware, correctly guessing that Mira and Zoey's attraction to him was the reason HUNTR/X followed them into a bathhouse. Like the other Saja Boys, he can be aggressive, but his actual combat effectiveness is questionable.",
     quotes: [
-      "Feel the beat? That's your heart pounding in fear.",
-      "We are what you desire most.",
-      "Your soul sings the sweetest melody.",
+      "Anytime it hurts, play another verse; I can be your sanctuary.",
+      "I knew they would. That one's always looking at me."
     ],
     abilities: [
-      "Superhuman Strength & Durability",
-      "Hypnotic Performance",
-      "Demonic Roar",
-      "Earth-shattering Stomps",
+      "Demonic Powers: He possesses standard demon abilities, including soul stealing, teleportation, levitation, and shapeshifting.",
+      "Immortality: He is effectively immortal unless killed by a hunter or Gwi-ma.",
+      "Idol Talents: As the main dancer, he is an exceptional performer with proficient singing and rapping skills.",
+      "Unique Ability: He has the bizarre power to turn a person's eyes into corn (which then becomes popcorn), as demonstrated on Zoey."
     ],
-    background:
-      "A powerful demon recruited by Gwi-Ma for his raw strength. Abby fully embraces his role in the Saja Boys, enjoying the fame and the chance to unleash his destructive power on the human world.",
+    background: "While his past is largely unknown, it is assumed that he was once human and became a demon through a deal with Gwi-ma.",
+    storyArc: "Abby is introduced when Jinu proposes the plan to form a demon K-pop group. During their debut in the human world, his shirt dramatically bursts open, revealing his abs and leaving a strong impression on Mira and Zoey. Throughout the film, he participates in various idol activities, including competing on a variety show and hijacking a HUNTR/X fan event. His final appearance is at the Saja Boys' Namsan Tower concert. After Jinu's sacrifice, Abby attempts to attack HUNTR/X but is swiftly killed by Mira, who slashes him across the stomach while declaring, 'No more abs!'",
     relationships: [
-       {
+      {
         name: "Jinu",
         relation: "Leader",
-        description:
-          "Follows Jinu's lead, respecting his power and connection to Gwi-Ma.",
+        description: "Follows Jinu's lead, respecting his power and connection to Gwi-Ma."
       },
+      {
+        name: "Mira",
+        relation: "Fan Interest",
+        description: "Part of the fan-created 'Miromabby' love triangle ship with Mira and Romance. Eventually killed by Mira."
+      }
     ],
-    combatStyle: "A straightforward brawler. He uses his immense strength to overpower opponents, create shockwaves, and destroy his surroundings.",
-    favoriteFood: "Steak (extra rare)",
-    hobbies: ["Working out", "Intimidating people", "Crowd surfing"],
-    fears: ["Magic seals", "Being outsmarted"],
+    combatStyle: "In his final confrontation with Mira, he opts to pose and flash his abs rather than attack, a fatal miscalculation that leads to his demise.",
+    favoriteFood: "Unknown",
+    hobbies: ["Flaunting his physique", "Fan interactions"],
+    fears: ["Unknown"],
+    trivia: [
+      {
+        category: "3D Model",
+        title: "Muscle Enhancement",
+        description: "All Saja Boys members share a base 3D model, but Abby's was exclusively modified to have 20% more muscle mass."
+      },
+      {
+        category: "Name Puns",
+        title: "Korean Wordplay",
+        description: "His name 'Abby' (애비) is a homophone for an old, informal Korean word for 'father,' leading to many jokes among viewers, especially in relation to his bandmate, Baby."
+      },
+      {
+        category: "Symbolism",
+        title: "Industry Commentary",
+        description: "His character can be seen as a commentary on the sexualization and objectification of K-pop idols."
+      },
+      {
+        category: "Occult Motif",
+        title: "Dokkaebi Connection",
+        description: "His motif is believed to be the dokkaebi (Korean goblin), a mythological figure known for its strength and masculine energy."
+      },
+      {
+        category: "Real-Life Parallel",
+        title: "Wonho Comparison",
+        description: "His muscular idol image drew comparisons to former Monsta X member Wonho, who later cosplayed as Abby."
+      },
+      {
+        category: "On-Screen Death",
+        title: "Confirmed Demise",
+        description: "He is the only member of the Saja Boys, besides Jinu, to have a confirmed, on-screen death."
+      }
+    ],
     relatedOST: ["Soda Pop", "Your Idol"],
   },
   romance: {
     name: "Romance Saja",
-    koreanName: "로맨스",
+    koreanName: "로맨스 사자",
+    fullName: "Romance Saja",
+    gender: "Male",
+    nationality: "Unspecified (as a human)",
+    species: "Demon",
+    affiliatedGroup: "Saja Boys",
+    position: "Lead Vocalist (Presumed)",
     role: "Saja Boys Member",
-    age: "Appears 20",
-    height: "180cm",
-    weapon: "Charm / Emotional Manipulation",
-    voiceActor: "Joel Kim Booster (Speaking) / samUIL Lee (Singing)",
-    personality:
-      "The smooth-talking, romantic member of the Saja Boys, who uses his charm as a weapon. He is an incubus-like demon who preys on the emotional vulnerabilities of fans, seeing love as a form of possession.",
+    age: "Appears young",
+    voiceActors: {
+      en: "Joel Kim Booster (Dialogue), samUIL Lee (Singing)",
+      kr: "Choi Hyun-sik (Dialogue)"
+    },
+    overview: "Romance Saja is a supporting antagonist in K-Pop Demon Hunters. He is a member of the demon idol group, Saja Boys, and is presumed to be the group's lead vocalist. While his official position is unconfirmed, fans have given him this title based on his significant vocal contributions to their songs, where he handles the second-most lines after Jinu, as well as high notes, harmonies, and choruses. He is a demon disguised as a K-pop idol, tasked with luring fans away from the hunter group HUNTR/X to help weaken the protective Honmoon barrier.",
+    appearance: "Romance is a handsome young man with an androgynous appearance. His most defining feature is his voluminous, pink, heart-shaped, 50/50 parted hairstyle. In his human form, he has pale skin and hazel eyes, and he meticulously styles himself, down to his sky-blue painted nails. In his true demon form, his skin turns purple, and his eyes glow gold.",
+    performanceOutfits: [
+      {
+        name: "Romantic Stage Persona",
+        description: "Meticulously styled outfits that showcase his romantic concept, complete with sky-blue painted nails and passionate poses.",
+        occasion: "Stage performances"
+      }
+    ],
+    personality: "On stage, he fully commits to his 'romantic' concept, frequently striking passionate poses and conjuring floating hearts as fanservice. He is openly flirtatious, as seen when he immediately tries to charm Mira at a fan signing event. However, this persona is a facade. Off-stage, he is aloof, easily irritated, and finds the demands of being an idol exhausting. He has a habit of invading others' personal space, particularly Mira's, staring at her intently throughout their joint event, revealing a more sinister, demonic nature beneath the charm.",
     quotes: [
-      "Love is just another form of possession.",
-      "Your heart belongs to us now.",
-      "Romance is eternal, just like your servitude.",
+      "Hmm, we keep meeting like this."
     ],
     abilities: [
-      "Emotional Manipulation",
-      "Seductive Aura",
-      "Heart-Corruption (feeds on affection)",
-      "Illusion Creation",
+      "Demonic Powers: He possesses standard demon abilities, including soul stealing, teleportation, levitation, and shapeshifting.",
+      "Immortality: He is effectively immortal unless killed by a hunter or Gwi-ma.",
+      "Heart Conjuration: As a form of fanservice, he can conjure floating hearts out of thin air.",
+      "Idol Talents: He is an exceptional dancer and a highly proficient singer."
     ],
-    background:
-      "A demon who specializes in emotional manipulation. He was drawn to Gwi-Ma's plan for the opportunity to feast on the powerful emotions of millions of K-pop fans. He is the most cunning of the Saja Boys next to Jinu.",
+    background: "While little is known about his past, it is assumed that Romance was once human and became a demon through a pact with Gwi-ma.",
+    storyArc: "Among the Saja Boys (excluding Jinu), Romance has one of the smallest narrative roles. Unlike his bandmates who have clear character hooks, he lacks a distinct story purpose. He is involved in the fan-created 'Miromabby' love triangle ship with Mira and Abby, but his actual interaction with Mira is minimal. Despite this, he appears to be genuinely intrigued by her. On stage, however, Romance has a significant presence. He has the longest verse in 'Soda Pop' and delivers a memorable performance in 'Your Idol' with his iconic 'gat-brim sweep' dance move. In the final battle, he attacks HUNTR/X and is countered by Mira. His ultimate fate is not explicitly shown and is left ambiguous.",
     relationships: [
-       {
+      {
         name: "Jinu",
         relation: "Leader",
-        description:
-          "Respects Jinu's cunning but also sees him as a rival for Gwi-Ma's favor.",
+        description: "Respects Jinu's cunning but also sees him as a rival for Gwi-Ma's favor."
       },
+      {
+        name: "Mira",
+        relation: "Interest",
+        description: "Part of the fan-created 'Miromabby' love triangle ship with Mira and Abby. Appears genuinely intrigued by her."
+      }
     ],
-    combatStyle: "Avoids direct physical conflict, preferring to turn his victims' emotions against them. He creates illusions and uses his seductive charm to incapacitate or control his opponents.",
-    favoriteFood: "Chocolates and broken hearts",
-    hobbies: ["Reading romance novels", "People watching", "Breaking hearts"],
-    fears: ["True, selfless love", "Emotional rejection"],
+    combatStyle: "In the final battle, he attacks HUNTR/X and is countered by Mira, but his ultimate fate is left ambiguous.",
+    favoriteFood: "Unknown",
+    hobbies: ["Fanservice performances", "Charming fans"],
+    fears: ["Unknown"],
+    trivia: [
+      {
+        category: "Occult Motif",
+        title: "Bachelor Ghost Theory",
+        description: "Fans speculate his demonic motif is the mongdal gwisin (bachelor ghost), the spirit of a man who died unmarried."
+      },
+      {
+        category: "Design History",
+        title: "Longest Development",
+        description: "His character design took the longest to finalize. His look is said to be inspired by Yeonjun of TOMORROW X TOGETHER and Felix of Stray Kids, and also bears a resemblance to the hairstyle of Moon Hee-jun of the 1st-generation K-pop group H.O.T."
+      },
+      {
+        category: "Group Dynamics",
+        title: "Motherly Image",
+        description: "Official fanart suggests the age hierarchy is Jinu > Romance > Abby. The art director also jokingly mentioned that he is bad at learning choreography. Because he is often seen looking after the younger members, Mystery and Baby, fans have given him a 'motherly' image."
+      },
+      {
+        category: "Symbolism",
+        title: "Fanservice Commentary",
+        description: "His character can be interpreted as a symbol of the fanservice culture prevalent in the K-pop industry."
+      },
+      {
+        category: "Korean Meme",
+        title: "Karami Resemblance",
+        description: "In Korea, he became a popular meme for his resemblance to the streamer Karami."
+      },
+      {
+        category: "Japanese Dub",
+        title: "Personal Pronoun",
+        description: "In the Japanese dub, he uses the personal pronoun 'boku.'"
+      }
+    ],
     relatedOST: ["Soda Pop", "Your Idol"],
   },
   baby: {
     name: "Baby Saja",
-    koreanName: "베이비",
+    koreanName: "베이비 사자",
+    fullName: "Baby Saja",
+    gender: "Male",
+    nationality: "Unspecified",
+    species: "Demon",
+    affiliatedGroup: "Saja Boys",
+    position: "Main Rapper, Sub-Vocalist",
     role: "Saja Boys Maknae",
-    age: "Appears 18",
-    height: "175cm",
-    weapon: "Deception / Speed",
-    voiceActor: "Danny Chung (Singing)",
-    personality:
-      "The youngest-appearing member of the Saja Boys, whose innocent and playful facade masks a sinister and chaotic nature. He delights in the mayhem the group causes and is more unpredictable than his teammates.",
+    age: "Appears young",
+    voiceActors: {
+      en: "Danny Chung"
+    },
+    overview: "Baby Saja is a supporting antagonist in K-Pop Demon Hunters. He is the main rapper and maknae (youngest member) of the demon idol group, Saja Boys. His mission, along with his bandmates, is to steal fans from the hunter group HUNTR/X to weaken the protective Honmoon barrier. He is well-loved by fans for his 'gap moe'—the charming contrast between his cute, boyish appearance and his deep, baritone rapping voice.",
+    appearance: "Baby has a youthful, boyish face with fluffy, mint-green hair and matching turquoise eyes. On stage, he leans into his maknae concept, wearing oversized sweaters and newsboy caps and using childish props like lollipops to project an innocent image. However, this is a carefully crafted persona. When he raps, his presence becomes powerful and commanding.",
+    performanceOutfits: [
+      {
+        name: "Maknae Concept Stage",
+        description: "Oversized sweaters and newsboy caps with childish props like lollipops to project an innocent image.",
+        occasion: "Stage performances"
+      }
+    ],
+    personality: "Off-stage, he drops the act and appears bored, indifferent, and weary of his idol duties. Like his fellow demons, he is aggressive when provoked and is genuinely shocked by Jinu's sacrifice.",
     quotes: [
-      "Don't let my age fool you.",
-      "The youngest flame burns the brightest.",
-      "Innocence is just another mask to wear.",
+      "Thank you for the pain, 'cause it got me going viral.",
+      "Googoo gaga."
     ],
     abilities: [
-      "Deceptive Innocence",
-      "Superhuman Speed & Agility",
-      "Energy Absorption",
-      "Trickster Tactics",
+      "Demonic Powers: He possesses standard demon abilities, including soul stealing, teleportation, levitation, and shapeshifting.",
+      "Immortality: He is effectively immortal unless killed by a hunter or Gwi-ma.",
+      "Rapping: As the main rapper, he is exceptionally skilled.",
+      "High Spice Tolerance: He has a superhuman ability to handle extremely spicy food."
     ],
-    background:
-      "A chaotic demon who enjoys toying with humans. Baby uses his youthful appearance to lower the guard of victims, making him particularly effective at targeting younger fans and stealing their energy. He joined Gwi-Ma for the sheer fun of it.",
+    background: "While his past is largely unknown, it is assumed that he was once human and became a demon through a pact with Gwi-ma.",
+    storyArc: "Baby is introduced as a member of the newly formed Saja Boys. He makes a strong impression on a variety show by effortlessly winning a spicy food challenge, finishing with a deadpan 'Googoo gaga.' At a joint fan signing event, he maintains his professional idol persona, giving a fan a 'cheek heart' when receiving a bouquet. His most significant on-stage moment is during the performance of 'Your Idol,' where his solo rap verse is timed with the dramatic descent of the demon king, Gwi-ma. In the final battle, he briefly fights Zoey and is visibly stunned by Jinu's betrayal. His ultimate fate is not shown on screen, leaving his status ambiguous.",
     relationships: [
-       {
+      {
         name: "Jinu",
         relation: "Leader",
-        description:
-          "Views Jinu as the 'boring' leader but follows his orders as long as they lead to chaos.",
+        description: "Views Jinu as the leader but is shocked by his ultimate sacrifice and betrayal."
       },
+      {
+        name: "Zoey",
+        relation: "Battle Opponent",
+        description: "Briefly fights against Zoey in the final battle."
+      }
     ],
-    combatStyle: "A chaotic and unpredictable fighting style based on speed and trickery. He darts around the battlefield, creating diversions and striking when his opponents are distracted.",
-    favoriteFood: "Candy and popcorn",
-    hobbies: ["Playing pranks", "Video games", "Annoying his bandmates"],
-    fears: ["Boredom", "Rules"],
+    combatStyle: "Unknown - his fate in battle is left ambiguous.",
+    favoriteFood: "Spicy food",
+    hobbies: ["Variety show challenges", "Maintaining idol persona"],
+    fears: ["Unknown"],
+    trivia: [
+      {
+        category: "Occult Motif",
+        title: "Yeommae Spirit",
+        description: "His demonic motif is believed to be the Yeommae, a spirit from Korean folklore created through a dark ritual involving the starvation and death of a child. This theory is supported by his 'baby' concept and his frequent on-screen eating."
+      },
+      {
+        category: "Design Inspiration",
+        title: "BTS Jimin Reference",
+        description: "His character design was inspired by Jimin of BTS. Fans have also noted a resemblance to Hyunjin of Stray Kids."
+      },
+      {
+        category: "Voice Actor",
+        title: "Unique Performance",
+        description: "Danny Chung is the only Saja Boys member whose voice actor performs both the speaking and singing parts. His only line of dialogue is 'Googoo gaga.'"
+      },
+      {
+        category: "Popularity",
+        title: "Breakout Character",
+        description: "Despite his minimal screen time, his unique 'gap moe' charm has made him a breakout star, with his popularity growing to rival even Jinu's. Because his fate is unknown, many fans hope he will return in a sequel."
+      },
+      {
+        category: "Symbolism",
+        title: "Infantilization Commentary",
+        description: "His character can be interpreted as a symbol of the infantilization of K-pop idols."
+      },
+      {
+        category: "Fan Culture",
+        title: "Shipping & Jokes",
+        description: "While not part of a canonical ship, he is sometimes depicted in fan works with Zoey or as the child of Zoey and Mystery. His name is also used in playful 'Abby x Baby' (father/baby) jokes."
+      },
+      {
+        category: "Physicality",
+        title: "Height Comparison",
+        description: "Although he is the maknae, official model sheets show that he is slightly taller than his bandmate Mystery."
+      },
+      {
+        category: "Anagram",
+        title: "Name Connection",
+        description: "His name, Baby, is an anagram of his teammate's name, Abby."
+      }
+    ],
     relatedOST: ["Soda Pop", "Your Idol"],
   },
   bobby: {
     name: "Bobby",
-    koreanName: "바비",
-    role: "Manager of HUNTR/X",
-    age: "30s",
-    height: "178cm",
-    weapon: "Cellphone / Contracts",
-    voiceActor: "Ken Jeong",
-    personality:
-      "The ever-enthusiastic, slightly clueless, but fiercely loyal manager of HUNTR/X. He is completely unaware of the group's demon-hunting activities, attributing their battles to rival fan groups or elaborate PR stunts. His priority is the group's success and well-being.",
+    koreanName: "바비 (Babi)",
+    fullName: "Bobby",
+    height: "145 cm (approx. 4'9\")",
+    species: "Human",
+    role: "The Tritagonist",
+    overview: "Bobby is the tritagonist of K-Pop Demon Hunters and the dedicated manager of the girl group HUNTR/X. He is completely unaware of their secret identities as demon hunters, a truth the members likely conceal to protect him from becoming a target. In a refreshing departure from the incompetent or antagonistic manager trope often seen in idol media, Bobby is portrayed as exceptionally competent, loyal, and a pillar of stability for the group. He is seen as the 'ideal manager.'",
+    voiceActors: {
+      en: "Ken Jeong",
+      kr: "Lee Sang-ho",
+      jp: "Takaaki Torashima",
+    },
+    appearance: "Bobby is a short, pudgy man with a medium-light skin tone. He has wavy, dark brown hair combed back, a small mustache, and a faint patch of facial hair. His typical attire consists of a gray jacket and pants worn over a white HUNTR/X merchandise T-shirt, complete with a purple VIP lanyard and white high-top sneakers. He also has a matching stage outfit, signifying his status as an honorary fourth member of the group.",
+    personality: "Bobby is a cheerful, dependable, and fiercely loyal manager. He handles the group's schedules, social media, and frequent crises with a calm, solution-oriented approach and a touch of dry humor. His dedication goes beyond professional duty; he genuinely loves HUNTR/X and cares for the members as if they were his own family. When a major on-stage incident occurs, his immediate reaction is to blame himself for not noticing their struggles sooner. This deep emotional investment is also his greatest vulnerability. The demon king Gwi-ma exploits Bobby's fear of the group disbanding and being left alone, suggesting his work is his primary source of belonging. His passion for his job is so immense that he forgoes a much-needed vacation to oversee the surprise launch of a new single, a testament to his workaholic nature driven by pure affection for his artists.",
     quotes: [
+      "Okay, I can handle this. I'm not having a nervous breakdown.",
+      "I love my girls.",
       "Your success is my success!",
-      "Whoa, those Saja Boys fans are really something else!",
-      "We'll face whatever comes together... as long as it doesn't violate paragraph 4 of your contract!",
+      "We'll face whatever comes together... as long as it doesn't violate paragraph 4 of your contract!"
     ],
     abilities: [
-      "Strategic Scheduling",
-      "Industry Connections",
-      "Crisis Management (of the mundane variety)",
-      "Unwavering Optimism",
+      "Exceptional Management - Highly skilled manager able to handle crises and logistics of a world-famous group with remarkable competence. Earns 3% of all HUNTR/X revenue",
+      "Dancing - Has some dance skills and is often seen happily dancing along to HUNTR/X's choreography during rehearsals"
     ],
-    background:
-      "A veteran K-pop manager, Bobby discovered HUNTR/X's potential early on and has been instrumental in their public careers. He works tirelessly to book shows, manage their image, and protect them from the perils of the entertainment industry, all while remaining oblivious to the supernatural dangers they face.",
+    background: "Bobby is a highly competent manager who handles HUNTR/X's schedules, social media, and crises with remarkable skill. His dedication goes beyond professional duty as he genuinely loves the group and cares for the members like family. He is completely unaware of their secret demon hunting activities, which the members likely conceal to protect him from becoming a target.",
+    storyArc: "Bobby is introduced in a state of panic, trying to manage a concert backstage while the group is still on a plane. Throughout the film, he navigates the chaos of their lives, from surprise single releases to Rumi's vocal issues and the sudden rivalry with the Saja Boys. Despite the stress, he remains a supportive presence. After HUNTR/X's public breakup, a devastated Bobby is targeted by Gwi-ma's telepathic whispers. Preying on his feelings of failure and loneliness, Gwi-ma puts him in a trance, and he is seen numbly attending the Saja Boys' concert. However, he is among the first to be freed from the hypnosis by Rumi's song. As HUNTR/X reunites to defeat the demons, a proud and emotional Bobby watches them, declaring, 'I love my girls.'",
     relationships: [
-       {
+      {
         name: "HUNTR/X",
-        relation: "Manager / Father Figure",
-        description:
-          "He adores the girls and treats them like his own daughters, albeit daughters with a very intense and destructive 'hobby'.",
+        relation: "Manager",
+        description: "His importance to the group is profound. The members trust him completely, comfortable with him visiting their apartment late at night. They care for him so much that they offer him their own luxury vacation and are easily lured into a trap when demons use a fake Bobby as bait.",
       },
     ],
-    combatStyle: "Fights his battles in boardrooms and on phone calls. His primary weapons are negotiation, scheduling, and a well-worded press release.",
-    favoriteFood: "Instant Coffee and Gimbap",
-    hobbies: ["Tracking album sales", "Organizing fan meets", "Stress-eating"],
-    fears: ["Scandals", "Disbandment", "The Saja Boys' manager"],
+    performanceOutfits: [
+      {
+        name: "Manager Outfit",
+        description: "Gray jacket and pants over white HUNTR/X merchandise T-shirt with purple VIP lanyard and white high-top sneakers",
+        occasion: "Daily management duties"
+      },
+      {
+        name: "Stage Outfit",
+        description: "Matching stage outfit signifying his status as honorary fourth member of the group",
+        occasion: "Special performances and events"
+      }
+    ],
+    trivia: [
+      {
+        category: "Background",
+        title: "Korean-American Heritage",
+        description: "His English name suggests he might be Korean-American, similar to Zoey. Assuming 'Bobby' is a nickname, his real name could be 'Robert.'",
+      },
+      {
+        category: "Personal Details",
+        title: "Traditional Taste",
+        description: "His ringtone is a remake of the classic Korean song 'The Moony Night of Shilla,' hinting at a slightly older or more traditional taste.",
+      },
+      {
+        category: "Fan Reception",
+        title: "Beloved Character",
+        description: "With his kind-hearted nature and competence, he has become a fan-favorite 'sweet guy' among international audiences and is admired by Korean fans as an ideal, passionate professional.",
+      },
+    ],
     relatedOST: ["Golden"],
   },
-  mystery: {
-    name: "Mystery",
-    koreanName: "미스터리",
-    role: "Saja Boys Member",
-    age: "Unknown",
-    height: "182cm",
-    weapon: "Unknown",
-    voiceActor: "N/A",
-    personality: "The enigmatic and silent member of the Saja Boys. He is always present but never speaks, his motives and abilities shrouded in secrecy. His presence is unsettling even to his own bandmates.",
-    quotes: ["..."],
-    abilities: ["Shadow Walking", "Stealth", "Fear Induction", "Psychic Interference"],
-    background: "Virtually nothing is known about Mystery. He appeared with Gwi-Ma and was assigned to the Saja Boys. Some whisper he is not a demon, but something else entirely, serving as Gwi-Ma's personal shadow and spy.",
+  derpy: {
+    name: "Derpy",
+    fullName: "Derpy",
+    species: "Supernatural Creature (Good Spirit/Yokai)",
+    role: "Mascot Character",
+    overview: "Derpy is a mascot character and the ultimate 'scene-stealer' in K-Pop Demon Hunters. He is a supernatural creature, a former pet of Jinu, who resembles a large, comical tiger from traditional Korean folk paintings (minhwa). Unlike the reddish demons, Derpy has a blue color scheme, associating him more with the hunters. His official name was confirmed by designer Radford Sechrist to be Derpy, a name derived from the internet meme 'Derp,' which refers to a silly, cross-eyed expression. This is a nod to the fact that tigers in Kkachi Horangi paintings are often depicted with crossed eyes.",
+    appearance: "Derpy is a large, supernatural feline with cerulean blue fur. His upper body is covered in black and white stripes, while his chest features rosette patterns. His eyes have a yellow cornea and red irises and are perpetually unfocused, giving him his signature 'derpy' look. He sports a constant grin with sharp white teeth and has tusk-like fangs poking out from the corners of his mouth.",
+    personality: "Derpy is a friendly, loyal, and affectionate creature, though he is also quite dim-witted. He behaves much like a common housecat, enjoying being petted. His most defining trait is a unique obsession: he feels an overwhelming compulsion to set any knocked-over object upright. This is his top priority, and he will ignore all else to try and fix a fallen flowerpot or trash can, though his chubby paws always cause him to fail.",
+    quotes: [
+      "*Happy purring sounds*",
+      "*Distressed sounds when objects are knocked over*",
+      "*Creaking bamboo sounds when moving*"
+    ],
+    abilities: [
+      "Interdimensional Travel - Can travel between realms by phasing through the ground or using the Honmoon as a medium",
+      "Supernatural Detection - Can sense and scare away lesser demons with a growl",
+      "Object Fixation - Compulsive need to set any knocked-over object upright",
+      "Stealth Appearance - Can appear and disappear at will like the Cheshire Cat"
+    ],
+    background: "According to the art director, Derpy is a 'good spirit or yokai that can exist in any space.' He is not a demon and is one of the only non-demon supernatural creatures in the film. This allows him to remain in the human world even after the Honmoon barrier is restored. A setting detail reveals that Jinu summons him by striking a haetae (a mythical guardian lion) statue. When he moves, a distinct creaking bamboo sound can be heard.",
+    storyArc: "He is introduced in a menacing way, but his comical obsession with a flowerpot he knocks over immediately reveals his harmless nature. Initially, he serves as a messenger between Jinu and Rumi. He quickly grows comfortable with Rumi, sleeping in her room and even acting as her mount. He is a neutral being who does not interfere in the conflict between hunters and demons. However, he shows deep affection for those he cares about. In a moment of heartbreak, he tries to stop Jinu from betraying Rumi by presenting him with the bracelet she had given him, his usually blank face filled with sadness.",
     relationships: [
-       {
-        name: "Gwi-Ma",
-        relation: "Direct Subordinate",
-        description:
-          "Seems to report directly to Gwi-Ma, bypassing Jinu's authority.",
+      {
+        name: "Jinu",
+        relation: "Former Owner",
+        description: "Derpy was Jinu's pet who shows loyalty and tries to prevent Jinu from betraying Rumi, demonstrating his deep affection.",
+      },
+      {
+        name: "Rumi",
+        relation: "New Caretaker",
+        description: "Quickly grows comfortable with Rumi, sleeping in her room and serving as her mount. After Jinu's demise, he is adopted by Rumi.",
+      },
+      {
+        name: "Sussie",
+        relation: "Companion",
+        description: "Always seen alongside his companion Sussie the magpie, who often gives him exasperated looks due to his clumsy antics.",
       },
     ],
-    combatStyle: "Avoids direct combat, using stealth and psychological warfare to disable his opponents. He moves unseen and strikes from the shadows, often without his victims even realizing he was there.",
+    performanceOutfits: [
+      {
+        name: "Natural Form",
+        description: "Cerulean blue fur with black and white stripes on upper body and rosette patterns on chest",
+        occasion: "Default appearance"
+      }
+    ],
+    trivia: [
+      {
+        category: "Motif",
+        title: "Kkachi Horangi Tiger",
+        description: "His primary motif is the tiger from the Korean folk art style known as Kkachi Horangi (or Hojakdo), which depicts magpies and tigers. True to the protective symbolism of these paintings, he is shown scaring away lesser demons with a growl.",
+      },
+      {
+        category: "Design Inspiration",
+        title: "Cheshire Cat",
+        description: "His ability to appear and disappear at will, combined with his grin, also draws inspiration from the Cheshire Cat in Alice in Wonderland.",
+      },
+      {
+        category: "Fan Reception",
+        title: "Immense Popularity",
+        description: "His cute, dog-like behavior and goofy appearance made him an instant fan favorite, leading to a flood of fanart and high demand for merchandise. Similar tiger-themed goods from the National Museum of Korea sold out quickly after the film's release.",
+      },
+      {
+        category: "Fan Theory",
+        title: "Spy Theory (Debunked)",
+        description: "A fan theory suggested Derpy might have been a spy for Jinu, looking at discarded lyrics in Rumi's trash can. However, the production team has consistently described him as a 'good spirit,' making it more likely that Jinu exploited his innocent nature.",
+      },
+    ],
+    relatedOST: ["Free"],
+  },
+  mystery: {
+    name: "Mystery Saja",
+    koreanName: "미스터리 사자",
+    fullName: "Mystery Saja",
+    gender: "Male",
+    nationality: "Unspecified",
+    species: "Demon",
+    affiliatedGroup: "Saja Boys",
+    position: "Lead Vocalist / Sub-Vocalist (Presumed)",
+    role: "Saja Boys Member",
+    age: "Unknown",
+    voiceActors: {
+      en: "Alan Lee (Dialogue), Kevin Woo (Singing)",
+      kr: "Im Chae-bin (Dialogue)"
+    },
+    overview: "Mystery Saja is a supporting antagonist in K-Pop Demon Hunters. He is the lead/sub-vocalist of the demon idol group, Saja Boys. True to his stage name, he is the group's most enigmatic member, whose face is almost entirely hidden by his long, periwinkle-colored bangs. He is a demon disguised as a K-pop idol to help steal fans from HUNTR/X and serves as the primary love interest for the group's rapper, Zoey.",
+    appearance: "Mystery is a slim man of average height, whose most defining feature is his long hair that completely covers his eyes. In his human form, he has a soft jawline and wears stylish outfits like sweater vests and arm warmers. When he first transforms, his sharp demonic fangs are shown magically turning into his earrings. In his demon form, he has purple skin, claws, and hidden tusks.",
+    performanceOutfits: [
+      {
+        name: "Enigmatic Stage Look",
+        description: "Stylish outfits like sweater vests and arm warmers, with his signature long bangs covering his eyes.",
+        occasion: "Stage performances"
+      }
+    ],
+    personality: "He maintains a reserved and stoic persona, striking bashful poses and remaining mostly silent. Because his eyes are covered, he often uses his mouth—a faint smile or a grimace—to convey emotion. However, he struggles to mimic human behavior convincingly, with his movements sometimes appearing rigid. He also displays sudden, animalistic traits, such as barking at a fan during a signing event. Beneath this quiet exterior, he is an immoral demon, apathetic and exhausted by his idol duties off-stage.",
+    quotes: [
+      "And to our fans, thank you. We really feed off your energy."
+    ],
+    abilities: [
+      "Demonic Powers: He can steal souls, teleport, levitate, and shapeshift.",
+      "Immortality: He is effectively immortal unless killed by a hunter or Gwi-ma.",
+      "Singing: As the lead vocalist, he has an exceptionally angelic, high-pitched falsetto voice.",
+      "Dancing: He is a proficient dancer."
+    ],
+    background: "Little is known about Mystery's past, but it is assumed he was once human and became a demon through a pact with Gwi-ma.",
+    storyArc: "Mystery has very little individual plot significance, but he serves as the main love interest for Zoey. She is immediately smitten with him, and their canonical ship name is 'Zoeystery.' During a joint fan event, Zoey flirts with him, and he later barks at a fan before Zoey reprimands him. In the final battle, he attacks HUNTR/X and engages in a brief fight with Zoey. After Jinu's sacrifice, he is the first to charge the hunters again. Just as Zoey is about to land a final blow, his bangs are swept aside, revealing his full face to her for a brief moment. Her reaction is, 'He's totally my type!' before she attacks. However, a puff of pink smoke implies he teleported away at the last second, leaving his ultimate fate ambiguous.",
+    relationships: [
+      {
+        name: "Zoey",
+        relation: "Love Interest",
+        description: "Serves as the primary love interest for Zoey, with their canonical ship name being 'Zoeystery.'"
+      },
+      {
+        name: "Gwi-ma",
+        relation: "Master",
+        description: "Serves under Gwi-ma like the other Saja Boys members."
+      }
+    ],
+    combatStyle: "Engages in brief combat with Zoey but appears to escape at the last moment through teleportation.",
     favoriteFood: "Unknown",
-    hobbies: ["Observing", "Lurking", "Being mysterious"],
+    hobbies: ["Maintaining mysterious persona", "Fan interactions"],
     fears: ["Unknown"],
+    trivia: [
+      {
+        category: "Occult Motif",
+        title: "Beast-Type Demon Theories",
+        description: "Fans speculate his true form is a beast-type demon. The two main theories are: Sapsali Dog (a native Korean dog breed with long fur covering its eyes) or Jangsanbeom (a fearsome, white-furred Korean cryptid known for its beautiful, luring voice)."
+      },
+      {
+        category: "Design Details",
+        title: "Animation Practicality",
+        description: "His face-covering hairstyle was a practical choice to simplify the animation process. Official character model sheets reveal that despite Baby being the maknae, Mystery is the shortest member of the Saja Boys."
+      },
+      {
+        category: "Fan Reception",
+        title: "Popular Despite Limited Screen Time",
+        description: "Despite his minimal screen time, he is extremely popular with fans due to his mysterious aura and his romantic connection with Zoey. His singing voice actor, Kevin Woo (a former K-pop idol himself), has stated he personally believes Mystery had a crush on Zoey."
+      },
+      {
+        category: "Symbolism",
+        title: "Idealization Commentary",
+        description: "His blank-slate character, onto whom Zoey and the fans project their ideals, can be interpreted as a symbol of the fan practice of creating idealized narratives for K-pop idols."
+      },
+      {
+        category: "Japanese Dub",
+        title: "Personal Pronoun",
+        description: "In the Japanese dub, he uses the personal pronoun 'boku.'"
+      }
+    ],
     relatedOST: ["Soda Pop", "Your Idol"],
+  },
+  sussie: {
+    name: "Sussie",
+    fullName: "Sussie",
+    species: "Supernatural Creature (Good Spirit/Yokai)",
+    role: "Mascot Character",
+    overview: "Sussie is a mascot character from K-Pop Demon Hunters and one of Jinu's former pets, always seen alongside her companion, Derpy. She is a supernatural magpie with six eyes. Her official name, Sussie, was confirmed by the director and is a pun based on her constantly 'suspicious eye' (Sussie) expression.",
+    appearance: "Sussie resembles a real-life magpie with a slender build and black-and-white plumage, but with a few key supernatural features: she has three eyes arranged vertically on each side of her face (for a total of six) and sharp teeth in her beak. Her most distinctive feature is the small, black Korean gat (hat) she wears, which she reportedly stole from Derpy. This unique six-eyed design is an original concept for the film, with no clear precedent in East Asian mythology.",
+    personality: "In sharp contrast to the dim-witted Derpy, Sussie is intelligent, sassy, and competent. She often gives her exasperated companion exasperated looks, annoyed by his clumsy antics. She also has kleptomaniacal tendencies, as evidenced by her stolen hat. Despite her mischievous and sarcastic nature, she is fiercely loyal to both Derpy and their owner, Jinu. Like Derpy, she is a 'good spirit or yokai' and is not a demon, allowing her to remain in the human world after the Honmoon is restored.",
+    quotes: [
+      "*Sassy magpie sounds*",
+      "*Exasperated chirping at Derpy*",
+      "*Suspicious eye expressions*"
+    ],
+    abilities: [
+      "Flight - Natural magpie flying abilities",
+      "Kleptomania - Tendency to steal small objects, particularly headwear",
+      "Intelligence - Sharp contrast to Derpy's dim-witted nature",
+      "Supernatural Vision - Six eyes provide enhanced perception"
+    ],
+    background: "Sussie is based on the magpie from the Korean folk art style known as Kkachi Horangi (Magpie and Tiger). Her act of stealing Derpy's hat can be interpreted as a satirical nod to the folk painting's original meaning, where the commoner magpie often outwits the foolish aristocratic tiger. Her vertically arranged, three-eyed appearance on each side of her head led fans to nickname her the 'Galaxy Magpie,' due to the resemblance to the camera lenses on Samsung Galaxy smartphones.",
+    storyArc: "Like Derpy, she serves as one of Jinu's companions and is a neutral being who does not interfere in the conflict between hunters and demons. Despite her mischievous and sarcastic nature, she is fiercely loyal to both Derpy and their owner, Jinu. After Jinu's demise, she and Derpy are adopted by Rumi and now live peacefully with the members of HUNTR/X.",
+    relationships: [
+      {
+        name: "Derpy",
+        relation: "Companion",
+        description: "Always seen alongside Derpy, often giving him exasperated looks due to his clumsy antics. Despite her annoyance, she is loyal to her dim-witted companion.",
+      },
+      {
+        name: "Jinu",
+        relation: "Former Owner",
+        description: "One of Jinu's former pets, fiercely loyal despite her mischievous nature.",
+      },
+      {
+        name: "Rumi",
+        relation: "New Caretaker",
+        description: "After Jinu's demise, she is adopted by Rumi and now lives peacefully with the members of HUNTR/X.",
+      },
+    ],
+    performanceOutfits: [
+      {
+        name: "Natural Form with Stolen Hat",
+        description: "Black-and-white magpie plumage with six eyes (three on each side arranged vertically) and a small black Korean gat hat",
+        occasion: "Default appearance"
+      }
+    ],
+    trivia: [
+      {
+        category: "Motif",
+        title: "Kkachi Horangi Magpie",
+        description: "She is based on the magpie from the Korean folk art style known as Kkachi Horangi (Magpie and Tiger). Her act of stealing Derpy's hat can be interpreted as a satirical nod to the folk painting's original meaning, where the commoner magpie often outwits the foolish aristocratic tiger.",
+      },
+      {
+        category: "Fan Nickname",
+        title: "Galaxy Magpie",
+        description: "Her vertically arranged, three-eyed appearance on each side of her head led fans to nickname her the 'Galaxy Magpie,' due to the resemblance to the camera lenses on Samsung Galaxy smartphones. This became so popular that Samsung officially collaborated with the film for a Galaxy Unpacked 2025 promotional video featuring Sussie.",
+      },
+      {
+        category: "Name Pronunciation",
+        title: "Dual Pronunciation",
+        description: "Her name can be pronounced as 'Sussie' or 'Soo-ji,' with the creators confirming that both are correct.",
+      },
+      {
+        category: "Design Origin",
+        title: "Original Concept",
+        description: "This unique six-eyed design is an original concept for the film, with no clear precedent in East Asian mythology.",
+      },
+    ],
+    relatedOST: ["Free"],
   }
 }
