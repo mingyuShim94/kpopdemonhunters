@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Footer from "./Footer";
 import CharacterImage from "./CharacterImage";
+import ScrollToTop from "./ScrollToTop";
 
 
 interface Character {
@@ -531,6 +532,9 @@ export default function CharacterPageClient({ character, characterSummary, slug 
       <div className="mt-16">
         <Footer />
       </div>
+      
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
     </div>
   );
 }
