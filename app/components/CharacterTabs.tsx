@@ -123,19 +123,23 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
         </div>
       </div>
 
-      {/* Character Content - All tabs rendered simultaneously */}
+      {/* Image Preloading - Hidden but loaded */}
+      <div className="hidden">
+        {characters.map((character) => (
+          <img key={character.id} src={character.image} alt="" />
+        ))}
+      </div>
+
+      {/* Character Content - Only active tab rendered */}
       <div className="max-w-6xl mx-auto">
-        {(["HUNTR/X", "Saja Boys", "Others"] as TabType[]).map((tab) => {
-          const tabConfig = getTabConfig(tab);
-          const tabCharacters = getCharactersByTab(tab);
-          const isActive = activeTab === tab;
+        {(() => {
+          const tabConfig = getTabConfig(activeTab);
+          const tabCharacters = getCharactersByTab(activeTab);
 
           return (
             <div
-              key={tab}
-              className={`transition-opacity duration-300 ${
-                isActive ? "opacity-100" : "opacity-0 hidden"
-              }`}
+              key={activeTab}
+              className="transition-opacity duration-300 opacity-100"
             >
               <div className="mb-8 text-center">
                 <h2 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${tabConfig.gradientFrom} ${tabConfig.gradientTo} mb-3`}>
@@ -150,7 +154,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
                 {tabCharacters.map((character) => (
                   <Link
                     key={character.id}
-                    href={`/characters/${character.id}?fromTab=${encodeURIComponent(tab)}`}
+                    href={`/characters/${character.id}?fromTab=${encodeURIComponent(activeTab)}`}
                     className="group"
                   >
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
@@ -159,7 +163,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
                         alt={`${character.name} character portrait`}
                         name={character.name}
                         role={character.role}
-                        priority={tab === "HUNTR/X"}
+                        priority={activeTab === "HUNTR/X"}
                       />
                       <div className="p-6">
                         <div className="flex justify-between items-start mb-3">
@@ -183,7 +187,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
               </div>
             </div>
           );
-        })}
+        })()}
       </div>
     </>
   );
