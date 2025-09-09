@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState, useCallback } from "react";
 import CharacterImage from "./CharacterImage";
@@ -126,7 +127,14 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
       {/* Image Preloading - Hidden but loaded */}
       <div className="hidden">
         {characters.map((character) => (
-          <img key={character.id} src={character.image} alt="" />
+          <Image 
+            key={character.id} 
+            src={character.image} 
+            alt=""
+            width={300}
+            height={300}
+            priority={false}
+          />
         ))}
       </div>
 

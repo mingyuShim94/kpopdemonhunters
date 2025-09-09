@@ -10,7 +10,7 @@ interface GumroadButtonProps {
 export default function GumroadButton({ characterName, className = "" }: GumroadButtonProps) {
   useEffect(() => {
     // Gumroad 스크립트가 로드되었는지 확인
-    if (typeof window !== 'undefined' && !(window as any).GumroadOverlay) {
+    if (typeof window !== 'undefined' && !('GumroadOverlay' in window)) {
       const script = document.createElement('script');
       script.src = 'https://gumroad.com/js/gumroad.js';
       script.async = true;
