@@ -97,8 +97,6 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
     }
   };
 
-  const currentTabConfig = getTabConfig(activeTab);
-  const currentCharacters = getCharactersByTab(activeTab);
 
   return (
     <>
