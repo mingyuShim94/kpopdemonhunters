@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import Footer from "./Footer";
 import CharacterImage from "./CharacterImage";
 import ScrollToTop from "./ScrollToTop";
-import GumroadButton from "./GumroadButton";
 
 
 interface Character {
@@ -470,12 +469,6 @@ export default function CharacterPageClient({ character, characterSummary, slug 
         </div>
       </section>
 
-      {/* Gumroad Purchase Button */}
-      <section className="px-4">
-        <div className="max-w-4xl mx-auto">
-          <GumroadButton characterName={character.name} />
-        </div>
-      </section>
 
       {/* Abilities */}
       <section id="abilities" className="py-12 px-4">

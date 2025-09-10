@@ -50,11 +50,15 @@ app/                    # Next.js App Router pages and layouts
 ├── page.tsx           # Homepage with hero section and category cards
 ├── globals.css        # Global Tailwind styles
 ├── components/        # Shared React components
-│   ├── SearchModal.tsx      # Client-side search with keyboard navigation
-│   ├── MobileNavigation.tsx # Mobile-responsive navigation
-│   ├── GoogleAnalytics.tsx  # GA4 integration
-│   ├── StructuredData.tsx   # JSON-LD structured data component
-│   └── Footer.tsx          # Site footer
+│   ├── SearchModal.tsx           # Client-side search with keyboard navigation
+│   ├── MobileNavigation.tsx      # Mobile-responsive navigation
+│   ├── GoogleAnalytics.tsx       # GA4 integration
+│   ├── StructuredData.tsx        # JSON-LD structured data component
+│   ├── CharacterPageClient.tsx   # Client-side character page logic
+│   ├── CharacterTabs.tsx         # Character detail page tab navigation
+│   ├── ScrollToTop.tsx           # Floating scroll-to-top button
+│   ├── GumroadButton.tsx         # Gumroad integration component
+│   └── Footer.tsx               # Site footer
 ├── data/              # Content data as TypeScript files
 │   ├── characters.ts        # Character summaries and detailed profiles
 │   ├── ost.ts              # OST track data with YouTube IDs and lyrics
@@ -62,6 +66,12 @@ app/                    # Next.js App Router pages and layouts
 ├── characters/        # Character pages
 │   ├── page.tsx           # Characters listing page
 │   └── [slug]/page.tsx    # Individual character detail pages
+├── play/              # Interactive features
+│   ├── page.tsx           # Play hub page
+│   ├── layout.tsx         # Play section layout
+│   └── ranking/          # Character ranking system
+│       ├── page.tsx       # Ranking interface
+│       └── layout.tsx     # Ranking layout
 ├── ost/page.tsx       # OST listing and player page
 ├── culture/page.tsx   # Korean culture information page
 ├── privacy-policy/    # Legal pages
@@ -90,14 +100,16 @@ public/               # Static assets with Cloudflare headers
 ## Development Guidelines
 
 ### Performance Targets (from PRD)
+
 - First Contentful Paint (FCP) ≤ 2s
-- Time to Interactive (TTI) ≤ 3s  
+- Time to Interactive (TTI) ≤ 3s
 - Largest Contentful Paint (LCP) ≤ 2.5s
 - First Input Delay (FID) ≤ 100ms
 - Cumulative Layout Shift (CLS) ≤ 0.1
 - Lighthouse mobile score ≥ 90
 
 ### Content Structure (Current Implementation)
+
 - **Characters**: Comprehensive character data with TypeScript interfaces
   - `CharacterSummary`: Basic info for listing pages (id, name, description, image, role)
   - `CharacterDetails`: Full character profiles (Korean names, quotes, abilities, relationships, combat styles, personal details)
@@ -109,11 +121,13 @@ public/               # Static assets with Cloudflare headers
 - **Search**: Real-time client-side search across all content types with keyboard navigation
 
 ### SEO Requirements
+
 - Auto-generated meta tags and Open Graph images
 - Google Search Console error-free indexing
 - Mobile-first responsive design
 
 ### Technology Constraints
+
 - Use existing libraries already in package.json
 - Follow Tailwind CSS utility-first approach with dark theme design system
 - Implement proper TypeScript types (see `CharacterSummary` and `CharacterDetails` interfaces)
@@ -123,12 +137,14 @@ public/               # Static assets with Cloudflare headers
 ## Data Architecture
 
 ### Character System
+
 - Character data is split into summaries (for listing pages) and details (for individual pages)
 - Relationships between characters are explicitly modeled with relation types and descriptions
 - Korean names (`koreanName`) are stored alongside English names
 - Character abilities, quotes, and personal details follow consistent interfaces
 
 ### Content Organization
+
 - All content data is stored as TypeScript files in `app/data/` for type safety
 - Images follow a structured naming convention: `/images/{category}/{subcategory}/filename.webp`
 - Culture content compares film representation vs reality with paired images
@@ -141,12 +157,14 @@ Currently no test framework is configured - verify with the user before implemen
 ## Design System
 
 ### Visual Theme
+
 - **Dark theme**: Black backgrounds with purple/pink/cyan gradients
 - **Glass morphism**: Backdrop blur effects with semi-transparent overlays
 - **Interactive elements**: Hover transforms, scale animations, and gradient transitions
 - **Typography**: Gradient text effects for headings, clean white text for content
 
 ### Component Patterns
+
 - **Layout**: Full-screen sections with relative/absolute positioning for layered effects
 - **Cards**: Gradient borders, backdrop blur, hover scale transforms
 - **Navigation**: Desktop horizontal nav + separate mobile navigation component
@@ -163,13 +181,34 @@ Currently no test framework is configured - verify with the user before implemen
 # Important Development Reminders
 
 **Cloudflare Edge Runtime**: This project runs on Cloudflare Pages with OpenNext.js adapter. Always consider Edge Runtime constraints:
+
 - No Node.js APIs (fs, path, crypto) in client/edge contexts
 - Use Web APIs instead (fetch, URL, TextEncoder, etc.)
 - Environment variables must be configured in wrangler.jsonc
 
-**Current Modified Files** (check git status before starting):
-- `app/layout.tsx`: Root layout changes
-- `app/play/ranking/page.tsx`: Ranking page modifications  
-- `app/components/TallyForm.tsx`: New Tally form component (untracked)
+## Interactive Features
 
-**Waitlist Form Status**: Currently disabled in ranking page - verify requirements before re-enabling
+### Character Ranking System (`/play/ranking`)
+
+- **Tally Integration**: Uses Tally forms for user preference collection
+- **Character Comparison**: Side-by-side character voting interface
+- **State Management**: Client-side ranking state with local persistence
+- **Components**: `GumroadButton.tsx` for integration, `TallyForm.tsx` for form handling
+
+### Play Hub (`/play`)
+
+- Interactive features entry point with navigation to ranking system
+- Future expansion point for additional fan engagement tools
+
+## Navigation Enhancements
+
+### Mobile Navigation
+
+- **Context-based**: `MobileNavContext.tsx` for state management across mobile components
+- **Multi-level**: `MobileMenu.tsx` and `MobileButtons.tsx` for different navigation states
+- **Responsive**: Separate desktop and mobile navigation patterns
+
+### User Experience
+
+- **ScrollToTop**: Floating button component with smooth scroll behavior
+- **Tab Navigation**: Character detail pages use `CharacterTabs.tsx` for content organization
