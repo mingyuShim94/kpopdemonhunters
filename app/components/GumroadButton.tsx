@@ -14,11 +14,10 @@ export default function GumroadButton({
   variant = 'primary' 
 }: GumroadButtonProps) {
 
-  const handleGumroadClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    // 직접 Gumroad 페이지로 이동 (CSP 문제 회피)
+  const handleSimpleClick = () => {
     window.open('https://gguggulab.gumroad.com/l/oexqcw', '_blank', 'noopener,noreferrer');
   };
+
 
   // Size-based styles
   const getSizeStyles = () => {
@@ -96,8 +95,8 @@ export default function GumroadButton({
     return (
       <div className={`text-center ${className}`}>
         <button 
-          onClick={handleGumroadClick}
-          className={`inline-flex items-center justify-center ${variantStyles.button} text-white ${styles.button} rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-pink-500/25`}
+          onClick={handleSimpleClick}
+          className={`inline-flex items-center justify-center ${variantStyles.button} text-white ${styles.button} rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-pink-500/25 cursor-pointer`}
         >
           <span className="mr-3 text-2xl">🎭</span>
           Get Complete Character Collection
@@ -121,8 +120,8 @@ export default function GumroadButton({
             Get the complete character profile with detailed personality traits, relationships, and story arcs.
           </p>
           <button 
-            onClick={handleGumroadClick}
-            className={`inline-flex items-center justify-center ${variantStyles.button} text-white ${styles.button} rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25`}
+            onClick={handleSimpleClick}
+            className={`inline-flex items-center justify-center ${variantStyles.button} text-white ${styles.button} rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25 cursor-pointer`}
           >
             <span className="mr-2">📚</span>
             Get Complete Character Profile

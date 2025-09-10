@@ -162,6 +162,37 @@ useEffect(() => {
 2. **라이프사이클 이해**: React 컴포넌트 마운트/언마운트 과정 분석
 3. **단계적 해결**: 복잡한 로직보다 근본적 구조 변경 고려
 
+## 추가 수정 사항 (Additional Fixes)
+
+### StructuredData 컴포넌트 수정 (2025-09-11)
+
+**문제 재발**: 동일한 `removeChild` 오류가 `app/components/StructuredData.tsx`에서 발생
+
+#### 수정 전
+```javascript
+return () => {
+  if (document.head.contains(script)) {
+    document.head.removeChild(script); // 오류 발생 지점
+  }
+};
+```
+
+#### 수정 후
+```javascript
+return () => {
+  try {
+    if (document.head && script && document.head.contains(script)) {
+      document.head.removeChild(script);
+    }
+  } catch (error) {
+    // Safely ignore cleanup errors during page navigation
+    console.warn('Error during StructuredData cleanup:', error);
+  }
+};
+```
+
+**적용된 패턴**: 문서에서 제시한 안전한 cleanup 패턴을 StructuredData 컴포넌트에도 적용
+
 ## 참고 자료 (References)
 
 - [Next.js Script Optimization](https://nextjs.org/docs/app/building-your-application/optimizing/scripts)
