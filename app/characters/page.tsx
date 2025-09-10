@@ -8,26 +8,28 @@ import GumroadButton from "../components/GumroadButton";
 import { characterSummaries as characters } from "../data/characters";
 
 export const metadata: Metadata = {
-  title: "All Characters | K-pop Demon Hunters Wiki",
+  title: "Kpop Demon Hunters Characters | Complete KDH Wiki Guide",
   description:
-    "Meet all K-pop Demon Hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby. Complete character profiles with abilities and backgrounds.",
+    "Complete guide to all kpop demon hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby. KDH wiki with character profiles, abilities and backgrounds.",
   keywords: [
-    "KDH characters",
-    "HUNTR/X",
+    "kpop demon hunters characters",
+    "kdh characters",
+    "k-pop demon hunters characters",
+    "KDH wiki",
+    "HUNTR/X members",
     "Saja Boys",
     "Rumi",
     "Mira",
     "Zoey",
     "Jinu",
-    "K-pop Demon Hunters characters",
   ],
   alternates: {
     canonical: "/characters",
   },
   openGraph: {
-    title: "All Characters | K-pop Demon Hunters Wiki",
+    title: "Kpop Demon Hunters Characters | Complete KDH Wiki Guide",
     description:
-      "Meet all K-pop Demon Hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby.",
+      "Complete guide to all kpop demon hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby.",
     url: "https://kpopdemonhunters.net/characters",
     siteName: "KDH Wiki",
     images: [
@@ -42,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "All Characters | K-pop Demon Hunters Wiki",
+    title: "Kpop Demon Hunters Characters | Complete KDH Wiki Guide",
     description:
-      "Meet all K-pop Demon Hunters characters including HUNTR/X and Saja Boys members.",
+      "Complete guide to all kpop demon hunters characters including HUNTR/X and Saja Boys members.",
     images: ["/images/characters/rumi.jpg"],
   },
 };

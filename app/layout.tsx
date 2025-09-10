@@ -16,14 +16,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "K-pop Demon Hunters Fan Wiki | Complete Characters & OST Guide",
+  title: "Kpop Demon Hunters Wiki | KDH Characters, Soundtrack & Complete Fan Guide",
   description:
-    "Complete fan wiki for K-pop Demon Hunters with detailed character profiles, OST tracks, Korean culture insights. Explore HUNTR/X, Saja Boys, and the demon hunting universe.",
+    "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
   keywords: [
+    "kpop demon hunters",
+    "kdh wiki",
+    "kpop demon hunters characters",
+    "kpop demon hunters soundtrack",
     "K-pop Demon Hunters",
-    "KDH wiki",
+    "KDH",
     "characters",
-    "soundtrack",
     "OST",
     "HUNTR/X",
     "Saja Boys",
@@ -44,9 +47,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "K-pop Demon Hunters Fan Wiki | Complete Characters & OST Guide",
+    title: "Kpop Demon Hunters Wiki | KDH Characters, Soundtrack & Complete Fan Guide",
     description:
-      "Complete fan wiki for K-pop Demon Hunters with detailed character profiles, OST tracks, Korean culture insights. Explore HUNTR/X, Saja Boys, and the demon hunting universe.",
+      "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
     url: "https://kpopdemonhunters.net",
     siteName: "KDH Wiki",
     images: [
@@ -62,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "K-pop Demon Hunters Fan Wiki | Complete Characters & OST Guide",
+    title: "Kpop Demon Hunters Wiki | KDH Characters, Soundtrack & Complete Fan Guide",
     description:
-      "Complete fan wiki for K-pop Demon Hunters with detailed character profiles, OST tracks, and Korean culture insights.",
+      "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, and Korean culture insights.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
@@ -122,9 +125,9 @@ export default function RootLayout({
           data={{
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "K-pop Demon Hunters Fan Wiki",
+            name: "Kpop Demon Hunters Fan Wiki",
             description:
-              "Complete fan wiki for K-pop Demon Hunters with detailed character profiles, OST tracks, Korean culture insights. Explore HUNTR/X, Saja Boys, and the demon hunting universe.",
+              "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
             url: "https://kpopdemonhunters.net",
             publisher: {
               "@type": "Organization",
@@ -140,9 +143,9 @@ export default function RootLayout({
               {
                 "@type": "CreativeWork",
                 "@id": "https://kpopdemonhunters.net#movie",
-                name: "K-pop Demon Hunters",
+                name: "Kpop Demon Hunters",
                 description:
-                  "Animated movie about K-pop idols who are secret demon hunters",
+                  "Animated movie about kpop idols who are secret demon hunters",
                 genre: "Animation, Action, K-pop, Supernatural",
                 datePublished: "2024",
               },

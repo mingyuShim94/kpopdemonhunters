@@ -6,15 +6,15 @@ import OSTSidebar from "../components/OSTSidebar";
 import MobileButtons from "../components/MobileButtons";
 
 export const metadata: Metadata = {
-  title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
-  description: "Listen to the complete K-pop Demon Hunters soundtrack with YouTube videos, lyrics, and track information. Featuring character themes, battle anthems, and emotional ballads.",
-  keywords: ["K-pop Demon Hunters OST", "soundtrack", "music", "YouTube", "lyrics", "Golden", "TAKEDOWN", "Soda Pop", "Your Idol"],
+  title: "Kpop Demon Hunters Soundtrack | Complete OST & Music Guide - KDH Wiki",
+  description: "Listen to the complete kpop demon hunters soundtrack with YouTube videos, lyrics, and track information. KDH OST featuring character themes, battle anthems, and emotional ballads.",
+  keywords: ["kpop demon hunters soundtrack", "kpop demon hunters ost", "k-pop demon hunters soundtrack", "KDH OST", "kdh music", "soundtrack", "music", "YouTube", "lyrics", "Golden", "TAKEDOWN", "Soda Pop", "Your Idol"],
   alternates: {
     canonical: '/ost',
   },
   openGraph: {
-    title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
-    description: "Listen to the complete K-pop Demon Hunters soundtrack with YouTube videos, lyrics, and track information.",
+    title: "Kpop Demon Hunters Soundtrack | Complete OST & Music Guide - KDH Wiki",
+    description: "Listen to the complete kpop demon hunters soundtrack with YouTube videos, lyrics, and track information.",
     url: 'https://kpopdemonhunters.net/ost',
     siteName: 'KDH Wiki',
     images: [
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Original Soundtrack (OST) | K-pop Demon Hunters Wiki",
-    description: "Listen to the complete K-pop Demon Hunters soundtrack with YouTube videos and lyrics.",
+    title: "Kpop Demon Hunters Soundtrack | Complete OST & Music Guide - KDH Wiki",
+    description: "Listen to the complete kpop demon hunters soundtrack with YouTube videos and lyrics.",
     images: ['/images/og-image.jpg'],
   },
 };

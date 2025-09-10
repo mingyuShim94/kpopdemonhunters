@@ -59,6 +59,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     keywords: [
       character.name,
       character.role,
+      'kpop demon hunters',
+      'kdh wiki',
+      'kdh character',
       'K-pop Demon Hunters',
       'KDH',
       'Character',
