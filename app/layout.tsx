@@ -112,6 +112,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script> */}
         <script async src="https://tally.so/widgets/embed.js"></script>
+        <script async src="https://gumroad.com/js/gumroad.js"></script>
         <GoogleAnalytics />
       </head>
       <body

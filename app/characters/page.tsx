@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import Footer from "../components/Footer";
 import CharacterTabs from "../components/CharacterTabs";
 import MobileButtons from "../components/MobileButtons";
+import GumroadButton from "../components/GumroadButton";
 import { characterSummaries as characters } from "../data/characters";
 
 export const metadata: Metadata = {
@@ -103,6 +104,52 @@ export default function CharactersPage() {
         <Suspense fallback={<div className="text-center text-white">Loading characters...</div>}>
           <CharacterTabs characters={characters} />
         </Suspense>
+      </section>
+
+      {/* Main Purchase Section - Position 3 */}
+      <section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-md border border-white/20 rounded-3xl p-10 text-center relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+            
+            <div className="relative z-10">
+              <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+                🎭 Dive Deeper Into Their Stories
+              </h2>
+              <p className="text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+                You&apos;ve met all 13 characters. Now discover their hidden depths, combat secrets, and untold stories in our comprehensive digital guide.
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8 text-left">
+                <div className="bg-black/20 rounded-xl p-4">
+                  <div className="text-purple-400 font-bold mb-2">✍️ Perfect for Creators</div>
+                  <div className="text-gray-300 text-sm">Detailed references for fanfiction writers and fan artists</div>
+                </div>
+                <div className="bg-black/20 rounded-xl p-4">
+                  <div className="text-pink-400 font-bold mb-2">🔍 Deep Analysis</div>
+                  <div className="text-gray-300 text-sm">Character psychology, relationships, and story arcs</div>
+                </div>
+                <div className="bg-black/20 rounded-xl p-4">
+                  <div className="text-cyan-400 font-bold mb-2">📱 Instant Access</div>
+                  <div className="text-gray-300 text-sm">13 high-quality Markdown files, ready to download</div>
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <span className="text-2xl font-bold text-yellow-400">13 Complete Profiles</span>
+                <span className="text-gray-300 mx-4">•</span>
+                <span className="text-xl text-white">Digital Collection</span>
+              </div>
+              
+              <GumroadButton size="xl" variant="primary" />
+              
+              <p className="text-gray-400 text-sm mt-4">
+                ⚡ Instant download • 💎 Lifetime access • 🔄 Professional formatting
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div className="mt-16">
