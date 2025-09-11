@@ -47,15 +47,9 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center">
-          <p className="text-purple-300 mb-2">
+          <p className="text-purple-300">
             © 2025 KDH Wiki. A fan-made tribute to K-pop Demon Hunters.
           </p>
-          <a 
-            href="/privacy-policy" 
-            className="text-sm text-gray-400 hover:text-purple-300 transition-colors underline"
-          >
-            Privacy Policy
-          </a>
         </div>
       </div>
     </footer>
