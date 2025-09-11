@@ -20,7 +20,7 @@ export default function StructuredData({ data }: StructuredDataProps) {
         if (document.head.contains(scriptRef.current)) {
           scriptRef.current.parentNode.removeChild(scriptRef.current);
         }
-      } catch (error) {
+      } catch {
         // Ignore cleanup errors during DOM transitions
       }
     }
@@ -56,7 +56,7 @@ export default function StructuredData({ data }: StructuredDataProps) {
               document.head.contains(currentScript)) {
             document.head.removeChild(currentScript);
           }
-        } catch (error) {
+        } catch {
           // Silently ignore all cleanup errors to prevent console spam
           // This prevents removeChild TypeError during page navigation
         } finally {
