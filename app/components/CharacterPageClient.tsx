@@ -310,12 +310,18 @@ function OutfitGallery({
   const theme = getCharacterTheme(characterName);
 
   const isRumi = characterSlug === "rumi";
-  const outfitCount = isRumi ? 14 : 5;
+  const isZoey = characterSlug === "zoey";
+  const outfitCount = isRumi ? 15 : isZoey ? 11 : 5;
 
   const outfits = Array.from({ length: outfitCount }, (_, index) => ({
     id: index + 1,
     image: isRumi
       ? `/images/characters/rumi/outfits/outfit_${String(index + 1).padStart(
+          2,
+          "0"
+        )}.webp`
+      : isZoey
+      ? `/images/characters/zoey/outfits/outfit_${String(index + 1).padStart(
           2,
           "0"
         )}.webp`
@@ -342,13 +348,15 @@ function OutfitGallery({
             className="group-hover:scale-105 transition-transform duration-300"
             sizes="(max-width: 768px) 40vw, 20vw" // 반응형 이미지 사이즈 최적화
           />
-          {/* Coming Soon overlay for non-Rumi characters */}
-          {!isRumi && (
+          {/* Coming Soon overlay for non-Rumi, non-Zoey characters */}
+          {!isRumi && !isZoey && (
             <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-              <span className="text-white text-lg font-semibold">Coming Soon</span>
+              <span className="text-white text-lg font-semibold">
+                Coming Soon
+              </span>
             </div>
           )}
-          
+
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
