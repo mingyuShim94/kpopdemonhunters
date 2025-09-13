@@ -3,9 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import Footer from "./Footer";
 import CharacterImage from "./CharacterImage";
 import ScrollToTop from "./ScrollToTop";
+import { PerformanceOutfit } from "../data/characters";
 
 interface Character {
   fullName?: string;
@@ -33,11 +35,6 @@ interface Character {
   };
 }
 
-interface PerformanceOutfit {
-  name: string;
-  description: string;
-  occasion: string;
-}
 
 interface TriviaItem {
   category: string;
@@ -299,79 +296,92 @@ function InfoBox({ character }: { character: CharacterData }) {
   );
 }
 
-// ==================== START: OutfitGallery 수정된 부분 ====================
 function OutfitGallery({
   characterName,
-  characterSlug,
+  outfits,
 }: {
   characterName: string;
-  characterSlug: string;
+  outfits?: PerformanceOutfit[];
 }) {
   const theme = getCharacterTheme(characterName);
+  const [imageStatuses, setImageStatuses] = useState<{[key: number]: 'loading' | 'loaded' | 'error'}>({});
 
-  const isRumi = characterSlug === "rumi";
-  const isZoey = characterSlug === "zoey";
-  const outfitCount = isRumi ? 15 : isZoey ? 11 : 5;
+  if (!outfits || outfits.length === 0) {
+    return (
+      <div className="flex justify-center items-center h-64 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
+        <span className="text-white text-lg">No outfits available yet</span>
+      </div>
+    );
+  }
 
-  const outfits = Array.from({ length: outfitCount }, (_, index) => ({
-    id: index + 1,
-    image: isRumi
-      ? `/images/characters/rumi/outfits/outfit_${String(index + 1).padStart(
-          2,
-          "0"
-        )}.webp`
-      : isZoey
-      ? `/images/characters/zoey/outfits/outfit_${String(index + 1).padStart(
-          2,
-          "0"
-        )}.webp`
-      : "/images/sample_outfit.png",
-  }));
+  const handleImageLoad = (index: number) => {
+    setImageStatuses(prev => ({ ...prev, [index]: 'loaded' }));
+  };
+
+  const handleImageError = (index: number) => {
+    setImageStatuses(prev => ({ ...prev, [index]: 'error' }));
+  };
 
   return (
-    // 1. 기존 flex-wrap, justify-center 대신, flex와 overflow-x-auto를 사용하여 가로 스크롤 컨테이너를 만듭니다.
     <div className="flex overflow-x-auto gap-4 pb-4">
-      {outfits.map((outfit) => (
-        <div
-          key={outfit.id}
-          // 2. flex-shrink-0을 추가하여 아이템들이 원래 크기를 유지하도록 합니다.
-          className="group relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 hover:bg-white/20 transition-all duration-300 flex-shrink-0"
-        >
-          {/* 3. Image 컴포넌트에서 fill을 제거하고, height와 width를 직접 지정합니다. */}
-          {/*    style={{ width: 'auto' }}를 통해 이미지 비율에 맞는 가로 길이를 갖도록 합니다. */}
-          <Image
-            src={outfit.image}
-            alt={`${characterName} outfit ${outfit.id}`}
-            height={300}
-            width={300} // width는 CSS에 의해 오버라이드되지만, next/image는 이 값을 placeholder와 비율 계산에 사용합니다.
-            style={{ height: "300px", width: "auto" }}
-            className="group-hover:scale-105 transition-transform duration-300"
-            sizes="(max-width: 768px) 40vw, 20vw" // 반응형 이미지 사이즈 최적화
-          />
-          {/* Coming Soon overlay for non-Rumi, non-Zoey characters */}
-          {!isRumi && !isZoey && (
-            <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-              <span className="text-white text-lg font-semibold">
-                Coming Soon
-              </span>
-            </div>
-          )}
+      {outfits.map((outfit, index) => {
+        const imageStatus = imageStatuses[index] || 'loading';
+        const isImageLoaded = imageStatus === 'loaded';
+        const hasImageError = imageStatus === 'error';
 
-          {/* Hover overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          <div className="absolute bottom-2 left-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span
-              className={`text-sm font-medium ${theme.primary} drop-shadow-lg`}
-            >
-              Outfit {outfit.id}
-            </span>
+        return (
+          <div
+            key={index}
+            className="group relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 hover:bg-white/20 transition-all duration-300 flex-shrink-0"
+          >
+            <Image
+              src={hasImageError ? "/images/sample_outfit.png" : outfit.imagePath}
+              alt={`${characterName} - ${outfit.name}`}
+              height={300}
+              width={300}
+              style={{ height: "300px", width: "auto" }}
+              className="group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 768px) 40vw, 20vw"
+              onLoad={() => handleImageLoad(index)}
+              onError={() => handleImageError(index)}
+              unoptimized={hasImageError} // Use unoptimized for fallback images
+            />
+
+            {/* Conditional overlay based on image status */}
+            {hasImageError ? (
+              // Coming Soon overlay for fallback images (always visible)
+              <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
+                <div className="text-center p-2">
+                  <span className="text-white text-lg font-semibold block mb-1">
+                    Coming Soon
+                  </span>
+                  <span className="text-white text-xs opacity-75">
+                    {outfit.name}
+                  </span>
+                </div>
+              </div>
+            ) : isImageLoaded ? (
+              // Outfit info overlay for loaded images (always visible)
+              <>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-2 left-2 right-2">
+                  <div className="text-white">
+                    <h4 className={`text-sm font-semibold ${theme.primary} drop-shadow-lg mb-1`}>
+                      {outfit.name}
+                    </h4>
+                    <p className="text-xs text-gray-200 drop-shadow-lg line-clamp-2">
+                      {outfit.occasion}
+                    </p>
+                  </div>
+                </div>
+              </>
+            ) : null}
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
-// ==================== END: OutfitGallery 수정된 부분 ====================
 
 function TriviaCards({
   trivia,
@@ -644,7 +654,7 @@ export default function CharacterPageClient({
               <h3 className="text-2xl font-bold text-white mb-6">Outfits</h3>
               <OutfitGallery
                 characterName={character.name}
-                characterSlug={slug}
+                outfits={character.performanceOutfits}
               />
             </>
           </div>
