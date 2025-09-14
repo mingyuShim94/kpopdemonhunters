@@ -6,15 +6,48 @@ import OSTSidebar from "../components/OSTSidebar";
 import MobileButtons from "../components/MobileButtons";
 
 export const metadata: Metadata = {
-  title: "Kpop Demon Hunters Soundtrack | Complete OST & Music Guide - KDH Wiki",
-  description: "Listen to the complete kpop demon hunters soundtrack with YouTube videos, lyrics, and track information. KDH OST featuring character themes, battle anthems, and emotional ballads.",
-  keywords: ["kpop demon hunters soundtrack", "kpop demon hunters ost", "k-pop demon hunters soundtrack", "KDH OST", "kdh music", "soundtrack", "music", "YouTube", "lyrics", "Golden", "TAKEDOWN", "Soda Pop", "Your Idol"],
+  title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
+  description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos, full lyrics, and detailed track information. Features Golden, TAKEDOWN, and all character theme songs.",
+  keywords: [
+    // Core trending keywords from Google Trends
+    "kpop demon hunters lyrics",
+    "kpop demon hunters songs",
+    "kpop demon hunters soundtrack",
+    "kpop demon hunters ost",
+    "golden lyrics",
+    "takedown lyrics",
+    // Expanded trending variations
+    "k-pop demon hunters lyrics",
+    "kdh lyrics",
+    "kdh songs",
+    "kdh soundtrack",
+    "KDH OST",
+    "kdh music",
+    "kpop demon hunters music",
+    // Individual song targeting
+    "Golden",
+    "TAKEDOWN",
+    "Soda Pop",
+    "Your Idol",
+    "Free",
+    "What It Sounds Like",
+    // Additional discovery keywords
+    "soundtrack",
+    "music",
+    "YouTube",
+    "lyrics",
+    "song lyrics",
+    "k-pop songs",
+    "demon hunter songs",
+    "huntr/x songs",
+    "saja boys songs"
+  ],
   alternates: {
     canonical: '/ost',
   },
   openGraph: {
-    title: "Kpop Demon Hunters Soundtrack | Complete OST & Music Guide - KDH Wiki",
-    description: "Listen to the complete kpop demon hunters soundtrack with YouTube videos, lyrics, and track information.",
+    title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
+    description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos, full lyrics, and detailed track information.",
     url: 'https://kpopdemonhunters.net/ost',
     siteName: 'KDH Wiki',
     images: [
@@ -22,15 +55,15 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'K-pop Demon Hunters OST',
+        alt: 'K-pop Demon Hunters OST & Lyrics',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Kpop Demon Hunters Soundtrack | Complete OST & Music Guide - KDH Wiki",
-    description: "Listen to the complete kpop demon hunters soundtrack with YouTube videos and lyrics.",
+    title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
+    description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos and lyrics.",
     images: ['/images/og-image.jpg'],
   },
 };

@@ -20,6 +20,33 @@ export const metadata: Metadata = {
   description:
     "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
   keywords: [
+    // Top Google Trends keywords (priority order)
+    "rumi kpop",                        // 100 points
+    "rumi kpop demon hunters",          // 99 points
+    "rumi",                             // 98 points
+    "kpop demon hunters zoey",          // 67 points
+    "kpop demon hunters golden",        // 67 points
+    "golden",                           // 66 points
+    "zoey",                             // 65 points
+    "kpop demon hunters lyrics",        // 54 points
+    "kpop demon hunters mira",          // 48 points
+    "mira",                             // 47 points
+    "kpop demon hunters costume",       // 43 points
+    "kpop demon hunters songs",         // 41 points
+    "kpop demon hunters cast",          // 39 points
+    "jinu",                             // 33 points
+    "kpop demon hunters jinu",          // 32 points
+    "kpop demon hunters movie",         // 28 points
+    "demon hunter",                     // 28 points
+    "demon hunter kpop",                // 28 points
+    "k pop demon hunters",              // 27 points
+    "k pop",                            // 27 points
+    "kpop demon hunters free",          // 26 points
+    "kpop demon hunters song",          // 26 points
+    "what is kpop demon hunters",       // 24 points
+    "golden lyrics",                    // 22 points
+
+    // Core brand keywords
     "kpop demon hunters",
     "kdh wiki",
     "kpop demon hunters characters",
@@ -33,6 +60,17 @@ export const metadata: Metadata = {
     "Rumi",
     "Jinu",
     "fan guide",
+
+    // Additional discovery keywords
+    "huntr/x kpop group",
+    "saja boys kpop",
+    "kdh characters",
+    "kdh lyrics",
+    "kdh songs",
+    "kdh soundtrack",
+    "demon hunters anime",
+    "k-pop anime",
+    "korean demon hunters",
   ],
   authors: [{ name: "KDH Wiki Team" }],
   creator: "KDH Wiki",
