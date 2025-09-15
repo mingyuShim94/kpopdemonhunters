@@ -161,30 +161,100 @@ export default function RootLayout({
         <StructuredData
           data={{
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Kpop Demon Hunters Fan Wiki",
-            description:
-              "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
-            url: "https://kpopdemonhunters.net",
-            publisher: {
-              "@type": "Organization",
-              name: "KDH Wiki",
-              url: "https://kpopdemonhunters.net",
-            },
-            potentialAction: {
-              "@type": "SearchAction",
-              target: "https://kpopdemonhunters.net/?q={search_term_string}",
-              "query-input": "required name=search_term_string",
-            },
-            mainEntity: [
+            "@graph": [
               {
-                "@type": "CreativeWork",
+                "@type": "WebSite",
+                "@id": "https://kpopdemonhunters.net#website",
+                name: "Kpop Demon Hunters Fan Wiki",
+                description:
+                  "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
+                url: "https://kpopdemonhunters.net",
+                image: "https://kpopdemonhunters.net/images/og-image.png",
+                publisher: {
+                  "@type": "Organization",
+                  "@id": "https://kpopdemonhunters.net#organization",
+                  name: "KDH Wiki",
+                  url: "https://kpopdemonhunters.net",
+                  logo: "https://kpopdemonhunters.net/images/og-image.png",
+                },
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target: "https://kpopdemonhunters.net/?q={search_term_string}",
+                  "query-input": "required name=search_term_string",
+                },
+              },
+              {
+                "@type": "Movie",
                 "@id": "https://kpopdemonhunters.net#movie",
                 name: "Kpop Demon Hunters",
+                alternateName: "K-pop Demon Hunters",
                 description:
-                  "Animated movie about kpop idols who are secret demon hunters",
-                genre: "Animation, Action, K-pop, Supernatural",
-                datePublished: "2024",
+                  "2025 animated musical fantasy film about K-pop idols who are secret demon hunters",
+                genre: ["Animation", "Musical", "Fantasy", "K-pop"],
+                datePublished: "2025-06-20",
+                productionCompany: "Republic Records",
+                image: "https://kpopdemonhunters.net/images/og-image.png",
+                soundtrack: {
+                  "@type": "MusicAlbum",
+                  "@id": "https://kpopdemonhunters.net#soundtrack",
+                  name: "Kpop Demon Hunters (Soundtrack)",
+                  description: "Official soundtrack album to the 2025 animated musical fantasy film",
+                  datePublished: "2025-06-20",
+                  recordLabel: "Republic Records",
+                  image: "https://kpopdemonhunters.net/images/og-image.png",
+                  numTracks: 12,
+                  genre: ["K-pop", "Soundtrack", "Pop"],
+                },
+              },
+              {
+                "@type": "MusicGroup",
+                "@id": "https://kpopdemonhunters.net#huntrx",
+                name: "HUNTR/X",
+                description: "Virtual K-pop group from Kpop Demon Hunters universe",
+                genre: ["K-pop", "Pop"],
+                image: "https://kpopdemonhunters.net/images/characters/huntrx-group.webp",
+                member: [
+                  {
+                    "@type": "Person",
+                    name: "Rumi",
+                    description: "Main vocalist and leader of HUNTR/X",
+                    image: "https://kpopdemonhunters.net/images/characters/rumi/profile.webp",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Zoey",
+                    description: "Lead dancer and vocalist of HUNTR/X",
+                    image: "https://kpopdemonhunters.net/images/characters/zoey/profile.webp",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Mira",
+                    description: "Main rapper and visual of HUNTR/X",
+                    image: "https://kpopdemonhunters.net/images/characters/mira/profile.webp",
+                  },
+                ],
+              },
+              {
+                "@type": "MusicGroup",
+                "@id": "https://kpopdemonhunters.net#sajaboys",
+                name: "Saja Boys",
+                description: "Virtual K-pop boy group from Kpop Demon Hunters universe",
+                genre: ["K-pop", "Pop"],
+                image: "https://kpopdemonhunters.net/images/characters/sajaboys-group.webp",
+                member: [
+                  {
+                    "@type": "Person",
+                    name: "Jinu",
+                    description: "Leader and main vocalist of Saja Boys",
+                    image: "https://kpopdemonhunters.net/images/characters/jinu/profile.webp",
+                  },
+                  {
+                    "@type": "Person",
+                    name: "Golden",
+                    description: "Main dancer and rapper of Saja Boys",
+                    image: "https://kpopdemonhunters.net/images/characters/golden/profile.webp",
+                  },
+                ],
               },
             ],
           }}
