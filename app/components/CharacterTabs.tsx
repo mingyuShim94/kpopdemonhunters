@@ -168,7 +168,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
                       <CharacterImage
                         src={character.image}
-                        alt={`${character.name} character portrait`}
+                        alt={`${character.name} from Kpop Demon Hunters - ${character.role} character profile`}
                         name={character.name}
                         role={character.role}
                         priority={activeTab === "HUNTR/X"}

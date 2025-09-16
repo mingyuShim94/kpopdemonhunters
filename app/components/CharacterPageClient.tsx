@@ -336,7 +336,7 @@ function OutfitGallery({
           >
             <Image
               src={hasImageError ? "/images/sample_outfit.png" : outfit.imagePath}
-              alt={`${characterName} - ${outfit.name}`}
+              alt={`${characterName} from Kpop Demon Hunters wearing ${outfit.name} outfit`}
               height={300}
               width={300}
               style={{ height: "300px", width: "auto" }}
@@ -551,7 +551,7 @@ export default function CharacterPageClient({
                   src={
                     characterSummary?.image || `/images/characters/${slug}.webp`
                   }
-                  alt={`${character.name} character portrait`}
+                  alt={`${character.name} from Kpop Demon Hunters - detailed character profile and biography`}
                   name={character.name}
                   role={character.role}
                   aspectRatio="square"

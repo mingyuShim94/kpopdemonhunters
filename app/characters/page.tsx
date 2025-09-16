@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import CharacterTabs from "../components/CharacterTabs";
 import MobileButtons from "../components/MobileButtons";
 import GumroadButton from "../components/GumroadButton";
+import StructuredData from "../components/StructuredData";
 import { characterSummaries as characters } from "../data/characters";
 
 export const metadata: Metadata = {
@@ -55,6 +56,26 @@ export default function CharactersPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://kpopdemonhunters.net",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Characters",
+              item: "https://kpopdemonhunters.net/characters",
+            },
+          ],
+        }}
+      />
       {/* Navigation */}
       <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
