@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     siteName: "KDH Wiki",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "KDH Wiki - K-pop Demon Hunters Fan Guide",
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
     title: "Kpop Demon Hunters Wiki | KDH Characters, Soundtrack & Complete Fan Guide",
     description:
       "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, and Korean culture insights.",
-    images: ["/images/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
