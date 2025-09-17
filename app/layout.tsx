@@ -169,13 +169,39 @@ export default function RootLayout({
                 description:
                   "Complete kpop demon hunters wiki with detailed character profiles, OST tracks, Korean culture insights. KDH fan guide for HUNTR/X, Saja Boys, and the demon hunting universe.",
                 url: "https://kpopdemonhunters.net",
-                image: "https://kpopdemonhunters.net/images/og-image.png",
+                primaryImageOfPage: {
+                  "@type": "ImageObject",
+                  url: "https://kpopdemonhunters.net/og-image.png",
+                  width: 1200,
+                  height: 630,
+                  caption: "KDH Wiki - K-pop Demon Hunters Fan Guide"
+                },
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://kpopdemonhunters.net/og-image.png",
+                  width: 1200,
+                  height: 630,
+                  caption: "KDH Wiki - K-pop Demon Hunters Fan Guide"
+                },
                 publisher: {
                   "@type": "Organization",
                   "@id": "https://kpopdemonhunters.net#organization",
                   name: "KDH Wiki",
                   url: "https://kpopdemonhunters.net",
-                  logo: "https://kpopdemonhunters.net/images/og-image.png",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://kpopdemonhunters.net/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    caption: "KDH Wiki Logo"
+                  },
+                  image: {
+                    "@type": "ImageObject",
+                    url: "https://kpopdemonhunters.net/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    caption: "KDH Wiki"
+                  }
                 },
                 potentialAction: {
                   "@type": "SearchAction",
@@ -193,7 +219,13 @@ export default function RootLayout({
                 genre: ["Animation", "Musical", "Fantasy", "K-pop"],
                 datePublished: "2025-06-20",
                 productionCompany: "Republic Records",
-                image: "https://kpopdemonhunters.net/images/og-image.png",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://kpopdemonhunters.net/og-image.png",
+                  width: 1200,
+                  height: 630,
+                  caption: "Kpop Demon Hunters 2025 animated musical fantasy film"
+                },
                 soundtrack: {
                   "@type": "MusicAlbum",
                   "@id": "https://kpopdemonhunters.net#soundtrack",
@@ -201,7 +233,13 @@ export default function RootLayout({
                   description: "Official soundtrack album to the 2025 animated musical fantasy film",
                   datePublished: "2025-06-20",
                   recordLabel: "Republic Records",
-                  image: "https://kpopdemonhunters.net/images/og-image.png",
+                  image: {
+                    "@type": "ImageObject",
+                    url: "https://kpopdemonhunters.net/og-image.png",
+                    width: 1200,
+                    height: 630,
+                    caption: "Kpop Demon Hunters Official Soundtrack Album"
+                  },
                   numTracks: 12,
                   genre: ["K-pop", "Soundtrack", "Pop"],
                 },
