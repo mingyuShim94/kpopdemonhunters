@@ -8,6 +8,8 @@ import GumroadButton from "../components/GumroadButton";
 import StructuredData from "../components/StructuredData";
 import { characterSummaries as characters } from "../data/characters";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Kpop Demon Hunters Characters | Complete KDH Wiki Guide",
   description:

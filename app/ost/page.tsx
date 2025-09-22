@@ -5,6 +5,8 @@ import { ostTracks } from "../data/ost";
 import OSTSidebar from "../components/OSTSidebar";
 import MobileButtons from "../components/MobileButtons";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
   description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos, full lyrics, and detailed track information. Features Golden, TAKEDOWN, and all character theme songs.",

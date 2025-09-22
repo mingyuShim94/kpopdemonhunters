@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../components/Footer";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Privacy Policy | KDH Wiki",
   description: "Privacy Policy for KDH Ranking Filter app - how we collect, use, and protect your personal information.",
