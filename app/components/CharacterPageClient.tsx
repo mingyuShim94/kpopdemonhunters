@@ -4,10 +4,24 @@ import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { Search, ChevronLeft, Quote, Music } from "lucide-react";
 import Footer from "./Footer";
 import CharacterImage from "./CharacterImage";
 import ScrollToTop from "./ScrollToTop";
+import MobileButtons from "./MobileButtons";
 import { PerformanceOutfit } from "../data/characters";
+
+// ... (Interfaces and helper functions will be updated in next steps)
+// Placeholder for interfaces to make this chunk valid TSX if possible, 
+// but since we are replacing the whole file eventually, we can rely on the existing ones if we don't touch them yet.
+// However, I need to make sure the file remains valid.
+// I will assume the interfaces and helper functions are ABOVE this component in the file or I will include them if I'm replacing the whole file.
+// Wait, I can't easily "skip" the middle parts with replace_file_content if I'm replacing from line 1 to 811.
+// I should use multi_replace_file_content to replace specific blocks.
+
+// Let's try replacing the IMPORTS first.
+
 
 interface Character {
   fullName?: string;
@@ -165,127 +179,129 @@ function InfoBox({ character }: { character: CharacterData }) {
   const theme = getCharacterTheme(character.name);
 
   return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 mb-8">
-      <h3 className="text-xl font-bold text-white mb-4 text-center border-b border-white/20 pb-2">
+    <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 mb-8 relative overflow-hidden">
+      <div className={`absolute top-0 left-0 right-0 h-1 ${theme.bg.replace('/30', '')}`} />
+
+      <h3 className="text-2xl font-bold text-white mb-6 text-center pb-4 border-b border-white/10">
         {character.fullName || character.name}
       </h3>
-      <div className="space-y-3 text-sm">
+      <div className="space-y-4 text-sm">
         {character.fullName && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Full Name:</span>
-            <span className="text-white col-span-2">{character.fullName}</span>
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Full Name</span>
+            <span className="text-gray-200 col-span-2 font-medium">{character.fullName}</span>
           </div>
         )}
         {character.gender && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Gender:</span>
-            <span className="text-white col-span-2">{character.gender}</span>
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Gender</span>
+            <span className="text-gray-200 col-span-2 font-medium">{character.gender}</span>
           </div>
         )}
         {character.species && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Species:</span>
-            <span className="text-white col-span-2">{character.species}</span>
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Species</span>
+            <span className="text-gray-200 col-span-2 font-medium">{character.species}</span>
           </div>
         )}
         {character.nationality && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>
-              Nationality:
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>
+              Nationality
             </span>
-            <span className="text-white col-span-2">
+            <span className="text-gray-200 col-span-2 font-medium">
               {character.nationality}
             </span>
           </div>
         )}
         {character.age && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Age:</span>
-            <span className="text-white col-span-2">{character.age}</span>
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Age</span>
+            <span className="text-gray-200 col-span-2 font-medium">{character.age}</span>
           </div>
         )}
         {character.affiliatedGroup && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Group:</span>
-            <span className="text-white col-span-2">
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Group</span>
+            <span className="text-gray-200 col-span-2 font-medium">
               {character.affiliatedGroup}
             </span>
           </div>
         )}
         {character.position && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Position:</span>
-            <span className="text-white col-span-2">{character.position}</span>
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Position</span>
+            <span className="text-gray-200 col-span-2 font-medium">{character.position}</span>
           </div>
         )}
         {character.weapon && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Weapon:</span>
-            <span className="text-white col-span-2">{character.weapon}</span>
+          <div className="grid grid-cols-3 gap-4 items-center">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary}`}>Weapon</span>
+            <span className="text-gray-200 col-span-2 font-medium">{character.weapon}</span>
           </div>
         )}
         {character.family && character.family.length > 0 && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Family:</span>
-            <div className="col-span-2 space-y-1">
+          <div className="grid grid-cols-3 gap-4 items-start">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary} mt-1`}>Family</span>
+            <div className="col-span-2 space-y-2">
               {character.family.map((member, index) => (
-                <div key={index} className="text-white text-xs">
-                  <span className={theme.secondary}>{member.relation}:</span>{" "}
-                  {member.name}
+                <div key={index} className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>{member.relation}</span>
+                  <span>{member.name}</span>
                 </div>
               ))}
             </div>
           </div>
         )}
         {character.voiceActors && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>
-              Voice Actors:
+          <div className="grid grid-cols-3 gap-4 items-start">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary} mt-1`}>
+              Voice Actors
             </span>
-            <div className="col-span-2 space-y-1">
+            <div className="col-span-2 space-y-2">
               {character.voiceActors.en && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>EN:</span>{" "}
-                  {character.voiceActors.en}
+                <div className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>EN</span>
+                  <span>{character.voiceActors.en}</span>
                 </div>
               )}
               {character.voiceActors.kr && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>KR:</span>{" "}
-                  {character.voiceActors.kr}
+                <div className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>KR</span>
+                  <span>{character.voiceActors.kr}</span>
                 </div>
               )}
               {character.voiceActors.jp && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>JP:</span>{" "}
-                  {character.voiceActors.jp}
+                <div className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>JP</span>
+                  <span>{character.voiceActors.jp}</span>
                 </div>
               )}
             </div>
           </div>
         )}
         {character.singingVoice && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>
-              Singing Voice:
+          <div className="grid grid-cols-3 gap-4 items-start">
+            <span className={`font-bold uppercase tracking-wider text-xs ${theme.primary} mt-1`}>
+              Singing Voice
             </span>
-            <div className="col-span-2 space-y-1">
+            <div className="col-span-2 space-y-2">
               {character.singingVoice.en && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>EN:</span>{" "}
-                  {character.singingVoice.en}
+                <div className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>EN</span>
+                  <span>{character.singingVoice.en}</span>
                 </div>
               )}
               {character.singingVoice.kr && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>KR:</span>{" "}
-                  {character.singingVoice.kr}
+                <div className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>KR</span>
+                  <span>{character.singingVoice.kr}</span>
                 </div>
               )}
               {character.singingVoice.jp && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>JP:</span>{" "}
-                  {character.singingVoice.jp}
+                <div className="text-gray-200 text-sm flex items-center gap-2">
+                  <span className={`text-xs px-2 py-0.5 rounded bg-white/5 ${theme.secondary}`}>JP</span>
+                  <span>{character.singingVoice.jp}</span>
                 </div>
               )}
             </div>
@@ -304,12 +320,12 @@ function OutfitGallery({
   outfits?: PerformanceOutfit[];
 }) {
   const theme = getCharacterTheme(characterName);
-  const [imageStatuses, setImageStatuses] = useState<{[key: number]: 'loading' | 'loaded' | 'error'}>({});
+  const [imageStatuses, setImageStatuses] = useState<{ [key: number]: 'loading' | 'loaded' | 'error' }>({});
 
   if (!outfits || outfits.length === 0) {
     return (
-      <div className="flex justify-center items-center h-64 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
-        <span className="text-white text-lg">No outfits available yet</span>
+      <div className="flex justify-center items-center h-64 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
+        <span className="text-gray-400 text-lg">No outfits available yet</span>
       </div>
     );
   }
@@ -323,59 +339,54 @@ function OutfitGallery({
   };
 
   return (
-    <div className="flex overflow-x-auto gap-4 pb-4">
+    <div className="flex overflow-x-auto gap-6 pb-8 snap-x">
       {outfits.map((outfit, index) => {
         const imageStatus = imageStatuses[index] || 'loading';
-        const isImageLoaded = imageStatus === 'loaded';
         const hasImageError = imageStatus === 'error';
 
         return (
           <div
             key={index}
-            className="group relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 hover:bg-white/20 transition-all duration-300 flex-shrink-0"
+            className="group relative bg-white/5 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-500 flex-shrink-0 w-72 snap-center"
           >
-            <Image
-              src={hasImageError ? "/images/sample_outfit.png" : outfit.imagePath}
-              alt={`${characterName} from Kpop Demon Hunters wearing ${outfit.name} outfit`}
-              height={300}
-              width={300}
-              style={{ height: "300px", width: "auto" }}
-              className="group-hover:scale-105 transition-transform duration-300"
-              sizes="(max-width: 768px) 40vw, 20vw"
-              onLoad={() => handleImageLoad(index)}
-              onError={() => handleImageError(index)}
-              unoptimized={hasImageError} // Use unoptimized for fallback images
-            />
+            <div className="aspect-[3/4] relative overflow-hidden">
+              <Image
+                src={hasImageError ? "/images/sample_outfit.png" : outfit.imagePath}
+                alt={`${characterName} from Kpop Demon Hunters wearing ${outfit.name} outfit`}
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+                sizes="(max-width: 768px) 80vw, 20vw"
+                onLoad={() => handleImageLoad(index)}
+                onError={() => handleImageError(index)}
+                unoptimized={hasImageError}
+              />
 
-            {/* Conditional overlay based on image status */}
-            {hasImageError ? (
-              // Coming Soon overlay for fallback images (always visible)
-              <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-                <div className="text-center p-2">
-                  <span className="text-white text-lg font-semibold block mb-1">
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+
+            {/* Content */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+              <h4 className={`text-xl font-bold ${theme.primary} mb-1 drop-shadow-lg`}>
+                {outfit.name}
+              </h4>
+              <p className="text-sm text-gray-300 drop-shadow-lg line-clamp-2">
+                {outfit.occasion}
+              </p>
+            </div>
+
+            {hasImageError && (
+              <div className="absolute inset-0 bg-black/80 flex items-center justify-center z-20">
+                <div className="text-center p-4">
+                  <span className="text-white text-lg font-semibold block mb-2">
                     Coming Soon
                   </span>
-                  <span className="text-white text-xs opacity-75">
+                  <span className="text-gray-400 text-sm">
                     {outfit.name}
                   </span>
                 </div>
               </div>
-            ) : isImageLoaded ? (
-              // Outfit info overlay for loaded images (always visible)
-              <>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <div className="absolute bottom-2 left-2 right-2">
-                  <div className="text-white">
-                    <h4 className={`text-sm font-semibold ${theme.primary} drop-shadow-lg mb-1`}>
-                      {outfit.name}
-                    </h4>
-                    <p className="text-xs text-gray-200 drop-shadow-lg line-clamp-2">
-                      {outfit.occasion}
-                    </p>
-                  </div>
-                </div>
-              </>
-            ) : null}
+            )}
           </div>
         );
       })}
@@ -393,24 +404,24 @@ function TriviaCards({
   const theme = getCharacterTheme(characterName);
 
   return (
-    <div className="grid md:grid-cols-2 gap-4">
+    <div className="grid md:grid-cols-2 gap-6">
       {trivia.map((item, index) => (
         <div
           key={index}
-          className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:scale-105 transition-transform"
+          className="bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:scale-[1.02] transition-all duration-300"
         >
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xl">✨</span>
+          <div className="flex items-start gap-4 mb-3">
+            <div className="p-3 rounded-full bg-white/5 text-2xl">✨</div>
             <div>
               <span
-                className={`${theme.primary} text-xs font-semibold uppercase tracking-wide`}
+                className={`${theme.primary} text-xs font-bold uppercase tracking-wider mb-1 block`}
               >
                 {item.category}
               </span>
-              <h4 className="text-white font-semibold">{item.title}</h4>
+              <h4 className="text-lg font-bold text-white">{item.title}</h4>
             </div>
           </div>
-          <p className={`${theme.secondary} text-sm`}>{item.description}</p>
+          <p className="text-gray-300 leading-relaxed pl-[4.5rem]">{item.description}</p>
         </div>
       ))}
     </div>
@@ -421,29 +432,37 @@ function SectionNavigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const navHeight = 80; // Approximate height of the fixed nav
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight - 20;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
   return (
-    <div className="sticky top-0 z-10 bg-black/40 backdrop-blur-sm border-b border-white/10 py-3 mb-8">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="flex flex-wrap gap-2 justify-center text-sm">
+    <div className="sticky top-16 z-40 bg-black/60 backdrop-blur-md border-b border-white/10 py-4 mb-12 transition-all duration-300">
+      <div className="max-w-6xl mx-auto px-4 overflow-x-auto no-scrollbar">
+        <div className="flex gap-3 min-w-max md:justify-center">
           {[
-            { id: "overview", label: "📖 Overview" },
-            { id: "appearance", label: "👗 Appearance" },
-            { id: "personality", label: "🧠 Personality" },
-            { id: "abilities", label: "⚔️ Abilities" },
-            { id: "story-arc", label: "📜 Story Arc" },
-            { id: "relationships", label: "💕 Relationships" },
-            { id: "trivia", label: "✨ Trivia" },
+            { id: "overview", label: "Overview", icon: "📖" },
+            { id: "appearance", label: "Appearance", icon: "👗" },
+            { id: "personality", label: "Personality", icon: "🧠" },
+            { id: "abilities", label: "Abilities", icon: "⚔️" },
+            { id: "story-arc", label: "Story", icon: "📜" },
+            { id: "relationships", label: "Relationships", icon: "💕" },
+            { id: "trivia", label: "Trivia", icon: "✨" },
           ].map((section) => (
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className="px-3 py-1 bg-white/10 hover:bg-white/20 text-purple-300 rounded-full transition-colors"
+              className="group flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/5 hover:border-purple-500/30 rounded-full transition-all duration-300"
             >
-              {section.label}
+              <span className="text-lg group-hover:scale-110 transition-transform">{section.icon}</span>
+              <span className="text-sm font-medium text-gray-300 group-hover:text-white whitespace-nowrap">{section.label}</span>
             </button>
           ))}
         </div>
@@ -476,77 +495,82 @@ export default function CharacterPageClient({
     : "/characters";
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen bg-black relative overflow-hidden font-sans text-white">
+      {/* Background Image */}
+      <div className="fixed inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+          style={{
+            backgroundImage: "url('/images/background.webp')",
+            filter: "brightness(0.3) saturate(1.2) blur(2px)",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-purple-900/20 to-black" />
+      </div>
+
       {/* Navigation */}
-      <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link
-                href="/"
-                className="text-xl sm:text-2xl font-bold text-white hover:text-purple-300 transition-colors"
-              >
+              <Link href="/" className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 transition-opacity">
                 KDH Wiki
               </Link>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/characters"
-                className="text-purple-300 font-semibold"
+                className="text-white font-medium tracking-wide border-b-2 border-pink-500"
               >
-                Characters
+                CHARACTERS
               </Link>
               <Link
                 href="/ost"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
                 OST
               </Link>
               <Link
                 href="/culture"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
-                Korean Culture
+                CULTURE
               </Link>
+              <button
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 transition-all duration-200 group"
+                aria-label="Search"
+              >
+                <Search className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+              </button>
             </div>
-            <div className="md:hidden flex space-x-4">
-              <Link
-                href="/characters"
-                className="text-purple-300 font-semibold text-sm"
-              >
-                Chars
-              </Link>
-              <Link
-                href="/ost"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                Culture
-              </Link>
-            </div>
+            <MobileButtons />
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative z-10 pt-32 pb-8 px-4">
+        <div className="max-w-7xl mx-auto">
           <Link
             href={backToCharactersUrl}
-            className="text-purple-300 hover:text-purple-200 mb-8 inline-block"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors group"
           >
-            ← Back to Characters
+            <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+              <ChevronLeft className="w-4 h-4" />
+            </div>
+            <span className="font-medium">Back to Characters</span>
           </Link>
 
-          <div className="grid lg:grid-cols-3 gap-12 items-start">
+          <div className="grid lg:grid-cols-12 gap-12 items-start">
             {/* Character Image */}
-            <div className="lg:col-span-1">
-              <div className="rounded-2xl overflow-hidden mb-6">
+            <motion.div
+              className="lg:col-span-4"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="rounded-3xl overflow-hidden mb-8 border border-white/10 shadow-2xl shadow-purple-500/10 relative group">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10" />
                 <CharacterImage
                   src={
                     characterSummary?.image || `/images/characters/${slug}.webp`
@@ -559,59 +583,55 @@ export default function CharacterPageClient({
               </div>
               {/* Info Box */}
               <InfoBox character={character} />
-            </div>
+            </motion.div>
 
             {/* Character Title & Quick Info */}
-            <div className="lg:col-span-2">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                <h1 className="text-4xl md:text-6xl font-bold text-white">
+            <motion.div
+              className="lg:col-span-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="mb-8">
+                <div className="flex flex-wrap items-center gap-4 mb-4">
+                  <span className={`px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider ${theme.bg} ${theme.secondary} border border-white/10`}>
+                    {character.role}
+                  </span>
+                  {character.species && (
+                    <span className={`px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-white/5 text-gray-300 border border-white/10`}>
+                      {character.species}
+                    </span>
+                  )}
+                </div>
+
+                <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-2 tracking-tight">
                   {character.name}
                 </h1>
                 {character.koreanName && (
-                  <span
-                    className={`text-2xl md:text-3xl font-medium ${theme.primary}`}
-                  >
+                  <div className={`text-3xl md:text-4xl font-bold ${theme.primary} opacity-80`}>
                     {character.koreanName}
-                  </span>
-                )}
-              </div>
-
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span
-                  className={`px-4 py-2 rounded-full ${theme.bg} ${theme.secondary}`}
-                >
-                  {character.role}
-                </span>
-                {character.species && (
-                  <span className={`px-4 py-2 rounded-full ${theme.accent}`}>
-                    {character.species}
-                  </span>
+                  </div>
                 )}
               </div>
 
               {character.quotes && character.quotes.length > 0 && (
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-white">
-                    Memorable Quotes
-                  </h3>
-                  <div className="space-y-4">
-                    {character.quotes.map((quote, index) => (
-                      <blockquote
-                        key={index}
-                        className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 border-l-4 border-l-purple-400"
-                      >
-                        <p className="text-purple-200 text-lg italic">
-                          &ldquo;{quote}&rdquo;
-                        </p>
-                        <footer className="text-purple-300 mt-2">
-                          — {character.name}
-                        </footer>
-                      </blockquote>
-                    ))}
-                  </div>
+                <div className="grid gap-4 mb-12">
+                  {character.quotes.map((quote, index) => (
+                    <div
+                      key={index}
+                      className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 relative overflow-hidden"
+                    >
+                      <Quote className="absolute top-4 right-4 w-8 h-8 text-white/5" />
+                      <p className="text-xl md:text-2xl text-gray-200 italic font-light leading-relaxed relative z-10">
+                        &ldquo;{quote}&rdquo;
+                      </p>
+                    </div>
+                  ))}
                 </div>
               )}
-            </div>
+
+              {/* Section Navigation inside the grid for desktop, or sticky below hero */}
+            </motion.div>
           </div>
         </div>
       </section>
@@ -619,119 +639,141 @@ export default function CharacterPageClient({
       {/* Section Navigation */}
       <SectionNavigation />
 
-      {/* Overview */}
-      {character.overview && (
-        <section id="overview" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+      <div className="max-w-5xl mx-auto px-4 pb-20 space-y-20 relative z-10">
+        {/* Overview */}
+        {character.overview && (
+          <motion.section
+            id="overview"
+            className="scroll-mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
               <span className="text-4xl">📖</span>
               Overview
             </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-purple-200 leading-relaxed">
-                {character.overview}
-              </p>
+            <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 leading-relaxed text-lg text-gray-300">
+              {character.overview}
             </div>
-          </div>
-        </section>
-      )}
+          </motion.section>
+        )}
 
-      {/* Appearance */}
-      {character.appearance && (
-        <section id="appearance" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Appearance */}
+        {character.appearance && (
+          <motion.section
+            id="appearance"
+            className="scroll-mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
               <span className="text-4xl">👗</span>
               Appearance
             </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 mb-8">
-              <p className="text-purple-200 leading-relaxed">
-                {character.appearance}
-              </p>
+            <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 leading-relaxed text-lg text-gray-300 mb-8">
+              {character.appearance}
             </div>
 
-            <>
-              <h3 className="text-2xl font-bold text-white mb-6">Outfits</h3>
-              <OutfitGallery
-                characterName={character.name}
-                outfits={character.performanceOutfits}
-              />
-            </>
-          </div>
-        </section>
-      )}
+            <h3 className="text-2xl font-bold text-white mb-6 pl-2 border-l-4 border-purple-500">Performance Outfits</h3>
+            <OutfitGallery
+              characterName={character.name}
+              outfits={character.performanceOutfits}
+            />
+          </motion.section>
+        )}
 
-      {/* Personality */}
-      <section id="personality" className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Personality */}
+        <motion.section
+          id="personality"
+          className="scroll-mt-32"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
             <span className="text-4xl">🧠</span>
             Personality
           </h2>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-purple-200 leading-relaxed space-y-4">
-              {character.personality.split("\n\n").map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-            </div>
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-lg text-gray-300 space-y-6">
+            {character.personality.split("\n\n").map((paragraph, index) => (
+              <p key={index} className="leading-relaxed">{paragraph}</p>
+            ))}
           </div>
-        </div>
-      </section>
+        </motion.section>
 
-      {/* Abilities */}
-      <section id="abilities" className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Abilities */}
+        <motion.section
+          id="abilities"
+          className="scroll-mt-32"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
             <span className="text-4xl">⚔️</span>
             Abilities
           </h2>
-          <div className="space-y-4">
+          <div className="grid gap-4">
             {character.abilities.map((ability, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
+                className="bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-colors"
               >
-                <div className="text-purple-200 leading-relaxed">{ability}</div>
+                <div className="text-gray-200 leading-relaxed text-lg">{ability}</div>
               </div>
             ))}
           </div>
 
           {character.weaponEvolution && (
-            <div className="mt-6 bg-gradient-to-r from-purple-600/20 to-indigo-600/20 rounded-lg p-6 border border-purple-400/30">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+            <div className="mt-8 bg-gradient-to-r from-purple-900/40 to-blue-900/40 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/30">
+              <h3 className="text-xl font-bold text-purple-300 mb-4 flex items-center gap-2">
                 <span className="text-2xl">🗡️</span>
                 Weapon Evolution
               </h3>
-              <p className="text-purple-200">{character.weaponEvolution}</p>
+              <p className="text-gray-300 text-lg leading-relaxed">{character.weaponEvolution}</p>
             </div>
           )}
-        </div>
-      </section>
+        </motion.section>
 
-      {/* Story Arc */}
-      {character.storyArc && (
-        <section id="story-arc" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Story Arc */}
+        {character.storyArc && (
+          <motion.section
+            id="story-arc"
+            className="scroll-mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
               <span className="text-4xl">📜</span>
               Story Arc
             </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-purple-200 leading-relaxed space-y-4">
-                {character.storyArc.split("\n\n").map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
+            <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-lg text-gray-300 space-y-6">
+              {character.storyArc.split("\n\n").map((paragraph, index) => (
+                <p key={index} className="leading-relaxed">{paragraph}</p>
+              ))}
             </div>
-          </div>
-        </section>
-      )}
+          </motion.section>
+        )}
 
-      {/* Relationships */}
-      {character.relationships && character.relationships.length > 0 && (
-        <section id="relationships" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Relationships */}
+        {character.relationships && character.relationships.length > 0 && (
+          <motion.section
+            id="relationships"
+            className="scroll-mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
               <span className="text-4xl">💕</span>
               Relationships
             </h2>
@@ -739,27 +781,32 @@ export default function CharacterPageClient({
               {character.relationships.map((rel, index) => (
                 <div
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
+                  className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-pink-500/30 transition-colors"
                 >
-                  <div className="flex justify-between items-start mb-3">
+                  <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-bold text-white">{rel.name}</h3>
-                    <span className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
+                    <span className="bg-pink-500/10 text-pink-300 px-3 py-1 rounded-full text-sm font-medium border border-pink-500/20">
                       {rel.relation}
                     </span>
                   </div>
-                  <p className="text-purple-200">{rel.description}</p>
+                  <p className="text-gray-300 leading-relaxed">{rel.description}</p>
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-      )}
+          </motion.section>
+        )}
 
-      {/* Trivia */}
-      {character.trivia && character.trivia.length > 0 && (
-        <section id="trivia" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Trivia */}
+        {character.trivia && character.trivia.length > 0 && (
+          <motion.section
+            id="trivia"
+            className="scroll-mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
               <span className="text-4xl">✨</span>
               Behind the Scenes & Trivia
             </h2>
@@ -767,39 +814,43 @@ export default function CharacterPageClient({
               trivia={character.trivia}
               characterName={character.name}
             />
-          </div>
-        </section>
-      )}
+          </motion.section>
+        )}
 
-      {/* Related OST */}
-      {character.relatedOST && character.relatedOST.length > 0 && (
-        <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+        {/* Related OST */}
+        {character.relatedOST && character.relatedOST.length > 0 && (
+          <motion.section
+            className="scroll-mt-32"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
               <span className="text-4xl">🎵</span>
               Related OST
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
               {character.relatedOST.map((track, index) => (
-                <div
+                <Link
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:scale-105 transition-transform"
+                  href="/ost"
+                  className="group bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-cyan-500/30 transition-all duration-300"
                 >
-                  <div className="text-purple-200 font-semibold">{track}</div>
-                  <Link
-                    href="/ost"
-                    className="text-purple-300 text-sm hover:text-purple-200 transition-colors"
-                  >
-                    Listen →
-                  </Link>
-                </div>
+                  <div className="flex items-center justify-between mb-2">
+                    <Music className="w-6 h-6 text-cyan-400" />
+                    <span className="text-xs text-gray-500 uppercase tracking-wider group-hover:text-cyan-300 transition-colors">Listen</span>
+                  </div>
+                  <div className="text-lg font-bold text-white mb-1">{track}</div>
+                  <div className="text-sm text-gray-400 group-hover:text-gray-300">View Lyrics & Video →</div>
+                </Link>
               ))}
             </div>
-          </div>
-        </section>
-      )}
+          </motion.section>
+        )}
+      </div>
 
-      <div className="mt-16">
+      <div className="relative z-10 mt-20">
         <Footer />
       </div>
 

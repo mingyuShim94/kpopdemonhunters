@@ -3,61 +3,73 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { Search, Music, Users, Globe, ChevronRight } from "lucide-react";
 import Footer from "./components/Footer";
 import SearchModal from "./components/SearchModal";
 import MobileButtons from "./components/MobileButtons";
 
 export default function Home() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  //수정
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  } as const;
+
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen bg-black relative overflow-hidden font-sans text-white">
       {/* Navigation */}
-      <nav className="relative z-20 bg-black/20 backdrop-blur-sm border-b border-white/10">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl sm:text-2xl font-bold text-white">
+              <Link href="/" className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 transition-opacity">
                 KDH Wiki
-              </h1>
+              </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/characters"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
-                Characters
+                CHARACTERS
               </Link>
               <Link
                 href="/ost"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
                 OST
               </Link>
               <Link
                 href="/culture"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
-                Korean Culture
+                CULTURE
               </Link>
               <button
                 onClick={() => setIsSearchOpen(true)}
-                className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-200"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 transition-all duration-200 group"
                 aria-label="Search"
               >
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
+                <Search className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
               </button>
             </div>
             <MobileButtons />
@@ -66,114 +78,160 @@ export default function Home() {
       </nav>
 
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="fixed inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
           style={{
             backgroundImage: "url('/images/background.webp')",
-            filter: "brightness(0.4) saturate(1.2)",
+            filter: "brightness(0.3) saturate(1.2) blur(2px)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/60 via-pink-900/40 to-cyan-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-purple-900/20 to-black" />
       </div>
 
       {/* Hero Section */}
-      <section className="relative z-10 py-12 md:py-20 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
-            K-pop Demon Hunters
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 md:mb-8 max-w-2xl mx-auto backdrop-blur-sm">
-            Your ultimate guide to the characters, music, and Korean culture of
-            the K-pop Demon Hunters universe
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+      <section className="relative z-10 min-h-screen flex items-center justify-center px-4 text-center pt-16">
+        <motion.div
+          className="max-w-5xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div variants={itemVariants} className="mb-6">
+            <span className="inline-block py-1 px-3 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold tracking-wider uppercase mb-4">
+              The Ultimate Fan Wiki
+            </span>
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight mb-6">
+              <span className="block text-white mb-2">K-pop</span>
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">
+                Demon Hunters
+              </span>
+            </h1>
+          </motion.div>
+
+          <motion.p
+            variants={itemVariants}
+            className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
+          >
+            Dive into the universe of demon hunters. Explore characters, music, and the Korean culture behind the story.
+          </motion.p>
+
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
             <Link
               href="/characters"
-              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 md:px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-pink-500/25 text-sm md:text-base"
+              className="group relative px-8 py-4 bg-white text-black rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105 active:scale-95"
             >
-              Explore Characters
+              <span className="relative z-10 flex items-center gap-2">
+                Start Exploring <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-10 transition-opacity" />
             </Link>
             <Link
               href="/ost"
-              className="bg-transparent border-2 border-cyan-400/50 hover:border-cyan-400 text-white px-6 md:px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-cyan-400/10 hover:shadow-lg hover:shadow-cyan-500/25 transform hover:scale-105 text-sm md:text-base"
+              className="px-8 py-4 rounded-full font-bold text-lg border border-white/20 hover:bg-white/10 transition-all hover:scale-105 active:scale-95 backdrop-blur-sm"
             >
               Listen to OST
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Category Cards */}
-      <section className="relative z-10 py-8 md:py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+      <section className="relative z-10 py-20 px-4 bg-gradient-to-b from-transparent to-black/80">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <Link href="/characters" className="group">
-              <div className="bg-gradient-to-br from-pink-500/20 to-purple-600/20 backdrop-blur-sm rounded-xl p-4 md:p-6 hover:from-pink-500/30 hover:to-purple-600/30 transition-all duration-300 border border-pink-400/30 hover:border-pink-400/60 transform hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25">
-                <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden border-2 border-pink-400/50">
-                  <Image
-                    src="/images/category_thumnail/chracters_thumnail.webp"
-                    alt="Characters"
-                    width={64}
-                    height={64}
-                    className="w-full h-full object-cover"
-                  />
+              <div className="h-full bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-pink-500/50 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <Users className="w-32 h-32 text-pink-500 transform rotate-12 group-hover:rotate-0 transition-transform duration-500" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-4">
-                  Characters
-                </h3>
-                <p className="text-gray-200 text-sm md:text-base">
-                  Meet the demon hunters and discover their personalities,
-                  backgrounds, and memorable quotes.
-                </p>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-pink-500 to-purple-600 p-0.5">
+                    <div className="w-full h-full rounded-2xl overflow-hidden bg-black">
+                      <Image
+                        src="/images/category_thumnail/chracters_thumnail.webp"
+                        alt="Characters"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">
+                    Characters
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Meet the demon hunters. Discover their unique personalities, backgrounds, and memorable quotes.
+                  </p>
+                </div>
               </div>
             </Link>
 
             <Link href="/ost" className="group">
-              <div className="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 backdrop-blur-sm rounded-xl p-4 md:p-6 hover:from-cyan-500/30 hover:to-blue-600/30 transition-all duration-300 border border-cyan-400/30 hover:border-cyan-400/60 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25">
-                <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden border-2 border-cyan-400/50">
-                  <Image
-                    src="/images/category_thumnail/ost_thumnail.webp"
-                    alt="OST"
-                    width={64}
-                    height={64}
-                    className="w-full h-full object-cover"
-                  />
+              <div className="h-full bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-cyan-500/50 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <Music className="w-32 h-32 text-cyan-500 transform -rotate-12 group-hover:rotate-0 transition-transform duration-500" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-4">
-                  OST
-                </h3>
-                <p className="text-gray-200 text-sm md:text-base">
-                  Explore the soundtrack with music videos, English lyrics, and
-                  track information.
-                </p>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 p-0.5">
+                    <div className="w-full h-full rounded-2xl overflow-hidden bg-black">
+                      <Image
+                        src="/images/category_thumnail/ost_thumnail.webp"
+                        alt="OST"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                    OST
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Immerse yourself in the soundtrack. Watch music videos and read lyrics in English and Korean.
+                  </p>
+                </div>
               </div>
             </Link>
 
             <Link href="/culture" className="group">
-              <div className="bg-gradient-to-br from-purple-500/20 to-indigo-600/20 backdrop-blur-sm rounded-xl p-4 md:p-6 hover:from-purple-500/30 hover:to-indigo-600/30 transition-all duration-300 border border-purple-400/30 hover:border-purple-400/60 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25">
-                <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden border-2 border-purple-400/50">
-                  <Image
-                    src="/images/category_thumnail/cultures_thumnail.webp"
-                    alt="Korean Culture"
-                    width={64}
-                    height={64}
-                    className="w-full h-full object-cover"
-                  />
+              <div className="h-full bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <Globe className="w-32 h-32 text-purple-500 transform rotate-12 group-hover:rotate-0 transition-transform duration-500" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-4">
-                  Korean Culture
-                </h3>
-                <p className="text-gray-200 text-sm md:text-base">
-                  Learn about Korean traditions, food, places, and modern
-                  culture featured in the anime.
-                </p>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 p-0.5">
+                    <div className="w-full h-full rounded-2xl overflow-hidden bg-black">
+                      <Image
+                        src="/images/category_thumnail/cultures_thumnail.webp"
+                        alt="Korean Culture"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                    Korean Culture
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Explore the real-world inspirations. Learn about the traditions, food, and places featured in the story.
+                  </p>
+                </div>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
-
 
       <Footer />
 

@@ -1,108 +1,89 @@
+"use client";
+
 import Link from "next/link";
-import type { Metadata } from "next";
+import { motion } from "framer-motion";
+import { Search, Music, Play, Disc } from "lucide-react";
 import Footer from "../components/Footer";
 import { ostTracks } from "../data/ost";
 import OSTSidebar from "../components/OSTSidebar";
 import MobileButtons from "../components/MobileButtons";
 
-export const dynamic = 'force-static';
-
-export const metadata: Metadata = {
-  title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
-  description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos, full lyrics, and detailed track information. Features Golden, TAKEDOWN, and all character theme songs.",
-  keywords: [
-    // Core trending keywords from Google Trends
-    "kpop demon hunters lyrics",
-    "kpop demon hunters songs",
-    "kpop demon hunters soundtrack",
-    "kpop demon hunters ost",
-    "golden lyrics",
-    "takedown lyrics",
-    // Expanded trending variations
-    "k-pop demon hunters lyrics",
-    "kdh lyrics",
-    "kdh songs",
-    "kdh soundtrack",
-    "KDH OST",
-    "kdh music",
-    "kpop demon hunters music",
-    // Individual song targeting
-    "Golden",
-    "TAKEDOWN",
-    "Soda Pop",
-    "Your Idol",
-    "Free",
-    "What It Sounds Like",
-    // Additional discovery keywords
-    "soundtrack",
-    "music",
-    "YouTube",
-    "lyrics",
-    "song lyrics",
-    "k-pop songs",
-    "demon hunter songs",
-    "huntr/x songs",
-    "saja boys songs"
-  ],
-  alternates: {
-    canonical: '/ost',
-  },
-  openGraph: {
-    title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
-    description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos, full lyrics, and detailed track information.",
-    url: 'https://kpopdemonhunters.net/ost',
-    siteName: 'KDH Wiki',
-    images: [
-      {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'K-pop Demon Hunters OST & Lyrics',
-      },
-    ],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: "Kpop Demon Hunters Lyrics & Soundtrack | Complete OST with Songs - KDH Wiki",
-    description: "Complete kpop demon hunters lyrics and soundtrack collection. Listen to all KDH OST songs with YouTube videos and lyrics.",
-    images: ['/images/og-image.jpg'],
-  },
-};
+// Note: Metadata export is removed because "use client" is needed for framer-motion.
 
 export default function OSTPage() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  } as const;
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen bg-black relative overflow-hidden font-sans text-white">
+      {/* Background Image */}
+      <div className="fixed inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+          style={{
+            backgroundImage: "url('/images/background.webp')",
+            filter: "brightness(0.3) saturate(1.2) blur(2px)",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-blue-900/20 to-black" />
+      </div>
+
       {/* OST Sidebar */}
       <OSTSidebar tracks={ostTracks.map(track => ({ id: track.id, title: track.title }))} />
+
       {/* Navigation */}
-      <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link
-                href="/"
-                className="text-xl sm:text-2xl font-bold text-white hover:text-purple-300 transition-colors"
-              >
+              <Link href="/" className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 transition-opacity">
                 KDH Wiki
               </Link>
             </div>
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/characters"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
-                Characters
+                CHARACTERS
               </Link>
-              <Link href="/ost" className="text-purple-300 font-semibold">
+              <Link
+                href="/ost"
+                className="text-white font-medium tracking-wide border-b-2 border-cyan-500"
+              >
                 OST
               </Link>
               <Link
                 href="/culture"
-                className="text-white hover:text-purple-300 transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
-                Korean Culture
+                CULTURE
               </Link>
+              <button
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 transition-all duration-200 group"
+                aria-label="Search"
+              >
+                <Search className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+              </button>
             </div>
             <MobileButtons />
           </div>
@@ -110,31 +91,43 @@ export default function OSTPage() {
       </nav>
 
       {/* Header */}
-      <section className="py-16 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Original Soundtrack
+      <section className="relative z-10 pt-32 pb-12 px-4 text-center">
+        <motion.div
+          className="max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
+            <span className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+              Original Soundtrack
+            </span>
           </h1>
-          <p className="text-xl text-purple-200 max-w-2xl mx-auto">
-            Experience the epic music of K-pop Demon Hunters with character
-            themes, battle anthems, and emotional ballads.
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Experience the epic music of K-pop Demon Hunters.
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* OST Tracks */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto space-y-12">
+      <section className="relative z-10 py-8 px-4">
+        <motion.div
+          className="max-w-6xl mx-auto space-y-12"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {ostTracks.map((track, index) => (
-            <div
+            <motion.div
               key={track.id}
               id={track.id}
-              className="bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 overflow-hidden"
+              variants={itemVariants}
+              className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden hover:border-cyan-500/30 transition-colors duration-500"
             >
               <div className="grid lg:grid-cols-2 gap-8 p-8">
                 {/* Video Section */}
-                <div>
-                  <div className="aspect-video bg-black/30 rounded-lg overflow-hidden mb-4">
+                <div className="space-y-6">
+                  <div className="aspect-video bg-black/50 rounded-2xl overflow-hidden shadow-2xl border border-white/5 relative group">
                     <iframe
                       src={`https://www.youtube.com/embed/${track.youtubeId}?rel=0`}
                       title={track.title}
@@ -143,146 +136,185 @@ export default function OSTPage() {
                       className="w-full h-full border-0"
                     ></iframe>
                   </div>
-                  <div className="flex items-center justify-between">
+
+                  <div className="flex items-start justify-between gap-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-1">
+                      <h3 className="text-3xl font-bold text-white mb-2">
                         {track.title}
                       </h3>
-                      <p className="text-purple-300">{track.artist}</p>
+                      <div className="flex items-center gap-2 text-cyan-400 font-medium">
+                        <Music className="w-4 h-4" />
+                        {track.artist}
+                      </div>
                     </div>
-                    <div className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
+                    <div className="bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-bold border border-cyan-500/20">
                       Track {index + 1}
                     </div>
                   </div>
-                  
+
                   {/* Track Details */}
                   {track.duration && (
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-sm">
-                      <div className="text-purple-300">
-                        <span className="font-semibold">Duration:</span> {track.duration}
+                    <div className="grid grid-cols-2 gap-4 p-4 bg-black/20 rounded-xl border border-white/5">
+                      <div className="space-y-1">
+                        <span className="text-xs text-gray-500 uppercase tracking-wider">Duration</span>
+                        <div className="text-gray-300 font-medium">{track.duration}</div>
                       </div>
                       {track.genre && (
-                        <div className="text-purple-300">
-                          <span className="font-semibold">Genre:</span> {track.genre}
+                        <div className="space-y-1">
+                          <span className="text-xs text-gray-500 uppercase tracking-wider">Genre</span>
+                          <div className="text-gray-300 font-medium">{track.genre}</div>
                         </div>
                       )}
                       {track.composer && (
-                        <div className="text-purple-300">
-                          <span className="font-semibold">Composer:</span> {track.composer}
+                        <div className="space-y-1">
+                          <span className="text-xs text-gray-500 uppercase tracking-wider">Composer</span>
+                          <div className="text-gray-300 font-medium">{track.composer}</div>
                         </div>
                       )}
                       {track.lyricist && (
-                        <div className="text-purple-300">
-                          <span className="font-semibold">Lyricist:</span> {track.lyricist}
+                        <div className="space-y-1">
+                          <span className="text-xs text-gray-500 uppercase tracking-wider">Lyricist</span>
+                          <div className="text-gray-300 font-medium">{track.lyricist}</div>
                         </div>
                       )}
                     </div>
                   )}
 
-                  <p className="text-purple-200 mt-4 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed text-lg">
                     {track.description}
                   </p>
 
                   {/* Scene Description */}
                   {track.sceneDescription && (
-                    <div className="mt-4 p-4 bg-black/20 rounded-lg border-l-4 border-purple-400">
-                      <h5 className="font-semibold text-white mb-2">Featured Scene:</h5>
-                      <p className="text-purple-200 text-sm">{track.sceneDescription}</p>
+                    <div className="p-6 bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-xl border border-white/5">
+                      <div className="flex items-center gap-2 text-purple-400 font-bold mb-2">
+                        <Play className="w-4 h-4 fill-current" /> Featured Scene
+                      </div>
+                      <p className="text-gray-300 italic">{track.sceneDescription}</p>
                     </div>
                   )}
 
                   {/* Themes */}
                   {track.themes && (
-                    <div className="mt-4">
-                      <h5 className="font-semibold text-white mb-2">Themes:</h5>
-                      <div className="flex flex-wrap gap-2">
-                        {track.themes.map((theme, themeIndex) => (
-                          <span key={themeIndex} className="bg-purple-600/20 text-purple-200 px-2 py-1 rounded text-sm">
-                            {theme}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="flex flex-wrap gap-2">
+                      {track.themes.map((theme, themeIndex) => (
+                        <span key={themeIndex} className="bg-white/5 hover:bg-white/10 text-gray-300 px-3 py-1.5 rounded-lg text-sm transition-colors border border-white/5">
+                          #{theme}
+                        </span>
+                      ))}
                     </div>
                   )}
                 </div>
 
                 {/* Lyrics Section */}
-                <div>
-                  <h4 className="text-xl font-bold text-white mb-4">Lyrics</h4>
-                  <div className="bg-black/20 rounded-lg p-6 max-h-96 overflow-y-auto">
-                    <pre className="text-purple-200 leading-relaxed whitespace-pre-wrap font-sans">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-2 bg-white/5 rounded-lg">
+                      <Disc className="w-6 h-6 text-gray-400" />
+                    </div>
+                    <h4 className="text-xl font-bold text-white">Lyrics</h4>
+                  </div>
+
+                  <div className="flex-grow bg-black/20 rounded-2xl p-8 border border-white/5 overflow-y-auto max-h-[600px] custom-scrollbar hover:border-white/10 transition-colors">
+                    <pre className="text-gray-300 leading-loose whitespace-pre-wrap font-sans text-base">
                       {track.lyrics}
                     </pre>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {/* Music Credits */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">Music Credits</h2>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
-            <div className="grid md:grid-cols-2 gap-8 text-left">
+      <section className="relative z-10 py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            className="bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl font-bold text-white mb-10 text-center">Music Credits</h2>
+            <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-xl font-bold text-white mb-4">
-                  Production
+                <h3 className="text-xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
+                  <Music className="w-5 h-5" /> Production
                 </h3>
-                <ul className="text-purple-200 space-y-2">
-                  <li>
-                    <span className="font-semibold">Music Director:</span>{" "}
-                    Studio KDH
+                <ul className="space-y-4">
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Music Director</span>
+                    <span className="text-white font-medium">Studio KDH</span>
                   </li>
-                  <li>
-                    <span className="font-semibold">Sound Design:</span> Audio
-                    Collective
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Sound Design</span>
+                    <span className="text-white font-medium">Audio Collective</span>
                   </li>
-                  <li>
-                    <span className="font-semibold">Mixing:</span> Seoul Sound
-                    Studios
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Mixing</span>
+                    <span className="text-white font-medium">Seoul Sound Studios</span>
                   </li>
-                  <li>
-                    <span className="font-semibold">Mastering:</span> Digital
-                    Audio Masters
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Mastering</span>
+                    <span className="text-white font-medium">Digital Audio Masters</span>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-4">
-                  Performers
+                <h3 className="text-xl font-bold text-purple-400 mb-6 flex items-center gap-2">
+                  <Users className="w-5 h-5" /> Performers
                 </h3>
-                <ul className="text-purple-200 space-y-2">
-                  <li>
-                    <span className="font-semibold">Main Vocals:</span> KDH
-                    Voice Cast
+                <ul className="space-y-4">
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Main Vocals</span>
+                    <span className="text-white font-medium">KDH Voice Cast</span>
                   </li>
-                  <li>
-                    <span className="font-semibold">
-                      Traditional Instruments:
-                    </span>{" "}
-                    Korean Classical Ensemble
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Traditional Instruments</span>
+                    <span className="text-white font-medium">Korean Classical Ensemble</span>
                   </li>
-                  <li>
-                    <span className="font-semibold">
-                      Electronic Production:
-                    </span>{" "}
-                    Modern Beats Collective
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Electronic Production</span>
+                    <span className="text-white font-medium">Modern Beats Collective</span>
                   </li>
-                  <li>
-                    <span className="font-semibold">Orchestration:</span> Seoul
-                    Symphony Orchestra
+                  <li className="flex justify-between border-b border-white/5 pb-2">
+                    <span className="text-gray-400">Orchestration</span>
+                    <span className="text-white font-medium">Seoul Symphony Orchestra</span>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <Footer />
+      <div className="relative z-10">
+        <Footer />
+      </div>
     </div>
   );
+}
+
+function Users({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  )
 }
