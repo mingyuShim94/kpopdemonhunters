@@ -2,19 +2,25 @@
 
 import { useMobileNav } from "./MobileNavContext";
 
-export default function MobileButtons() {
+interface MobileButtonsProps {
+  onSearchClick?: () => void;
+}
+
+export default function MobileButtons({ onSearchClick }: MobileButtonsProps = {}) {
   const { toggleMenu, openSearch } = useMobileNav();
+
+  const handleSearchClick = onSearchClick || openSearch;
 
   return (
     <div className="md:hidden flex items-center space-x-2">
       {/* Search button */}
       <button
-        onClick={openSearch}
-        className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-200"
+        onClick={handleSearchClick}
+        className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Search"
       >
         <svg
-          className="w-5 h-5 text-white"
+          className="w-5 h-5 text-gray-700"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -31,13 +37,13 @@ export default function MobileButtons() {
       {/* Mobile menu button */}
       <button
         onClick={toggleMenu}
-        className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-200"
+        className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Toggle menu"
       >
         <div className="w-6 h-6 relative">
-          <span className="absolute block w-6 h-0.5 bg-white transition-all duration-300 top-1" />
-          <span className="absolute block w-6 h-0.5 bg-white transition-all duration-300 top-3" />
-          <span className="absolute block w-6 h-0.5 bg-white transition-all duration-300 top-5" />
+          <span className="absolute block w-6 h-0.5 bg-gray-700 transition-all duration-300 top-1" />
+          <span className="absolute block w-6 h-0.5 bg-gray-700 transition-all duration-300 top-3" />
+          <span className="absolute block w-6 h-0.5 bg-gray-700 transition-all duration-300 top-5" />
         </div>
       </button>
     </div>

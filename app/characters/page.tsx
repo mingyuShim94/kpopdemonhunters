@@ -1,9 +1,8 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import Footer from "../components/Footer";
+import GlobalNav from "../components/GlobalNav";
 import CharacterTabs from "../components/CharacterTabs";
-import MobileButtons from "../components/MobileButtons";
 import GumroadButton from "../components/GumroadButton";
 import StructuredData from "../components/StructuredData";
 import { characterSummaries as characters } from "../data/characters";
@@ -17,36 +16,16 @@ export const metadata: Metadata = {
   keywords: [
     "kpop demon hunters characters",
     "kdh characters",
-    "k-pop demon hunters characters",
-    "KDH wiki",
-    "HUNTR/X members",
-    "Saja Boys",
-    "Rumi",
-    "Mira",
-    "Zoey",
-    "Jinu",
+    "huntr/x members",
+    "saja boys members",
+    "rumi kpop demon hunters",
+    "mira kdh",
+    "zoey kdh",
+    "jinu saja boys",
+    "kpop demon hunters character guide",
+    "kdh wiki characters",
   ],
-  alternates: {
-    canonical: "/characters",
-  },
   openGraph: {
-    title: "Kpop Demon Hunters Characters | Complete KDH Wiki Guide",
-    description:
-      "Complete guide to all kpop demon hunters characters including HUNTR/X members Rumi, Mira, Zoey and Saja Boys Jinu, Abby, Romance, Mystery, Baby.",
-    url: "https://kpopdemonhunters.net/characters",
-    siteName: "KDH Wiki",
-    images: [
-      {
-        url: "/images/characters/rumi.webp",
-        width: 800,
-        height: 800,
-        alt: "K-pop Demon Hunters Characters",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
     title: "Kpop Demon Hunters Characters | Complete KDH Wiki Guide",
     description:
       "Complete guide to all kpop demon hunters characters including HUNTR/X and Saja Boys members.",
@@ -55,9 +34,8 @@ export const metadata: Metadata = {
 };
 
 export default function CharactersPage() {
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <StructuredData
         data={{
           "@context": "https://schema.org",
@@ -78,113 +56,53 @@ export default function CharactersPage() {
           ],
         }}
       />
-      {/* Navigation */}
-      <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link
-                href="/"
-                className="text-xl sm:text-2xl font-bold text-white hover:text-purple-300 transition-colors"
-              >
-                KDH Wiki
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link
-                href="/characters"
-                className="text-purple-300 font-semibold"
-              >
-                Characters
-              </Link>
-              <Link
-                href="/ost"
-                className="text-white hover:text-purple-300 transition-colors"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-white hover:text-purple-300 transition-colors"
-              >
-                Korean Culture
-              </Link>
-            </div>
-            <MobileButtons />
-          </div>
-        </div>
-      </nav>
+
+      {/* Global Navigation */}
+      <GlobalNav />
 
       {/* Header */}
-      <section className="py-8 px-4 text-center">
+      <section className="py-16 px-4 text-center bg-pattern-dancheong">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Characters
+          <h1 className="text-5xl md:text-7xl font-extrabold text-ink mb-6 leading-tight">
+            Meet the <br className="md:hidden" />
+            <span className="relative inline-block">
+              Characters
+              <span className="absolute -bottom-2 left-0 right-0 h-1.5 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-full" />
+            </span>
           </h1>
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            Explore the heroes, villains, and allies of the K-pop Demon Hunters universe
+          </p>
         </div>
       </section>
 
       {/* Character Grid */}
-      <section className="pt-0 pb-8 px-4">
-        <Suspense fallback={<div className="text-center text-white">Loading characters...</div>}>
+      <section className="py-16 px-4">
+        <Suspense fallback={
+          <div className="text-center text-gray-600">
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-4 border-pink-500"></div>
+            <p className="mt-4 text-lg">Loading characters...</p>
+          </div>
+        }>
           <CharacterTabs characters={characters} />
         </Suspense>
       </section>
 
-      {/* Main Purchase Section - Position 3 */}
-      <section className="py-8 md:py-12 px-4">
+      {/* Purchase Section */}
+      <section className="py-16 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-md border border-white/20 rounded-3xl p-6 md:p-10 text-center relative overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
-            
-            <div className="relative z-10">
-              <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 md:mb-4">
-                🎭 Dive Deeper Into Their Stories
-              </h2>
-              
-              {/* Mobile optimized description */}
-              <p className="text-base md:text-xl text-gray-200 mb-4 md:mb-6 max-w-3xl mx-auto">
-                <span className="block md:hidden">
-                  Get detailed profiles of all 13 characters with exclusive content perfect for creators.
-                </span>
-                <span className="hidden md:block">
-                  You&apos;ve met all 13 characters. Now discover their hidden depths, combat secrets, and untold stories in our comprehensive digital guide.
-                </span>
-              </p>
-              
-              {/* Desktop: Full 3-column grid */}
-              <div className="hidden md:grid md:grid-cols-3 gap-6 mb-8 text-left">
-                <div className="bg-black/20 rounded-xl p-4">
-                  <div className="text-purple-400 font-bold mb-2">✍️ Perfect for Creators</div>
-                  <div className="text-gray-300 text-sm">Detailed references for fanfiction writers and fan artists</div>
-                </div>
-                <div className="bg-black/20 rounded-xl p-4">
-                  <div className="text-pink-400 font-bold mb-2">🔍 Deep Analysis</div>
-                  <div className="text-gray-300 text-sm">Character psychology, relationships, and story arcs</div>
-                </div>
-                <div className="bg-black/20 rounded-xl p-4">
-                  <div className="text-cyan-400 font-bold mb-2">📱 Instant Access</div>
-                  <div className="text-gray-300 text-sm">13 high-quality Markdown files, ready to download</div>
-                </div>
-              </div>
-
-              {/* Mobile: Single focused message */}
-              <div className="block md:hidden mb-4">
-                <div className="bg-black/20 rounded-xl p-4 text-center">
-                  <div className="text-purple-400 font-bold mb-2">✍️📍🔍 Complete Character Collection</div>
-                  <div className="text-gray-300 text-sm">Perfect for creators • Deep analysis • Instant download</div>
-                </div>
-              </div>
-              
-              <div className="mb-4 md:mb-6">
-                <span className="text-lg md:text-2xl font-bold text-yellow-400">13 Complete Profiles</span>
-                <span className="text-gray-300 mx-2 md:mx-4">•</span>
-                <span className="text-base md:text-xl text-white">Digital Collection</span>
-              </div>
-              
-              <GumroadButton size="xl" variant="primary" />
-            </div>
+          <div className="bg-gradient-to-br from-pink-50 to-purple-50 border-2 border-pink-200 rounded-3xl p-8 md:p-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-ink">
+              Unlock Exclusive Character Content
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Get access to exclusive character art, behind-the-scenes content, and special
+              merchandise featuring your favorite demon hunters.
+            </p>
+            <GumroadButton
+              size="xl"
+              variant="primary"
+            />
           </div>
         </div>
       </section>

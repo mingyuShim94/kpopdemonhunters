@@ -16,7 +16,7 @@ interface CharacterTabsProps {
 export default function CharacterTabs({ characters }: CharacterTabsProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
-  
+
   // URL 파라미터에서 탭 값을 읽어오기
   const getInitialTab = useCallback((): TabType => {
     const tabParam = searchParams.get('tab');
@@ -67,69 +67,80 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
         return {
           title: "HUNTR/X",
           description: "The demon-hunting K-pop group protecting humanity with their music and magical abilities",
-          gradientFrom: "from-pink-400",
-          gradientTo: "to-purple-400",
-          badgeColor: "bg-purple-600/30 text-purple-200"
+          borderColor: "border-pink-500",
+          activeColor: "bg-pink-500",
+          hoverBg: "hover:bg-pink-50",
+          textColor: "text-pink-600",
+          badgeColor: "bg-pink-100 text-pink-700"
         };
       case "Saja Boys":
         return {
           title: "Saja Boys",
           description: "The demonic boy band serving the Demon King, using their music to drain souls",
-          gradientFrom: "from-red-400",
-          gradientTo: "to-orange-400",
-          badgeColor: "bg-red-600/30 text-red-200"
+          borderColor: "border-purple-500",
+          activeColor: "bg-purple-500",
+          hoverBg: "hover:bg-purple-50",
+          textColor: "text-purple-600",
+          badgeColor: "bg-purple-100 text-purple-700"
         };
       case "Others":
         return {
           title: "Other Characters",
           description: "Mentors, allies, and villains who shape the story",
-          gradientFrom: "from-cyan-400",
-          gradientTo: "to-blue-400",
-          badgeColor: "bg-cyan-600/30 text-cyan-200"
+          borderColor: "border-cyan-500",
+          activeColor: "bg-cyan-500",
+          hoverBg: "hover:bg-cyan-50",
+          textColor: "text-cyan-600",
+          badgeColor: "bg-cyan-100 text-cyan-700"
         };
       default:
         return {
           title: "",
           description: "",
-          gradientFrom: "",
-          gradientTo: "",
+          borderColor: "",
+          activeColor: "",
+          hoverBg: "",
+          textColor: "",
           badgeColor: ""
         };
     }
   };
 
-
   return (
     <>
-      {/* Tab Navigation */}
-      <div className="flex justify-center mb-4">
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-1 border border-white/10">
-          <div className="flex space-x-1">
-            {(["HUNTR/X", "Saja Boys", "Others"] as TabType[]).map((tab) => (
+      {/* Tab Navigation - Clean & Modern */}
+      <div className="flex justify-center mb-12">
+        <div className="inline-flex bg-white rounded-xl p-1.5 shadow-md border border-gray-200">
+          {(["HUNTR/X", "Saja Boys", "Others"] as TabType[]).map((tab) => {
+            const config = getTabConfig(tab);
+            return (
               <button
                 key={tab}
                 onClick={() => handleTabChange(tab)}
                 className={`
-                  px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
+                  relative px-8 py-3 rounded-lg text-base font-semibold transition-all duration-250
                   ${activeTab === tab
-                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
-                    : "text-purple-200 hover:text-white hover:bg-white/10"
+                    ? `${config.activeColor} text-white shadow-md`
+                    : `text-gray-600 ${config.hoverBg}`
                   }
                 `}
               >
                 {tab}
+                {activeTab === tab && (
+                  <span className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-full opacity-50" />
+                )}
               </button>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
 
       {/* Image Preloading - Hidden but loaded */}
       <div className="hidden">
         {characters.map((character) => (
-          <Image 
-            key={character.id} 
-            src={character.image} 
+          <Image
+            key={character.id}
+            src={character.image}
             alt=""
             width={300}
             height={300}
@@ -139,7 +150,7 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
       </div>
 
       {/* Character Content - Only active tab rendered */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {(() => {
           const tabConfig = getTabConfig(activeTab);
           const tabCharacters = getCharactersByTab(activeTab);
@@ -149,44 +160,49 @@ export default function CharacterTabs({ characters }: CharacterTabsProps) {
               key={activeTab}
               className="transition-opacity duration-300 opacity-100"
             >
-              <div className="mb-8 text-center">
-                <h2 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${tabConfig.gradientFrom} ${tabConfig.gradientTo} mb-3`}>
+              {/* Tab Header */}
+              <div className="mb-12 text-center">
+                <h2 className={`text-4xl md:text-5xl font-bold ${tabConfig.textColor} mb-4`}>
                   {tabConfig.title}
                 </h2>
-                <p className="text-purple-200 text-lg">
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                   {tabConfig.description}
                 </p>
               </div>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+              {/* Character Grid - 4 columns on desktop */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {tabCharacters.map((character) => (
                   <Link
                     key={character.id}
                     href={`/characters/${character.id}?fromTab=${encodeURIComponent(activeTab)}`}
                     className="group"
                   >
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-300 border border-white/20">
-                      <CharacterImage
-                        src={character.image}
-                        alt={`${character.name} from Kpop Demon Hunters - ${character.role} character profile`}
-                        name={character.name}
-                        role={character.role}
-                        priority={activeTab === "HUNTR/X"}
-                      />
-                      <div className="p-6">
-                        <div className="flex justify-between items-start mb-3">
-                          <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
-                            {character.name}
-                          </h3>
-                          <span className={`${tabConfig.badgeColor} px-3 py-1 rounded-full text-sm`}>
-                            {character.role}
-                          </span>
-                        </div>
-                        <p className="text-purple-200 leading-relaxed">
+                    <div className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 ${tabConfig.borderColor} border-t-4`}>
+                      <div className="relative aspect-[3/4]">
+                        <CharacterImage
+                          src={character.image}
+                          alt={`${character.name} from Kpop Demon Hunters - ${character.role} character profile`}
+                          name={character.name}
+                          role={character.role}
+                          priority={activeTab === "HUNTR/X"}
+                        />
+                      </div>
+                      <div className="p-5">
+                        <h3 className={`text-xl md:text-2xl font-bold text-gray-900 mb-2 ${tabConfig.textColor.replace('text-', 'group-hover:text-')} transition-colors`}>
+                          {character.name}
+                        </h3>
+                        <span className={`inline-block ${tabConfig.badgeColor} px-3 py-1 rounded-full text-xs font-semibold mb-3`}>
+                          {character.role}
+                        </span>
+                        <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
                           {character.description}
                         </p>
-                        <div className="mt-4 text-purple-300 group-hover:text-purple-200 transition-colors">
-                          Learn more →
+                        <div className={`mt-4 flex items-center ${tabConfig.textColor} font-semibold text-sm`}>
+                          View Profile
+                          <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
                         </div>
                       </div>
                     </div>

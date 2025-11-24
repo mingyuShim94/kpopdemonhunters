@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import Footer from "./Footer";
+import GlobalNav from "./GlobalNav";
 import CharacterImage from "./CharacterImage";
 import ScrollToTop from "./ScrollToTop";
 import { PerformanceOutfit } from "../data/characters";
@@ -16,9 +16,11 @@ interface Character {
   species?: string;
   nationality?: string;
   age?: string;
+  height?: string;
   affiliatedGroup?: string;
   position?: string;
   weapon?: string;
+  weaponEvolution?: string;
   family?: Array<{
     relation: string;
     name: string;
@@ -34,7 +36,6 @@ interface Character {
     jp?: string;
   };
 }
-
 
 interface TriviaItem {
   category: string;
@@ -57,753 +58,322 @@ interface CharacterData extends Character {
   personality: string;
   quotes?: string[];
   abilities: string[];
-  weaponEvolution?: string;
   storyArc?: string;
   relationships?: Relationship[];
   trivia?: TriviaItem[];
   relatedOST?: string[];
 }
 
-// Character color theme utility function
-function getCharacterTheme(characterName: string) {
-  switch (characterName) {
-    case "Zoey":
-      return {
-        primary: "text-teal-300",
-        secondary: "text-teal-200",
-        bg: "bg-teal-600/30",
-        accent: "bg-yellow-600/30 text-yellow-200",
-      };
-    case "Mira":
-      return {
-        primary: "text-pink-300",
-        secondary: "text-pink-200",
-        bg: "bg-pink-600/30",
-        accent: "bg-red-600/30 text-red-200",
-      };
-    case "Jinu":
-      return {
-        primary: "text-amber-300",
-        secondary: "text-amber-200",
-        bg: "bg-amber-600/30",
-        accent: "bg-orange-600/30 text-orange-200",
-      };
-    case "Abby":
-      return {
-        primary: "text-emerald-300",
-        secondary: "text-emerald-200",
-        bg: "bg-emerald-600/30",
-        accent: "bg-green-600/30 text-green-200",
-      };
-    case "Baby":
-      return {
-        primary: "text-cyan-300",
-        secondary: "text-cyan-200",
-        bg: "bg-cyan-600/30",
-        accent: "bg-blue-600/30 text-blue-200",
-      };
-    case "Mystery":
-      return {
-        primary: "text-slate-300",
-        secondary: "text-slate-200",
-        bg: "bg-slate-600/30",
-        accent: "bg-gray-600/30 text-gray-200",
-      };
-    case "Romance":
-      return {
-        primary: "text-rose-300",
-        secondary: "text-rose-200",
-        bg: "bg-rose-600/30",
-        accent: "bg-pink-600/30 text-pink-200",
-      };
-    case "Gwi-Ma":
-      return {
-        primary: "text-red-300",
-        secondary: "text-red-200",
-        bg: "bg-red-600/30",
-        accent: "bg-orange-600/30 text-orange-200",
-      };
-    case "Celine":
-      return {
-        primary: "text-violet-300",
-        secondary: "text-violet-200",
-        bg: "bg-violet-600/30",
-        accent: "bg-purple-600/30 text-purple-200",
-      };
-    case "Bobby":
-      return {
-        primary: "text-yellow-300",
-        secondary: "text-yellow-200",
-        bg: "bg-yellow-600/30",
-        accent: "bg-amber-600/30 text-amber-200",
-      };
-    case "Derpy":
-      return {
-        primary: "text-blue-300",
-        secondary: "text-blue-200",
-        bg: "bg-blue-600/30",
-        accent: "bg-cyan-600/30 text-cyan-200",
-      };
-    case "Sussie":
-      return {
-        primary: "text-slate-300",
-        secondary: "text-slate-200",
-        bg: "bg-slate-600/30",
-        accent: "bg-gray-600/30 text-gray-200",
-      };
-    default:
-      return {
-        primary: "text-purple-300",
-        secondary: "text-purple-200",
-        bg: "bg-purple-600/30",
-        accent: "bg-indigo-600/30 text-indigo-200",
-      };
-  }
+interface CharacterSummary {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  role: string;
 }
 
-function InfoBox({ character }: { character: CharacterData }) {
-  const theme = getCharacterTheme(character.name);
-
-  return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 mb-8">
-      <h3 className="text-xl font-bold text-white mb-4 text-center border-b border-white/20 pb-2">
-        {character.fullName || character.name}
-      </h3>
-      <div className="space-y-3 text-sm">
-        {character.fullName && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Full Name:</span>
-            <span className="text-white col-span-2">{character.fullName}</span>
-          </div>
-        )}
-        {character.gender && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Gender:</span>
-            <span className="text-white col-span-2">{character.gender}</span>
-          </div>
-        )}
-        {character.species && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Species:</span>
-            <span className="text-white col-span-2">{character.species}</span>
-          </div>
-        )}
-        {character.nationality && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>
-              Nationality:
-            </span>
-            <span className="text-white col-span-2">
-              {character.nationality}
-            </span>
-          </div>
-        )}
-        {character.age && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Age:</span>
-            <span className="text-white col-span-2">{character.age}</span>
-          </div>
-        )}
-        {character.affiliatedGroup && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Group:</span>
-            <span className="text-white col-span-2">
-              {character.affiliatedGroup}
-            </span>
-          </div>
-        )}
-        {character.position && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Position:</span>
-            <span className="text-white col-span-2">{character.position}</span>
-          </div>
-        )}
-        {character.weapon && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Weapon:</span>
-            <span className="text-white col-span-2">{character.weapon}</span>
-          </div>
-        )}
-        {character.family && character.family.length > 0 && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>Family:</span>
-            <div className="col-span-2 space-y-1">
-              {character.family.map((member, index) => (
-                <div key={index} className="text-white text-xs">
-                  <span className={theme.secondary}>{member.relation}:</span>{" "}
-                  {member.name}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-        {character.voiceActors && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>
-              Voice Actors:
-            </span>
-            <div className="col-span-2 space-y-1">
-              {character.voiceActors.en && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>EN:</span>{" "}
-                  {character.voiceActors.en}
-                </div>
-              )}
-              {character.voiceActors.kr && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>KR:</span>{" "}
-                  {character.voiceActors.kr}
-                </div>
-              )}
-              {character.voiceActors.jp && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>JP:</span>{" "}
-                  {character.voiceActors.jp}
-                </div>
-              )}
-            </div>
-          </div>
-        )}
-        {character.singingVoice && (
-          <div className="grid grid-cols-3 gap-2">
-            <span className={`font-semibold ${theme.primary}`}>
-              Singing Voice:
-            </span>
-            <div className="col-span-2 space-y-1">
-              {character.singingVoice.en && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>EN:</span>{" "}
-                  {character.singingVoice.en}
-                </div>
-              )}
-              {character.singingVoice.kr && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>KR:</span>{" "}
-                  {character.singingVoice.kr}
-                </div>
-              )}
-              {character.singingVoice.jp && (
-                <div className="text-white text-xs">
-                  <span className={theme.secondary}>JP:</span>{" "}
-                  {character.singingVoice.jp}
-                </div>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function OutfitGallery({
-  characterName,
-  outfits,
-}: {
-  characterName: string;
-  outfits?: PerformanceOutfit[];
-}) {
-  const theme = getCharacterTheme(characterName);
-  const [imageStatuses, setImageStatuses] = useState<{[key: number]: 'loading' | 'loaded' | 'error'}>({});
-
-  if (!outfits || outfits.length === 0) {
-    return (
-      <div className="flex justify-center items-center h-64 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
-        <span className="text-white text-lg">No outfits available yet</span>
-      </div>
-    );
-  }
-
-  const handleImageLoad = (index: number) => {
-    setImageStatuses(prev => ({ ...prev, [index]: 'loaded' }));
-  };
-
-  const handleImageError = (index: number) => {
-    setImageStatuses(prev => ({ ...prev, [index]: 'error' }));
-  };
-
-  return (
-    <div className="flex overflow-x-auto gap-4 pb-4">
-      {outfits.map((outfit, index) => {
-        const imageStatus = imageStatuses[index] || 'loading';
-        const isImageLoaded = imageStatus === 'loaded';
-        const hasImageError = imageStatus === 'error';
-
-        return (
-          <div
-            key={index}
-            className="group relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 hover:bg-white/20 transition-all duration-300 flex-shrink-0"
-          >
-            <Image
-              src={hasImageError ? "/images/sample_outfit.png" : outfit.imagePath}
-              alt={`${characterName} from Kpop Demon Hunters wearing ${outfit.name} outfit`}
-              height={300}
-              width={300}
-              style={{ height: "300px", width: "auto" }}
-              className="group-hover:scale-105 transition-transform duration-300"
-              sizes="(max-width: 768px) 40vw, 20vw"
-              onLoad={() => handleImageLoad(index)}
-              onError={() => handleImageError(index)}
-              unoptimized={hasImageError} // Use unoptimized for fallback images
-            />
-
-            {/* Conditional overlay based on image status */}
-            {hasImageError ? (
-              // Coming Soon overlay for fallback images (always visible)
-              <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
-                <div className="text-center p-2">
-                  <span className="text-white text-lg font-semibold block mb-1">
-                    Coming Soon
-                  </span>
-                  <span className="text-white text-xs opacity-75">
-                    {outfit.name}
-                  </span>
-                </div>
-              </div>
-            ) : isImageLoaded ? (
-              // Outfit info overlay for loaded images (always visible)
-              <>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <div className="absolute bottom-2 left-2 right-2">
-                  <div className="text-white">
-                    <h4 className={`text-sm font-semibold ${theme.primary} drop-shadow-lg mb-1`}>
-                      {outfit.name}
-                    </h4>
-                    <p className="text-xs text-gray-200 drop-shadow-lg line-clamp-2">
-                      {outfit.occasion}
-                    </p>
-                  </div>
-                </div>
-              </>
-            ) : null}
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function TriviaCards({
-  trivia,
-  characterName,
-}: {
-  trivia: TriviaItem[];
-  characterName: string;
-}) {
-  const theme = getCharacterTheme(characterName);
-
-  return (
-    <div className="grid md:grid-cols-2 gap-4">
-      {trivia.map((item, index) => (
-        <div
-          key={index}
-          className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:scale-105 transition-transform"
-        >
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xl">✨</span>
-            <div>
-              <span
-                className={`${theme.primary} text-xs font-semibold uppercase tracking-wide`}
-              >
-                {item.category}
-              </span>
-              <h4 className="text-white font-semibold">{item.title}</h4>
-            </div>
-          </div>
-          <p className={`${theme.secondary} text-sm`}>{item.description}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function SectionNavigation() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
-  return (
-    <div className="sticky top-0 z-10 bg-black/40 backdrop-blur-sm border-b border-white/10 py-3 mb-8">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="flex flex-wrap gap-2 justify-center text-sm">
-          {[
-            { id: "overview", label: "📖 Overview" },
-            { id: "appearance", label: "👗 Appearance" },
-            { id: "personality", label: "🧠 Personality" },
-            { id: "abilities", label: "⚔️ Abilities" },
-            { id: "story-arc", label: "📜 Story Arc" },
-            { id: "relationships", label: "💕 Relationships" },
-            { id: "trivia", label: "✨ Trivia" },
-          ].map((section) => (
-            <button
-              key={section.id}
-              onClick={() => scrollToSection(section.id)}
-              className="px-3 py-1 bg-white/10 hover:bg-white/20 text-purple-300 rounded-full transition-colors"
-            >
-              {section.label}
-            </button>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-interface CharacterPageClientProps {
+interface Props {
   character: CharacterData;
-  characterSummary?: {
-    image?: string;
-    name: string;
-    role: string;
-  };
+  characterSummary?: CharacterSummary;
   slug: string;
 }
 
-export default function CharacterPageClient({
-  character,
-  characterSummary,
-  slug,
-}: CharacterPageClientProps) {
-  const theme = getCharacterTheme(character.name);
-  const searchParams = useSearchParams();
+// Character color theme - Updated for new design
+function getCharacterTheme(characterName: string) {
+  const themes: Record<string, { primary: string; secondary: string; badge: string }> = {
+    Rumi: { primary: "text-pink-600", secondary: "bg-pink-50", badge: "bg-pink-100 text-pink-700 border-pink-300" },
+    Mira: { primary: "text-pink-600", secondary: "bg-pink-50", badge: "bg-pink-100 text-pink-700 border-pink-300" },
+    Zoey: { primary: "text-cyan-600", secondary: "bg-cyan-50", badge: "bg-cyan-100 text-cyan-700 border-cyan-300" },
+    Jinu: { primary: "text-purple-600", secondary: "bg-purple-50", badge: "bg-purple-100 text-purple-700 border-purple-300" },
+    Abby: { primary: "text-green-600", secondary: "bg-green-50", badge: "bg-green-100 text-green-700 border-green-300" },
+    Baby: { primary: "text-blue-600", secondary: "bg-blue-50", badge: "bg-blue-100 text-blue-700 border-blue-300" },
+    Mystery: { primary: "text-gray-600", secondary: "bg-gray-50", badge: "bg-gray-100 text-gray-700 border-gray-300" },
+    Romance: { primary: "text-rose-600", secondary: "bg-rose-50", badge: "bg-rose-100 text-rose-700 border-rose-300" },
+    "Gwi-Ma": { primary: "text-red-600", secondary: "bg-red-50", badge: "bg-red-100 text-red-700 border-red-300" },
+    Celine: { primary: "text-violet-600", secondary: "bg-violet-50", badge: "bg-violet-100 text-violet-700 border-violet-300" },
+    Bobby: { primary: "text-yellow-600", secondary: "bg-yellow-50", badge: "bg-yellow-100 text-yellow-700 border-yellow-300" },
+    Derpy: { primary: "text-blue-600", secondary: "bg-blue-50", badge: "bg-blue-100 text-blue-700 border-blue-300" },
+    Sussie: { primary: "text-gray-600", secondary: "bg-gray-50", badge: "bg-gray-100 text-gray-700 border-gray-300" },
+  };
 
-  const fromTab = searchParams.get("fromTab");
-  const backToCharactersUrl = fromTab
-    ? `/characters?tab=${encodeURIComponent(fromTab)}`
-    : "/characters";
+  return themes[characterName] || { primary: "text-purple-600", secondary: "bg-purple-50", badge: "bg-purple-100 text-purple-700 border-purple-300" };
+}
+
+type TabType = "profile" | "relationships" | "combat" | "trivia";
+
+export default function CharacterPageClient({ character, characterSummary }: Props) {
+  const searchParams = useSearchParams();
+  const [activeTab, setActiveTab] = useState<TabType>("profile");
+  const theme = getCharacterTheme(character.name);
+
+  const fromTab = searchParams.get("fromTab") || "HUNTR/X";
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
-      {/* Navigation */}
-      <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link
-                href="/"
-                className="text-xl sm:text-2xl font-bold text-white hover:text-purple-300 transition-colors"
-              >
-                KDH Wiki
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link
-                href="/characters"
-                className="text-purple-300 font-semibold"
-              >
-                Characters
-              </Link>
-              <Link
-                href="/ost"
-                className="text-white hover:text-purple-300 transition-colors"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-white hover:text-purple-300 transition-colors"
-              >
-                Korean Culture
-              </Link>
-            </div>
-            <div className="md:hidden flex space-x-4">
-              <Link
-                href="/characters"
-                className="text-purple-300 font-semibold text-sm"
-              >
-                Chars
-              </Link>
-              <Link
-                href="/ost"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                OST
-              </Link>
-              <Link
-                href="/culture"
-                className="text-white hover:text-purple-300 transition-colors text-sm"
-              >
-                Culture
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      {/* Global Navigation */}
+      <GlobalNav />
 
       {/* Hero Section */}
-      <section className="py-16 px-4">
+      <section className="relative py-16 px-4 bg-pattern-dancheong overflow-hidden">
         <div className="max-w-6xl mx-auto">
+          {/* Back Button */}
           <Link
-            href={backToCharactersUrl}
-            className="text-purple-300 hover:text-purple-200 mb-8 inline-block"
+            href={`/characters?tab=${encodeURIComponent(fromTab)}`}
+            className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 mb-8 font-medium transition-colors"
           >
-            ← Back to Characters
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Characters
           </Link>
 
-          <div className="grid lg:grid-cols-3 gap-12 items-start">
+          {/* Character Hero */}
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Character Image */}
-            <div className="lg:col-span-1">
-              <div className="rounded-2xl overflow-hidden mb-6">
-                <CharacterImage
-                  src={
-                    characterSummary?.image || `/images/characters/${slug}.webp`
-                  }
-                  alt={`${character.name} from Kpop Demon Hunters - detailed character profile and biography`}
-                  name={character.name}
-                  role={character.role}
-                  aspectRatio="square"
-                />
+            <div className="relative">
+              <div className="sticky top-24">
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  {characterSummary && (
+                    <CharacterImage
+                      src={characterSummary.image}
+                      alt={`${character.name} from K-pop Demon Hunters`}
+                      name={character.name}
+                      role={character.role}
+                      priority={true}
+                    />
+                  )}
+                </div>
               </div>
-              {/* Info Box */}
-              <InfoBox character={character} />
             </div>
 
-            {/* Character Title & Quick Info */}
-            <div className="lg:col-span-2">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-                <h1 className="text-4xl md:text-6xl font-bold text-white">
-                  {character.name}
-                </h1>
-                {character.koreanName && (
-                  <span
-                    className={`text-2xl md:text-3xl font-medium ${theme.primary}`}
-                  >
-                    {character.koreanName}
-                  </span>
-                )}
-              </div>
+            {/* Character Info */}
+            <div>
+              <h1 className="text-5xl md:text-6xl font-extrabold text-ink mb-4 leading-tight">
+                {character.name}
+              </h1>
+              {character.koreanName && (
+                <p className="text-2xl text-gray-600 mb-6">{character.koreanName}</p>
+              )}
 
-              <div className="flex flex-wrap gap-2 mb-6">
-                <span
-                  className={`px-4 py-2 rounded-full ${theme.bg} ${theme.secondary}`}
-                >
-                  {character.role}
-                </span>
-                {character.species && (
-                  <span className={`px-4 py-2 rounded-full ${theme.accent}`}>
-                    {character.species}
-                  </span>
-                )}
-              </div>
+              <span className={`inline-block px-4 py-2 rounded-full font-semibold mb-8 border-2 ${theme.badge}`}>
+                {character.role}
+              </span>
 
-              {character.quotes && character.quotes.length > 0 && (
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-white">
-                    Memorable Quotes
-                  </h3>
-                  <div className="space-y-4">
-                    {character.quotes.map((quote, index) => (
-                      <blockquote
-                        key={index}
-                        className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 border-l-4 border-l-purple-400"
-                      >
-                        <p className="text-purple-200 text-lg italic">
-                          &ldquo;{quote}&rdquo;
-                        </p>
-                        <footer className="text-purple-300 mt-2">
-                          — {character.name}
-                        </footer>
-                      </blockquote>
-                    ))}
-                  </div>
+              {/* Quick Stats */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Stats</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  {character.age && (
+                    <div>
+                      <span className="text-sm text-gray-500 block">Age</span>
+                      <span className="text-lg font-semibold text-gray-900">{character.age}</span>
+                    </div>
+                  )}
+                  {character.height && (
+                    <div>
+                      <span className="text-sm text-gray-500 block">Height</span>
+                      <span className="text-lg font-semibold text-gray-900">{character.height}</span>
+                    </div>
+                  )}
+                  {character.weapon && (
+                    <div>
+                      <span className="text-sm text-gray-500 block">Weapon</span>
+                      <span className="text-lg font-semibold text-gray-900">{character.weapon}</span>
+                    </div>
+                  )}
+                  {character.position && (
+                    <div>
+                      <span className="text-sm text-gray-500 block">Position</span>
+                      <span className="text-lg font-semibold text-gray-900">{character.position}</span>
+                    </div>
+                  )}
                 </div>
+
+                {/* Voice Actors */}
+                {character.voiceActors && (
+                  <div className="mt-6 pt-6 border-t border-gray-200">
+                    <span className="text-sm text-gray-500 block mb-2">Voice Actor</span>
+                    {character.voiceActors.en && (
+                      <p className="text-base font-semibold text-gray-900">{character.voiceActors.en}</p>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Famous Quote */}
+              {character.quotes && character.quotes.length > 0 && (
+                <blockquote className={`${theme.secondary} rounded-2xl p-6 border-l-4 ${theme.primary.replace('text-', 'border-')}`}>
+                  <p className="text-lg italic text-gray-700 leading-relaxed">
+                    &ldquo;{character.quotes[0]}&rdquo;
+                  </p>
+                </blockquote>
               )}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section Navigation */}
-      <SectionNavigation />
-
-      {/* Overview */}
-      {character.overview && (
-        <section id="overview" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-4xl">📖</span>
-              Overview
-            </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <p className="text-purple-200 leading-relaxed">
-                {character.overview}
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Appearance */}
-      {character.appearance && (
-        <section id="appearance" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-4xl">👗</span>
-              Appearance
-            </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 mb-8">
-              <p className="text-purple-200 leading-relaxed">
-                {character.appearance}
-              </p>
-            </div>
-
-            <>
-              <h3 className="text-2xl font-bold text-white mb-6">Outfits</h3>
-              <OutfitGallery
-                characterName={character.name}
-                outfits={character.performanceOutfits}
-              />
-            </>
-          </div>
-        </section>
-      )}
-
-      {/* Personality */}
-      <section id="personality" className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <span className="text-4xl">🧠</span>
-            Personality
-          </h2>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-            <div className="text-purple-200 leading-relaxed space-y-4">
-              {character.personality.split("\n\n").map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+      {/* Content Tabs */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Tab Navigation */}
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex bg-white rounded-xl p-1.5 shadow-md border border-gray-200">
+              {[
+                { id: "profile" as TabType, label: "Profile" },
+                { id: "relationships" as TabType, label: "Relationships" },
+                { id: "combat" as TabType, label: "Combat" },
+                { id: "trivia" as TabType, label: "Trivia" },
+              ].map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`
+                    px-8 py-3 rounded-lg text-base font-semibold transition-all duration-250
+                    ${activeTab === tab.id
+                      ? `bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-md`
+                      : `text-gray-600 hover:bg-gray-50`
+                    }
+                  `}
+                >
+                  {tab.label}
+                </button>
               ))}
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Abilities */}
-      <section id="abilities" className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <span className="text-4xl">⚔️</span>
-            Abilities
-          </h2>
-          <div className="space-y-4">
-            {character.abilities.map((ability, index) => (
-              <div
-                key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
-              >
-                <div className="text-purple-200 leading-relaxed">{ability}</div>
-              </div>
-            ))}
-          </div>
-
-          {character.weaponEvolution && (
-            <div className="mt-6 bg-gradient-to-r from-purple-600/20 to-indigo-600/20 rounded-lg p-6 border border-purple-400/30">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                <span className="text-2xl">🗡️</span>
-                Weapon Evolution
-              </h3>
-              <p className="text-purple-200">{character.weaponEvolution}</p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Story Arc */}
-      {character.storyArc && (
-        <section id="story-arc" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-4xl">📜</span>
-              Story Arc
-            </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="text-purple-200 leading-relaxed space-y-4">
-                {character.storyArc.split("\n\n").map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Relationships */}
-      {character.relationships && character.relationships.length > 0 && (
-        <section id="relationships" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-4xl">💕</span>
-              Relationships
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {character.relationships.map((rel, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20"
-                >
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-bold text-white">{rel.name}</h3>
-                    <span className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
-                      {rel.relation}
-                    </span>
+          {/* Tab Content */}
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+            {/* Profile Tab */}
+            {activeTab === "profile" && (
+              <div className="space-y-8">
+                {character.overview && (
+                  <div>
+                    <h2 className={`text-3xl font-bold mb-4 ${theme.primary}`}>Overview</h2>
+                    <p className="text-lg text-gray-700 leading-relaxed">{character.overview}</p>
                   </div>
-                  <p className="text-purple-200">{rel.description}</p>
-                </div>
-              ))}
-            </div>
+                )}
+
+                {character.personality && (
+                  <div>
+                    <h2 className={`text-3xl font-bold mb-4 ${theme.primary}`}>Personality</h2>
+                    <p className="text-lg text-gray-700 leading-relaxed">{character.personality}</p>
+                  </div>
+                )}
+
+                {character.appearance && (
+                  <div>
+                    <h2 className={`text-3xl font-bold mb-4 ${theme.primary}`}>Appearance</h2>
+                    <p className="text-lg text-gray-700 leading-relaxed">{character.appearance}</p>
+                  </div>
+                )}
+
+                {character.storyArc && (
+                  <div>
+                    <h2 className={`text-3xl font-bold mb-4 ${theme.primary}`}>Story Arc</h2>
+                    <p className="text-lg text-gray-700 leading-relaxed">{character.storyArc}</p>
+                  </div>
+                )}
+
+                {character.quotes && character.quotes.length > 1 && (
+                  <div>
+                    <h2 className={`text-3xl font-bold mb-6 ${theme.primary}`}>Memorable Quotes</h2>
+                    <div className="space-y-4">
+                      {character.quotes.map((quote, index) => (
+                        <blockquote key={index} className={`${theme.secondary} rounded-xl p-6 border-l-4 ${theme.primary.replace('text-', 'border-')}`}>
+                          <p className="text-base italic text-gray-700">&ldquo;{quote}&rdquo;</p>
+                        </blockquote>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Relationships Tab */}
+            {activeTab === "relationships" && (
+              <div>
+                <h2 className={`text-3xl font-bold mb-8 ${theme.primary}`}>Relationships</h2>
+                {character.relationships && character.relationships.length > 0 ? (
+                  <div className="space-y-6">
+                    {character.relationships.map((rel, index) => (
+                      <div key={index} className="bg-gray-50 rounded-xl p-6">
+                        <div className="flex justify-between items-start mb-3">
+                          <h3 className="text-xl font-bold text-gray-900">{rel.name}</h3>
+                          <span className={`px-3 py-1 rounded-full text-sm font-semibold ${theme.badge}`}>
+                            {rel.relation}
+                          </span>
+                        </div>
+                        <p className="text-gray-700 leading-relaxed">{rel.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-gray-600 text-center py-12">No relationship information available yet.</p>
+                )}
+              </div>
+            )}
+
+            {/* Combat Tab */}
+            {activeTab === "combat" && (
+              <div className="space-y-8">
+                {character.abilities && character.abilities.length > 0 && (
+                  <div>
+                    <h2 className={`text-3xl font-bold mb-6 ${theme.primary}`}>Abilities & Powers</h2>
+                    <div className="grid gap-4">
+                      {character.abilities.map((ability, index) => (
+                        <div key={index} className="flex items-start gap-3">
+                          <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-white text-sm font-bold ${theme.primary.replace('text-', 'bg-')}`}>
+                            {index + 1}
+                          </span>
+                          <p className="text-lg text-gray-700 leading-relaxed">{ability}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {character.weapon && (
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">Primary Weapon</h3>
+                    <p className="text-lg text-gray-700">{character.weapon}</p>
+                    {character.weaponEvolution && (
+                      <>
+                        <h4 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Evolution</h4>
+                        <p className="text-gray-700">{character.weaponEvolution}</p>
+                      </>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Trivia Tab */}
+            {activeTab === "trivia" && (
+              <div>
+                <h2 className={`text-3xl font-bold mb-8 ${theme.primary}`}>Fun Facts & Trivia</h2>
+                {character.trivia && character.trivia.length > 0 ? (
+                  <div className="space-y-6">
+                    {character.trivia.map((item, index) => (
+                      <div key={index} className="bg-gray-50 rounded-xl p-6">
+                        <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${theme.badge}`}>
+                          {item.category}
+                        </span>
+                        <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                        <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-gray-600 text-center py-12">No trivia available yet.</p>
+                )}
+              </div>
+            )}
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
-      {/* Trivia */}
-      {character.trivia && character.trivia.length > 0 && (
-        <section id="trivia" className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-4xl">✨</span>
-              Behind the Scenes & Trivia
-            </h2>
-            <TriviaCards
-              trivia={character.trivia}
-              characterName={character.name}
-            />
-          </div>
-        </section>
-      )}
-
-      {/* Related OST */}
-      {character.relatedOST && character.relatedOST.length > 0 && (
-        <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-4xl">🎵</span>
-              Related OST
-            </h2>
-            <div className="grid md:grid-cols-3 gap-4">
-              {character.relatedOST.map((track, index) => (
-                <div
-                  key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 hover:scale-105 transition-transform"
-                >
-                  <div className="text-purple-200 font-semibold">{track}</div>
-                  <Link
-                    href="/ost"
-                    className="text-purple-300 text-sm hover:text-purple-200 transition-colors"
-                  >
-                    Listen →
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      <div className="mt-16">
-        <Footer />
-      </div>
-
-      {/* Scroll to Top Button */}
+      <Footer />
       <ScrollToTop />
     </div>
   );
