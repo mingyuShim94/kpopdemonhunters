@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Search, X, ChevronRight, Music, User, Globe, Command } from 'lucide-react';
 import { ostTracks } from '../data/ost';
 
 interface SearchResult {
@@ -38,6 +40,17 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(-1);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     if (!searchTerm.trim()) {
@@ -111,121 +124,154 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
       e.preventDefault();
       if (selectedIndex >= 0) {
         window.location.href = results[selectedIndex].href;
+        onClose();
       }
     } else if (e.key === 'Escape') {
       onClose();
     }
   };
 
-  const getTypeColor = (type: string) => {
+  const getIcon = (type: string) => {
     switch (type) {
-      case 'character':
-        return 'bg-pink-500/20 text-pink-300';
-      case 'ost':
-        return 'bg-cyan-500/20 text-cyan-300';
-      case 'culture':
-        return 'bg-purple-500/20 text-purple-300';
-      default:
-        return 'bg-gray-500/20 text-gray-300';
+      case 'character': return <User className="w-4 h-4" />;
+      case 'ost': return <Music className="w-4 h-4" />;
+      case 'culture': return <Globe className="w-4 h-4" />;
+      default: return <Search className="w-4 h-4" />;
     }
   };
 
-  if (!isOpen) return null;
+  const getTypeStyles = (type: string) => {
+    switch (type) {
+      case 'character':
+        return 'bg-pink-500/10 text-pink-400 border-pink-500/20';
+      case 'ost':
+        return 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20';
+      case 'culture':
+        return 'bg-purple-500/10 text-purple-400 border-purple-500/20';
+      default:
+        return 'bg-gray-500/10 text-gray-400 border-gray-500/20';
+    }
+  };
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center pt-20">
-      <div className="bg-gradient-to-br from-purple-900/95 via-blue-900/95 to-indigo-900/95 backdrop-blur-sm rounded-2xl border border-white/20 w-full max-w-2xl mx-4 max-h-[70vh] overflow-hidden">
-        {/* Search Input */}
-        <div className="p-6 border-b border-white/20">
-          <div className="relative">
-            <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            <input
-              type="text"
-              placeholder="Search characters, OST, or culture..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyDown={handleKeyDown}
-              className="w-full bg-white/10 border border-white/20 rounded-lg pl-10 pr-4 py-3 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              autoFocus
-            />
-            <button
-              onClick={onClose}
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white/60 hover:text-white transition-colors"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {/* Search Results */}
-        <div className="max-h-96 overflow-y-auto">
-          {results.length > 0 ? (
-            <div className="p-4 space-y-2">
-              {results.map((result, index) => (
-                <Link
-                  key={`${result.type}-${result.title}`}
-                  href={result.href}
-                  className={`block p-4 rounded-lg transition-all duration-200 ${
-                    index === selectedIndex
-                      ? 'bg-white/20 ring-2 ring-purple-500'
-                      : 'bg-white/10 hover:bg-white/20'
-                  }`}
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="fixed inset-0 bg-black/80 backdrop-blur-md z-50"
+          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-x-4 top-[15%] md:inset-x-auto md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-2xl z-50"
+          >
+            <div className="bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl shadow-purple-500/10 overflow-hidden flex flex-col max-h-[70vh]">
+              {/* Search Input */}
+              <div className="p-4 border-b border-white/10 flex items-center gap-3">
+                <Search className="w-5 h-5 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search characters, OST, or culture..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  className="flex-1 bg-transparent border-none text-white text-lg placeholder-gray-500 focus:outline-none focus:ring-0"
+                  autoFocus
+                />
+                <button
                   onClick={onClose}
+                  className="p-1 rounded-lg hover:bg-white/10 text-gray-400 hover:text-white transition-colors"
                 >
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-white font-semibold">{result.title}</h3>
-                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${getTypeColor(result.type)}`}>
-                      {result.type}
-                    </span>
-                  </div>
-                  <p className="text-white/70 text-sm line-clamp-2">{result.description}</p>
-                </Link>
-              ))}
-            </div>
-          ) : searchTerm.trim() ? (
-            <div className="p-8 text-center text-white/60">
-              <svg className="w-16 h-16 mx-auto mb-4 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <p>No results found for &quot;{searchTerm}&quot;</p>
-              <p className="text-sm mt-2">Try searching for characters, OST tracks, or culture topics</p>
-            </div>
-          ) : (
-            <div className="p-8 text-center text-white/60">
-              <svg className="w-16 h-16 mx-auto mb-4 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <p>Start typing to search...</p>
-              <p className="text-sm mt-2">Find characters, OST tracks, and culture information</p>
-            </div>
-          )}
-        </div>
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
 
-        {/* Shortcuts */}
-        <div className="p-4 border-t border-white/20 bg-white/5">
-          <div className="flex items-center justify-between text-xs text-white/50">
-            <div className="flex items-center space-x-4">
-              <span className="flex items-center space-x-1">
-                <kbd className="px-2 py-1 bg-white/10 rounded text-xs">↑</kbd>
-                <kbd className="px-2 py-1 bg-white/10 rounded text-xs">↓</kbd>
-                <span>to navigate</span>
-              </span>
-              <span className="flex items-center space-x-1">
-                <kbd className="px-2 py-1 bg-white/10 rounded text-xs">Enter</kbd>
-                <span>to select</span>
-              </span>
+              {/* Search Results */}
+              <div className="overflow-y-auto custom-scrollbar">
+                {results.length > 0 ? (
+                  <div className="p-2">
+                    <div className="text-xs font-medium text-gray-500 px-3 py-2 uppercase tracking-wider">
+                      Results
+                    </div>
+                    {results.map((result, index) => (
+                      <Link
+                        key={`${result.type}-${result.title}`}
+                        href={result.href}
+                        onClick={onClose}
+                        className={`group flex items-center gap-4 p-3 rounded-xl transition-all duration-200 ${index === selectedIndex
+                          ? 'bg-white/10'
+                          : 'hover:bg-white/5'
+                          }`}
+                      >
+                        <div className={`p-2 rounded-lg border ${getTypeStyles(result.type)}`}>
+                          {getIcon(result.type)}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center justify-between mb-0.5">
+                            <h3 className="text-white font-medium truncate group-hover:text-purple-300 transition-colors">
+                              {result.title}
+                            </h3>
+                            {index === selectedIndex && (
+                              <ChevronRight className="w-4 h-4 text-gray-400" />
+                            )}
+                          </div>
+                          <p className="text-sm text-gray-400 truncate">
+                            {result.description}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                ) : searchTerm.trim() ? (
+                  <div className="p-12 text-center">
+                    <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Search className="w-8 h-8 text-gray-500" />
+                    </div>
+                    <p className="text-gray-300 font-medium mb-1">No results found</p>
+                    <p className="text-sm text-gray-500">
+                      We couldn&apos;t find anything matching &quot;{searchTerm}&quot;
+                    </p>
+                  </div>
+                ) : (
+                  <div className="p-12 text-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/5">
+                      <Command className="w-8 h-8 text-purple-400" />
+                    </div>
+                    <p className="text-gray-300 font-medium mb-1">Search the Wiki</p>
+                    <p className="text-sm text-gray-500 max-w-xs mx-auto">
+                      Find detailed character profiles, OST lyrics, and cultural insights.
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* Footer */}
+              <div className="p-3 bg-white/5 border-t border-white/10 flex items-center justify-between text-xs text-gray-500">
+                <div className="flex items-center gap-4">
+                  <span className="flex items-center gap-1.5">
+                    <kbd className="px-1.5 py-0.5 rounded bg-white/10 border border-white/10 font-sans">↑↓</kbd>
+                    <span>navigate</span>
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <kbd className="px-1.5 py-0.5 rounded bg-white/10 border border-white/10 font-sans">↵</kbd>
+                    <span>select</span>
+                  </span>
+                </div>
+                <span className="flex items-center gap-1.5">
+                  <kbd className="px-1.5 py-0.5 rounded bg-white/10 border border-white/10 font-sans">esc</kbd>
+                  <span>close</span>
+                </span>
+              </div>
             </div>
-            <span className="flex items-center space-x-1">
-              <kbd className="px-2 py-1 bg-white/10 rounded text-xs">Esc</kbd>
-              <span>to close</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
   );
 }
